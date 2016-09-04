@@ -28,7 +28,8 @@ int							main(int ac, char **av)
 	ft_bzero(vm->memory, MEM_SIZE);
 	vm->nb_champ = ac - 1;
 	fill_memory(ac, av, vm);
-	print_memory(vm->memory, MEM_SIZE);
+	// print_memory(vm->memory, MEM_SIZE);
+	manage_players(vm);
 	// start_war(vm);
 
 }

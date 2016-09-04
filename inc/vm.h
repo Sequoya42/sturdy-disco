@@ -31,7 +31,7 @@ struct					s_proc
 	unsigned int		reg[REG_NUMBER];
 	char				name[PROG_NAME_LENGTH + 1];
 	char				comment[COMMENT_LENGTH + 1];
-	char				*set[4];
+	int					set[5];
 };
 
 struct					s_vm

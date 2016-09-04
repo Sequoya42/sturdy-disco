@@ -50,7 +50,6 @@ int							fill_memory(int ac, char **av, t_vm *vm)
 	while (--ac)
 	{
 		fill_champion((i * dist), ac, av[ac], vm);
-		ft_putendl("tt");
 		i++;
 	}
 	return (1);

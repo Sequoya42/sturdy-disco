@@ -20,8 +20,8 @@
 // 	stop = CYCLE_TO_DIE;
 // 	while (1)
 // 	{
-// 		cycle = 0;
-// 		while (cycle < stop)
+// 		i = 0;
+// 		while (i < stop)
 // 		{
 // 			manage_players(vm);
 // 		}

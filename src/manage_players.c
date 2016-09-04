@@ -12,24 +12,64 @@
 
 #include "vm.h"
 
-// void						get_instructions(int ac, t_vm *vm)
-// {
-// 	int						i;
-// 	char					*s;
+void						manage_args(int op, t_vm *vm)
+{
 
-// 	i = CP[ac].pc;
-// 	s = ft_strsub(vm->memory, i, 16);
+}
 
-// }
+void						manage_byte_args(int op, t_vm *vm)
+{
+	int						encode;
 
-// void						manage_players(t_vm *vm)
-// {
-// 	int						i;
-// 	int						op;
+	encode = (vm->memory[i + 1] / 16) * 10 + (vm->memory[i + 1] % 16);
+}
 
-// 	i = -1;
-// 	while (++i <= vm->nb_champ)
-// 	{
-// 		op = get_instructions(i, vm);
-// 	}
-// }
+
+int							get_instructions(int ac, t_vm *vm)
+{
+	int						i;
+	int						op;
+
+	i = CP[ac].pc;
+	op = (vm->memory[i] / 16) * 10 + (vm->memory[i] % 16);
+	CP[ac].set[0] = op;
+	ft_putnbrendl(op);
+	if (GOT(op - 1).op_mod == 1)
+		manage_byte_args(op, vm);
+		op = (vm->memory[i + 1] / 16) * 10 + (vm->memory[i + 1] % 16);
+	else
+		manage_args(op, vm);
+	CP[ac].set[1] = op;
+		ft_putnbrendl(op);
+	#if 0
+	if (type == OPERATOR)
+		return (g_op_tab[op - 1].op_mod == 0 ? 1 : 2);
+	else if (type == REGISTER)
+		return (T_REG);
+	else if (type == DIRECT)
+		return (g_op_tab[op - 1].dir_mod == 0 ? DIR_SIZE : IND_SIZE);
+	else if (type == INDIRECT)
+		return (IND_SIZE);
+	else
+		return (0);
+}
+
+	check op_table pour voir si int codage
+	get params
+	plug tableau pointeur sur fonction ici
+	
+	#endif
+	return (op);
+}
+
+void						manage_players(t_vm *vm)
+{
+	unsigned int			i;
+	unsigned int			op;
+
+	i = -1;
+	while (++i < vm->nb_champ)
+	{
+		op = get_instructions(i, vm);
+	}
+}
