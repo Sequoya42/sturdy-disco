@@ -15,6 +15,7 @@
 
 # include "op.h"
 # include "libft.h"
+# include "definition.h"
 # include <fcntl.h>
 
 #define CP				vm->champ
@@ -46,6 +47,7 @@ struct					s_vm
 };
 
 int							fill_memory(int ac, char **av, t_vm *vm);
+int							hex_to_dec(unsigned int n);
 int							format_int(int n, int size);
 unsigned int				ft_swap(unsigned int val);
 unsigned int				ft_endian(unsigned int val);
@@ -54,5 +56,4 @@ void						write_memory(int size, int ost, char *s, t_vm *vm);
 void						start_war(t_vm *vm);
 void						manage_players(t_vm *vm);
 t_vm						*get_vm(void);
-
 #endif

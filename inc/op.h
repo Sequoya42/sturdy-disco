@@ -20,6 +20,21 @@
 # define REG_CODE				1
 # define DIR_CODE				2
 # define IND_CODE				3
+#if 0
+D R
+I R
+R R
+R R R
+R D R
+R I R
+R D D
+R I I
+D I R
+D D R
+I D R
+I I R
+
+#endif
 
 # define MAX_ARGS_NUMBER		4
 # define MAX_PLAYERS			4

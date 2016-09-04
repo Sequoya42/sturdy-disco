@@ -11,17 +11,41 @@
 /* ************************************************************************** */
 
 #include "vm.h"
-
-void						manage_args(int op, t_vm *vm)
-{
-
-}
-
-void						manage_byte_args(int op, t_vm *vm)
+// 00011010
+ 
+void						manage_byte_args(int i,int op, t_vm *vm)
 {
 	int						encode;
+	// int						size[3];
 
-	encode = (vm->memory[i + 1] / 16) * 10 + (vm->memory[i + 1] % 16);
+	encode = vm->memory[i];
+	ft_putnbrendl(encode);
+	int j = 8;
+
+	// 011010
+
+
+	int k = 0;
+	// encode = 120;
+	while (j >= 2)
+	{
+		k = (encode >> j) & 3;
+		// k2 = (encode >> j) & 2;
+		if ((encode >> j) & 1)
+			ft_putchar('1');
+		else
+			ft_putchar('0');
+		// encode >>= 1;
+		ft_print(KGRN "\t\t%d\n" KNRM, k);
+		// ft_print(KGRN "\t\t%s\n"KNRM , ft_base(encode >> j, 2));
+		j -= 2;
+	}
+	ft_putchar('\n');
+	ft_putnbrendl(encode >> 5);
+	ft_putnbrendl(encode >> 6);
+	ft_putendl("end");
+	ft_putnbrendl(encode);
+	(void)op;
 }
 
 
@@ -31,16 +55,14 @@ int							get_instructions(int ac, t_vm *vm)
 	int						op;
 
 	i = CP[ac].pc;
-	op = (vm->memory[i] / 16) * 10 + (vm->memory[i] % 16);
+	op = vm->memory[i];
 	CP[ac].set[0] = op;
-	ft_putnbrendl(op);
-	if (GOT(op - 1).op_mod == 1)
-		manage_byte_args(op, vm);
-		op = (vm->memory[i + 1] / 16) * 10 + (vm->memory[i + 1] % 16);
-	else
-		manage_args(op, vm);
+	ft_print("op is the sane %d\n", op);
+	if (GOT(op).op_mod == 1)
+		manage_byte_args(i + 1, op, vm);
+	// else
+		// manage_args(op, vm);
 	CP[ac].set[1] = op;
-		ft_putnbrendl(op);
 	#if 0
 	if (type == OPERATOR)
 		return (g_op_tab[op - 1].op_mod == 0 ? 1 : 2);

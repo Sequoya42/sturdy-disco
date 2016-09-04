@@ -33,6 +33,7 @@ SRC_NAME =		main.c\
 				write_memory.c\
 				start_war.c\
 				manage_players.c\
+				hex_to_dec.c\
 				op.c\
 
 
