@@ -12,10 +12,10 @@
 
 #include "vm.h"
 
-void						fill_champion(int ofst, int ac, char *av, t_vm *vm)
+void					fill_champion(int ofst, char *av, t_vm *vm, t_proc *p)
 {
-	int						fd;
-	int						i;
+	int					fd;
+	int					i;
 
 	i = 0;
 	if ((fd = open(av, O_RDONLY)) <= -1)
@@ -23,33 +23,58 @@ void						fill_champion(int ofst, int ac, char *av, t_vm *vm)
 	ft_read(fd, &i, sizeof(int));
 	if (ft_endian(i) != COREWAR_EXEC_MAGIC)
 		msg_exit("Bad magic number\n");
-	ft_read(fd, vm->champ[ac].name, PROG_NAME_LENGTH);
+	ft_read(fd, p->name, PROG_NAME_LENGTH);
 	lseek(fd, sizeof(int), SEEK_CUR);
 	ft_read(fd, &i, sizeof(int));
-	vm->champ[ac].size = ft_endian(i);
-	if (CP[ac].size > CHAMP_MAX_SIZE)
+	p->size = ft_endian(i);
+	if (p->size > CHAMP_MAX_SIZE)
 		msg_exit("%d : Too big a champion !\nMax size is %d\n",
-		 CP[ac].size, CHAMP_MAX_SIZE);
-	ft_read(fd, vm->champ[ac].comment, COMMENT_LENGTH);
-	char *s = ft_memalloc(CP[ac].size + 1);
+		 p->size, CHAMP_MAX_SIZE);
+	ft_read(fd, p->comment, COMMENT_LENGTH);
+	char *s = ft_memalloc(p->size + 1);
 		lseek(fd, sizeof(int), SEEK_CUR);
-	ft_read(fd, s, CP[ac].size);
-	write_memory(CP[ac].size, ofst, s, vm);
-	CP[ac].pc = ofst;
-	CP[ac].loc = ofst;
-	// ft_print("size: %d\nname:\t%s\ncomment:\t%s\n", CP[ac].size, CP[ac].name, CP[ac].comment);
+	ft_read(fd, s, p->size);
+	write_memory(p->size, ofst, s, vm);
+	p->pc = ofst;
+	p->carry = 0;
+	p->next = NULL;
+	// ft_print("size: %d\nname:\t%s\ncomment:\t%s\n", p->size, p->name, p->comment);
 }
 
-int							fill_memory(int ac, char **av, t_vm *vm)
+void					add_proc(t_proc *new, t_vm *vm)
 {
-	unsigned int			dist;
-	unsigned int			i;
-
-	dist = MEM_SIZE / (ac - 1);
-	i = 0;
-	while (--ac)
+	if (new)
 	{
-		fill_champion((i * dist), ac, av[ac], vm);
+		if (!vm->first)
+		{
+			vm->proc = new;
+			vm->first = vm->proc;
+		}
+		else
+		{
+			vm->proc->next = new;
+			vm->proc = vm->proc->next;
+		}
+	}
+	else
+		msg_exit("No new elem");
+}
+
+int						fill_memory(int ac, char **av, t_vm *vm)
+{
+	unsigned int		dist;
+	int					i;
+	t_proc				*p;
+
+	dist = MEM_SIZE / (ac);
+	i = 0;
+  	while (i < ac)
+	{
+		if (!(p = ft_memalloc(sizeof(t_proc))))
+			msg_exit("Bad alloc of processus\n");
+		fill_champion((i * dist), av[i], vm, p);
+		// p->reg[0] = -1, -2 etc or if -n do otherwise blabla
+		add_proc(p, vm);
 		i++;
 	}
 	return (1);

@@ -17,24 +17,9 @@
 # define REG_SIZE				4
 # define DIR_SIZE				REG_SIZE
 
-# define REG_CODE				1
-# define DIR_CODE				2
-# define IND_CODE				3
-#if 0
-D R
-I R
-R R
-R R R
-R D R
-R I R
-R D D
-R I I
-D I R
-D D R
-I D R
-I I R
-
-#endif
+# define REG_CODE				1 // 000001
+# define DIR_CODE				2 // 000010
+# define IND_CODE				3 // 000011
 
 # define MAX_ARGS_NUMBER		4
 # define MAX_PLAYERS			4

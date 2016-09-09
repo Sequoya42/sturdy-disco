@@ -12,24 +12,49 @@
 
 #include "vm.h"
 
-// void						start_war(t_vm *vm)
-// {
-// 	int						cycle;
-// 	int						stop;
+void						dump_memory(t_vm *vm)
+{
+	print_memory(vm->memory, MEM_SIZE);
+	exit(0);
+}
 
-// 	stop = CYCLE_TO_DIE;
-// 	while (1)
-// 	{
-// 		i = 0;
-// 		while (i < stop)
-// 		{
-// 			manage_players(vm);
-// 		}
-// 		if (alived >= NBR_LIVE || check == MAX_CHECKS)
-// 			stop -= CYCLE_DELTA;
-// 		if (alived == 0)
-// 			break;
-// 		if (check == MAX_CHECKS)
-// 			stop -= CYCLE
-// 	}
-// }
+int							loop_players(t_cycle *cycle, t_vm *vm)
+{
+	unsigned int			i;
+
+	i = 0;
+	while (i < cycle->stop)
+	{
+		manage_players(cycle, vm);
+		i++;
+		cycle->total++;
+		if (vm->dump == cycle->total)
+			dump_memory(vm);
+	}
+	cycle->check++;
+	return (0);
+}
+
+void						start_war(t_vm *vm)
+{
+	t_cycle					cycle;
+
+	cycle.total = 0;
+	cycle.stop = CYCLE_TO_DIE;
+	cycle.check = 0;
+	cycle.alive = 0;
+	while (1)
+	{
+		if (loop_players(&cycle, vm) == -1)
+			break;
+	if (cycle.alive >= NBR_LIVE || cycle.check == MAX_CHECKS)
+	{
+		cycle.stop -= CYCLE_DELTA;
+		cycle.check = 0;
+	}
+	if (cycle.alive == 0)
+		break;
+	}
+	ft_print("Contestant %d, \"%s\", has won !\n",
+	 vm->first->num, vm->first->name);
+}

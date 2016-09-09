@@ -35,6 +35,10 @@ SRC_NAME =		main.c\
 				manage_players.c\
 				hex_to_dec.c\
 				op.c\
+				live.c	ld.c	st.c	add.c\
+				sub.c	and.c	or.c	xor.c\
+				zjmp.c	ldi.c	sti.c	fork.c\
+				lld.c	lldi.c	lfork.c	aff.c\
 
 
 OBJ_NAME =		$(SRC_NAME:.c=.o)

@@ -13,7 +13,7 @@
 #include "op.h"
 
 #if 0
-
+02 90 00 00 01 00 02 03 70 02 00 2a 00 00
 #endif
 t_op		g_op_tab[17] =
 {

@@ -45,7 +45,7 @@ void	print_adrr(int i)
 	unsigned int	j = 0;
 	char *r = ft_base(i, 16);
 	ft_putstr("0x");
-	while (j < (4 - ft_strlen(r)))
+	while (j++ < (4 - ft_strlen(r)))
 		ft_putchar('0');
 	ft_putstr(r);
 	ft_putchar(' ');
