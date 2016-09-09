@@ -56,5 +56,5 @@ void						start_war(t_vm *vm)
 		break;
 	}
 	ft_print("Contestant %d, \"%s\", has won !\n",
-	 vm->first->num, vm->first->name);
+	 vm->first->reg[0], vm->first->name);
 }

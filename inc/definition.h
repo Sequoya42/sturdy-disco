@@ -61,6 +61,7 @@ enum							e_code
 	LLDI,
 	LFORK,
 	AFF,
+	CODE_LEN
 };
 
 #endif

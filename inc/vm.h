@@ -20,9 +20,10 @@
 
 // #define CP				vm->proc
 
+// typedef struct s_arg	t_arg;
+typedef struct s_cycle	t_cycle;
 typedef struct s_proc	t_proc;
 typedef struct s_vm		t_vm;
-typedef struct s_cycle	t_cycle;
 
 struct					s_proc
 {
@@ -36,9 +37,16 @@ struct					s_proc
 	char				name[PROG_NAME_LENGTH + 1];
 	char				comment[COMMENT_LENGTH + 1];
 	int					set[5];
+	int					arg_size[4];
 	t_proc				*next;
 
 };
+
+// struct					s_arg
+// {
+// 	int					ac;
+// 	char				**av;
+// };
 
 struct					s_cycle
 {
@@ -61,11 +69,14 @@ struct					s_vm
 	t_proc				*proc;
 };
 
+typedef void				(*t_fptr)(t_vm *vm, t_proc *p);
+
+unsigned int				ft_swap(unsigned int val);
+unsigned int				ft_endian(unsigned int val);
 int							fill_memory(int ac, char **av, t_vm *vm);
 int							hex_to_dec(unsigned int n);
 int							format_int(int n, int size);
-unsigned int				ft_swap(unsigned int val);
-unsigned int				ft_endian(unsigned int val);
+char						**check_arg(int ac, char **av, t_vm *vm);
 void						verify_last(char *s);
 void						write_memory(int size, int ost, char *s, t_vm *vm);
 void						start_war(t_vm *vm);

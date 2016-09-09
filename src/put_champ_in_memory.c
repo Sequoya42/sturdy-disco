@@ -57,7 +57,7 @@ void					add_proc(t_proc *new, t_vm *vm)
 		}
 	}
 	else
-		msg_exit("No new elem");
+		msg_exit("No new elem\n");
 }
 
 int						fill_memory(int ac, char **av, t_vm *vm)

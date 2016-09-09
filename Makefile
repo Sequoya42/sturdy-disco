@@ -27,6 +27,7 @@ LIBFT_PATH =	./libft/
 INC_PATH =		./inc/
 
 SRC_NAME =		main.c\
+				check_arg.c\
 				singleton.c\
 				ft_format.c\
 				put_champ_in_memory.c\
