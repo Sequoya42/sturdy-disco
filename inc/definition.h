@@ -32,7 +32,7 @@ typedef enum e_code				t_opcode;
 # define ARG_ONE				t->next
 # define ARG_TWO				t->next->next
 # define ARG_THREE				t->next->next->next
-
+# define N_ERR					"Number [ %d ] already used by previous champ %s\n"
 enum							e_type
 {
 	REGISTER = REG_CODE,

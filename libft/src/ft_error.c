@@ -57,14 +57,3 @@ void	ft_colendl(char *s)
 	ft_putendl(s);
 	ft_putstr(KNRM);
 }
-
-void	ft_strcol(char *col, char *o, char *t, char *l)
-{
-	if (o)
-		ft_putstr(o);
-	ft_putstr(col);
-	ft_putstr(t);
-	ft_putstr(KNRM);
-	if (l)
-		ft_putstr(l);
-}

@@ -15,6 +15,12 @@
 
 #if 0
 Finished check_arg, assign right number with -n
+put them [process] in char**, for the name, and an int 
+so structure...
+OR | join name with number.. so just one tab
+
+p->number = n != (i * -1) ? n : ()
+
 #endif
 int							main(int ac, char **av)
 {
@@ -26,8 +32,9 @@ int							main(int ac, char **av)
 			"to dump memory after N cycle", MAX_PLAYERS);
 	vm = get_vm();
 	t = check_arg(ac, av, vm);
+	exit(0);
 	ft_bzero(vm->memory, MEM_SIZE);
-	// fill_memory(vm->nb_champ, t, vm);
+	fill_memory(vm->nb_champ, t, vm);
 	start_war(vm);
 	// print_memory(vm->memory, MEM_SIZE);
 	// manage_players(vm);

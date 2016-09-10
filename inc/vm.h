@@ -21,6 +21,7 @@
 // #define CP				vm->proc
 
 // typedef struct s_arg	t_arg;
+typedef	struct s_plr 	t_plr;
 typedef struct s_cycle	t_cycle;
 typedef struct s_proc	t_proc;
 typedef struct s_vm		t_vm;
@@ -39,14 +40,15 @@ struct					s_proc
 	int					set[5];
 	int					arg_size[4];
 	t_proc				*next;
-
 };
 
-// struct					s_arg
-// {
-// 	int					ac;
-// 	char				**av;
-// };
+
+
+struct					s_plr
+{
+	int					n;
+	char				*s;
+};
 
 struct					s_cycle
 {
@@ -67,6 +69,7 @@ struct					s_vm
 	unsigned char		memory[MEM_SIZE];
 	t_proc				*first;
 	t_proc				*proc;
+	t_plr				plr[MAX_PLAYERS + 1];
 };
 
 typedef void				(*t_fptr)(t_vm *vm, t_proc *p);

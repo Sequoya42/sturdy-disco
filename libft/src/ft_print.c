@@ -65,3 +65,31 @@ void				msg_exit(char *s, ...)
 	va_end(argp);
 	exit(0);
 }
+
+int					int_exit(char *s, ...)
+{
+	int				i;
+	char			*t;
+	va_list			argp;
+
+	i = 0;
+	t = s;
+	va_start(argp, s);
+	while (t[i])
+	{
+		if (t[i] != '%')
+			ft_putchar(t[i]);
+		else
+		{
+			if (t[i + 1] == 'd')
+				ft_putnbr(va_arg(argp, int));
+			else if (t[i + 1] == 's')
+				ft_putstr(va_arg(argp, char *));
+			i++;
+		}
+		i++;
+	}
+	va_end(argp);
+	exit(0);
+	return (-1);
+}
