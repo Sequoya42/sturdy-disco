@@ -27,7 +27,6 @@ void					check_number(int *n, t_vm *vm)
 		msg_exit("N must be superior to 0 [n > 0]\n");
 	while (i < MAX_PLAYERS)
 	{
-		ft_putnbrendl(vm->plr[i].n);
 		if (*n == vm->plr[i].n)
 			msg_exit(N_ERR, *n, vm->plr[i].s);
 		i++;
@@ -43,21 +42,37 @@ void					check_cor(int *n, char *av, t_vm *vm)
 	(*n)++;
 }
 
-char					**check_arg(int ac, char **av, t_vm *vm)
+void					check_dump(char **av, int *i, t_vm *vm)
+{
+	int					n;
+	int					j;
+
+	j = (*i) + 1;
+	n = 0;
+	if (av[j])
+		n = ft_atoi(av[j]);
+	else
+		msg_exit("Must have numerical value for [-d] \n");
+	if (n >= 0)
+		vm->dump = n;
+	else
+		msg_exit("Arg must be positive integer [-d] \n");
+	(*i)++;
+}
+
+void					check_arg(int ac, char **av, t_vm *vm)
 {
 	int					i;
 	int					n;
-	char				**t;
 
 	i = 1;
 	n = 1;
 	vm->nb_champ = 0;
 	vm->dump = -1;
-	t = ft_memalloc(sizeof(*t) * (MAX_PLAYERS + 1));
 	while (i < ac)
 	{
 		if (!ft_strcmp(av[i], "-d"))
-			vm->dump = ft_atoi(av[++i]);
+			check_dump(av, &i, vm);
 		else if (av[i][0] == '-' && av[i][1] == 'n')
 			n = ft_atoi(av[++i]);
 		else
@@ -65,6 +80,4 @@ char					**check_arg(int ac, char **av, t_vm *vm)
 		i++;
 		check_number(&n, vm);
 	}
-	ft_putnbrendl(vm->dump);
-	return (t);
 }

@@ -41,38 +41,21 @@ void					fill_champion(int ofst, char *av, t_vm *vm, t_proc *p)
 	// ft_print("size: %d\nname:\t%s\ncomment:\t%s\n", p->size, p->name, p->comment);
 }
 
-void					add_proc(t_proc *new, t_vm *vm)
-{
-	if (new)
-	{
-		if (!vm->first)
-		{
-			vm->proc = new;
-			vm->first = vm->proc;
-		}
-		else
-		{
-			vm->proc->next = new;
-			vm->proc = vm->proc->next;
-		}
-	}
-	else
-		msg_exit("No new elem\n");
-}
-
-int						fill_memory(int ac, char **av, t_vm *vm)
+int						fill_memory(t_vm *vm)
 {
 	unsigned int		dist;
 	int					i;
+	int					ac;
 	t_proc				*p;
 
+	ac = vm->nb_champ;
 	dist = MEM_SIZE / (ac);
 	i = 0;
   	while (i < ac)
 	{
 		if (!(p = ft_memalloc(sizeof(t_proc))))
 			msg_exit("Bad alloc of processus\n");
-		fill_champion((i * dist), av[i], vm, p);
+		// fill_champion((i * dist), av[i], vm, p);
 		// p->reg[0] = -1, -2 etc or if -n do otherwise blabla
 		add_proc(p, vm);
 		i++;

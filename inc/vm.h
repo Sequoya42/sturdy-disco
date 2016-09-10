@@ -42,8 +42,6 @@ struct					s_proc
 	t_proc				*next;
 };
 
-
-
 struct					s_plr
 {
 	int					n;
@@ -76,13 +74,15 @@ typedef void				(*t_fptr)(t_vm *vm, t_proc *p);
 
 unsigned int				ft_swap(unsigned int val);
 unsigned int				ft_endian(unsigned int val);
-int							fill_memory(int ac, char **av, t_vm *vm);
+int							fill_memory(t_vm *vm);
 int							hex_to_dec(unsigned int n);
 int							format_int(int n, int size);
-char						**check_arg(int ac, char **av, t_vm *vm);
+void						check_arg(int ac, char **av, t_vm *vm);
 void						verify_last(char *s);
 void						write_memory(int size, int ost, char *s, t_vm *vm);
 void						start_war(t_vm *vm);
 void						manage_players(t_cycle *cycle, t_vm *vm);
+void						add_proc(t_proc *new, t_vm *vm);
 t_vm						*get_vm(void);
+
 #endif
