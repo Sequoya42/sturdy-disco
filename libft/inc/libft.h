@@ -98,6 +98,7 @@ int					ft_error(char *name, char *arg, char *msg);
 int					match(char *s1, char *s2);
 int					match_char(char c, char *s1);
 int					is_blank(char *s);
+int					ft_string_digit(char *s);
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
 char				*ft_strchr(char const *s, int c);

@@ -49,10 +49,10 @@ void					check_dump(char **av, int *i, t_vm *vm)
 
 	j = (*i) + 1;
 	n = 0;
-	if (av[j])
+	if (av[j] && ft_string_digit(av[j]))
 		n = ft_atoi(av[j]);
 	else
-		msg_exit("Must have numerical value for [-d] \n");
+		msg_exit("Arg must be positive integer [-d] \n");
 	if (n >= 0)
 		vm->dump = n;
 	else
