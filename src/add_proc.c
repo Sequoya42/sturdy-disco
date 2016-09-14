@@ -12,6 +12,7 @@
 
 #include "vm.h"
 
+// Implement prev
 void					add_proc(t_proc *new, t_vm *vm)
 {
 	if (new)

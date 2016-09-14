@@ -55,8 +55,8 @@ int						fill_memory(t_vm *vm)
 	{
 		if (!(p = ft_memalloc(sizeof(t_proc))))
 			msg_exit("Bad alloc of processus\n");
-		// fill_champion((i * dist), av[i], vm, p);
-		// p->reg[0] = -1, -2 etc or if -n do otherwise blabla
+		fill_champion((i * dist), vm->plr[i].s, vm, p);
+		p->reg[0] = vm->plr[i].n;
 		add_proc(p, vm);
 		i++;
 	}

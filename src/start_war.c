@@ -20,16 +20,14 @@ void						dump_memory(t_vm *vm)
 
 int							loop_players(t_cycle *cycle, t_vm *vm)
 {
-	unsigned int			i;
-
-	i = 0;
-	while (i < cycle->stop)
+	cycle->current = 0;
+	while (cycle->current < cycle->stop)
 	{
 		manage_players(cycle, vm);
-		i++;
-		cycle->total++;
 		if (vm->dump == cycle->total)
 			dump_memory(vm);
+		cycle->current++;
+		cycle->total++;
 	}
 	cycle->check++;
 	return (0);
@@ -47,13 +45,13 @@ void						start_war(t_vm *vm)
 	{
 		if (loop_players(&cycle, vm) == -1)
 			break;
-	if (cycle.alive >= NBR_LIVE || cycle.check == MAX_CHECKS)
-	{
-		cycle.stop -= CYCLE_DELTA;
-		cycle.check = 0;
-	}
-	if (cycle.alive == 0)
-		break;
+		if (cycle.alive >= NBR_LIVE || cycle.check == MAX_CHECKS)
+		{
+			cycle.stop -= CYCLE_DELTA;
+			cycle.check = 0;
+		}
+		if (cycle.alive == 12 || (int)cycle.stop <= 0)
+			break;
 	}
 	ft_print("Contestant %d, \"%s\", has won !\n",
 	 vm->first->reg[0], vm->first->name);

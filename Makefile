@@ -34,13 +34,14 @@ SRC_NAME =		main.c\
 				write_memory.c\
 				start_war.c\
 				manage_players.c\
+				manage_arg.c\
 				hex_to_dec.c\
 				add_proc.c\
 				op.c\
-				live.c	ld.c	st.c	add.c\
-				sub.c	and.c	or.c	xor.c\
-				zjmp.c	ldi.c	sti.c	fork.c\
-				lld.c	lldi.c	lfork.c	aff.c\
+				# live.c	ld.c	st.c	add.c\
+				# sub.c	and.c	or.c	xor.c\
+				# zjmp.c	ldi.c	sti.c	fork.c\
+				# lld.c	lldi.c	lfork.c	aff.c\
 
 
 OBJ_NAME =		$(SRC_NAME:.c=.o)

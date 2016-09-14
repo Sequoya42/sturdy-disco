@@ -37,9 +37,10 @@ struct					s_proc
 	unsigned int		reg[REG_NUMBER];
 	char				name[PROG_NAME_LENGTH + 1];
 	char				comment[COMMENT_LENGTH + 1];
-	int					set[5];
+	int					set[6];
 	int					arg_size[4];
 	t_proc				*next;
+	t_proc				*prev;
 };
 
 struct					s_plr
@@ -50,6 +51,7 @@ struct					s_plr
 
 struct					s_cycle
 {
+	unsigned int		current;
 	unsigned int		check;
 	unsigned int		alive;
 	unsigned int		stop;
@@ -83,6 +85,27 @@ void						write_memory(int size, int ost, char *s, t_vm *vm);
 void						start_war(t_vm *vm);
 void						manage_players(t_cycle *cycle, t_vm *vm);
 void						add_proc(t_proc *new, t_vm *vm);
+void						get_args_size(int encode, t_proc *p);
+void						put_in_set(int i, t_vm *vm, t_proc *p);
 t_vm						*get_vm(void);
+
+void						op_live(t_vm *vm , t_proc *p);
+void						op_ld(t_vm *vm , t_proc *p);
+void						op_st(t_vm *vm , t_proc *p);
+void						op_add(t_vm *vm , t_proc *p);
+void						op_sub(t_vm *vm , t_proc *p);
+void						op_and(t_vm *vm , t_proc *p);
+void						op_or(t_vm *vm , t_proc *p);
+void						op_xor(t_vm *vm , t_proc *p);
+void						op_zjmp(t_vm *vm , t_proc *p);
+void						op_ldi(t_vm *vm , t_proc *p);
+void						op_sti(t_vm *vm , t_proc *p);
+void						op_fork(t_vm *vm , t_proc *p);
+void						op_lld(t_vm *vm , t_proc *p);
+void						op_lldi(t_vm *vm , t_proc *p);
+void						op_lfork(t_vm *vm , t_proc *p);
+void						op_aff(t_vm *vm , t_proc *p);
+
+
 
 #endif

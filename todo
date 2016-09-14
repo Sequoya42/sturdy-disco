@@ -2,3 +2,14 @@
 -Dump memory in 32 format instead of 16
 - implement all 16 OP_functions  
 - * [all the rest]
+
+
+- Continue testing with test.s
+Find a way to rewrite enough
+Understand why %:LABEL give weird result in adressing with ldi
+
+test with false shit, as current state of test
+
+--
+
+Make proc double link list (circular? >...)

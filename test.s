@@ -1,6 +1,11 @@
 .name "test"
 .comment "instruction test"
 
-ld %-1, r2
-sti r2, %12, %30
+
+#ecrit un sti et un zjmp 
+#etc
+w1:
+ldi %0,%24, r2
+sti r2, %100, %202
+
 
