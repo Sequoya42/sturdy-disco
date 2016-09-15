@@ -13,3 +13,18 @@ test with false shit, as current state of test
 --
 
 Make proc double link list (circular? >...)
+
+
+***********************************************************
+
+live at 114, live process but not champion
+
+finish 1536 cycle
+do one more, so 3072 (-1 = 3071)
+hasnt live for 3071 - 114 = 1536
+
+***********************************************************
+
+IF OCTET CODAGE != OP.c
+JUST AVANCE
+***********************************************************

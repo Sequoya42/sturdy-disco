@@ -20,10 +20,19 @@ int							get_instructions(t_vm *vm, t_proc *p)
 
 	i = p->pc;
 	op = vm->memory[i];
+	// ft_print("OP HERE INSTRUCT \t\t%d\n", op);
 	p->set[0] = op;
-	put_in_set(i, vm, p);
-	// p->set[1] = vm->memory[i + 1];
-	p->cycle = GOT(op).cycle;
+	if (op > 0 && op < 17)
+	{
+		put_in_set(i, vm, p);
+		p->cycle = GOT(op).cycle;
+	}
+	else
+	{
+		p->pc++;
+		p->cycle = 0;
+	}
+	// ft_print("pc: %d\t\tcycle:\t%d\n", p->pc, p->cycle);
 	return (op);
 }
 
@@ -35,9 +44,11 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 	(void)cycle;
 	while (p)
 	{
-			if (p->cycle == 0)
-				get_instructions(vm, p);
-			p = p->next;
+		if (p->cycle == 0)
+			get_instructions(vm, p);
+		else
+			p->cycle--;
+		p = p->next;
 	}
 }
 

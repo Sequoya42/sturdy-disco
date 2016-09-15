@@ -21,6 +21,8 @@ typedef enum e_code				t_opcode;
 
 # define INT_MAX				2147483648l
 
+# define ISDIR					(GOT(p->set[0]).dir_mod == 1)
+
 # define LEFT_SHIFT				0XFF00FF00
 # define RIGHT_SHIFT			0xFF00FF
 # define TKN_HEAD				token_head(NULL)

@@ -28,6 +28,7 @@ typedef struct s_vm		t_vm;
 
 struct					s_proc
 {
+	unsigned int		next_i;
 	unsigned int		num;
 	unsigned int		alive;
 	unsigned int		size;

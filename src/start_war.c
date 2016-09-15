@@ -50,7 +50,7 @@ void						start_war(t_vm *vm)
 			cycle.stop -= CYCLE_DELTA;
 			cycle.check = 0;
 		}
-		if (cycle.alive == 12 || (int)cycle.stop <= 0)
+		if (cycle.alive == 0 || (int)cycle.stop <= 0)
 			break;
 	}
 	ft_print("Contestant %d, \"%s\", has won !\n",
