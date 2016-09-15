@@ -1,5 +1,0 @@
-.name "toto"
-.comment "saying alive"
-
-live %1
-sti r1, %2, %2

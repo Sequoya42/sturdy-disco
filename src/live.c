@@ -17,3 +17,7 @@ void						live(t_vm *vm, t_proc *p)
 	(void)vm;
 	p->alive++;
 }
+
+#if 0
+
+#endif

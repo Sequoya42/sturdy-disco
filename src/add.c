@@ -14,5 +14,14 @@
 
 void						op_live(t_vm *vm , t_proc *p)
 {
-	
+	int						n1;
+	int						n2;
+
+	n1 = p->reg[p->set[2]]
+	n2 = p->reg[p->set[3]];
+	p->reg[p->set[4]] = n1 + n2;
 }
+
+#if 0
+
+#endif

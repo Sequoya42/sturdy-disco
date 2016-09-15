@@ -45,7 +45,10 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 	while (p)
 	{
 		if (p->cycle == 0)
+		{
 			get_instructions(vm, p);
+			// g_operator[p->set[0]];
+		}
 		else
 			p->cycle--;
 		p = p->next;
