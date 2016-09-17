@@ -12,7 +12,7 @@
 
 #include "vm.h"
 
-void						op_live(t_vm *vm , t_proc *p)
+void						op_add(t_vm *vm , t_proc *p)
 {
 	int						n1;
 	int						n2;

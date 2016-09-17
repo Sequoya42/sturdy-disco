@@ -6,7 +6,7 @@
 #etc
 w1:
 st r1, 72
-ld %2, r2
+ld 2, r2
 # st r1, 20
 sti r2, %50, %17
 zjmp %10

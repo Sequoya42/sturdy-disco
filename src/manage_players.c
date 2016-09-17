@@ -6,11 +6,17 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/04 08:40:44 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/17 03:28:48 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
+
+#if 0
+Verify validity of the args
+could do something like 
+
+#endif
 
 int							get_instructions(t_vm *vm, t_proc *p)
 {
@@ -30,10 +36,40 @@ int							get_instructions(t_vm *vm, t_proc *p)
 	else
 	{
 		p->pc++;
+		// ft_print(KGRN"PC IS \t\t\t%d\n" KNRM, p->pc);
 		p->cycle = 0;
 	}
 	// ft_print("pc: %d\t\tcycle:\t%d\n", p->pc, p->cycle);
-	return (op);
+	return (1);
+}
+
+int							verify_validity(t_proc *p)
+{
+	int						i;
+	int						j;
+	// int						k;
+
+	i = 0;
+	j = GOT(p->set[0]).params;
+	if (j < 1 || j > 17)
+		return (0);
+	while (i < j)
+	{
+		// k = p->arg_size[i];
+		// if (k == 3)
+		// 	k = 4;
+		// p->arg_size[i] = p->arg_size[i] == 3 ? 4 : p->arg_size[i];
+		if (!IS_IN(p->arg_size[i], p->set[0], i) || p->arg_size[i] == 0)
+		{
+			ft_print(KRED "i:\t%d\top: \t%d\t%d\n" KNRM, i,p->set[0], p->arg_size[i]);
+			// ft_print()
+			return (0);
+		}
+		else
+			ft_print(KCYN "i:\t%d\top: \t%d\t%d\n" KNRM, i,p->set[0], p->arg_size[i]);
+		i++;
+	}
+	return (1);
 }
 
 void						manage_players(t_cycle *cycle, t_vm *vm)
@@ -46,7 +82,12 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 	{
 		if (p->cycle == 0)
 		{
+			// ft_print("CYCLE IS 			%d\n", cycle->total);
 			get_instructions(vm, p);
+			if (verify_validity(p))
+				ft_print(KMAG "VALID\n" KNRM);
+			else
+				ft_colendl("Not valid ! ");
 			// g_operator[p->set[0]];
 		}
 		else
