@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/09 16:30:33 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/09 16:30:37 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/17 18:30:44 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,6 @@ void					check_arg(int ac, char **av, t_vm *vm)
 		i++;
 		check_number(&n, vm);
 	}
+	if (vm->nb_champ > MAX_PLAYERS)
+		msg_exit("Too many players, [max is : %d]\n", MAX_PLAYERS);
 }

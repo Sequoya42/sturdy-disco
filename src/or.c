@@ -6,8 +6,14 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:43 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/11 00:07:47 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/17 19:52:39 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
+
+void						op_or(t_vm *vm , t_proc *p)
+{
+	p->reg[p->set[4]] = (p->set[2] | p->set[3]) % IDX_MOD;
+	(void)vm;
+}

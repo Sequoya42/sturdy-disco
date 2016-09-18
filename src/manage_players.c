@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/17 03:28:48 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/18 03:24:46 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ int							get_instructions(t_vm *vm, t_proc *p)
 
 
 	i = p->pc;
-	op = vm->memory[i];
-	// ft_print("OP HERE INSTRUCT \t\t%d\n", op);
+	op = VM(i);
 	p->set[0] = op;
 	if (op > 0 && op < 17)
 	{
@@ -34,12 +33,7 @@ int							get_instructions(t_vm *vm, t_proc *p)
 		p->cycle = GOT(op).cycle;
 	}
 	else
-	{
 		p->pc++;
-		// ft_print(KGRN"PC IS \t\t\t%d\n" KNRM, p->pc);
-		p->cycle = 0;
-	}
-	// ft_print("pc: %d\t\tcycle:\t%d\n", p->pc, p->cycle);
 	return (1);
 }
 
@@ -47,65 +41,22 @@ int							verify_validity(t_proc *p)
 {
 	int						i;
 	int						j;
-	// int						k;
 
 	i = 0;
+	if (p->set[0] < 1 || p->set[0] > 17)
+		return (0);
 	j = GOT(p->set[0]).params;
 	if (j < 1 || j > 17)
 		return (0);
 	while (i < j)
 	{
-		// k = p->arg_size[i];
-		// if (k == 3)
-		// 	k = 4;
-		// p->arg_size[i] = p->arg_size[i] == 3 ? 4 : p->arg_size[i];
+		p->arg_size[i] = p->arg_size[i] == 3 ? 4 : p->arg_size[i];
 		if (!IS_IN(p->arg_size[i], p->set[0], i) || p->arg_size[i] == 0)
-		{
-			ft_print(KRED "i:\t%d\top: \t%d\t%d\n" KNRM, i,p->set[0], p->arg_size[i]);
-			// ft_print()
 			return (0);
-		}
-		else
-			ft_print(KCYN "i:\t%d\top: \t%d\t%d\n" KNRM, i,p->set[0], p->arg_size[i]);
 		i++;
 	}
 	return (1);
 }
-
-void						manage_players(t_cycle *cycle, t_vm *vm)
-{
-	t_proc					*p;
-
-	p = vm->first;
-	(void)cycle;
-	while (p)
-	{
-		if (p->cycle == 0)
-		{
-			// ft_print("CYCLE IS 			%d\n", cycle->total);
-			get_instructions(vm, p);
-			if (verify_validity(p))
-				ft_print(KMAG "VALID\n" KNRM);
-			else
-				ft_colendl("Not valid ! ");
-			// g_operator[p->set[0]];
-		}
-		else
-			p->cycle--;
-		p = p->next;
-	}
-}
-
-#if 0 
-
-get op
-if cycle
-else if cycle ..
-wait cycle
-
-Imnplement pointer function tab to call each of the 16 instructions
-Those who need will cann manage byte args
-void func (vm, proc)
 
 static t_fptr       	g_operator[CODE_LEN] =
 {
@@ -127,4 +78,45 @@ static t_fptr       	g_operator[CODE_LEN] =
     &op_lfork,
     &op_aff
 };
+
+void						manage_players(t_cycle *cycle, t_vm *vm)
+{
+	t_proc					*p;
+
+	p = vm->first;
+	(void)cycle;
+	while (p)
+	{
+		if (p->cycle == 0)
+		{
+			// ft_print("CYCLE IS 			%d\n", cycle->total);
+			if (verify_validity(p))
+			{
+				// ft_print(KGRN "VALUE OF OP : %s\n" KNRM , GOT(p->set[0]).name);
+				g_operator[p->set[0]](vm, p);
+			}
+			// else
+				// ft_colendl("Not valid ! ");
+			get_instructions(vm, p);
+				// ft_print(KMAG "VALID\n" KNRM);
+		}
+		else
+		{
+			// ft_print(KCYN "P_CYCLE:\t\t\t\t\t%d\n" KNRM, p->cycle);
+			p->cycle--;
+		}
+		p = p->next;
+	}
+}
+
+#if 0 
+
+get op
+if cycle
+else if cycle ..
+wait cycle
+
+Imnplement pointer function tab to call each of the 16 instructions
+Those who need will cann manage byte args
+void func (vm, proc)
 #endif

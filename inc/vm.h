@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:45 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/03 15:27:57 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/18 03:30:24 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,13 @@ typedef struct s_vm		t_vm;
 struct					s_proc
 {
 	unsigned int		next_i;
-	unsigned int		num;
+	int					num;
 	unsigned int		alive;
 	unsigned int		size;
 	unsigned int		cycle;
 	unsigned int		pc;
 	unsigned int		carry : 1;
-	unsigned int		reg[REG_NUMBER];
+	unsigned int		reg[REG_NUMBER + 1];
 	char				name[PROG_NAME_LENGTH + 1];
 	char				comment[COMMENT_LENGTH + 1];
 	int					set[6];
@@ -61,13 +61,14 @@ struct					s_cycle
 
 struct					s_vm
 {
+	int		nb_proc;
 	unsigned int		dump;
 	unsigned int		pc;
 	unsigned int		nb_champ;
 	unsigned int		nbr_cycle;
-	unsigned int		cycle;
+	t_cycle				*cycle;
 	unsigned int		num_champ[MAX_PLAYERS + 1];
-	unsigned char		memory[MEM_SIZE];
+	unsigned char		memory[MEM_SIZE + 1];
 	t_proc				*first;
 	t_proc				*proc;
 	t_plr				plr[MAX_PLAYERS + 1];

@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 03:13:46 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/17 03:28:41 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/17 20:21:50 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,13 @@ typedef enum e_code				t_opcode;
 
 # define ISDIR					(GOT(p->set[0]).dir_mod == 1)
 
+# define VM(x)					vm->memory[(x) % MEM_SIZE]
+
 # define LEFT_SHIFT				0XFF00FF00
 # define RIGHT_SHIFT			0xFF00FF
 # define TKN_HEAD				token_head(NULL)
 # define LBL_HEAD				label_head(NULL)
-# define IS_IN(x, y, z)			(((x = (x == 3 ? 4 : x)) == (int)(x & GOT(y).arg[z])) ? 1 : 0)
+# define IS_IN(x, y, z)			((x == (int)(x & GOT(y).arg[z])) ? 1 : 0)
 
 # define WRITE_INT(x)			ft_endian(x)
 # define SWAP(x)				((x >> 8) | (x << 8))

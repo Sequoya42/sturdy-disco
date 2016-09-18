@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 16:02:58 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/03 16:03:02 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/18 03:51:38 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,9 @@ void					fill_champion(int ofst, char *av, t_vm *vm, t_proc *p)
 	p->pc = ofst;
 	p->carry = 0;
 	p->next = NULL;
+	p->prev = NULL;
 	// ft_print("size: %d\nname:\t%s\ncomment:\t%s\n", p->size, p->name, p->comment);
+	// exit(0);
 }
 
 int						fill_memory(t_vm *vm)
@@ -56,7 +58,8 @@ int						fill_memory(t_vm *vm)
 		if (!(p = ft_memalloc(sizeof(t_proc))))
 			msg_exit("Bad alloc of processus\n");
 		fill_champion((i * dist), vm->plr[i].s, vm, p);
-		p->reg[0] = vm->plr[i].n;
+		p->reg[1] = vm->plr[i].n;
+		p->num = vm->plr[i].n * (-1);
 		add_proc(p, vm);
 		i++;
 	}

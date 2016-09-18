@@ -39,3 +39,11 @@ and the other do nothing
 ----------------------------------
 
 -Implement all 16 func
+
+**************************************
+- Kill proc that didnt live
+- Add new proc when forking
+
+==
+
+FIX ST

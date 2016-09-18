@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:37 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/03 15:27:41 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/18 03:32:37 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,11 @@ int							main(int ac, char **av)
 		msg_exit("Up to %d players\n flags: -d N" \
 			"\tto dump memory after N cycle\n", MAX_PLAYERS);
 	vm = get_vm();
+	vm->nb_proc = 0;
 	check_arg(ac, av, vm);
 	ft_print("numbet player : %d\n", vm->nb_champ);
 	ft_bzero(vm->memory, MEM_SIZE);
 	fill_memory(vm);
-	ft_colendl("memory filled");
 	start_war(vm);
-	exit(0);
-	// print_memory(vm->memory, MEM_SIZE);
-	// manage_players(vm);
 
 }

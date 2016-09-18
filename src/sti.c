@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:22 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/11 00:08:27 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/17 22:05:29 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,15 @@
 
 void						op_sti(t_vm *vm , t_proc *p)
 {
+	int						n;
 
+	n = p->set[3] + p->set[4];
+	// ft_print("%d\t\t\t%d\n", n, n % MEM_SIZE);
+	VM(n) = p->set[2];
 }
+
+
+#if 0
+
+
+#endif

@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 03:49:22 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/10 03:49:27 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/17 22:21:05 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,11 @@
 // Implement prev
 void					add_proc(t_proc *new, t_vm *vm)
 {
+
 	if (new)
 	{
+		vm->nb_proc++;
+		ft_print("\t\t\tNb proc: %d\n", vm->nb_proc);
 		if (!vm->first)
 		{
 			vm->proc = new;
@@ -24,6 +27,7 @@ void					add_proc(t_proc *new, t_vm *vm)
 		}
 		else
 		{
+			new->prev = vm->proc;
 			vm->proc->next = new;
 			vm->proc = vm->proc->next;
 		}
@@ -31,3 +35,4 @@ void					add_proc(t_proc *new, t_vm *vm)
 	else
 		msg_exit("No new elem\n");
 }
+

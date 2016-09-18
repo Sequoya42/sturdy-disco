@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:25 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/11 00:07:28 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/17 19:15:19 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ void						op_sub(t_vm *vm , t_proc *p)
 	int						n1;
 	int						n2;
 
-	n1 = p->reg[p->set[2]]
+	n1 = p->reg[p->set[2]];
 	n2 = p->reg[p->set[3]];
-	p->reg[p->set[4]] = n1 - n2;
+	p->reg[p->set[4]] = (n1 - n2) % IDX_MOD;
+	(void)vm;
 }
