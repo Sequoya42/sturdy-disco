@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:11 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 13:16:57 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/20 00:52:21 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 
 
-void						right_value(int r, int n, t_vm *vm)
+void						right_value(int r, unsigned int n, t_vm *vm)
 {
 	int						j;
 
@@ -26,7 +26,6 @@ void						right_value(int r, int n, t_vm *vm)
 		j -= 8;
 		n--;
 	}
-
 	// VM(n) = (r >> 24) & 0xFF;
 	// VM(n + 1) = (r >> 16) & 0xFF;
 	// VM(n + 2) = (r >> 8) & 0xFF;
@@ -35,7 +34,7 @@ void						right_value(int r, int n, t_vm *vm)
 
 void						op_st(t_vm *vm , t_proc *p)
 {
-	int						n;
+unsigned	int						n;
 	int						r;
 
 	n = 0;
@@ -44,10 +43,8 @@ void						op_st(t_vm *vm , t_proc *p)
 		p->reg[p->set[3]] = r;
 	else
 	{
-		// attron(COLOR_PAIR(-p->num));
 		n = p->pc + (p->set[3] % IDX_MOD);
-		p->w_st = n;
+		p->w_st = n % MEM_SIZE;
 		right_value(r, n, vm);
-		// ft_print("ST SUPPOSE TO WRITE SOMETHING [r is %d]  at %d !\n", r, n);
 	}
 }

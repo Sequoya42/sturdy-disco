@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 14:48:20 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/20 00:48:00 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ int							reset_players(t_vm *vm)
 		if (p->alive == 0)
 		{
 			t = p;
-			// ft_print(KBLU "THIS ONE [%d] IS DEAD [Cycle is : %d]\n" KNRM ,p->pos, vm->cycle->total);
 			if (p == vm->first && vm->first->next)
 				vm->first = vm->first->next;
 			else if (p == vm->first && !vm->first->next)
@@ -84,7 +83,6 @@ void						start_war(t_vm *vm)
 	vm->cycle = &cycle;
 	while (1)
 	{
-		// ft_print("Total : %d\t\t\tCurrent : %d\ncheck: %d\t\talive: %d\n", cycle.total, cycle.current, cycle.check, cycle.alive);
 		if (loop_players(&cycle, vm) == -1)
 			break;
 		if (cycle.alive >= NBR_LIVE || cycle.check == MAX_CHECKS)
@@ -95,6 +93,6 @@ void						start_war(t_vm *vm)
 		if (cycle.alive == 0 || (int)cycle.stop <= 0)
 			break;
 	}
-	ft_print("Contestant %d, \"%s\", has won !\n",
-			 -vm->first->num, vm->first->name);
+	ft_print("Contestant %d, \"%s\", has won at cycle : %d!\n",
+			 -vm->first->num, vm->first->name, cycle.total);
 }

@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/30 16:30:47 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 13:47:03 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/19 22:57:08 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,6 @@ unsigned int				ft_endian(unsigned int val)
 }
 
 unsigned int				ft_swap(unsigned int val)
-{
-	return ((val << 8) | (val >> 8));
-}
-
-
-int							sign_swap(int val)
 {
 	return ((val << 8) | (val >> 8));
 }

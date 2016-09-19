@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 12:36:43 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/20 00:43:00 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,30 +79,6 @@ static t_fptr       	g_operator[CODE_LEN] =
     &op_aff
 };
 
-
-void						tryhard(t_proc *p, t_vm *vm)
-{
-	int i = p->pc;
-		char	hex[] = "0123456789abcdef";
-	// attroff(COLOR_PAIR(1));
-		// ft_putstr(KCYN);
-		ft_putstr(KNRM);
-		(void)vm;
-
-	mvaddch(hex[(int)10], 5, 5); 
-	mvaddch(hex[(int)10], 5, 5);
-	p->pc += p->next_i;
-	p->pc %= MEM_SIZE;
-	i = p->pc;
-	// attron(COLOR_PAIR(1));
-	ft_putstr(KCYN);
-	mvaddch(hex[(int)10], 5,5);
-	mvaddch(hex[(int)10], 5, 5);
-	// attroff(COLOR_PAIR(1));
-	ft_putstr(KNRM);
-	(void)vm;
-}
-
 void						manage_players(t_cycle *cycle, t_vm *vm)
 {
 	t_proc					*p;
@@ -113,10 +89,8 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 	{
 		if (p->cycle == 0)
 		{
-			// ft_print("CYCLE IS 			%d\n", cycle->total);
 			if (verify_validity(p))
 			{
-				// ft_print(KGRN "VALUE OF OP : %s\n" KNRM , GOT(p->set[0]).name);
 				g_operator[p->set[0]](vm, p);
 				if (p->set[0] != 9)
 				{
@@ -124,12 +98,8 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 					p->pc %= MEM_SIZE;
 				}
 
-				// tryhard(p, vm);
 			}
-			// else
-				// ft_colendl("Not valid ! ");
 			get_instructions(vm, p);
-				// ft_print(KMAG "VALID\n" KNRM);
 		}
 		else
 			p->cycle--;

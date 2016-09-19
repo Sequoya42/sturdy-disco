@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:59 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 14:49:04 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/20 00:59:44 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,14 @@ void						op_zjmp(t_vm *vm , t_proc *p)
 {
 	if (p->carry == 1)
 	{
-		ft_print(KCYN "\t\t\tCarrry at one Jumping from %d  to : %d\n",p->pc ,p->set[1]);
+		// ft_print(KCYN "\t\t\tCarrry at one Jumping from %d  to : %d\n",p->pc ,p->set[1]);
 
 		p->pc += (p->set[1]) % IDX_MOD;
-		// p->pc -= 211;
+		p->pc %= MEM_SIZE;
+	}
+	else
+	{
+		p->pc += p->next_i;
 		p->pc %= MEM_SIZE;
 	}
 	// else

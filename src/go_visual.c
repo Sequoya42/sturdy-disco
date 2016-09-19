@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:27:55 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 12:36:59 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/19 23:13:26 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,6 @@ Take care of stuff like :
 
 #endif
 
-void					atexit_cb(void)
-{
-	endwin();
-}
-
 void					init_visual(t_vm *vm)
 {
 	initscr();
@@ -31,10 +26,10 @@ void					init_visual(t_vm *vm)
 	init_pair(1, COLOR_GREEN, COLOR_BLACK);
 	init_pair(3, COLOR_BLUE, COLOR_GREEN);
 	init_pair(4, COLOR_CYAN, COLOR_BLACK);
+	init_pair(5, COLOR_YELLOW, COLOR_BLACK);
 	// noecho();
 	 // curs_set(FALSE);
 	// cbreak();
-	atexit(atexit_cb);
 	(void)vm;
 }
 
@@ -68,6 +63,7 @@ void					go_visual(t_vm *vm)
 	sleep = sec / i;
 	usleep(sleep);
 	move(0, 0);
+	printw("\n");
 	print_visual(vm->memory, MEM_SIZE, vm);
 	printw("\nNumber cycle: %d\n", vm->cycle->total);
 	printw("Cycle/second : %d\n", i);

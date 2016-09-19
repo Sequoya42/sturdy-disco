@@ -47,3 +47,10 @@ and the other do nothing
 ==
 
 FIX ST
+
+=====
+
+IMPLEMENT func
+SHOW LIVE IN -v
+VERIFY ARG [never know..]
+FORK IS BUGGY

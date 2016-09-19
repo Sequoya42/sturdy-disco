@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:37 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 13:13:54 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/20 00:58:50 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,15 +48,17 @@ int							main(int ac, char **av)
 			"\tto dump memory after N cycle\n", MAX_PLAYERS);
 	vm = get_vm();
 	vm->nb_proc = 0;
+	vm->visual = 0;
 	check_arg(ac, av, vm);
-	ft_print("numbet player : %d\n", vm->nb_champ);
 	ft_bzero(vm->memory, MEM_SIZE);
 	fill_memory(vm);
 	// test_shit(vm);
 	if (vm->visual == 1)
-	{
 		init_visual(vm);
-	}
 	start_war(vm);
+	printw("FINISHED !\n, press any key to escape!");
+	timeout(-1);
+	getch();
+	endwin();
 	return (0);
 }

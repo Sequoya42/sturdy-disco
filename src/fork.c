@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:32 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/18 01:02:59 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/20 01:02:09 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 
 	i = 0;
 	n->pc = 0;
-
 	n->pc = p->pc + (p->set[1] % IDX_MOD);
-	ft_print(KYEL "set: %d\t\tppc: %d\t\t\tnpc: %d\n" KNRM, p->set[1], p->pc, n->pc);
 	n->pc %= MEM_SIZE;
 	n->carry = p->carry;
 	n->cycle = 0;
@@ -42,11 +40,17 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	(void)vm;
 }
 
+
+#if 0
+
+JUMP TO RIGHT ADRESS WHEN DONE !
+#endif
+
 void						op_fork(t_vm *vm , t_proc *p)
 {
 	t_proc					*n;
 
-	ft_print(KRED "APPEL A FORK AU CYCLE %d\n" KNRM, vm->cycle->total);
+	// ft_print(KRED "APPEL A FORK AU CYCLE %d\n" KNRM, vm->cycle->total);
 	if (!(n = ft_memalloc(sizeof(t_proc))))
 		msg_exit("Bad alloc of new proc [fork]\n");
 	fill_new(n, p, vm);

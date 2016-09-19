@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/14 02:44:43 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 14:52:22 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/19 22:58:43 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int							manage_ind(int *i, t_vm *vm)
 	r = 0;
 	r |= (VM(*i + 1) << 8);
 	r |= (VM(*i + 2));
-	if (r > 65025)
+	if (r > 65025) // = 256 * 256
 	{
 		r &= 0xFF;
 		r = ft_endian(r) * -1;
@@ -95,12 +95,12 @@ void						put_in_set(int i, t_vm *vm, t_proc *p)
 	// j = 0;
 
 
-	ft_print("op: %d\tnext i: %d\tpc:\t%d\n", p->set[0], p->next_i, p->pc);
-	while (j < 5)
-	{
-		ft_print("set[%d]:\t%d\n", j, p->set[j]);
-		j++;
-	}
+	// ft_print("op: %d\tnext i: %d\tpc:\t%d\n", p->set[0], p->next_i, p->pc);
+	// while (j < 5)
+	// {
+	// 	ft_print("set[%d]:\t%d\n", j, p->set[j]);
+	// 	j++;
+	// }
 
 	
 }
