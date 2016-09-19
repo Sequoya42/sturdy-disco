@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 07:53:24 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/19 12:36:43 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ void						tryhard(t_proc *p, t_vm *vm)
 		// ft_putstr(KCYN);
 		ft_putstr(KNRM);
 		(void)vm;
-		
+
 	mvaddch(hex[(int)10], 5, 5); 
 	mvaddch(hex[(int)10], 5, 5);
 	p->pc += p->next_i;
@@ -118,10 +118,13 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 			{
 				// ft_print(KGRN "VALUE OF OP : %s\n" KNRM , GOT(p->set[0]).name);
 				g_operator[p->set[0]](vm, p);
-					// p->pc += p->next_i;
-					// p->pc %= MEM_SIZE;
+				if (p->set[0] != 9)
+				{
+					p->pc += p->next_i;
+					p->pc %= MEM_SIZE;
+				}
 
-				tryhard(p, vm);
+				// tryhard(p, vm);
 			}
 			// else
 				// ft_colendl("Not valid ! ");
@@ -129,10 +132,7 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 				// ft_print(KMAG "VALID\n" KNRM);
 		}
 		else
-		{
-			// ft_print(KCYN "P_CYCLE:\t\t\t\t\t%d\n" KNRM, p->cycle);
 			p->cycle--;
-		}
 		p = p->next;
 	}
 }

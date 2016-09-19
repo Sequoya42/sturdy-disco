@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:27:55 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 09:30:54 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/19 12:36:59 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,7 @@ void					deal_with_keyboard(int *i)
 		if (getch() == ' ')
 			timeout(1);
 	}
-	else if (c == 'a')
-		msg_exit("Aaaaa");
-	else if (c == '+' && *i < 100)
+	else if (c == '+' && *i < 1000)
 		*i += 5;
 	else if (c == '-' && *i > 1)
 		*i = (*i > 5) ? *i - 5 : *i - 1;

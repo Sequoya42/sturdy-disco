@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:37 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 08:38:22 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/19 13:13:54 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,17 @@ CHECK THE TODO
 
 void						test_shit(t_vm *vm)
 {
+int	n = -210;
+int	r = ft_endian(n);
+int	k = ft_endian(r);
+	ft_print("n : %d\tr: %d\t k:%d\n", n , r, k);
 (void)vm;
-	t_proc *p = vm->first;
-	while (p)
-	{
-		ft_print("p->num = %d\n", -(p->num));
-		p = p->next;
-	}
+// 	t_proc *p = vm->first;
+// 	while (p)
+// 	{
+// 		ft_print("p->num = %d\n", -(p->num));
+// 		p = p->next;
+// 	}
 	exit(0);
 }
 
