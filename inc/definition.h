@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 03:13:46 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/17 20:21:50 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/19 07:29:07 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ typedef enum e_code				t_opcode;
 # define ARG_TWO				t->next->next
 # define ARG_THREE				t->next->next->next
 # define N_ERR					"Number [ %d ] already used by previous champ %s\n"
+
 enum							e_type
 {
 	REGISTER = REG_CODE,

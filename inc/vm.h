@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:45 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/18 03:30:24 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/19 08:56:29 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 # include "libft.h"
 # include "definition.h"
 # include <fcntl.h>
-
+# include <curses.h>
+# include <ncurses.h>
 // #define CP				vm->proc
 
 // typedef struct s_arg	t_arg;
@@ -29,7 +30,9 @@ typedef struct s_vm		t_vm;
 struct					s_proc
 {
 	unsigned int		next_i;
+	unsigned int		pos;
 	int					num;
+	unsigned int		w_st;
 	unsigned int		alive;
 	unsigned int		size;
 	unsigned int		cycle;
@@ -61,7 +64,8 @@ struct					s_cycle
 
 struct					s_vm
 {
-	int		nb_proc;
+	int					nb_proc;
+	unsigned int		visual : 1;
 	unsigned int		dump;
 	unsigned int		pc;
 	unsigned int		nb_champ;
@@ -107,7 +111,9 @@ void						op_lld(t_vm *vm , t_proc *p);
 void						op_lldi(t_vm *vm , t_proc *p);
 void						op_lfork(t_vm *vm , t_proc *p);
 void						op_aff(t_vm *vm , t_proc *p);
-
+void						init_visual(t_vm *vm);
+void						go_visual(t_vm *vm);
+void						print_visual(const void *addr, size_t size, t_vm *vm);
 
 
 #endif

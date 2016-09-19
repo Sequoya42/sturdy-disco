@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/18 03:34:52 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/19 07:49:02 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,36 +22,33 @@ void						dump_memory(t_vm *vm)
 int							reset_players(t_vm *vm)
 {
 	t_proc					*p;
-	// t_proc					*t;
-	int						alive;
+	t_proc					*t;
 
 	p = vm->first;
-	alive = 0;
 	int i = 0;
 	while (p)
 	{
-
 		if (p->alive == 0)
 		{
-			ft_print(KBLU "THIS ONE [%d] IS DEAD [Cycle is : %d]\n" KNRM , i, vm->cycle->total);
-			// t = p;
-			vm->nb_proc--;
+			t = p;
+			ft_print(KBLU "THIS ONE [%d] IS DEAD [Cycle is : %d]\n" KNRM ,p->pos, vm->cycle->total);
+			if (p == vm->first && vm->first->next)
+				vm->first = vm->first->next;
+			else if (p == vm->first && !vm->first->next)
+				return (-1);
 			if (p->prev)
-				p->prev->next = p->next;
+				p->prev->next = t->next;
+			else
+				p->prev = NULL;
 			if (p->next)
-			{
-				p->next->prev = p->prev;
-			// p = p->next;
-			}
+				p->next->prev = t->prev;
+			else
+				p->next = NULL;
 		}
-		else
-			alive++;
 		p->alive = 0;
 		p = p->next;
 		i++;
 	}
-	if (alive == 0)
-		return (-1);
 	return (0);
 }
 
@@ -64,10 +61,13 @@ int							loop_players(t_cycle *cycle, t_vm *vm)
 		manage_players(cycle, vm);
 		if (vm->dump == cycle->total)
 			dump_memory(vm);
+		if (vm->visual == 1)
+			go_visual(vm);
 		cycle->current++;
 		cycle->total++;
 	}
-	reset_players(vm);	
+	if (reset_players(vm) == -1)
+		return (-1);
 	cycle->check++;
 	return (0);
 }
@@ -83,8 +83,6 @@ void						start_war(t_vm *vm)
 	vm->cycle = &cycle;
 	while (1)
 	{
-		if (vm->nb_proc <= 0)
-			break;
 		ft_print("Total : %d\t\t\tCurrent : %d\ncheck: %d\t\talive: %d\n", cycle.total, cycle.current, cycle.check, cycle.alive);
 		if (loop_players(&cycle, vm) == -1)
 			break;
@@ -97,5 +95,6 @@ void						start_war(t_vm *vm)
 			break;
 	}
 	ft_print("Contestant %d, \"%s\", has won !\n",
-	 -vm->first->num, vm->first->name);
+			 -vm->first->num, vm->first->name);
+
 }

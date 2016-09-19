@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/14 02:44:43 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/18 04:01:34 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/19 02:26:02 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ void						get_args_size(int encode, t_proc *p)
 	while (j >= 4)
 	{
 		p->arg_size[i] = (encode >> j) & 3;
-			// ft_print("OP: %d\t\targ size: %d\n", p->set[0], p->arg_size[i]);
 		j -= 2;
 		i++;
 	}
@@ -54,12 +53,12 @@ int							manage_dir(int *i, t_vm *vm, t_proc *p)
 	r |= (VM(*i + 2) << 16);
 	r |= (VM(*i + 3) << 8);
 	r |= (VM(*i + 4));
-	ft_putendl("******************");
-	ft_putnbrn(VM(*i + 1));
-		ft_putnbrn(VM(*i + 3));
-			ft_putnbrn(VM(*i + 3));
-				ft_putnbrn(VM(*i + 4));
-					ft_putendl("\n******************");
+	// ft_putendl("******************");
+	// ft_putnbrn(VM(*i + 1));
+	// 	ft_putnbrn(VM(*i + 3));
+	// 		ft_putnbrn(VM(*i + 3));
+	// 			ft_putnbrn(VM(*i + 4));
+	// 				ft_putendl("\n******************");
 	*i += 4;
 	return (r);
 }
@@ -77,9 +76,6 @@ void						put_in_set(int i, t_vm *vm, t_proc *p)
 	else
 		p->arg_size[0] = GOT(p->set[0]).arg[0];
 	p->set[1] = VM(i);
-	// p->set[2] = 0;
-	// p->set[3] = 0;
-	// p->set[4] = 0;
 	while (j < GOT(p->set[0]).params)
 	{
 		if (p->arg_size[j] == REG_CODE && (p->next_i++))
@@ -91,17 +87,15 @@ void						put_in_set(int i, t_vm *vm, t_proc *p)
 		j++;
 		k++;
 	}
-	p->pc += p->next_i;
-	p->pc %= MEM_SIZE;
-	j = 0;
+	// j = 0;
 
 
-	ft_print("op: %d\tnext i: %d\tpc:\t%d\n", p->set[0], p->next_i, p->pc);
-	while (j < 5)
-	{
-		ft_print("set[%d]:\t%d\n", j, p->set[j]);
-		j++;
-	}
+	// ft_print("op: %d\tnext i: %d\tpc:\t%d\n", p->set[0], p->next_i, p->pc);
+	// while (j < 5)
+	// {
+	// 	ft_print("set[%d]:\t%d\n", j, p->set[j]);
+	// 	j++;
+	// }
 
 	
 }

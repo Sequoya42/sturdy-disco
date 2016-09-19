@@ -14,7 +14,7 @@
 
 CC =			gcc
 
-CFLAG =			-Wall -Wextra -Werror -g 
+CFLAG =			-Wall -Wextra -Werror -g
 
 NAME =			corewar
 
@@ -37,6 +37,8 @@ SRC_NAME =		main.c\
 				manage_arg.c\
 				hex_to_dec.c\
 				add_proc.c\
+				go_visual.c\
+				print_visual.c\
 				op.c\
 				live.c	ld.c	st.c	add.c\
 				sub.c	and.c	or.c	xor.c\
@@ -66,12 +68,12 @@ LIBFT_FLAG = 	-L$(LIBFT_PATH) -lft
 all:			libft $(NAME) 
 
 $(NAME):		$(OBJ)
-				@$(CC) $(LIBFT_FLAG) -o $@ $^ -fsanitize=address
+				@$(CC) $(LIBFT_FLAG) -o $@ $^ -fsanitize=address -lncurses
 				@echo "Done"
 
 $(OBJ_PATH)%.o:	$(SRC_PATH)%.c $(INC)
 				@mkdir -p $(OBJ_PATH)
-				@$(CC) $(CFLAG) -I$(INC_PATH) -I$(INCLIBFT) -o $@ -c $<
+				@$(CC) $(CFLAG) -I$(INC_PATH) -I$(INCLIBFT) -o $@ -c $< 
 
 libft:			$(LIBFT)
 

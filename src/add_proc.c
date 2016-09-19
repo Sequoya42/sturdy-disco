@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 03:49:22 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/17 22:21:05 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/18 23:34:38 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,12 @@
 // Implement prev
 void					add_proc(t_proc *new, t_vm *vm)
 {
+	static int			i = 1;
 
 	if (new)
 	{
+		new->pos = i++;
 		vm->nb_proc++;
-		ft_print("\t\t\tNb proc: %d\n", vm->nb_proc);
 		if (!vm->first)
 		{
 			vm->proc = new;
