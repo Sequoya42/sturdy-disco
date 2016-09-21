@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:45 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 15:04:17 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/21 04:28:29 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ struct					s_proc
 	unsigned int		next_i;
 	unsigned int		pos;
 	int					num;
-	unsigned int		w_st;
+	int					w_st;
 	unsigned int		alive;
 	unsigned int		size;
 	unsigned int		cycle;
@@ -50,6 +50,7 @@ struct					s_proc
 struct					s_plr
 {
 	int					n;
+	int					live;
 	char				*s;
 };
 
@@ -71,7 +72,6 @@ struct					s_vm
 	unsigned int		nb_champ;
 	unsigned int		nbr_cycle;
 	t_cycle				*cycle;
-	unsigned int		num_champ[MAX_PLAYERS + 1];
 	unsigned char		memory[MEM_SIZE + 1];
 	t_proc				*first;
 	t_proc				*proc;
@@ -91,6 +91,7 @@ void						write_memory(int size, int ost, char *s, t_vm *vm);
 void						start_war(t_vm *vm);
 void						manage_players(t_cycle *cycle, t_vm *vm);
 void						add_proc(t_proc *new, t_vm *vm);
+void						first_add_proc(t_proc *new, t_vm *vm);
 void						get_args_size(int encode, t_proc *p);
 void						put_in_set(int i, t_vm *vm, t_proc *p);
 t_vm						*get_vm(void);

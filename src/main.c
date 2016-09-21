@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:37 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/20 00:58:50 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/21 03:52:45 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,13 @@ CHECK THE TODO
 
 void						test_shit(t_vm *vm)
 {
-int	n = -210;
-int	r = ft_endian(n);
-int	k = ft_endian(r);
-	ft_print("n : %d\tr: %d\t k:%d\n", n , r, k);
 (void)vm;
-// 	t_proc *p = vm->first;
-// 	while (p)
-// 	{
-// 		ft_print("p->num = %d\n", -(p->num));
-// 		p = p->next;
-// 	}
+	t_proc *p = vm->first;
+	while (p)
+	{
+		ft_print("p->num = %d\n", -(p->num));
+		p = p->next;
+	}
 	exit(0);
 }
 
@@ -56,9 +52,12 @@ int							main(int ac, char **av)
 	if (vm->visual == 1)
 		init_visual(vm);
 	start_war(vm);
-	printw("FINISHED !\n, press any key to escape!");
-	timeout(-1);
-	getch();
-	endwin();
+	if (vm->visual == 1)
+	{
+		timeout(-1);
+		printw("FINISHED !\n \t\tPress any key to escape!");
+		getch();
+		endwin();
+	}
 	return (0);
 }

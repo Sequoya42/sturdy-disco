@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:27:55 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 23:13:26 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/21 05:02:27 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void					init_visual(t_vm *vm)
 	init_pair(3, COLOR_BLUE, COLOR_GREEN);
 	init_pair(4, COLOR_CYAN, COLOR_BLACK);
 	init_pair(5, COLOR_YELLOW, COLOR_BLACK);
+	init_pair(6, COLOR_BLACK, COLOR_BLACK);
+	init_pair(8, COLOR_WHITE, COLOR_BLACK);
 	// noecho();
 	 // curs_set(FALSE);
 	// cbreak();
@@ -46,8 +48,8 @@ void					deal_with_keyboard(int *i)
 		if (getch() == ' ')
 			timeout(1);
 	}
-	else if (c == '+' && *i < 1000)
-		*i += 5;
+	else if (c == '+' && *i < 10000)
+		*i += 50;
 	else if (c == '-' && *i > 1)
 		*i = (*i > 5) ? *i - 5 : *i - 1;
 	else if (c == ERR)
@@ -63,10 +65,10 @@ void					go_visual(t_vm *vm)
 	sleep = sec / i;
 	usleep(sleep);
 	move(0, 0);
-	printw("\n");
+	addch('\n');
+	printw("Speed : %d\n", i);
+	addch('\n');
 	print_visual(vm->memory, MEM_SIZE, vm);
-	printw("\nNumber cycle: %d\n", vm->cycle->total);
-	printw("Cycle/second : %d\n", i);
 	deal_with_keyboard(&i);
 	// refresh();
 }

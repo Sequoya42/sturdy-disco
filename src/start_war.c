@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/20 00:48:00 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/21 05:12:26 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int							reset_players(t_vm *vm)
 		if (p->alive == 0)
 		{
 			t = p;
+			vm->nb_proc--;
 			if (p == vm->first && vm->first->next)
 				vm->first = vm->first->next;
 			else if (p == vm->first && !vm->first->next)
@@ -45,7 +46,7 @@ int							reset_players(t_vm *vm)
 				p->next = NULL;
 		}
 		p->alive = 0;
-		p->w_st = 0;
+		// p->w_st = -10;
 		p = p->next;
 		i++;
 	}
@@ -54,10 +55,14 @@ int							reset_players(t_vm *vm)
 
 int							loop_players(t_cycle *cycle, t_vm *vm)
 {
+	int						i;
+
+	i = -1;
 	cycle->current = 0;
 	cycle->alive = 0;
 	while (cycle->current < cycle->stop)
 	{
+		// ft_print("CyCLE TOTAL \t\t%d\n", cycle->total);
 		manage_players(cycle, vm);
 		if (vm->dump == cycle->total)
 			dump_memory(vm);
@@ -66,6 +71,8 @@ int							loop_players(t_cycle *cycle, t_vm *vm)
 		cycle->current++;
 		cycle->total++;
 	}
+	while (++i < MAX_PLAYERS)
+		vm->plr[i].live = 0;
 	if (reset_players(vm) == -1)
 		return (-1);
 	cycle->check++;

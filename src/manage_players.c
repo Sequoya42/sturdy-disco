@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/20 00:43:00 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/21 04:50:24 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ int							verify_validity(t_proc *p)
 	if (p->set[0] < 1 || p->set[0] > 17)
 		return (0);
 	j = GOT(p->set[0]).params;
+	//le if suivant n'a aucun sens
 	if (j < 1 || j > 17)
 		return (0);
 	while (i < j)

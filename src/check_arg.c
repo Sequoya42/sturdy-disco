@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/09 16:30:33 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/20 00:57:08 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/21 03:51:41 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,14 +69,13 @@ void					check_arg(int ac, char **av, t_vm *vm)
 	n = 1;
 	vm->nb_champ = 0;
 	vm->dump = -1;
-	// vm->visual = 0;
 	while (i < ac)
 	{
 		if (!ft_strcmp(av[i], "-d"))
 			check_dump(av, &i, vm);
 		else if (!ft_strcmp(av[i], "-v"))
 			vm->visual = 1;
-		else if (av[i][0] == '-' && av[i][1] == 'n')
+		else if (!ft_strcmp(av[i], "-n") && av[i + 1])
 			n = ft_atoi(av[++i]);
 		else
 			check_cor(&n, av[i], vm);

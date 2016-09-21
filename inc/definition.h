@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 03:13:46 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/19 07:29:07 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/21 05:10:18 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,14 @@
 
 typedef enum e_code				t_opcode;
 
+# define DEBUG					0
+
 # define BREAK_CHAR				"," " " "\t" "\0" "\r" "\n"
 # define NUM_CHAR				"-1234567890"
 # define GOT(x)					g_op_tab[x - 1]
+# define M(x)					x % MEM_SIZE
+# define COLORN(x, y)			( M(x) == y || M(x + 1) == y\
+								|| M(x + 2) == y || M(x + 3) == y)
 
 # define INT_MAX				2147483648l
 
