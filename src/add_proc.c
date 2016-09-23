@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 03:49:22 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/21 04:30:31 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/21 19:07:13 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ void					first_add_proc(t_proc *new, t_vm *vm)
 {
 	if (new)
 	{
+		vm->nb_proc++;
 		if (!vm->proc)
 		{
 			vm->proc = new;

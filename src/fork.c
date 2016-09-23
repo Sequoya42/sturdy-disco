@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:32 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/21 05:14:13 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/22 02:21:48 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	int						i;
 
 	i = 0;
-	n->pc = (int)(p->pc + p->set[1]);
+	n->pc = p->pc + (p->set[1] % IDX_MOD);
+	n->pc %= MEM_SIZE;
 	n->carry = p->carry;
 	n->cycle = 0;
 	n->w_st = -10;

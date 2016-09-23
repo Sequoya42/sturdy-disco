@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/21 05:12:26 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/21 20:02:31 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int							reset_players(t_vm *vm)
 		if (p->alive == 0)
 		{
 			t = p;
-			vm->nb_proc--;
+			// vm->nb_proc--;
 			if (p == vm->first && vm->first->next)
 				vm->first = vm->first->next;
 			else if (p == vm->first && !vm->first->next)
@@ -46,7 +46,7 @@ int							reset_players(t_vm *vm)
 				p->next = NULL;
 		}
 		p->alive = 0;
-		// p->w_st = -10;
+		p->w_st = -10;
 		p = p->next;
 		i++;
 	}

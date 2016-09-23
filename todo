@@ -1,3 +1,20 @@
+
+				NEW ON TOP 
+
+				===========
+
+CHECK FLUTtERSHY
+the ldi and sti thing 
+LDI 2 !
+				************
+
+Check reset players to remove process when dead
+and decrease nb_proc
+
+
+
+				***********
+
 -Implement option (-dump and -n to dump memory after n cycle)
 -Dump memory in 32 format instead of 16
 - implement all 16 OP_functions  
@@ -54,3 +71,7 @@ IMPLEMENT func
 SHOW LIVE IN -v
 VERIFY ARG [never know..]
 FORK IS BUGGY
+
+
+
+

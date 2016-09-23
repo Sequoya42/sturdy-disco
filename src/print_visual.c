@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:31:42 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/21 05:13:11 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/21 20:18:22 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,10 @@ void						print_sub_screen(t_vm *vm)
 	int						i;
 
 	i = -1;
+	int x = 0; int y = 0;
+	getyx(stdscr, y, x);
 	printw("******************************\n");
+	printw("x: %d\ty%d\n", x, y);
 	printw("Cycle to die:\t%d\t    *\n", vm->cycle->stop);
 	printw("Cycle total: \t%d\t    *\n", vm->cycle->total);
 	printw("Nb_process:  \t%d\t    *\n", vm->nb_proc);

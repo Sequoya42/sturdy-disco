@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/21 04:50:24 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/23 03:58:47 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,15 @@ int							get_instructions(t_vm *vm, t_proc *p)
 	p->set[0] = op;
 	if (op > 0 && op < 17)
 	{
-		put_in_set(i, vm, p);
+		put_in_set(i, vm, p);//could move that to verify validity, so get arg at the end
+
 		p->cycle = GOT(op).cycle;
 	}
 	else
+	{
+		p->set[0] = 0;
 		p->pc++;
+	}
 	return (1);
 }
 
@@ -43,16 +47,13 @@ int							verify_validity(t_proc *p)
 	int						j;
 
 	i = 0;
-	if (p->set[0] < 1 || p->set[0] > 17)
+	if (p->set[0] < 1 || p->set[0] > 16)
 		return (0);
 	j = GOT(p->set[0]).params;
-	//le if suivant n'a aucun sens
-	if (j < 1 || j > 17)
-		return (0);
 	while (i < j)
 	{
 		p->arg_size[i] = p->arg_size[i] == 3 ? 4 : p->arg_size[i];
-		if (!IS_IN(p->arg_size[i], p->set[0], i) || p->arg_size[i] == 0)
+		if (p->arg_size[i] == 0 || !IS_IN(p->arg_size[i], p->set[0], i))
 			return (0);
 		i++;
 	}
@@ -98,7 +99,6 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 					p->pc += p->next_i;
 					p->pc %= MEM_SIZE;
 				}
-
 			}
 			get_instructions(vm, p);
 		}

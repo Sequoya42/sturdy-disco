@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:42 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/17 19:08:57 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/22 02:17:05 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void						op_lld(t_vm *vm , t_proc *p)
 {
 	p->reg[p->set[3]] = p->set[2];
 	if (p->set[2] == 0)
-		p->carry++;
+		p->carry = 1;
+	else
+		p->carry = 0;
 	(void)vm;
 }

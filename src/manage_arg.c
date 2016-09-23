@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/14 02:44:43 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/21 05:20:03 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/23 03:57:45 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,11 @@ void						get_args_size(int encode, t_proc *p)
 	j = 8;
 	i = 0;
 	encode <<= 2;
+	#if 0
+	p->arg_size[i] = (encode >> 8) & 3;
+	p->arg_size[i + 1] = (encode >> 6) & 3;
+	p->arg_size[i + 2] = (encode >> 4) & 3;
+	#endif
 	while (j >= 4)
 	{
 		p->arg_size[i] = (encode >> j) & 3;
@@ -28,7 +33,7 @@ void						get_args_size(int encode, t_proc *p)
 	}
 }
 
-int							manage_ind(int *i, t_vm *vm)
+int							manage_ind(int *i, t_vm *vm, t_proc *p)
 {
 	int					r;
 
@@ -43,7 +48,8 @@ int							manage_ind(int *i, t_vm *vm)
 		r = ft_endian(r) * -1;
 		r = format_int(r, T_IND) * -1;
 	}
-	*i += 2;
+ 	*i += 2;
+ 	(void)p;
 	return (r);
 }
 
@@ -55,7 +61,7 @@ int							manage_dir(int *i, t_vm *vm, t_proc *p)
 	r = 0;
 	nb_byte = ISDIR ? 2 : 4;
 	if (nb_byte == 2)
-		return (manage_ind(i, vm));
+		return (manage_ind(i, vm, p));
 	if (DEBUG == 1)
 		ft_putendl("DIRECT");
 	r |= (VM(*i + 1) << 24);
@@ -88,11 +94,14 @@ void						put_in_set(int i, t_vm *vm, t_proc *p)
 	while (j < GOT(p->set[0]).params)
 	{
 		if (p->arg_size[j] == REG_CODE && (p->next_i++))
-			p->set[k] = VM(++i);
+		{
+		int		n = VM(++i);
+			p->set[k] = V_REG(n);
+		}
 		else if (p->arg_size[j] == DIR_CODE && (p->next_i += ISDIR ? 2 : 4))
 			p->set[k] = manage_dir(&i, vm, p);
 		else if (p->arg_size[j] == IND_CODE && (p->next_i += 2))
-			p->set[k] = manage_ind(&i, vm);
+			p->set[k] = manage_ind(&i, vm, p);
 		j++;
 		k++;
 	}

@@ -4,11 +4,17 @@
 
 #ecrit un sti et un zjmp 
 #etc
+w2:
+ld		%8, r2
+
+
 w1:
-add r16, r16, r16
-zjmp %0
-zjmp %14
-ld %80, r2
+ldi		%:w2, r2, r4
+sti		r4, 400, r2
+ldi		%:w2, r2, r4
+ld		%0, r3
+zjmp 	%-14
+st		r2, 42
 
 # st r1, 72
 # live %-1
