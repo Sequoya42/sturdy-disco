@@ -38,6 +38,7 @@ SRC_NAME =		main.c\
 				hex_to_dec.c\
 				add_proc.c\
 				go_visual.c\
+				get_value.c\
 				print_visual.c\
 				op.c\
 				live.c	ld.c	st.c	add.c\

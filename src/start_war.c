@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/21 20:02:31 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/24 05:05:33 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int							reset_players(t_vm *vm)
 		if (p->alive == 0)
 		{
 			t = p;
-			// vm->nb_proc--;
+			vm->nb_proc--;
 			if (p == vm->first && vm->first->next)
 				vm->first = vm->first->next;
 			else if (p == vm->first && !vm->first->next)
@@ -78,7 +78,7 @@ int							loop_players(t_cycle *cycle, t_vm *vm)
 	cycle->check++;
 	return (0);
 }
-
+void					start_visual(t_vm *vm);
 void						start_war(t_vm *vm)
 {
 	t_cycle					cycle;
@@ -88,6 +88,8 @@ void						start_war(t_vm *vm)
 	cycle.check = 0;
 	cycle.alive = 0;
 	vm->cycle = &cycle;
+	if (vm->visual == 1)
+		start_visual(vm);
 	while (1)
 	{
 		if (loop_players(&cycle, vm) == -1)

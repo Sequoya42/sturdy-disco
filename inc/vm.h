@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:45 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/21 04:28:29 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/24 19:24:47 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ struct					s_proc
 {
 	unsigned int		next_i;
 	unsigned int		pos;
+	int					old;
 	int					num;
 	int					w_st;
 	unsigned int		alive;
@@ -84,6 +85,8 @@ unsigned int				ft_swap(unsigned int val);
 unsigned int				ft_endian(unsigned int val);
 int							fill_memory(t_vm *vm);
 int							hex_to_dec(unsigned int n);
+void						right_value(int r, unsigned int n, t_vm *vm);
+int							get_value(t_proc *p, int i, int j, t_vm *vm);
 int							format_int(int n, int size);
 void						check_arg(int ac, char **av, t_vm *vm);
 void						verify_last(char *s);
@@ -115,6 +118,7 @@ void						op_aff(t_vm *vm , t_proc *p);
 void						init_visual(t_vm *vm);
 void						go_visual(t_vm *vm);
 void						print_visual(const void *addr, size_t size, t_vm *vm);
-
+void						print_pc(t_proc *f, t_vm *vm);
+void						print_sub_screen(t_vm *vm);
 
 #endif

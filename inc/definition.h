@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 03:13:46 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/23 04:20:55 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/24 18:36:07 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,11 @@ typedef enum e_code				t_opcode;
 
 # define DEBUG					0
 
+# define NC_SIZE				192
 # define BREAK_CHAR				"," " " "\t" "\0" "\r" "\n"
 # define NUM_CHAR				"-1234567890"
 # define GOT(x)					g_op_tab[x - 1]
-# define M(x)					x % MEM_SIZE
+# define M(x)					(x % MEM_SIZE)
 # define COLORN(x, y)			( M(x) == y || M(x + 1) == y\
 								|| M(x + 2) == y || M(x + 3) == y)
 
@@ -30,7 +31,7 @@ typedef enum e_code				t_opcode;
 
 # define ISDIR					(GOT(p->set[0]).dir_mod == 1)
 
-# define VM(x)					vm->memory[(x) % MEM_SIZE]
+# define VM(x)					(vm->memory[(x) % MEM_SIZE])
 
 # define LEFT_SHIFT				0XFF00FF00
 # define RIGHT_SHIFT			0xFF00FF

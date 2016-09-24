@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:32 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/22 02:21:48 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/24 04:12:19 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	n->cycle = 0;
 	n->w_st = -10;
 	n->num = p->num;
+	n->old = -1;
 	while (i < PROG_NAME_LENGTH)
 	{
 		if (i <= 16)

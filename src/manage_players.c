@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/23 03:58:47 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/24 17:17:20 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,14 @@ int							get_instructions(t_vm *vm, t_proc *p)
 		put_in_set(i, vm, p);//could move that to verify validity, so get arg at the end
 
 		p->cycle = GOT(op).cycle;
+		// if (p->set[0] == 12)
+			// vm->nb_proc++;
+
 	}
 	else
 	{
 		p->set[0] = 0;
+		p->old = p->pc;
 		p->pc++;
 	}
 	return (1);
@@ -96,6 +100,7 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 				g_operator[p->set[0]](vm, p);
 				if (p->set[0] != 9)
 				{
+					p->old = p->pc;
 					p->pc += p->next_i;
 					p->pc %= MEM_SIZE;
 				}

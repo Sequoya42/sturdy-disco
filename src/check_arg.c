@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/09 16:30:33 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/21 03:51:41 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/24 01:36:25 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,18 +64,20 @@ void					check_arg(int ac, char **av, t_vm *vm)
 {
 	int					i;
 	int					n;
+	int					nb;
 
 	i = 1;
 	n = 1;
 	vm->nb_champ = 0;
 	vm->dump = -1;
+	nb = 0;
 	while (i < ac)
 	{
 		if (!ft_strcmp(av[i], "-d"))
 			check_dump(av, &i, vm);
 		else if (!ft_strcmp(av[i], "-v"))
 			vm->visual = 1;
-		else if (!ft_strcmp(av[i], "-n") && av[i + 1])
+		else if (!ft_strcmp(av[i], "-n") && av[i + 1] && ++nb)
 			n = ft_atoi(av[++i]);
 		else
 			check_cor(&n, av[i], vm);
@@ -84,4 +86,6 @@ void					check_arg(int ac, char **av, t_vm *vm)
 	}
 	if (vm->nb_champ > MAX_PLAYERS)
 		msg_exit("Too many players, [max is : %d]\n", MAX_PLAYERS);
+	if (vm->visual == 1 && nb == 1)
+		msg_exit("-v and -n are mutually exclusive\n");
 }

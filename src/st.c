@@ -6,35 +6,36 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:11 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/23 01:40:30 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/24 19:24:02 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
 
-
-
-void						right_value(int r, unsigned int n, t_vm *vm)
+void						st_visual(unsigned int n, int c, t_vm *vm)
 {
 	int						j;
+	int						k;
+	char					hex[] = "0123456789abcdef";
 
-	j = REG_SIZE * 8;
-	n += 3;
-	while (j)
+
+	j = -1;
+	attron(COLOR_PAIR(c));
+	while (++j < 4)
 	{
-		VM(n) = (r >> j);
-		j -= 8;
-		n--;
-	}
-	// VM(n) = (r >> 24) & 0xFF;
-	// VM(n + 1) = (r >> 16) & 0xFF;
-	// VM(n + 2) = (r >> 8) & 0xFF;
-	// VM(n + 3) = r & 0xFF;
+		n = M(n);
+		move((n / 64) + 4, (n % 64) * 3);
+		k = VM(n);
+		addch(hex[k / 16]);
+		addch(hex[k % 16]);
+		n++;
+}
+	attroff(COLOR_PAIR(c));
 }
 
 void						op_st(t_vm *vm , t_proc *p)
 {
-unsigned	int						n;
+	unsigned int			n;
 	int						r;
 
 	n = 0;
@@ -46,5 +47,7 @@ unsigned	int						n;
 		n = p->pc + (p->set[3] % IDX_MOD);
 		p->w_st = n % MEM_SIZE;
 		right_value(r, n, vm);
+		if (vm->visual == 1)
+			st_visual(n, -p->num, vm);
 	}
 }

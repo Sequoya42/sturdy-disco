@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:35 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/21 04:39:06 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/23 08:02:42 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,13 @@
 
 void						op_and(t_vm *vm , t_proc *p)
 {
+	int						v1;
+	int						v2;
 	int						n;
 
-	n = p->set[2] & p->set[3];
+	v1 = get_value(p, 1, 3, vm);
+	v2 = get_value(p, 2, 4, vm);
+	n = v1 & v2;
 	p->reg[p->set[4]] = n;
 		if (n == 0)
 		p->carry = 1;

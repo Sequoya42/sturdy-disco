@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 04:39:19 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/04 04:39:25 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/24 03:41:21 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	print_adrr(int i)
 	while (j++ < (4 - ft_strlen(r)))
 		ft_putchar('0');
 	ft_putstr(r);
-	ft_putchar(' ');
+	ft_putstr(" : ");
 }
 
 void	print_memory(const void *addr, size_t size)

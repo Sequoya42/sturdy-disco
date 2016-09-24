@@ -1,11 +1,12 @@
 .name "test2"
 .comment "rewrite"
 
+
+# 150994949
 w2:
-ld		%8, r2
-
-
-ldi		%:w2, r2, r4
-sti		r4, -12, %10
+ld		%150994953, r4
+ld		%12, r2
+xor		r2, r4, r15	
+sti		r15, %5, %10
 
 

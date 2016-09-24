@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:02 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/22 18:06:41 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/23 08:36:58 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ void						op_ld(t_vm *vm , t_proc *p)
 {
 	int						n;
 
-	n = p->set[2] % IDX_MOD;
+	n = get_value(p, 0, 2, vm);
+	// n = p->set[2] % IDX_MOD;
 	p->reg[p->set[3]] = n;
 	if (n == 0)
 		p->carry = 1;

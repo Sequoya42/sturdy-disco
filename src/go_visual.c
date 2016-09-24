@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:27:55 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/23 03:31:56 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/24 19:24:42 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,15 @@ void					init_visual(t_vm *vm)
 		msg_exit("You need to be in fullscreen !\n");
 	}
 	start_color();
-	init_pair(2, COLOR_RED, COLOR_BLACK);
 	init_pair(1, COLOR_GREEN, COLOR_BLACK);
+	init_pair(2, COLOR_RED, COLOR_BLACK);
 	init_pair(3, COLOR_BLUE, COLOR_GREEN);
 	init_pair(4, COLOR_CYAN, COLOR_BLACK);
 	init_pair(5, COLOR_YELLOW, COLOR_BLACK);
 	init_pair(6, COLOR_BLACK, COLOR_BLACK);
 	init_pair(8, COLOR_WHITE, COLOR_BLACK);
 	noecho();
-	 // curs_set(FALSE);
+	 curs_set(FALSE);
 	cbreak();
 	(void)vm;
 }
@@ -43,21 +43,32 @@ void					init_visual(t_vm *vm)
 void					deal_with_keyboard(int *i)
 {
 	int					c;
+	static	int			j = -1;
 
 	c = getch();
 	if (c == ' ')
-	{
-			timeout(1);
-		if (getch() == ' ')
-		timeout(-1);
-	}
-	else if (c == '+' && *i <= 1000)
+		j = j == 1 ? -1 : 1;
+		timeout(j);
+	if (c == '+' && *i <= 1000)
 		*i += 50;
 	else if (c == '-' && *i > 1)
 		*i = (*i > 5) ? *i - 5 : *i - 1;
 	else if (c == ERR)
 		refresh();
 }
+
+void					start_visual(t_vm *vm)
+{
+	move(0, 0);
+	addch('\n');
+	printw("Speed : %d\n", 50);
+	addch('\n');
+	int x = 0; int y = 0;
+	getyx(stdscr, y, x);
+	printw("x: %d\ty  : %d\n", x, y);
+	print_visual(vm->memory, MEM_SIZE, vm);
+}
+
 void					go_visual(t_vm *vm)
 {
 	int					sleep;
@@ -74,9 +85,8 @@ void					go_visual(t_vm *vm)
 	addch('\n');
 	printw("Speed : %d\n", i);
 	addch('\n');
-	int x = 0; int y = 0;
-	getyx(stdscr, y, x);
-	printw("x: %d\ty  : %d\n", x, y);
-	print_visual(vm->memory, MEM_SIZE, vm);
+	print_pc(vm->first, vm);
+	move(70, 0);
+	print_sub_screen(vm);
 	deal_with_keyboard(&i);
 }
