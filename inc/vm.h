@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:45 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 19:24:47 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/25 16:49:07 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@
 # include <fcntl.h>
 # include <curses.h>
 # include <ncurses.h>
-// #define CP				vm->proc
 
-// typedef struct s_arg	t_arg;
 typedef	struct s_plr 	t_plr;
 typedef struct s_cycle	t_cycle;
 typedef struct s_proc	t_proc;
@@ -33,7 +31,6 @@ struct					s_proc
 	unsigned int		pos;
 	int					old;
 	int					num;
-	int					w_st;
 	unsigned int		alive;
 	unsigned int		size;
 	unsigned int		cycle;
@@ -85,9 +82,9 @@ unsigned int				ft_swap(unsigned int val);
 unsigned int				ft_endian(unsigned int val);
 int							fill_memory(t_vm *vm);
 int							hex_to_dec(unsigned int n);
-void						right_value(int r, unsigned int n, t_vm *vm);
 int							get_value(t_proc *p, int i, int j, t_vm *vm);
 int							format_int(int n, int size);
+void						right_value(int r, unsigned int n, t_vm *vm);
 void						check_arg(int ac, char **av, t_vm *vm);
 void						verify_last(char *s);
 void						write_memory(int size, int ost, char *s, t_vm *vm);
@@ -117,8 +114,8 @@ void						op_lfork(t_vm *vm , t_proc *p);
 void						op_aff(t_vm *vm , t_proc *p);
 void						init_visual(t_vm *vm);
 void						go_visual(t_vm *vm);
+void						start_visual(t_vm *vm);
 void						print_visual(const void *addr, size_t size, t_vm *vm);
 void						print_pc(t_proc *f, t_vm *vm);
 void						print_sub_screen(t_vm *vm);
-
 #endif

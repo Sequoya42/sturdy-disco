@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:31:42 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 17:15:41 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/25 23:29:21 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,22 +46,23 @@ void							print_pc(t_proc *f, t_vm *vm)
 
 	while (f)
 	{
-		attron(COLOR_PAIR(-f->num));
 		old = f->old;
 		if (old != -1)
 		{
-		attroff(WA_STANDOUT);
 		move((old / 64) + 4 , (old % 64) * 3);
+		attron(inch());
+		attroff(WA_STANDOUT);
 		addch(hex[(int)vm->memory[old] / 16]);
 		addch(hex[(int)vm->memory[old] % 16]);
 	}
 		old = f->pc;
-		attron(WA_STANDOUT);
+		attroff(WA_STANDOUT | inch());
 		move((old / 64) + 4 , (old % 64) * 3);
+		attron(WA_STANDOUT | inch());
 		addch(hex[(int)vm->memory[old] / 16]);
 		addch(hex[(int)vm->memory[old] % 16]);
 		attroff(WA_STANDOUT);
-		attroff(COLOR_PAIR(-f->num));
+		attroff(inch());
 		f = f->next;
 	}
 }

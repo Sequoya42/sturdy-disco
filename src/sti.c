@@ -6,16 +6,11 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:22 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 19:23:32 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/25 23:30:18 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
-
-#if 0
-gere lenrroule loin -v mais pas -d
-
-#endif
 
 void						sti_visual(unsigned int n, int c, t_vm *vm)
 {
@@ -25,17 +20,17 @@ void						sti_visual(unsigned int n, int c, t_vm *vm)
 
 
 	j = -1;
-	attron(COLOR_PAIR(c));
 	while (++j < 4)
 	{
 		n = M(n);
 		move((n / 64) + 4, (n % 64) * 3);
+		attron(COLOR_PAIR(c) | A_BOLD);
 		k = VM(n);
 		addch(hex[k / 16]);
 		addch(hex[k % 16]);
+		attroff(COLOR_PAIR(c) | A_BOLD);
 		n++;
 	}
-	attroff(COLOR_PAIR(c));
 }
 
 void						op_sti(t_vm *vm , t_proc *p)
@@ -51,7 +46,6 @@ void						op_sti(t_vm *vm , t_proc *p)
 	v2 = get_value(p, 2, 4, vm);
 	n = p->pc + ((v1 + v2));
 	r = p->reg[p->set[2]];
-	p->w_st = n % MEM_SIZE;
 	right_value(r, n, vm);
 	if (vm->visual == 1)
 		sti_visual(n, -p->num, vm );

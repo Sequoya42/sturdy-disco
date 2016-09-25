@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 03:13:46 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 18:36:07 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/25 16:55:01 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ typedef enum e_code				t_opcode;
 
 # define INT_MAX				2147483648l
 
-#define V_REG(x)				(x < 0 || x > REG_NUMBER) ? x : x
+#define V_REG(x)				(x < 0 || x > REG_NUMBER) ? 0 : x
 
 # define ISDIR					(GOT(p->set[0]).dir_mod == 1)
 

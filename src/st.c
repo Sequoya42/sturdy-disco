@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:11 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 19:24:02 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/25 23:30:24 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,17 @@ void						st_visual(unsigned int n, int c, t_vm *vm)
 
 
 	j = -1;
-	attron(COLOR_PAIR(c));
 	while (++j < 4)
 	{
 		n = M(n);
 		move((n / 64) + 4, (n % 64) * 3);
+		attron(COLOR_PAIR(c) | A_BOLD);
 		k = VM(n);
 		addch(hex[k / 16]);
 		addch(hex[k % 16]);
+		attroff(COLOR_PAIR(c) | A_BOLD);
 		n++;
 }
-	attroff(COLOR_PAIR(c));
 }
 
 void						op_st(t_vm *vm , t_proc *p)
@@ -45,7 +45,6 @@ void						op_st(t_vm *vm , t_proc *p)
 	else
 	{
 		n = p->pc + (p->set[3] % IDX_MOD);
-		p->w_st = n % MEM_SIZE;
 		right_value(r, n, vm);
 		if (vm->visual == 1)
 			st_visual(n, -p->num, vm);

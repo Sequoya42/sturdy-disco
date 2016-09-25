@@ -6,17 +6,11 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 17:17:20 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/25 23:31:08 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
-
-#if 0
-Verify validity of the args
-could do something like 
-
-#endif
 
 int							get_instructions(t_vm *vm, t_proc *p)
 {
@@ -30,17 +24,15 @@ int							get_instructions(t_vm *vm, t_proc *p)
 	if (op > 0 && op < 17)
 	{
 		put_in_set(i, vm, p);//could move that to verify validity, so get arg at the end
-
 		p->cycle = GOT(op).cycle;
-		// if (p->set[0] == 12)
-			// vm->nb_proc++;
-
 	}
 	else
 	{
 		p->set[0] = 0;
-		p->old = p->pc;
-		p->pc++;
+		// p->old = p->pc;
+		p->next_i = 1;
+		// p->pc++;
+		p->cycle = 1;
 	}
 	return (1);
 }
@@ -95,7 +87,7 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 	{
 		if (p->cycle == 0)
 		{
-			if (verify_validity(p))
+			if (p->set[0] && verify_validity(p))
 			{
 				g_operator[p->set[0]](vm, p);
 				if (p->set[0] != 9)
@@ -105,10 +97,16 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 					p->pc %= MEM_SIZE;
 				}
 			}
+			else
+			{
+				p->old = p->pc;
+				p->pc += p->next_i;
+				p->pc %= MEM_SIZE;
+				p->next_i = 1;
+			}
 			get_instructions(vm, p);
 		}
-		else
-			p->cycle--;
+		p->cycle--;
 		p = p->next;
 	}
 }

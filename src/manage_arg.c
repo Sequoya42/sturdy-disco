@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/14 02:44:43 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 01:53:49 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/25 18:23:04 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,10 @@ void						put_in_set(int i, t_vm *vm, t_proc *p)
 	while (j < GOT(p->set[0]).params)
 	{
 		if (p->arg_size[j] == REG_CODE && (p->next_i++) && ++i)
-			p->set[k] = V_REG(VM(i));
+		{
+			if ((p->set[k] = V_REG(VM(i))) == 0)
+				p->arg_size[j] = 0;
+		}
 		else if (p->arg_size[j] == DIR_CODE && (p->next_i += ISDIR ? 2 : 4))
 			p->set[k] = manage_dir(&i, vm, p);
 		else if (p->arg_size[j] == IND_CODE && (p->next_i += 2))

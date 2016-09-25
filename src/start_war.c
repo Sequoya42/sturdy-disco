@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 05:05:33 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/25 16:47:52 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void						dump_memory(t_vm *vm)
 	print_memory(vm->memory, MEM_SIZE);
 	exit(0);
 }
-
 
 int							reset_players(t_vm *vm)
 {
@@ -46,7 +45,6 @@ int							reset_players(t_vm *vm)
 				p->next = NULL;
 		}
 		p->alive = 0;
-		p->w_st = -10;
 		p = p->next;
 		i++;
 	}
@@ -78,7 +76,7 @@ int							loop_players(t_cycle *cycle, t_vm *vm)
 	cycle->check++;
 	return (0);
 }
-void					start_visual(t_vm *vm);
+
 void						start_war(t_vm *vm)
 {
 	t_cycle					cycle;
@@ -97,7 +95,7 @@ void						start_war(t_vm *vm)
 		if (cycle.alive >= NBR_LIVE || cycle.check == MAX_CHECKS)
 		{
 			cycle.stop -= CYCLE_DELTA;
-			cycle.check = 0;
+			cycle.check = 0; // Maybe cycle check 0 only if max check
 		}
 		if (cycle.alive == 0 || (int)cycle.stop <= 0)
 			break;
