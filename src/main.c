@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:37 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 02:28:00 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/27 17:00:52 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,20 @@ void						test_shit(t_vm *vm)
 	exit(0);
 }
 
+void						introducing(int n, t_proc *p)
+{
+	int						i;
+
+	i = -1;
+	ft_putendl("Introducing contestants...");
+	while (++i < n)
+	{
+		ft_print("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
+			-p->num, p->size, p->name, p->comment);
+		p = p->next;
+	}
+}
+
 int							main(int ac, char **av)
 {
 	t_vm					*vm;
@@ -51,6 +65,7 @@ int							main(int ac, char **av)
 	// test_shit(vm);
 	if (vm->visual == 1)
 		init_visual(vm);
+	introducing(vm->nb_champ, vm->first);
 	start_war(vm);
 	if (vm->visual == 1)
 	{

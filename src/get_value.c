@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 07:57:53 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 03:26:18 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/27 17:32:52 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,11 @@ int							get_value(t_proc *p, int i, int j, t_vm *vm)
 		return (p->reg[p->set[j]]);
 	else if (p->arg_size[i] == 4)
 	{
-		n = p->pc + p->set[j] - 1;
-		r |= (VM(n + 1) << 24);
-		r |= (VM(n + 2) << 16);
-		r |= (VM(n + 3) << 8);
-		r |= (VM(n + 4));
+		n = p->pc + p->set[j];
+		r |= (VM(n + 0) << 24);
+		r |= (VM(n + 1) << 16);
+		r |= (VM(n + 2) << 8);
+		r |= (VM(n + 3));
 		// ft_print("Value of r : %d\n", r);
 		// ft_print("Value of endian r: %d\n", format_int(r, DIR_SIZE));
 		return (r);

@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:27:55 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 19:24:42 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/27 00:02:53 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void					init_visual(t_vm *vm)
 	start_color();
 	init_pair(1, COLOR_GREEN, COLOR_BLACK);
 	init_pair(2, COLOR_RED, COLOR_BLACK);
-	init_pair(3, COLOR_BLUE, COLOR_GREEN);
+	init_pair(3, COLOR_BLUE, COLOR_BLACK);
 	init_pair(4, COLOR_CYAN, COLOR_BLACK);
 	init_pair(5, COLOR_YELLOW, COLOR_BLACK);
 	init_pair(6, COLOR_BLACK, COLOR_BLACK);
@@ -87,6 +87,8 @@ void					go_visual(t_vm *vm)
 	addch('\n');
 	print_pc(vm->first, vm);
 	move(70, 0);
+	attron(COLOR_PAIR(8));
 	print_sub_screen(vm);
+	// attroff(COLOR_PAIR(8));
 	deal_with_keyboard(&i);
 }

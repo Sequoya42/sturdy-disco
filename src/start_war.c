@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/25 16:47:52 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/27 23:03:46 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,6 @@ int							loop_players(t_cycle *cycle, t_vm *vm)
 	cycle->alive = 0;
 	while (cycle->current < cycle->stop)
 	{
-		// ft_print("CyCLE TOTAL \t\t%d\n", cycle->total);
 		manage_players(cycle, vm);
 		if (vm->dump == cycle->total)
 			dump_memory(vm);
@@ -72,7 +71,10 @@ int							loop_players(t_cycle *cycle, t_vm *vm)
 	while (++i < MAX_PLAYERS)
 		vm->plr[i].live = 0;
 	if (reset_players(vm) == -1)
+	{
+		ft_print("Trouble at cycle : %d\n", cycle->total);
 		return (-1);
+	}
 	cycle->check++;
 	return (0);
 }
@@ -100,6 +102,6 @@ void						start_war(t_vm *vm)
 		if (cycle.alive == 0 || (int)cycle.stop <= 0)
 			break;
 	}
-	ft_print("Contestant %d, \"%s\", has won at cycle : %d!\n",
-			 -vm->first->num, vm->first->name, cycle.total);
+	ft_print("cycle: %d\tContestant %d, \"%s\", has won !\n",cycle.total,
+			 -vm->first->num, vm->first->name);
 }

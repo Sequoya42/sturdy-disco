@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:11 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/25 23:30:24 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/27 18:51:36 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void						st_visual(unsigned int n, int c, t_vm *vm)
 
 
 	j = -1;
+	(void)c;
 	while (++j < 4)
 	{
 		n = M(n);
@@ -30,7 +31,7 @@ void						st_visual(unsigned int n, int c, t_vm *vm)
 		addch(hex[k % 16]);
 		attroff(COLOR_PAIR(c) | A_BOLD);
 		n++;
-}
+	}
 }
 
 void						op_st(t_vm *vm , t_proc *p)
@@ -39,14 +40,17 @@ void						op_st(t_vm *vm , t_proc *p)
 	int						r;
 
 	n = 0;
-	r = (p->arg_size[0] == REG_CODE) ? p->reg[p->set[2]] : p->set[2];
+	r = p->reg[p->set[2]];
 	if (p->arg_size[1] == REG_CODE)
 		p->reg[p->set[3]] = r;
 	else
 	{
 		n = p->pc + (p->set[3] % IDX_MOD);
+		// ft_print("in St: Value of n : %d\t\tset[3] : %d\n", n, p->set[3]);
 		right_value(r, n, vm);
 		if (vm->visual == 1)
 			st_visual(n, -p->num, vm);
 	}
 }
+
+

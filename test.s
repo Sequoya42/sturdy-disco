@@ -2,14 +2,22 @@
 .comment "instruction test"
 
 
+
+ld %251658255, r2
+st r1, -1
+st r2, 314
+st r16, -4
+st r16, -300
+st r2, -301
+st r2, -302
+
 #ecrit un sti et un zjmp 
 #etc
-w2:
-ld		12, r3
-ld		21, r4
+# w2:
+# ld		3, r3
 
-and		r3, r4, r2
-sti		r2, %-63, %0
+# sti		r3, %63, %12
+# sti		r4, %63, %12
 
 
 # w1:

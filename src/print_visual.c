@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:31:42 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/25 23:29:21 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/27 23:02:25 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,20 +49,21 @@ void							print_pc(t_proc *f, t_vm *vm)
 		old = f->old;
 		if (old != -1)
 		{
-		move((old / 64) + 4 , (old % 64) * 3);
-		attron(inch());
-		attroff(WA_STANDOUT);
-		addch(hex[(int)vm->memory[old] / 16]);
-		addch(hex[(int)vm->memory[old] % 16]);
-	}
+			move((old / 64) + 4 , (old % 64) * 3);
+			attron(inch());
+			attroff(WA_STANDOUT);
+			addch(hex[VM(old) / 16]);
+			addch(hex[VM(old) % 16]);
+		}
 		old = f->pc;
-		attroff(WA_STANDOUT | inch());
-		move((old / 64) + 4 , (old % 64) * 3);
-		attron(WA_STANDOUT | inch());
-		addch(hex[(int)vm->memory[old] / 16]);
-		addch(hex[(int)vm->memory[old] % 16]);
-		attroff(WA_STANDOUT);
+		attron(COLOR_PAIR(8));
+		move((old / 64) + 4 , ((old % 64) * 3));
+		attron(WA_STANDOUT);
+		attron(inch());
+		addch(hex[VM(old) / 16]);
+		addch(hex[VM(old) % 16]);
 		attroff(inch());
+		attroff(WA_STANDOUT);
 		f = f->next;
 	}
 }
@@ -86,16 +87,13 @@ void						print_sub_screen(t_vm *vm)
 	int						i;
 
 	i = -1;
-	int x = 0; int y = 0;
-	getyx(stdscr, y, x);
 	printw("******************************\n");
-	printw("x: %d\ty%d\n", x, y);
 	printw("Cycle to die:\t%d\t    *\n", vm->cycle->stop);
 	printw("Cycle total: \t%d\t    *\n", vm->cycle->total);
 	printw("Nb_process:  \t%d\t    *\n", vm->nb_proc);
 	printw("******************************\n");
-	while (++i < MAX_PLAYERS)
-		printw("\n[%s]  live(s) : %d\n", vm->plr[i].s , vm->plr[i].live);
+	while (++i < vm->nb_champ)
+		printw("\n[%s]  live(s) : %d\t\t\t%d\n", vm->plr[i].s , vm->plr[i].live, vm->plr[i].last);
 }
 
 void						print_visual(const void *addr, size_t size, t_vm *vm)

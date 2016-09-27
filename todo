@@ -3,8 +3,17 @@
 
 				===========
 
+ZJMP (qui jump pas du coup)[fluttershy -+4700]
 
-Offest de 1 pour chaque putain d[op]
+---
+
+ld et lld
+ld		3, r3 
+ou lld
+sti		r3, %63, %12
+
+--
+
 VISU STI
 
 

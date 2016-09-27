@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 16:02:58 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/25 16:49:00 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/27 16:56:00 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,6 @@ void					fill_champion(int ofst, char *av, t_vm *vm, t_proc *p)
 	p->next = NULL;
 	p->prev = NULL;
 	p->old = -1;
-	// ft_print("size: %d\nname:\t%s\ncomment:\t%s\n", p->size, p->name, p->comment);
-	// exit(0);
 }
 
 int						fill_memory(t_vm *vm)
@@ -64,6 +62,5 @@ int						fill_memory(t_vm *vm)
 		add_proc(p, vm);
 		i++;
 	}
-	// vm->first = vm->proc;
 	return (1);
 }

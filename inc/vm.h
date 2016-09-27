@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:45 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/25 16:49:07 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/27 23:01:58 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ struct					s_plr
 {
 	int					n;
 	int					live;
+	unsigned int		last;
 	char				*s;
 };
 
@@ -67,7 +68,7 @@ struct					s_vm
 	unsigned int		visual : 1;
 	unsigned int		dump;
 	unsigned int		pc;
-	unsigned int		nb_champ;
+	int		nb_champ;
 	unsigned int		nbr_cycle;
 	t_cycle				*cycle;
 	unsigned char		memory[MEM_SIZE + 1];

@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/08/18 03:13:46 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/25 16:55:01 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/27 17:19:14 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ typedef enum e_code				t_opcode;
 # define M(x)					(x % MEM_SIZE)
 # define COLORN(x, y)			( M(x) == y || M(x + 1) == y\
 								|| M(x + 2) == y || M(x + 3) == y)
-
-# define INT_MAX				2147483648l
 
 #define V_REG(x)				(x < 0 || x > REG_NUMBER) ? 0 : x
 
