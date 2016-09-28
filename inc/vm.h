@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:45 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 23:01:58 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/28 23:53:38 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,4 +119,8 @@ void						start_visual(t_vm *vm);
 void						print_visual(const void *addr, size_t size, t_vm *vm);
 void						print_pc(t_proc *f, t_vm *vm);
 void						print_sub_screen(t_vm *vm);
+void						print_coord(int old, t_vm *vm);
+void						test_shit(t_vm *vm);
+
+
 #endif

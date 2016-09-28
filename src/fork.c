@@ -6,11 +6,12 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:32 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 22:54:56 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 00:19:16 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
+
 
 static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 {
@@ -19,10 +20,10 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	i = 0;
 	n->pc = p->pc + (p->set[1] % IDX_MOD);
 	n->pc %= MEM_SIZE;
-	n->carry = p->carry;
-	n->cycle = 1;
-	n->num = p->num;
 	n->old = -1;
+	n->carry = p->carry;
+	n->num = p->num;
+	n->alive = p->alive;
 	while (i < PROG_NAME_LENGTH)
 	{
 		if (i <= 16)
@@ -32,7 +33,12 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	}
 	n->next = NULL;
 	n->prev = NULL;
+	// ft_putendl("**********\tFORK BEFORE \t*********");
+	// test_shit(vm);
+	// ft_putendl("**********\tFORK\t*********");
 	add_proc(n, vm);
+	// test_shit(vm);
+	// ft_putendl("**********\tEND_FORK\t*********");
 }
 
 

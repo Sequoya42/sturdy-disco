@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/25 23:31:08 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/28 01:22:51 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,7 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 	(void)cycle;
 	while (p)
 	{
+		// ft_print("manage\n");	
 		if (p->cycle == 0)
 		{
 			if (p->set[0] && verify_validity(p))

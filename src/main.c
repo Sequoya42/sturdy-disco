@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:37 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 17:00:52 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 00:26:57 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ void						test_shit(t_vm *vm)
 	t_proc *p = vm->first;
 	while (p)
 	{
-		ft_print("p->num = %d\n", -(p->num));
+		ft_print("p->num = %d\t\tp->name : %s\n", (p->pos), p->name);
 		p = p->next;
 	}
-	exit(0);
+	// exit(0);
 }
 
 void						introducing(int n, t_proc *p)
@@ -45,7 +45,7 @@ void						introducing(int n, t_proc *p)
 	{
 		ft_print("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
 			-p->num, p->size, p->name, p->comment);
-		p = p->next;
+		p = p->prev;
 	}
 }
 
@@ -65,12 +65,15 @@ int							main(int ac, char **av)
 	// test_shit(vm);
 	if (vm->visual == 1)
 		init_visual(vm);
-	introducing(vm->nb_champ, vm->first);
+	introducing(vm->nb_champ, vm->proc);
+	// ft_print("FIRST: %s\t PROC: %s \n", vm->first->name, vm->proc->name);
+	// exit(0);
 	start_war(vm);
 	if (vm->visual == 1)
 	{
+		move(20, 250);
 		timeout(-1);
-		printw("FINISHED !\n \t\tPress any key to escape!");
+		printw("FINISHED !\tPress any key to escape!");
 		getch();
 		endwin();
 	}

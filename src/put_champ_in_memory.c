@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 16:02:58 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 16:56:00 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 00:16:52 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,8 +59,9 @@ int						fill_memory(t_vm *vm)
 		fill_champion((i * dist), vm->plr[i].s, vm, p);
 		p->num = (vm->plr[i].n) * (-1);
 		p->reg[1] = p->num;
-		add_proc(p, vm);
+		first_add_proc(p, vm);
 		i++;
 	}
+	// vm->first = vm->proc;	
 	return (1);
 }

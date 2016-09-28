@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:31:42 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 23:02:25 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/28 20:02:32 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,18 @@ static void	print_hex_mem(unsigned char *addr, unsigned int j, t_proc *p)
 	// addch('\n');
 }
 
+void							print_coord(int old, t_vm *vm)
+{
+	char						hex[] = "0123456789abcdef";
+
+	move((old / 64) + 4 , (old % 64) * 3);
+	attron(inch());
+	attroff(WA_STANDOUT);
+	addch(hex[VM(old) / 16]);
+	addch(hex[VM(old) % 16]);
+	attroff(inch());
+}
+
 void							print_pc(t_proc *f, t_vm *vm)
 {
 	int							old;
@@ -48,13 +60,7 @@ void							print_pc(t_proc *f, t_vm *vm)
 	{
 		old = f->old;
 		if (old != -1)
-		{
-			move((old / 64) + 4 , (old % 64) * 3);
-			attron(inch());
-			attroff(WA_STANDOUT);
-			addch(hex[VM(old) / 16]);
-			addch(hex[VM(old) % 16]);
-		}
+			print_coord(old, vm);
 		old = f->pc;
 		attron(COLOR_PAIR(8));
 		move((old / 64) + 4 , ((old % 64) * 3));

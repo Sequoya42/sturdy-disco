@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 03:49:22 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/24 05:06:33 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 00:20:33 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,10 @@ void					add_proc(t_proc *new, t_vm *vm)
 	{
 		new->pos = i++;
 		vm->nb_proc++;
-		if (!vm->first)
-		{
-			vm->proc = new;
-			vm->first = vm->proc;
-		}
-		else
-		{
-			new->prev = vm->proc;
-			vm->proc->next = new;
-			vm->proc = vm->proc->next;
-		}
+		// ft_putendl("\t\t\t\t\tELSE");
+		new->prev = vm->proc;
+		vm->proc->next = new;
+		vm->proc = vm->proc->next;
 	}
 	else
 		msg_exit("No new elem\n");
@@ -44,15 +37,16 @@ void					first_add_proc(t_proc *new, t_vm *vm)
 	if (new)
 	{
 		vm->nb_proc++;
-		if (!vm->proc)
+		if (!vm->first)
 		{
-			vm->proc = new;
+			vm->first = new;
+			vm->proc = vm->first;
 		}
 		else
 		{
-			vm->proc->prev = new;
-			new->next = vm->proc;
-			vm->proc = vm->proc->prev;
+			vm->first->prev = new;
+			new->next = vm->first;
+			vm->first = vm->first->prev;
 		}
 	}
 	else

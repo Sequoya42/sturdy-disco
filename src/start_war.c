@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 23:03:46 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 00:22:29 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,32 +18,50 @@ void						dump_memory(t_vm *vm)
 	exit(0);
 }
 
+// null <- 1 <-> 2 <-> 3 ->null
+
+int							remove_player(t_vm *vm, t_proc *p)
+{
+	vm->nb_proc--;
+	if (p == vm->proc)
+		vm->proc = vm->proc->prev;
+	if (p == vm->first && vm->first->next)
+		vm->first = vm->first->next;
+	else if (p == vm->first && !vm->first->next)
+		return (-1);
+
+
+	if (p->prev)
+		p->prev->next = p->next;
+	else
+		p->prev = NULL;
+	if (p->next)
+		p->next->prev = p->prev;
+	else
+		p->next = NULL;
+	if (vm->visual == 1)
+		print_coord(p->pc, vm);
+	// if (p == vm->proc && vm->proc->next)
+	// 	vm->proc = vm->proc->next;
+	// free(t);
+	// ft_colendl("\t\t AFTER REMOVAL");
+	// test_shit(vm);
+	// ft_colendl("************");
+	return (0);
+}
+
 int							reset_players(t_vm *vm)
 {
 	t_proc					*p;
-	t_proc					*t;
+	// t_proc					*t;
 
 	p = vm->first;
 	int i = 0;
 	while (p)
 	{
 		if (p->alive == 0)
-		{
-			t = p;
-			vm->nb_proc--;
-			if (p == vm->first && vm->first->next)
-				vm->first = vm->first->next;
-			else if (p == vm->first && !vm->first->next)
+			if (remove_player(vm, p) == -1)
 				return (-1);
-			if (p->prev)
-				p->prev->next = t->next;
-			else
-				p->prev = NULL;
-			if (p->next)
-				p->next->prev = t->prev;
-			else
-				p->next = NULL;
-		}
 		p->alive = 0;
 		p = p->next;
 		i++;

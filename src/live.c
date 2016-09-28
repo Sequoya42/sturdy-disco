@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/09 03:10:10 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 23:03:49 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/27 23:34:48 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ void						op_live(t_vm *vm, t_proc *p)
 		{
 			vm->plr[i].live++;
 			vm->plr[i].last = vm->cycle->total;
-			p->alive++;
 		}
 		i++;
 	}
+	p->alive++;
 	vm->cycle->alive++;
 }
 
