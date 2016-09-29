@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:22 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 00:25:16 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 02:01:16 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ void						op_sti(t_vm *vm , t_proc *p)
 	r = 0;
 	v1 = get_value(p, 1, 3, vm);
 	v2 = get_value(p, 2, 4, vm);
+	// ft_print("%d\t%d\n", v1, v2);
 	n = p->pc + ((v1 + v2) % IDX_MOD);
 	r = p->reg[p->set[2]];
 	right_value(r, n, vm);

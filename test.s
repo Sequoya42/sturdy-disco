@@ -2,35 +2,41 @@
 .comment "instruction test"
 
 
+sti r1, %32767, %0
+sti r1, %64516, %0
+sti r1, %64517, %0
+sti r1, %64770, %0
 
-fork %250
-assaut1:
-live %0
-ld %190055943, r10 # sti r6, r7
-ld %84476405, r11 # r5 jump 01F5 (501)
-fork %:second
-ld %190055172, r3 #0x0B540304
-ld %190055172, r6 #0x0B540304
-ld %507, r7
-ld %24, r4
-ld %0, r5
-zjmp %:jump
+#####################################################
 
-second:
-live %0
-ld %84475923, r3 #0x0509001b
-ld %84475923, r6
-ld %511, r7
-ld %28, r4
-ld %0, r5
-zjmp %:jump
+# fork %250
+# assaut1:
+# live %0
+# ld %190055943, r10 # sti r6, r7
+# ld %84476405, r11 # r5 jump 01F5 (501)
+# fork %:second
+# ld %190055172, r3 #0x0B540304
+# ld %190055172, r6 #0x0B540304
+# ld %507, r7
+# ld %24, r4
+# ld %0, r5
+# zjmp %:jump
 
-jump:
-live %0
-st r10, 511
-st r11, 510
-zjmp %501
+# second:
+# live %0
+# ld %84475923, r3 #0x0509001b
+# ld %84475923, r6
+# ld %511, r7
+# ld %28, r4
+# ld %0, r5
+# zjmp %:jump
 
+# jump:
+# live %0
+# st r10, 511
+# st r11, 510
+# zjmp %501
+#######################################################
 # fork %:ledroi
 # ld %190055943, r10 # sti r6, r7
 # ld %84476405, r11 # r5 jump 01F5 (501)
