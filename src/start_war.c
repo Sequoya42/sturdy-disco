@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 00:22:29 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 15:54:43 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void						dump_memory(t_vm *vm)
 	print_memory(vm->memory, MEM_SIZE);
 	exit(0);
 }
-
-// null <- 1 <-> 2 <-> 3 ->null
 
 int							remove_player(t_vm *vm, t_proc *p)
 {
@@ -41,27 +39,22 @@ int							remove_player(t_vm *vm, t_proc *p)
 		p->next = NULL;
 	if (vm->visual == 1)
 		print_coord(p->pc, vm);
-	// if (p == vm->proc && vm->proc->next)
-	// 	vm->proc = vm->proc->next;
-	// free(t);
-	// ft_colendl("\t\t AFTER REMOVAL");
-	// test_shit(vm);
-	// ft_colendl("************");
 	return (0);
 }
 
 int							reset_players(t_vm *vm)
 {
 	t_proc					*p;
-	// t_proc					*t;
 
 	p = vm->first;
 	int i = 0;
 	while (p)
 	{
 		if (p->alive == 0)
+		{
 			if (remove_player(vm, p) == -1)
 				return (-1);
+		}
 		p->alive = 0;
 		p = p->next;
 		i++;

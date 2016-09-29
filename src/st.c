@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:11 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 18:51:36 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 21:07:51 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ void						op_st(t_vm *vm , t_proc *p)
 
 	n = 0;
 	r = p->reg[p->set[2]];
+	// printf("Value in st: %d\t\t%x\n", r, r);
 	if (p->arg_size[1] == REG_CODE)
 		p->reg[p->set[3]] = r;
 	else

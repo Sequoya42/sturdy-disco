@@ -1,0 +1,1499 @@
+It is now cycle 805
+P    2 | ld 0 r16
+It is now cycle 840
+P    2 | ld 190055943 r10
+It is now cycle 845
+P    2 | ld 84476405 r11
+It is now cycle 1615
+P    3 | ld 0 r16
+P    1 | ld 251658255 r2
+It is now cycle 1620
+P    1 | ld 1 r12
+It is now cycle 1625
+P    1 | ld 40 r11
+It is now cycle 1650
+P    3 | ld 190055943 r10
+P    2 | ld 190055172 r3
+It is now cycle 1655
+P    3 | ld 84476405 r11
+--
+ADV 7 (0x01f3 -> 0x01fa) 02 90 05 09 01 f5 0b 
+P    2 | ld 190055172 r6
+--
+ADV 7 (0x023d -> 0x0244) 02 90 0b 54 03 04 06 
+P    1 | st r2 -301
+ADV 5 (0x0034 -> 0x0039) 03 70 02 fe d3 
+It is now cycle 1656
+It is now cycle 1657
+It is now cycle 1658
+It is now cycle 1659
+It is now cycle 1660
+P    4 | ld 84475923 r3
+--
+ADV 7 (0x0261 -> 0x0268) 02 90 05 09 00 13 03 
+P    3 | ld 150994956 r3
+--
+ADV 7 (0x01fa -> 0x0201) 02 90 09 00 00 0c 03 
+P    2 | ld 507 r7
+--
+ADV 7 (0x0244 -> 0x024b) 02 90 00 00 01 fb 07 
+P    1 | st r2 -302
+ADV 5 (0x0039 -> 0x003e) 03 70 02 fe d2 
+It is now cycle 1661
+It is now cycle 1662
+It is now cycle 1663
+It is now cycle 1664
+It is now cycle 1665
+P    4 | ld 84475923 r6
+--
+ADV 7 (0x0268 -> 0x026f) 02 90 05 09 00 13 06 
+P    3 | ld 150994956 r6
+--
+ADV 7 (0x0201 -> 0x0208) 02 90 09 00 00 0c 06 
+P    2 | ld 24 r4
+--
+ADV 7 (0x024b -> 0x0252) 02 90 00 00 00 18 04 
+It is now cycle 1666
+It is now cycle 1667
+It is now cycle 1668
+It is now cycle 1669
+It is now cycle 1670
+P    4 | ld 511 r7
+--
+ADV 7 (0x026f -> 0x0276) 02 90 00 00 01 ff 07 
+P    3 | ld 26 r7
+--
+ADV 7 (0x0208 -> 0x020f) 02 90 00 00 00 1a 07 
+P    2 | ld 0 r5
+--
+ADV 7 (0x0252 -> 0x0259) 02 90 00 00 00 00 05 
+It is now cycle 1671
+It is now cycle 1672
+It is now cycle 1673
+It is now cycle 1674
+It is now cycle 1675
+P    4 | ld 28 r4
+--
+ADV 7 (0x0276 -> 0x027d) 02 90 00 00 00 1c 04 
+P    3 | ld 495 r4
+--
+ADV 7 (0x020f -> 0x0216) 02 90 00 00 01 ef 04 
+It is now cycle 1676
+It is now cycle 1677
+It is now cycle 1678
+It is now cycle 1679
+It is now cycle 1680
+P    4 | ld 0 r5
+--
+ADV 7 (0x027d -> 0x0284) 02 90 00 00 00 00 05 
+P    3 | ld 0 r5
+--
+ADV 7 (0x0216 -> 0x021d) 02 90 00 00 00 00 05 
+P    1 | zjmp 33 FAILED
+ADV 3 (0x003e -> 0x0041) 09 00 21 
+It is now cycle 1681
+It is now cycle 1682
+It is now cycle 1683
+It is now cycle 1684
+It is now cycle 1685
+P    1 | ld 0 r16
+--
+It is now cycle 1767
+It is now cycle 1768
+It is now cycle 1769
+It is now cycle 1770
+It is now cycle 1771
+It is now cycle 1772
+It is now cycle 1773
+It is now cycle 1774
+It is now cycle 1775
+P    2 | zjmp 501 OK
+P    1 | ldi -53 1 r13
+--
+       | -> load from -53 + 1 = -52 (with pc and mod 43)
+ADV 7 (0x005f -> 0x0066) 0a a4 ff cb 00 01 0d 
+It is now cycle 1776
+It is now cycle 1777
+It is now cycle 1778
+It is now cycle 1779
+It is now cycle 1780
+P    1 | ld 0 r16
+--
+It is now cycle 3410
+P    5 | st r13 6
+ADV 5 (0x007a -> 0x007f) 03 70 0d 00 06 
+P    1 | fork 44 (176)
+ADV 3 (0x0084 -> 0x0087) 0c 00 2c 
+It is now cycle 3411
+It is now cycle 3412
+It is now cycle 3413
+It is now cycle 3414
+It is now cycle 3415
+P    7 | ld 202068999 r10
+--
+ADV 7 (0x00b0 -> 0x00b7) 02 90 0c 0b 54 07 0a 
+P    6 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P    1 | ld 190056971 r10
+--
+It is now cycle 3416
+It is now cycle 3417
+It is now cycle 3418
+It is now cycle 3419
+It is now cycle 3420
+P    7 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P    5 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P    1 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 3421
+P    2 | sti r3 24 0
+       | -> store to 24 + 0 = 24 (with pc and mod 2558)
+ADV 5 (0x09e6 -> 0x09eb) 0b 54 03 04 05 
+It is now cycle 3422
+It is now cycle 3423
+It is now cycle 3424
+It is now cycle 3425
+P    7 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P    1 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+It is now cycle 3426
+It is now cycle 3427
+It is now cycle 3428
+It is now cycle 3429
+It is now cycle 3430
+P    7 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P    1 | ld 270 r11
+--
+P    4 | sti r3 28 0
+       | -> store to 28 + 0 = 28 (with pc and mod 2562)
+ADV 5 (0x09e6 -> 0x09eb) 0b 54 03 04 05 
+P    3 | sti r3 495 0
+       | -> store to 495 + 0 = 495 (with pc and mod 3029)
+ADV 5 (0x09e6 -> 0x09eb) 0b 54 03 04 05 
+It is now cycle 3432
+It is now cycle 3433
+It is now cycle 3434
+It is now cycle 3435
+P    7 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P    1 | ld 0 r12
+--
+It is now cycle 4220
+P    6 | st r13 6
+ADV 5 (0x007a -> 0x007f) 03 70 0d 00 06 
+P    5 | fork 44 (176)
+ADV 3 (0x0084 -> 0x0087) 0c 00 2c 
+It is now cycle 4221
+It is now cycle 4222
+It is now cycle 4223
+It is now cycle 4224
+It is now cycle 4225
+P    9 | ld 202068999 r10
+--
+ADV 7 (0x00b0 -> 0x00b7) 02 90 0c 0b 54 07 0a 
+P    8 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P    5 | ld 190056971 r10
+--
+It is now cycle 4226
+It is now cycle 4227
+It is now cycle 4228
+It is now cycle 4229
+It is now cycle 4230
+P    9 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P    6 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P    5 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 4231
+P    2 | sti r3 24 0
+       | -> store to 24 + 0 = 24 (with pc and mod 2990)
+ADV 5 (0x0b96 -> 0x0b9b) 0b 54 03 04 05 
+It is now cycle 4232
+It is now cycle 4233
+It is now cycle 4234
+It is now cycle 4235
+P    9 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P    7 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P    5 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P    1 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 4236
+It is now cycle 4237
+It is now cycle 4238
+It is now cycle 4239
+It is now cycle 4240
+P    9 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P    5 | ld 270 r11
+--
+P    4 | sti r3 28 0
+       | -> store to 28 + 0 = 28 (with pc and mod 2994)
+ADV 5 (0x0b96 -> 0x0b9b) 0b 54 03 04 05 
+P    3 | sti r3 495 0
+       | -> store to 495 + 0 = 495 (with pc and mod 3461)
+ADV 5 (0x0b96 -> 0x0b9b) 0b 54 03 04 05 
+It is now cycle 4242
+It is now cycle 4243
+It is now cycle 4244
+It is now cycle 4245
+P    9 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P    5 | ld 0 r12
+--
+It is now cycle 5030
+P    8 | st r13 6
+ADV 5 (0x007a -> 0x007f) 03 70 0d 00 06 
+P    6 | fork 44 (176)
+ADV 3 (0x0084 -> 0x0087) 0c 00 2c 
+It is now cycle 5031
+It is now cycle 5032
+It is now cycle 5033
+It is now cycle 5034
+It is now cycle 5035
+P   13 | ld 202068999 r10
+--
+P   12 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   11 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   10 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P    7 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0296 -> 0x029b) 01 ff ff ff ff 
+P    6 | ld 190056971 r10
+--
+It is now cycle 5036
+It is now cycle 5037
+It is now cycle 5038
+It is now cycle 5039
+It is now cycle 5040
+P   13 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P    8 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P    6 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 5041
+It is now cycle 5042
+It is now cycle 5043
+It is now cycle 5044
+It is now cycle 5045
+P   13 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P    9 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P    6 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P    5 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 5046
+It is now cycle 5047
+It is now cycle 5048
+It is now cycle 5049
+It is now cycle 5050
+P   13 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P    6 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 5051
+It is now cycle 5052
+It is now cycle 5053
+It is now cycle 5054
+It is now cycle 5055
+P   13 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P    6 | ld 0 r12
+--
+       | -> store to 274 + 0 = 274 (with pc and mod 1136)
+ADV 5 (0x035e -> 0x0363) 0b 54 0a 0b 0c 
+P    1 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 1132)
+ADV 5 (0x035e -> 0x0363) 0b 54 0a 0b 0c 
+It is now cycle 5841
+It is now cycle 5842
+It is now cycle 5843
+It is now cycle 5844
+It is now cycle 5845
+P   17 | ld 202068999 r10
+--
+P   16 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   15 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   14 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P    9 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0296 -> 0x029b) 01 ff ff ff ff 
+P    8 | ld 190056971 r10
+--
+It is now cycle 5846
+It is now cycle 5847
+It is now cycle 5848
+It is now cycle 5849
+It is now cycle 5850
+P   17 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   12 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P    8 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 5851
+It is now cycle 5852
+It is now cycle 5853
+It is now cycle 5854
+It is now cycle 5855
+P   17 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   13 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P    8 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P    6 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 5856
+It is now cycle 5857
+It is now cycle 5858
+It is now cycle 5859
+It is now cycle 5860
+P   17 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P    8 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 5861
+It is now cycle 5862
+It is now cycle 5863
+It is now cycle 5864
+It is now cycle 5865
+P   17 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   11 | sti r7 273 0
+       | -> store to 273 + 0 = 273 (with pc and mod 885)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   10 | sti r7 276 0
+       | -> store to 276 + 0 = 276 (with pc and mod 888)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P    8 | ld 0 r12
+--
+       | -> store to 274 + 0 = 274 (with pc and mod 1136)
+ADV 5 (0x035e -> 0x0363) 0b 54 0a 0b 0c 
+P    5 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 1132)
+ADV 5 (0x035e -> 0x0363) 0b 54 0a 0b 0c 
+It is now cycle 6651
+It is now cycle 6652
+It is now cycle 6653
+It is now cycle 6654
+It is now cycle 6655
+P   21 | ld 202068999 r10
+--
+P   20 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   19 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   18 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   13 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0296 -> 0x029b) 01 ff ff ff ff 
+P   12 | ld 190056971 r10
+--
+It is now cycle 6656
+It is now cycle 6657
+It is now cycle 6658
+It is now cycle 6659
+It is now cycle 6660
+P   21 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   16 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   12 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 6661
+It is now cycle 6662
+It is now cycle 6663
+It is now cycle 6664
+It is now cycle 6665
+P   21 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   17 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   12 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P    8 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 6666
+It is now cycle 6667
+It is now cycle 6668
+It is now cycle 6669
+It is now cycle 6670
+P   21 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   12 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 6671
+It is now cycle 6672
+It is now cycle 6673
+It is now cycle 6674
+It is now cycle 6675
+P   21 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   15 | sti r7 273 0
+       | -> store to 273 + 0 = 273 (with pc and mod 885)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   14 | sti r7 276 0
+       | -> store to 276 + 0 = 276 (with pc and mod 888)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   12 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 1132)
+ADV 5 (0x035e -> 0x0363) 0b 54 0a 0b 0c 
+P    1 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 1537)
+ADV 5 (0x04f3 -> 0x04f8) 0b 54 0a 0b 0c 
+It is now cycle 7461
+It is now cycle 7462
+It is now cycle 7463
+It is now cycle 7464
+It is now cycle 7465
+P   25 | ld 202068999 r10
+--
+P   24 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   23 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   22 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   17 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0296 -> 0x029b) 01 ff ff ff ff 
+P   16 | ld 190056971 r10
+--
+It is now cycle 7466
+It is now cycle 7467
+It is now cycle 7468
+It is now cycle 7469
+It is now cycle 7470
+P   25 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   20 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   16 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 7471
+It is now cycle 7472
+It is now cycle 7473
+It is now cycle 7474
+It is now cycle 7475
+P   25 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   21 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   16 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P   12 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 7476
+It is now cycle 7477
+It is now cycle 7478
+It is now cycle 7479
+It is now cycle 7480
+P   25 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   16 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 7481
+It is now cycle 7482
+It is now cycle 7483
+It is now cycle 7484
+It is now cycle 7485
+P   25 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   19 | sti r7 273 0
+       | -> store to 273 + 0 = 273 (with pc and mod 885)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   18 | sti r7 276 0
+       | -> store to 276 + 0 = 276 (with pc and mod 888)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   16 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 1132)
+ADV 5 (0x035e -> 0x0363) 0b 54 0a 0b 0c 
+P    5 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 1537)
+ADV 5 (0x04f3 -> 0x04f8) 0b 54 0a 0b 0c 
+It is now cycle 8271
+It is now cycle 8272
+It is now cycle 8273
+It is now cycle 8274
+It is now cycle 8275
+P   29 | ld 202068999 r10
+--
+ADV 7 (0x00b0 -> 0x00b7) 02 90 0c 0b 54 07 0a 
+P   28 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   20 | ld 190056971 r10
+--
+It is now cycle 8276
+It is now cycle 8277
+It is now cycle 8278
+It is now cycle 8279
+It is now cycle 8280
+P   29 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   24 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   20 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 8281
+It is now cycle 8282
+It is now cycle 8283
+It is now cycle 8284
+It is now cycle 8285
+P   29 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   25 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   20 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P   16 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 8286
+It is now cycle 8287
+It is now cycle 8288
+It is now cycle 8289
+It is now cycle 8290
+P   29 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   20 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 8291
+It is now cycle 8292
+It is now cycle 8293
+It is now cycle 8294
+It is now cycle 8295
+P   29 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   23 | sti r7 273 0
+       | -> store to 273 + 0 = 273 (with pc and mod 885)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   22 | sti r7 276 0
+       | -> store to 276 + 0 = 276 (with pc and mod 888)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   20 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 1537)
+ADV 5 (0x04f3 -> 0x04f8) 0b 54 0a 0b 0c 
+P    1 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 1942)
+ADV 5 (0x0688 -> 0x068d) 0b 54 0a 0b 0c 
+It is now cycle 9081
+It is now cycle 9082
+It is now cycle 9083
+It is now cycle 9084
+It is now cycle 9085
+P   33 | ld 202068999 r10
+--
+P   32 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   31 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   30 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   25 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0296 -> 0x029b) 01 ff ff ff ff 
+P   24 | ld 190056971 r10
+--
+It is now cycle 9086
+It is now cycle 9087
+It is now cycle 9088
+It is now cycle 9089
+It is now cycle 9090
+P   33 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   28 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   24 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 9091
+It is now cycle 9092
+It is now cycle 9093
+It is now cycle 9094
+It is now cycle 9095
+P   33 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   24 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+It is now cycle 9096
+It is now cycle 9097
+It is now cycle 9098
+It is now cycle 9099
+It is now cycle 9100
+P   33 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   24 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 9101
+It is now cycle 9102
+It is now cycle 9103
+It is now cycle 9104
+It is now cycle 9105
+P   33 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   24 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 1537)
+ADV 5 (0x04f3 -> 0x04f8) 0b 54 0a 0b 0c 
+P    5 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 1942)
+ADV 5 (0x0688 -> 0x068d) 0b 54 0a 0b 0c 
+It is now cycle 9891
+It is now cycle 9892
+It is now cycle 9893
+It is now cycle 9894
+It is now cycle 9895
+P   35 | ld 202068999 r10
+--
+ADV 7 (0x00b0 -> 0x00b7) 02 90 0c 0b 54 07 0a 
+P   34 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   28 | ld 190056971 r10
+--
+It is now cycle 9896
+It is now cycle 9897
+It is now cycle 9898
+It is now cycle 9899
+It is now cycle 9900
+P   35 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   32 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   28 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 9901
+It is now cycle 9902
+It is now cycle 9903
+It is now cycle 9904
+It is now cycle 9905
+P   35 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   33 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   28 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P   24 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 9906
+It is now cycle 9907
+It is now cycle 9908
+It is now cycle 9909
+It is now cycle 9910
+P   35 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   28 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 9911
+It is now cycle 9912
+It is now cycle 9913
+It is now cycle 9914
+It is now cycle 9915
+P   35 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   31 | sti r7 273 0
+       | -> store to 273 + 0 = 273 (with pc and mod 885)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   30 | sti r7 276 0
+       | -> store to 276 + 0 = 276 (with pc and mod 888)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   28 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 1942)
+ADV 5 (0x0688 -> 0x068d) 0b 54 0a 0b 0c 
+P    1 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 2347)
+ADV 5 (0x081d -> 0x0822) 0b 54 0a 0b 0c 
+It is now cycle 10701
+It is now cycle 10702
+It is now cycle 10703
+It is now cycle 10704
+It is now cycle 10705
+P   39 | ld 202068999 r10
+--
+P   38 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   37 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   36 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   33 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0296 -> 0x029b) 01 ff ff ff ff 
+P   32 | ld 190056971 r10
+--
+It is now cycle 10706
+It is now cycle 10707
+It is now cycle 10708
+It is now cycle 10709
+It is now cycle 10710
+P   39 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   34 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   32 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 10711
+It is now cycle 10712
+It is now cycle 10713
+It is now cycle 10714
+It is now cycle 10715
+P   39 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   35 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   32 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P   28 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 10716
+It is now cycle 10717
+It is now cycle 10718
+It is now cycle 10719
+It is now cycle 10720
+P   39 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   32 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 10721
+It is now cycle 10722
+It is now cycle 10723
+It is now cycle 10724
+It is now cycle 10725
+P   39 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   32 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 1942)
+ADV 5 (0x0688 -> 0x068d) 0b 54 0a 0b 0c 
+P    5 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 2347)
+ADV 5 (0x081d -> 0x0822) 0b 54 0a 0b 0c 
+It is now cycle 11511
+It is now cycle 11512
+It is now cycle 11513
+It is now cycle 11514
+It is now cycle 11515
+P   43 | ld 202068999 r10
+--
+P   42 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   41 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   40 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   35 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0296 -> 0x029b) 01 ff ff ff ff 
+P   34 | ld 190056971 r10
+--
+It is now cycle 11516
+It is now cycle 11517
+It is now cycle 11518
+It is now cycle 11519
+It is now cycle 11520
+P   43 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   38 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   34 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 11521
+It is now cycle 11522
+It is now cycle 11523
+It is now cycle 11524
+It is now cycle 11525
+P   43 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   39 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   34 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P   32 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 11526
+It is now cycle 11527
+It is now cycle 11528
+It is now cycle 11529
+It is now cycle 11530
+P   43 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   34 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 11531
+It is now cycle 11532
+It is now cycle 11533
+It is now cycle 11534
+It is now cycle 11535
+P   43 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   37 | sti r7 273 0
+       | -> store to 273 + 0 = 273 (with pc and mod 885)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   36 | sti r7 276 0
+       | -> store to 276 + 0 = 276 (with pc and mod 888)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   34 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 2347)
+ADV 5 (0x081d -> 0x0822) 0b 54 0a 0b 0c 
+P    1 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 2752)
+ADV 5 (0x09b2 -> 0x09b7) 0b 54 0a 0b 0c 
+It is now cycle 12321
+It is now cycle 12322
+It is now cycle 12323
+It is now cycle 12324
+It is now cycle 12325
+P   47 | ld 202068999 r10
+--
+ADV 7 (0x00b0 -> 0x00b7) 02 90 0c 0b 54 07 0a 
+P   46 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   38 | ld 190056971 r10
+--
+It is now cycle 12326
+It is now cycle 12327
+It is now cycle 12328
+It is now cycle 12329
+It is now cycle 12330
+P   47 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   42 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   38 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 12331
+It is now cycle 12332
+It is now cycle 12333
+It is now cycle 12334
+It is now cycle 12335
+P   47 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   43 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   38 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P   34 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 12336
+It is now cycle 12337
+It is now cycle 12338
+It is now cycle 12339
+It is now cycle 12340
+P   47 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   38 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 12341
+It is now cycle 12342
+It is now cycle 12343
+It is now cycle 12344
+It is now cycle 12345
+P   47 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   41 | sti r7 273 0
+       | -> store to 273 + 0 = 273 (with pc and mod 885)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   40 | sti r7 276 0
+       | -> store to 276 + 0 = 276 (with pc and mod 888)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   38 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 2347)
+ADV 5 (0x081d -> 0x0822) 0b 54 0a 0b 0c 
+P    5 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 2752)
+ADV 5 (0x09b2 -> 0x09b7) 0b 54 0a 0b 0c 
+It is now cycle 13131
+It is now cycle 13132
+It is now cycle 13133
+It is now cycle 13134
+It is now cycle 13135
+P   51 | ld 202068999 r10
+--
+P   50 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   49 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   48 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   43 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0296 -> 0x029b) 01 ff ff ff ff 
+P   42 | ld 190056971 r10
+--
+It is now cycle 13136
+It is now cycle 13137
+It is now cycle 13138
+It is now cycle 13139
+It is now cycle 13140
+P   51 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   46 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   42 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 13141
+It is now cycle 13142
+It is now cycle 13143
+It is now cycle 13144
+It is now cycle 13145
+P   51 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   42 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+It is now cycle 13146
+It is now cycle 13147
+It is now cycle 13148
+It is now cycle 13149
+It is now cycle 13150
+P   51 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   42 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 13151
+It is now cycle 13152
+It is now cycle 13153
+It is now cycle 13154
+It is now cycle 13155
+P   51 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   42 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 2752)
+ADV 5 (0x09b2 -> 0x09b7) 0b 54 0a 0b 0c 
+P    1 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 3157)
+ADV 5 (0x0b47 -> 0x0b4c) 0b 54 0a 0b 0c 
+It is now cycle 13941
+It is now cycle 13942
+It is now cycle 13943
+It is now cycle 13944
+It is now cycle 13945
+P   53 | ld 202068999 r10
+--
+ADV 7 (0x00b0 -> 0x00b7) 02 90 0c 0b 54 07 0a 
+P   52 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   46 | ld 190056971 r10
+--
+It is now cycle 13946
+It is now cycle 13947
+It is now cycle 13948
+It is now cycle 13949
+It is now cycle 13950
+P   53 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   50 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   46 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 13951
+It is now cycle 13952
+It is now cycle 13953
+It is now cycle 13954
+It is now cycle 13955
+P   53 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   51 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   46 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P   42 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 13956
+It is now cycle 13957
+It is now cycle 13958
+It is now cycle 13959
+It is now cycle 13960
+P   53 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   46 | ld 270 r11
+--
+Process 55 hasn't lived for 1630 cycles (CTD 1186)
+Process 54 hasn't lived for 1630 cycles (CTD 1186)
+Process 51 hasn't lived for 1630 cycles (CTD 1186)
+Process 42 hasn't lived for 1630 cycles (CTD 1186)
+Cycle to die is now 1136
+It is now cycle 13961
+It is now cycle 13962
+It is now cycle 13963
+It is now cycle 13964
+It is now cycle 13965
+P   53 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   49 | sti r7 273 0
+       | -> store to 273 + 0 = 273 (with pc and mod 885)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   48 | sti r7 276 0
+       | -> store to 276 + 0 = 276 (with pc and mod 888)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   46 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 2752)
+ADV 5 (0x09b2 -> 0x09b7) 0b 54 0a 0b 0c 
+P    5 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 3157)
+ADV 5 (0x0b47 -> 0x0b4c) 0b 54 0a 0b 0c 
+It is now cycle 14751
+It is now cycle 14752
+It is now cycle 14753
+It is now cycle 14754
+It is now cycle 14755
+P   57 | ld 202068999 r10
+--
+ADV 7 (0x00b0 -> 0x00b7) 02 90 0c 0b 54 07 0a 
+P   56 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   50 | ld 190056971 r10
+--
+It is now cycle 14756
+It is now cycle 14757
+It is now cycle 14758
+It is now cycle 14759
+It is now cycle 14760
+P   57 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   52 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   50 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 14761
+It is now cycle 14762
+It is now cycle 14763
+It is now cycle 14764
+It is now cycle 14765
+P   57 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   53 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   50 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P   46 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 14766
+It is now cycle 14767
+It is now cycle 14768
+It is now cycle 14769
+It is now cycle 14770
+P   57 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   50 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 14771
+It is now cycle 14772
+It is now cycle 14773
+It is now cycle 14774
+It is now cycle 14775
+P   57 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   50 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 3157)
+ADV 5 (0x0b47 -> 0x0b4c) 0b 54 0a 0b 0c 
+P    1 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 3562)
+ADV 5 (0x0cdc -> 0x0ce1) 0b 54 0a 0b 0c 
+It is now cycle 15561
+It is now cycle 15562
+It is now cycle 15563
+It is now cycle 15564
+It is now cycle 15565
+P   61 | ld 202068999 r10
+--
+P   60 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   59 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   58 | live 0
+ADV 5 (0x0197 -> 0x019c) 01 00 00 00 00 
+P   53 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0296 -> 0x029b) 01 ff ff ff ff 
+P   52 | ld 190056971 r10
+--
+It is now cycle 15566
+It is now cycle 15567
+It is now cycle 15568
+It is now cycle 15569
+It is now cycle 15570
+P   61 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   56 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   52 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 15571
+It is now cycle 15572
+It is now cycle 15573
+It is now cycle 15574
+It is now cycle 15575
+P   61 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   52 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+It is now cycle 15576
+It is now cycle 15577
+It is now cycle 15578
+It is now cycle 15579
+It is now cycle 15580
+P   61 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   52 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 15581
+It is now cycle 15582
+It is now cycle 15583
+It is now cycle 15584
+It is now cycle 15585
+P   61 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   52 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 3157)
+ADV 5 (0x0b47 -> 0x0b4c) 0b 54 0a 0b 0c 
+P    5 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 3562)
+ADV 5 (0x0cdc -> 0x0ce1) 0b 54 0a 0b 0c 
+It is now cycle 16371
+It is now cycle 16372
+It is now cycle 16373
+It is now cycle 16374
+It is now cycle 16375
+P   63 | ld 202068999 r10
+--
+ADV 7 (0x00b0 -> 0x00b7) 02 90 0c 0b 54 07 0a 
+P   62 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   56 | ld 190056971 r10
+--
+It is now cycle 16376
+It is now cycle 16377
+It is now cycle 16378
+It is now cycle 16379
+It is now cycle 16380
+P   63 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   60 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   56 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 16381
+It is now cycle 16382
+It is now cycle 16383
+It is now cycle 16384
+It is now cycle 16385
+P   63 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   56 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+It is now cycle 16386
+It is now cycle 16387
+It is now cycle 16388
+It is now cycle 16389
+It is now cycle 16390
+P   63 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   56 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 16391
+It is now cycle 16392
+It is now cycle 16393
+It is now cycle 16394
+It is now cycle 16395
+P   63 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   59 | sti r7 273 0
+       | -> store to 273 + 0 = 273 (with pc and mod 885)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   58 | sti r7 276 0
+       | -> store to 276 + 0 = 276 (with pc and mod 888)
+ADV 5 (0x0264 -> 0x0269) 0b 54 07 08 0c 
+P   56 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 3562)
+ADV 5 (0x0cdc -> 0x0ce1) 0b 54 0a 0b 0c 
+P    1 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 3967)
+ADV 5 (0x0e71 -> 0x0e76) 0b 54 0a 0b 0c 
+It is now cycle 17181
+It is now cycle 17182
+It is now cycle 17183
+It is now cycle 17184
+It is now cycle 17185
+P   65 | ld 202068999 r10
+--
+ADV 7 (0x00b0 -> 0x00b7) 02 90 0c 0b 54 07 0a 
+P   64 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   60 | ld 190056971 r10
+--
+It is now cycle 17186
+It is now cycle 17187
+It is now cycle 17188
+It is now cycle 17189
+It is now cycle 17190
+P   65 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   62 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   60 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 17191
+It is now cycle 17192
+It is now cycle 17193
+It is now cycle 17194
+It is now cycle 17195
+P   65 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   63 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   60 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P   56 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 17196
+It is now cycle 17197
+It is now cycle 17198
+It is now cycle 17199
+It is now cycle 17200
+P   65 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   60 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 17201
+It is now cycle 17202
+It is now cycle 17203
+It is now cycle 17204
+It is now cycle 17205
+P   65 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   60 | ld 0 r12
+--
+       | -> store to 270 + 0 = 270 (with pc and mod 3562)
+ADV 5 (0x0cdc -> 0x0ce1) 0b 54 0a 0b 0c 
+P    5 | sti r10 270 0
+       | -> store to 270 + 0 = 270 (with pc and mod 3967)
+ADV 5 (0x0e71 -> 0x0e76) 0b 54 0a 0b 0c 
+It is now cycle 17991
+It is now cycle 17992
+It is now cycle 17993
+It is now cycle 17994
+It is now cycle 17995
+P   69 | ld 202068999 r10
+--
+ADV 7 (0x00b0 -> 0x00b7) 02 90 0c 0b 54 07 0a 
+P   68 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x0072 -> 0x0077) 01 ff ff ff ff 
+P   62 | ld 190056971 r10
+--
+It is now cycle 17996
+It is now cycle 17997
+It is now cycle 17998
+It is now cycle 17999
+It is now cycle 18000
+P   69 | st r13 7
+ADV 4 (0x00b7 -> 0x00bb) 03 50 0d 07 
+P   64 | live -1
+Player 1 (King Sombra) is said to be alive
+ADV 5 (0x007f -> 0x0084) 01 ff ff ff ff 
+P   62 | ld 135004416 r7
+--
+ADV 7 (0x008e -> 0x0095) 02 90 08 0c 01 00 07 
+It is now cycle 18001
+It is now cycle 18002
+It is now cycle 18003
+It is now cycle 18004
+It is now cycle 18005
+P   69 | ld 276 r8
+--
+ADV 7 (0x00bb -> 0x00c2) 02 90 00 00 01 14 08 
+P   65 | fork 6 (214)
+ADV 3 (0x00d0 -> 0x00d3) 0c 00 06 
+P   62 | ld 273 r8
+--
+ADV 7 (0x0095 -> 0x009c) 02 90 00 00 01 11 08 
+P   60 | fork 44 (214)
+ADV 3 (0x00aa -> 0x00ad) 0c 00 2c 
+It is now cycle 18006
+It is now cycle 18007
+It is now cycle 18008
+It is now cycle 18009
+It is now cycle 18010
+P   69 | ld 274 r11
+--
+ADV 7 (0x00c2 -> 0x00c9) 02 90 00 00 01 12 0b 
+P   62 | ld 270 r11
+--
+ADV 7 (0x009c -> 0x00a3) 02 90 00 00 01 0e 0b 
+It is now cycle 18011
+It is now cycle 18012
+It is now cycle 18013
+It is now cycle 18014
+It is now cycle 18015
+P   69 | ld 0 r12
+--
+ADV 7 (0x00c9 -> 0x00d0) 02 90 00 00 00 00 0c 
+P   62 | ld 0 r12

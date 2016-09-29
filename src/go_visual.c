@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:27:55 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 00:02:53 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 18:05:49 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Take care of stuff like :
 void					init_visual(t_vm *vm)
 {
 	initscr();
-	if (COLS < 360 || LINES < 82)
+	if (COLS < 340 || LINES < 78)
 	{
 		endwin();
 		msg_exit("You need to be in fullscreen !\n");

@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/23 07:57:53 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/27 17:32:52 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 20:59:54 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ void						right_value(int r, unsigned int n, t_vm *vm)
 	// }
 	// r = (long)r;
 	// ft_print("base : %s\n", ft_base(r, 16));
-	VM(n) = (r >> 24) & 0xFF;
-	VM(n + 1) = (r >> 16) & 0xFF;
-	VM(n + 2) = (r >> 8) & 0xFF;
-	VM(n + 3) = (r) & 0xFF;
+	VM(n) = (r >> 24);
+	VM(n + 1) = (r >> 16);
+	VM(n + 2) = (r >> 8);
+	VM(n + 3) = (r);
 }
 
 

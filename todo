@@ -3,12 +3,52 @@
 
 				===========
 
-STart war, check reset player (killing dead proc)
---
+
+ST
+
+
+--PROBLEM---
+
+doge:			4558
+champ:			2211
+_ 		:		3506
+Misaka :		3560
+MarineKing: 	3425
+Kappa : 		4928
+HElltrain : 	4410
+Asombra: 		7365
 
 
 
----
+---OK----
+Fluttershy
+Machine gun
+Rainbow dash
+Thunder
+Varimathras
+Wall
+HoneyBadger
+Big_feet
+BigZork
+Casimir
+Corelol
+DarkSasuke
+Dubo
+Gedeon
+Jinx
+Justin_bee				->DECALAGE DE 1 fin de cycle quand fini
+Little puppy
+Loose
+MeowLuigi
+salamahenagalabadoun
+SKynet
+Terminator
+
+----UNDEFINED--
+Bee_gees				-> Never finish
+Mandragore				-> Never finish (21k..)
+Live					-> Zaz keep cycling though its dead
+*************************************
 
 ld et lld
 ld		3, r3 

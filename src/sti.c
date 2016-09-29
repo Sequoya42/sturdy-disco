@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:22 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 02:01:16 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 21:07:50 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void						op_sti(t_vm *vm , t_proc *p)
 	// ft_print("%d\t%d\n", v1, v2);
 	n = p->pc + ((v1 + v2) % IDX_MOD);
 	r = p->reg[p->set[2]];
+	// printf("Value in sti: %d\t\t%x\n", r, r);
 	right_value(r, n, vm);
 	if (vm->visual == 1)
 		sti_visual(n, -p->num, vm);

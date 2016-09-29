@@ -6,12 +6,12 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:32 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 00:19:16 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 23:09:55 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
-
+int							get_instructions(t_vm *vm, t_proc *p);
 
 static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 {
@@ -26,7 +26,7 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	n->alive = p->alive;
 	while (i < PROG_NAME_LENGTH)
 	{
-		if (i <= 16)
+		if (i <= REG_NUMBER)
 			n->reg[i] = p->reg[i];
 		n->name[i] = p->name[i];
 		i++;
@@ -36,7 +36,9 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	// ft_putendl("**********\tFORK BEFORE \t*********");
 	// test_shit(vm);
 	// ft_putendl("**********\tFORK\t*********");
-	add_proc(n, vm);
+	first_add_proc(n, vm);
+	get_instructions(vm, n);
+	n->cycle--;
 	// test_shit(vm);
 	// ft_putendl("**********\tEND_FORK\t*********");
 }

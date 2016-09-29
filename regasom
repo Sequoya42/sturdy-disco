@@ -1,0 +1,396 @@
+cycle: 805
+P    2 | ld 0	16
+cycle: 840
+P    2 | ld 190055943	10
+cycle: 845
+P    2 | ld 84476405	11
+cycle: 1615
+P    1 | ld 251658255	2
+cycle: 1615
+P    3 | ld 0	16
+cycle: 1620
+P    1 | ld 1	12
+cycle: 1625
+P    1 | ld 40	11
+cycle: 1650
+P    2 | ld 190055172	3
+cycle: 1650
+P    3 | ld 190055943	10
+cycle: 1655
+P    2 | ld 190055172	6
+cycle: 1655
+P    3 | ld 84476405	11
+cycle: 1660
+P    2 | ld 507	7
+cycle: 1660
+P    3 | ld 150994956	3
+cycle: 1660
+P    4 | ld 84475923	3
+cycle: 1665
+P    2 | ld 24	4
+cycle: 1665
+P    3 | ld 150994956	6
+cycle: 1665
+P    4 | ld 84475923	6
+cycle: 1670
+P    2 | ld 0	5
+cycle: 1670
+P    3 | ld 26	7
+cycle: 1670
+P    4 | ld 511	7
+cycle: 1675
+P    3 | ld 495	4
+cycle: 1675
+P    4 | ld 28	4
+cycle: 1680
+P    3 | ld 0	5
+cycle: 1680
+P    4 | ld 0	5
+cycle: 1685
+P    1 | ld 0	16
+cycle: 1780
+P    1 | ld 0	16
+cycle: 3415
+P    1 | ld 190056971	10
+cycle: 3415
+P    7 | ld 202068999	10
+cycle: 3420
+P    1 | ld 135004416	7
+cycle: 3425
+P    1 | ld 273	8
+cycle: 3425
+P    7 | ld 276	8
+cycle: 3430
+P    1 | ld 270	11
+cycle: 3430
+P    7 | ld 274	11
+cycle: 3435
+P    1 | ld 0	12
+cycle: 3435
+P    7 | ld 0	12
+cycle: 4225
+P    5 | ld 190056971	10
+cycle: 4225
+P    9 | ld 202068999	10
+cycle: 4230
+P    5 | ld 135004416	7
+cycle: 4235
+P    5 | ld 273	8
+cycle: 4235
+P    9 | ld 276	8
+cycle: 4240
+P    5 | ld 270	11
+cycle: 4240
+P    9 | ld 274	11
+cycle: 4245
+P    5 | ld 0	12
+cycle: 4245
+P    9 | ld 0	12
+cycle: 5035
+P    6 | ld 190056971	10
+cycle: 5035
+P   13 | ld 202068999	10
+cycle: 5040
+P    6 | ld 135004416	7
+cycle: 5045
+P    6 | ld 273	8
+cycle: 5045
+P   13 | ld 276	8
+cycle: 5050
+P    6 | ld 270	11
+cycle: 5050
+P   13 | ld 274	11
+cycle: 5055
+P    6 | ld 0	12
+cycle: 5055
+P   13 | ld 0	12
+cycle: 5845
+P    8 | ld 190056971	10
+cycle: 5845
+P   17 | ld 202068999	10
+cycle: 5850
+P    8 | ld 135004416	7
+cycle: 5855
+P    8 | ld 273	8
+cycle: 5855
+P   17 | ld 276	8
+cycle: 5860
+P    8 | ld 270	11
+cycle: 5860
+P   17 | ld 274	11
+cycle: 5865
+P    8 | ld 0	12
+cycle: 5865
+P   17 | ld 0	12
+cycle: 6655
+P   12 | ld 190056971	10
+cycle: 6655
+P   21 | ld 202068999	10
+cycle: 6660
+P   12 | ld 135004416	7
+cycle: 6665
+P   12 | ld 273	8
+cycle: 6665
+P   21 | ld 276	8
+cycle: 6670
+P   12 | ld 270	11
+cycle: 6670
+P   21 | ld 274	11
+cycle: 6675
+P   12 | ld 0	12
+cycle: 6675
+P   21 | ld 0	12
+cycle: 7465
+P   16 | ld 190056971	10
+cycle: 7465
+P   25 | ld 202068999	10
+cycle: 7470
+P   16 | ld 135004416	7
+cycle: 7475
+P   16 | ld 273	8
+cycle: 7475
+P   25 | ld 276	8
+cycle: 7480
+P   16 | ld 270	11
+cycle: 7480
+P   25 | ld 274	11
+cycle: 7485
+P   16 | ld 0	12
+cycle: 7485
+P   25 | ld 0	12
+cycle: 8275
+P   20 | ld 190056971	10
+cycle: 8275
+P   29 | ld 202068999	10
+cycle: 8280
+P   20 | ld 135004416	7
+cycle: 8285
+P   20 | ld 273	8
+cycle: 8285
+P   29 | ld 276	8
+cycle: 8290
+P   20 | ld 270	11
+cycle: 8290
+P   29 | ld 274	11
+cycle: 8295
+P   20 | ld 0	12
+cycle: 8295
+P   29 | ld 0	12
+cycle: 9085
+P   24 | ld 190056971	10
+cycle: 9085
+P   33 | ld 202068999	10
+cycle: 9090
+P   24 | ld 135004416	7
+cycle: 9095
+P   24 | ld 273	8
+cycle: 9095
+P   33 | ld 276	8
+cycle: 9100
+P   24 | ld 270	11
+cycle: 9100
+P   33 | ld 274	11
+cycle: 9105
+P   24 | ld 0	12
+cycle: 9105
+P   33 | ld 0	12
+cycle: 9895
+P   28 | ld 190056971	10
+cycle: 9895
+P   35 | ld 202068999	10
+cycle: 9900
+P   28 | ld 135004416	7
+cycle: 9905
+P   28 | ld 273	8
+cycle: 9905
+P   35 | ld 276	8
+cycle: 9910
+P   28 | ld 270	11
+cycle: 9910
+P   35 | ld 274	11
+cycle: 9915
+P   28 | ld 0	12
+cycle: 9915
+P   35 | ld 0	12
+cycle: 10705
+P   32 | ld 190056971	10
+cycle: 10705
+P   39 | ld 202068999	10
+cycle: 10710
+P   32 | ld 135004416	7
+cycle: 10715
+P   32 | ld 273	8
+cycle: 10715
+P   39 | ld 276	8
+cycle: 10720
+P   32 | ld 270	11
+cycle: 10720
+P   39 | ld 274	11
+cycle: 10725
+P   32 | ld 0	12
+cycle: 10725
+P   39 | ld 0	12
+cycle: 11515
+P   34 | ld 190056971	10
+cycle: 11515
+P   43 | ld 202068999	10
+cycle: 11520
+P   34 | ld 135004416	7
+cycle: 11525
+P   34 | ld 273	8
+cycle: 11525
+P   43 | ld 276	8
+cycle: 11530
+P   34 | ld 270	11
+cycle: 11530
+P   43 | ld 274	11
+cycle: 11535
+P   34 | ld 0	12
+cycle: 11535
+P   43 | ld 0	12
+cycle: 12325
+P   38 | ld 190056971	10
+cycle: 12325
+P   47 |Trouble at cycle : 27474
+cycle: 27474	Contestant 1, "King Sombra", has won !
+ ld 202068999	10
+cycle: 12330
+P   38 | ld 135004416	7
+cycle: 12335
+P   38 | ld 273	8
+cycle: 12335
+P   47 | ld 276	8
+cycle: 12340
+P   38 | ld 270	11
+cycle: 12340
+P   47 | ld 274	11
+cycle: 12345
+P   38 | ld 0	12
+cycle: 12345
+P   47 | ld 0	12
+cycle: 13135
+P   42 | ld 190056971	10
+cycle: 13135
+P   51 | ld 202068999	10
+cycle: 13140
+P   42 | ld 135004416	7
+cycle: 13145
+P   42 | ld 273	8
+cycle: 13145
+P   51 | ld 276	8
+cycle: 13150
+P   42 | ld 270	11
+cycle: 13150
+P   51 | ld 274	11
+cycle: 13155
+P   42 | ld 0	12
+cycle: 13155
+P   51 | ld 0	12
+cycle: 13945
+P   46 | ld 190056971	10
+cycle: 13945
+P   53 | ld 202068999	10
+cycle: 13950
+P   46 | ld 135004416	7
+cycle: 13955
+P   46 | ld 273	8
+cycle: 13955
+P   53 | ld 276	8
+cycle: 13960
+P   46 | ld 270	11
+cycle: 13960
+P   53 | ld 274	11
+cycle: 13965
+P   46 | ld 0	12
+cycle: 13965
+P   53 | ld 0	12
+cycle: 14755
+P   50 | ld 190056971	10
+cycle: 14755
+P   57 | ld 202068999	10
+cycle: 14760
+P   50 | ld 135004416	7
+cycle: 14765
+P   50 | ld 273	8
+cycle: 14765
+P   57 | ld 276	8
+cycle: 14770
+P   50 | ld 270	11
+cycle: 14770
+P   57 | ld 274	11
+cycle: 14775
+P   50 | ld 0	12
+cycle: 14775
+P   57 | ld 0	12
+cycle: 15565
+P   52 | ld 190056971	10
+cycle: 15565
+P   61 | ld 202068999	10
+cycle: 15570
+P   52 | ld 135004416	7
+cycle: 15575
+P   52 | ld 273	8
+cycle: 15575
+P   61 | ld 276	8
+cycle: 15580
+P   52 | ld 270	11
+cycle: 15580
+P   61 | ld 274	11
+cycle: 15585
+P   52 | ld 0	12
+cycle: 15585
+P   61 | ld 0	12
+cycle: 16375
+P   56 | ld 190056971	10
+cycle: 16375
+P   63 | ld 202068999	10
+cycle: 16380
+P   56 | ld 135004416	7
+cycle: 16385
+P   56 | ld 273	8
+cycle: 16385
+P   63 | ld 276	8
+cycle: 16390
+P   56 | ld 270	11
+cycle: 16390
+P   63 | ld 274	11
+cycle: 16395
+P   56 | ld 0	12
+cycle: 16395
+P   63 | ld 0	12
+cycle: 17185
+P   60 | ld 190056971	10
+cycle: 17185
+P   65 | ld 202068999	10
+cycle: 17190
+P   60 | ld 135004416	7
+cycle: 17195
+P   60 | ld 273	8
+cycle: 17195
+P   65 | ld 276	8
+cycle: 17200
+P   60 | ld 270	11
+cycle: 17200
+P   65 | ld 274	11
+cycle: 17205
+P   60 | ld 0	12
+cycle: 17205
+P   65 | ld 0	12
+cycle: 17995
+P   62 | ld 190056971	10
+cycle: 17995
+P   69 | ld 202068999	10
+cycle: 18000
+P   62 | ld 135004416	7
+cycle: 18005
+P   62 | ld 273	8
+cycle: 18005
+P   69 | ld 276	8
+cycle: 18010
+P   62 | ld 270	11
+cycle: 18010
+P   69 | ld 274	11
+cycle: 18015
+P   62 | ld 0	12
+cycle: 18015
+P   69 | ld 0	12

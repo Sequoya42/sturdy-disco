@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 03:49:22 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 00:39:55 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/29 23:03:09 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,51 @@
 // Implement prev
 void					add_proc(t_proc *new, t_vm *vm)
 {
-	// static int			i = 1;
+	static int			i = 1;
 
 	if (new)
 	{
-		// new->pos = i++;
+		new->pos = i++;
 		vm->nb_proc++;
-		// ft_putendl("\t\t\t\t\tELSE");
-		vm->proc->next = new;
-		new->prev = vm->proc;
-		vm->proc = vm->proc->next;
+		if (!vm->first)
+		{
+			vm->proc = new;
+			vm->first = vm->proc;
+		}
+		else
+		{
+			new->prev = vm->proc;
+			vm->proc->next = new;
+			vm->proc = vm->proc->next;
+		}
 	}
 	else
 		msg_exit("No new elem\n");
 }
 
+// void					add_proc(t_proc *new, t_vm *vm)
+// {
+// 	static int			i = 2;
 
+// 	if (new)
+// 	{
+// 		new->pos = i++;
+// 		vm->nb_proc++;
+// 		// ft_putendl("\t\t\t\t\tELSE");
+// 		vm->proc->next = new;
+// 		new->prev = vm->proc;
+// 		vm->proc = vm->proc->next;
+// 	}
+// 	else
+// 		msg_exit("No new elem\n");
+// }
 
 void					first_add_proc(t_proc *new, t_vm *vm)
 {
+		static int			i = 1;
 	if (new)
 	{
+		new->pos = i++;
 		vm->nb_proc++;
 		if (!vm->first)
 		{
