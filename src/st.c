@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:11 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 21:07:51 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/30 22:32:52 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,17 @@ void						st_visual(unsigned int n, int c, t_vm *vm)
 
 	j = -1;
 	(void)c;
+	attron(COLOR_PAIR(c) | A_BOLD);
 	while (++j < 4)
 	{
 		n = M(n);
 		move((n / 64) + 4, (n % 64) * 3);
-		attron(COLOR_PAIR(c) | A_BOLD);
 		k = VM(n);
 		addch(hex[k / 16]);
 		addch(hex[k % 16]);
-		attroff(COLOR_PAIR(c) | A_BOLD);
 		n++;
 	}
+	attroff(COLOR_PAIR(c) | A_BOLD);
 }
 
 void						op_st(t_vm *vm , t_proc *p)

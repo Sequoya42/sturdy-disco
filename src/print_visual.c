@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:31:42 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/28 20:02:32 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/30 22:32:30 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ static void	print_hex_mem(unsigned char *addr, unsigned int j, t_proc *p)
 
 	i = -1;
 	// int k = 0;
+	init_color(COLOR_MAGENTA, 254, 254, 254);
+	init_pair(17, COLOR_MAGENTA, COLOR_BLACK);
 	while (++i < 64)
 	{
 		t = p;
@@ -28,7 +30,7 @@ static void	print_hex_mem(unsigned char *addr, unsigned int j, t_proc *p)
 			if (t->pc == j)
 				attron(COLOR_PAIR(-t->num));
 			if (t->pc + t->size == j)
-				attroff(COLOR_PAIR(-t->num));
+				attron(COLOR_PAIR(17));
 			t = t->next;
 		}
 		addch(hex[(int)addr[i] / 16]);
@@ -44,11 +46,11 @@ void							print_coord(int old, t_vm *vm)
 	char						hex[] = "0123456789abcdef";
 
 	move((old / 64) + 4 , (old % 64) * 3);
-	attron(inch());
-	attroff(WA_STANDOUT);
+	attron(inch() & A_COLOR);
+	attroff(A_STANDOUT);
 	addch(hex[VM(old) / 16]);
 	addch(hex[VM(old) % 16]);
-	attroff(inch());
+	attroff(inch() & A_COLOR);
 }
 
 void							print_pc(t_proc *f, t_vm *vm)
@@ -62,14 +64,11 @@ void							print_pc(t_proc *f, t_vm *vm)
 		if (old != -1)
 			print_coord(old, vm);
 		old = f->pc;
-		attron(COLOR_PAIR(8));
 		move((old / 64) + 4 , ((old % 64) * 3));
-		attron(WA_STANDOUT);
-		attron(inch());
+		attron((inch() & A_COLOR) | A_STANDOUT);
 		addch(hex[VM(old) / 16]);
 		addch(hex[VM(old) % 16]);
-		attroff(inch());
-		attroff(WA_STANDOUT);
+		attroff((inch() & A_COLOR) | A_STANDOUT);
 		f = f->next;
 	}
 }
@@ -93,6 +92,7 @@ void						print_sub_screen(t_vm *vm)
 	int						i;
 
 	i = -1;
+
 	printw("******************************\n");
 	printw("Cycle to die:\t%d\t    *\n", vm->cycle->stop);
 	printw("Cycle total: \t%d\t    *\n", vm->cycle->total);

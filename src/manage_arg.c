@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/14 02:44:43 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 02:18:48 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/30 20:29:49 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,6 @@
 
 void						get_args_size(int encode, t_proc *p)
 {
-	#if 0
-	int						i;
-	int						j;
-
-	j = 8;
-	i = 0;
-	encode <<= 2;
-	while (j >= 4)
-	{
-		p->arg_size[i] = (encode >> j) & 3;
-		j -= 2;
-		i++;
-	}
-	#endif
 	p->arg_size[0] = (encode >> 6) & 3;
 	p->arg_size[1] = (encode >> 4) & 3;
 	p->arg_size[2] = (encode >> 2) & 3;
@@ -64,15 +50,34 @@ int							manage_dir(int *i, t_vm *vm, t_proc *p)
 	r |= (VM(*i + 2) << 16);
 	r |= (VM(*i + 3) << 8);
 	r |= (VM(*i + 4));
-	// ft_print("DIR R %d\n", r);
-	// ft_putendl("******************");
-	// ft_putnbrn(VM(*i + 1));
-	// 	ft_putnbrn(VM(*i + 3));
-	// 		ft_putnbrn(VM(*i + 3));
-	// 			ft_putnbrn(VM(*i + 4));
-	// 				ft_putendl("\n******************");
 	*i += 4;
 	return (r);
+}
+
+void						verify_set(int i, t_vm *vm, t_proc *p)
+{
+	int						k;
+	unsigned	int						j;
+
+
+	k = GOT(p->set[0]).op_mod == 0 ? 1 : 2;
+	i = k == 1 ? i : i + 1;
+	j = 0;
+	while (j < GOT(p->set[0]).params)
+	{
+		// ft_print("I : %d\n", i);
+		if (p->arg_size[j] == REG_CODE && i++)
+		{
+			if ((p->set[k] = V_REG(VM(i))) == 0)
+				p->arg_size[j] = 0;
+		}
+		else if (p->arg_size[j] == DIR_CODE)
+			p->set[k] = manage_dir(&i, vm, p);
+		else if (p->arg_size[j] == IND_CODE)
+			p->set[k] = manage_ind(&i, vm, p);
+		j++;
+		k++;
+	}
 }
 
 void						put_in_set(int i, t_vm *vm, t_proc *p)

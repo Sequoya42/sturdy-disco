@@ -6,12 +6,11 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:32 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 23:09:55 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/30 20:50:38 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
-int							get_instructions(t_vm *vm, t_proc *p);
 
 static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 {
@@ -54,6 +53,7 @@ void						op_fork(t_vm *vm , t_proc *p)
 	t_proc					*n;
 
 	// ft_print(KRED "APPEL A FORK AU CYCLE %d\n" KNRM, vm->cycle->total);
+	put_in_set(p->pc, vm, p);
 	if (!(n = ft_memalloc(sizeof(t_proc))))
 		msg_exit("Bad alloc of new proc [fork]\n");
 	fill_new(n, p, vm);

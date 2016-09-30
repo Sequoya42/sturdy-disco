@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/19 02:27:55 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 18:05:49 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/30 22:19:24 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void					init_visual(t_vm *vm)
 		msg_exit("You need to be in fullscreen !\n");
 	}
 	start_color();
+	// init_color(COLOR_WHITE, 255, 255, 255);
 	init_pair(1, COLOR_GREEN, COLOR_BLACK);
 	init_pair(2, COLOR_RED, COLOR_BLACK);
 	init_pair(3, COLOR_BLUE, COLOR_BLACK);
@@ -86,9 +87,7 @@ void					go_visual(t_vm *vm)
 	printw("Speed : %d\n", i);
 	addch('\n');
 	print_pc(vm->first, vm);
-	move(70, 0);
-	attron(COLOR_PAIR(8));
+		move(70, 0);
 	print_sub_screen(vm);
-	// attroff(COLOR_PAIR(8));
 	deal_with_keyboard(&i);
 }

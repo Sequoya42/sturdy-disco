@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:22 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 21:07:50 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/30 22:34:14 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ void						sti_visual(unsigned int n, int c, t_vm *vm)
 	int						j;
 	int						k;
 	char					hex[] = "0123456789abcdef";
+
 
 	j = -1;
 	attron(COLOR_PAIR(c) | A_BOLD);

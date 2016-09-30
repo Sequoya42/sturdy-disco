@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:57 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/28 01:22:40 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/30 19:14:18 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,17 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	}
 	n->next = NULL;
 	n->prev = NULL;
-	add_proc(n, vm);
+	first_add_proc(n, vm);
+	get_instructions(vm, n);
+	n->cycle--;
+
 }
 
 void						op_lfork(t_vm *vm , t_proc *p)
 {
 	t_proc					*n;
 
+	put_in_set(p->pc, vm, p);
 	if (!(n = ft_memalloc(sizeof(t_proc))))
 		msg_exit("Bad alloc of new proc [fork]\n");
 	fill_new(n, p, vm);

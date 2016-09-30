@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 23:03:28 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/30 20:31:54 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,16 @@ int							get_instructions(t_vm *vm, t_proc *p)
 	return (1);
 }
 
+void						verify_set(int i, t_vm *vm, t_proc *p);
 int							verify_validity(t_proc *p)
 {
 	int						i;
 	int						j;
 
 	i = 0;
+	// printf("Before[%s]\t%d\t%d\t%d\n", GOT(p->set[0]).name, p->set[2], p->set[3], p->set[4]);
+	verify_set(p->pc, get_vm(), p);
+	// printf("After[%s]\t%d\t%d\t%d\n\n", GOT(p->set[0]).name, p->set[2], p->set[3], p->set[4]);
 	if (p->set[0] < 1 || p->set[0] > 16)
 		return (0);
 	j = GOT(p->set[0]).params;
