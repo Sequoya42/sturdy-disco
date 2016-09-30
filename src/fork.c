@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:08:32 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/30 20:50:38 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/09/30 23:11:01 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,9 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	}
 	n->next = NULL;
 	n->prev = NULL;
-	// ft_putendl("**********\tFORK BEFORE \t*********");
-	// test_shit(vm);
-	// ft_putendl("**********\tFORK\t*********");
 	first_add_proc(n, vm);
 	get_instructions(vm, n);
 	n->cycle--;
-	// test_shit(vm);
-	// ft_putendl("**********\tEND_FORK\t*********");
 }
 
 

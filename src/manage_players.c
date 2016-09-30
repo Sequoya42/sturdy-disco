@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/30 20:31:54 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/10/01 00:19:39 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,9 @@ int							get_instructions(t_vm *vm, t_proc *p)
 	else
 	{
 		p->set[0] = 0;
-		// p->old = p->pc;
 		p->next_i = 1;
-		// p->pc++;
 		p->cycle = 1;
-	}
+ 	}
 	return (1);
 }
 
@@ -81,6 +79,15 @@ static t_fptr       	g_operator[CODE_LEN] =
     &op_aff
 };
 
+void						tstw(t_proc *p, t_vm *vm)
+{
+	if (p->cycle == 0)
+	{
+			if (p->set[0] && verify_validity(p))
+				g_operator[p->set[0]](vm, p);
+	}
+}
+
 void						manage_players(t_cycle *cycle, t_vm *vm)
 {
 	t_proc					*p;
@@ -89,12 +96,12 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 	(void)cycle;
 	while (p)
 	{
-		// ft_print("manage\n");	
 		if (p->cycle == 0)
 		{
 			if (p->set[0] && verify_validity(p))
 			{
 				g_operator[p->set[0]](vm, p);
+
 				if (p->set[0] != 9)
 				{
 					p->old = p->pc;
@@ -112,6 +119,7 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 			get_instructions(vm, p);
 		}
 		p->cycle--;
+	
 		p = p->next;
 	}
 }

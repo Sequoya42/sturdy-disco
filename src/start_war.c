@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 15:54:43 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/10/01 00:19:52 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int							remove_player(t_vm *vm, t_proc *p)
 		print_coord(p->pc, vm);
 	return (0);
 }
-
+void						tstw(t_proc *p, t_vm *vm);
 int							reset_players(t_vm *vm)
 {
 	t_proc					*p;
@@ -52,6 +52,7 @@ int							reset_players(t_vm *vm)
 	{
 		if (p->alive == 0)
 		{
+			tstw(p, vm);
 			if (remove_player(vm, p) == -1)
 				return (-1);
 		}
@@ -107,6 +108,7 @@ void						start_war(t_vm *vm)
 			break;
 		if (cycle.alive >= NBR_LIVE || cycle.check == MAX_CHECKS)
 		{
+
 			cycle.stop -= CYCLE_DELTA;
 			cycle.check = 0; // Maybe cycle check 0 only if max check
 		}
