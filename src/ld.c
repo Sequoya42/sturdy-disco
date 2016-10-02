@@ -47,7 +47,7 @@ void						op_ld(t_vm *vm , t_proc *p)
 	// printf("P% 5d | ld %d\t%d\n", p->pos, n, p->set[3]);
 	// printf("[%d] Value in ld:%d\t\t%x\n",p->set[3], n, n);
 	p->reg[p->set[3]] = n;
-	if (n == 0)
+	if ((n % IDX_MOD) == 0)
 		p->carry = 1;
 	else
 		p->carry = 0;

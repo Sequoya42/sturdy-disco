@@ -23,7 +23,7 @@ int							get_instructions(t_vm *vm, t_proc *p)
 	p->set[0] = op;
 	if (op > 0 && op < 17)
 	{
-		put_in_set(i, vm, p);//could move that to verify validity, so get arg at the end
+		// put_in_set(i, vm, p);//could move that to verify validity, so get arg at the end
 		p->cycle = GOT(op).cycle;
 	}
 	else
@@ -43,8 +43,11 @@ int							verify_validity(t_proc *p, t_vm *vm)
 
 	i = 0;
 	(void)vm;
-	if (put_in_set(p->pc, vm, p) == -1)
+	put_in_set(p->pc, vm, p);
+	if (GOT(p->set[0]).params == 3 && p->set[1] > 252)
 		return (0);
+	// if (put_in_set(p->pc, vm, p) == -1)
+		// return (0);
 	if (p->set[0] < 1 || p->set[0] > 16 || p->arg_size[2] == -1)
 		return (0);
 	j = GOT(p->set[0]).params;
@@ -88,6 +91,11 @@ void						tstw(t_proc *p, t_vm *vm)
 	}
 }
 
+// #define BLA cycle->total >= 8900 && cycle->total < 9000
+// #define BLA 1
+#define BLA 0
+
+
 void						manage_players(t_cycle *cycle, t_vm *vm)
 {
 	t_proc					*p;
@@ -95,14 +103,33 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 	p = vm->first;
 	(void)cycle;
 
+		if (BLA)
+			ft_print("\t\t\t\t\t\t\t\t\t\t\tCycle [ %d ]\n", cycle->total);
 	while (p)
 	{
+		if ((p->set[0] == 0 || (p->cycle + 1) == GOT(p->set[0]).cycle) && cycle->total)
+		{
+			get_instructions(vm, p);
+			p->cycle--;	
+		}
 		if (p->cycle == 0)
 		{
-			if (p->set[0] && verify_validity(p, vm))
+			 if (p->set[0] && verify_validity(p, vm))
+			{
+		if (BLA)
+		{			
+			ft_print("Player %d | %s [ %d ]\t%d\t%d\t%d\n", p->pos, GOT(p->set[0]).name, p->set[1], p->set[2], p->set[3], p->set[4]);
+			// ft_print("PLAYER [%s] ADV %d\t%s -> %s\t[%d]\n", GOT(p->set[0]).name,p->next_i, ft_base(p->pc, 16), ft_base(p->pc + p->next_i, 16), p->pos);
+		}
+				
 				g_operator[p->set[0]](vm, p);
-			else if (p->set[0] == 0)
-				p->redo = 1;
+			}
+			if (p->next_i > 1)
+			{
+				if (BLA && p->set[0] != 9)
+					ft_print("[%s] ADV %d\t%s -> %s\t[%d]\n", GOT(p->set[0]).name,p->next_i, ft_base(p->pc, 16), ft_base(p->pc + p->next_i, 16), p->pos);
+
+			}
 			p->old = p->pc;
 			p->pc += p->next_i;
 			p->pc %= MEM_SIZE;
@@ -111,40 +138,21 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 		p->cycle--;
 		p = p->next;
 	}
-	p = vm->first;
-	while (p)
-	{
-		if (p->redo == 1)
-		{
-			get_instructions(vm, p);
-			p->cycle--;
-			p->redo = 0;
-		}
-		p = p->next;
-	}
+	// p = vm->first;
+	// while (p)
+	// {
+	// 	if (p->cycle == 0)
+	// 	{
+	// 					p->old = p->pc;
+	// 		p->pc += p->next_i;
+	// 		p->pc %= MEM_SIZE;
+
+	// 		get_instructions(vm, p);
+	// 	}
+	// 	p->cycle--;
+	// 	p = p->next;
+	// }
 }
-
-// void						manage_players(t_cycle *cycle, t_vm *vm)
-// {
-// 	t_proc					*p;
-
-// 	p = vm->first;
-// 	(void)cycle;
-// 	while (p)
-// 	{
-// 		if (p->cycle == 0)
-// 		{
-// 			if (p->set[0] && verify_validity(p, vm))
-// 				g_operator[p->set[0]](vm, p);
-// 				p->old = p->pc;
-// 				p->pc += p->next_i;
-// 				p->pc %= MEM_SIZE;
-// 			get_instructions(vm, p);
-// 		}
-// 		p->cycle--;
-// 		p = p->next;
-// 	}
-// }
 
 #if 0 
 

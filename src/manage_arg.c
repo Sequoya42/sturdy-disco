@@ -20,8 +20,8 @@ void						get_args_size(int encode, t_proc *p)
 	p->arg_size[2] = (encode >> 2) & 3;
 
 			
-			if (GOT(p->set[0]).params == 2 && p->arg_size[2] != 0)
-				p->arg_size[2] = -12;
+			// if (GOT(p->set[0]).params == 2 && p->arg_size[2] != 0)
+			// 	p->arg_size[2] = -12;
 
 }
 
@@ -113,8 +113,11 @@ int							put_in_set(int i, t_vm *vm, t_proc *p)
 		j++;
 		k++;
 	}
-	if (p->arg_size[2] == -12)
-		return (-1);
+	// if (p->arg_size[2] == -12)
+	// {
+	// 	p->arg_size[2] = 0;
+	// 	return (-1);
+	// }
 	return (0);
 	// if (DEBUG == 1)
 	// {

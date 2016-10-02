@@ -46,6 +46,28 @@ t_op		g_op_tab[17] =
 #if 0
 KAPPA
 
+8957
+come from the jymp at 03
+so
+see when and which
+
+prendre op a la fin quand exec tous les bails [sti /st ] les bails
+
+8967
+
+											It is now cycle 8106
+P   51 | st r2 -3
+ADV 5 (0x0ebc -> 0x0ec1) 03 70 02 ff fd 
+P   15 | zjmp -33 OK
+
+
+
+											Cycle [ 8106 ]
+Player 51 | st [ 112 ]	2	-3	0
+ADV 3	be9 -> bec	[15]
+-----------------
+DONE
+----------------------
 It is now cycle 8077
 P   15 | live -16551934
 

@@ -29,15 +29,13 @@ struct					s_proc
 {
 	int					old;
 	int					num;
-	int					redo;
 	unsigned int		next_i;
 	unsigned int		pos;
 	unsigned int		alive;
 	unsigned int		size;
 	unsigned int		cycle;
 	unsigned int		pc;
-
-	unsigned int		carry : 1;
+	int					carry;
 	unsigned int		reg[REG_NUMBER + 1];
 	char				name[PROG_NAME_LENGTH + 1];
 	char				comment[COMMENT_LENGTH + 1];

@@ -21,7 +21,7 @@ void						op_sub(t_vm *vm , t_proc *p)
 	v1 = p->reg[p->set[2]];
 	v2 = p->reg[p->set[3]];
 	n = (v1 - v2);
-	if (n == 0)
+	if ((n % IDX_MOD) == 0)
 		p->carry = 1;
 	else
 		p->carry = 0;

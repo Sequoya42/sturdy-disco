@@ -1,0 +1,1160 @@
+Introducing contestants...
+* Player 1, weighing 682 bytes, "Kappa" ("AKA Kappa Sandwich.") !
+											Cycle [ 8900 ]
+Player 77 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[77]
+Player 64 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[64]
+Player 57 | st [ 112 ]	2	-18	0
+[st] ADV 5	f28 -> f2d	[57]
+Player 56 | st [ 112 ]	2	26	0
+[st] ADV 5	4b7 -> 4bc	[56]
+Player 52 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[52]
+Player 50 | st [ 112 ]	2	-7	0
+[st] ADV 5	d54 -> d59	[50]
+Player 37 | st [ 112 ]	3	-1	0
+[st] ADV 5	d47 -> d4c	[37]
+Player 35 | st [ 112 ]	2	26	0
+[st] ADV 5	976 -> 97b	[35]
+											Cycle [ 8901 ]
+Player 58 | zjmp [ -33 ]	3	-1	0
+Player 51 | zjmp [ -33 ]	3	-1	0
+Player 41 | st [ 112 ]	3	2559	0
+[st] ADV 5	d35 -> d3a	[41]
+[st] ADV 6	d3b -> d41	[40]
+Player 39 | st [ 112 ]	2	-10	0
+[st] ADV 5	d42 -> d47	[39]
+Player 31 | zjmp [ -5 ]	0	0	0
+Player 22 | zjmp [ -5 ]	0	0	0
+Player 14 | zjmp [ -5 ]	0	0	0
+Player 8 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8902 ]
+Player 53 | st [ 112 ]	2	15	0
+[st] ADV 5	4c6 -> 4cb	[53]
+Player 32 | st [ 112 ]	2	15	0
+[st] ADV 5	985 -> 98a	[32]
+Player 1 | live [ -1 ]	0	2	1
+[live] ADV 5	1c8 -> 1cd	[1]
+											Cycle [ 8903 ]
+Player 54 | live [ -1 ]	3	-1	0
+[live] ADV 5	4c1 -> 4c6	[54]
+Player 47 | live [ -1 ]	3	-1	0
+[live] ADV 5	d5e -> d63	[47]
+Player 43 | st [ 112 ]	3	-1	0
+[st] ADV 5	723 -> 728	[43]
+Player 33 | live [ -1 ]	3	-1	0
+[live] ADV 5	980 -> 985	[33]
+Player 24 | st [ 112 ]	3	-1	0
+[st] ADV 5	be2 -> be7	[24]
+Player 16 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[16]
+											Cycle [ 8904 ]
+Player 44 | st [ 112 ]	2	23	0
+[st] ADV 5	71e -> 723	[44]
+Player 36 | live [ -1 ]	3	-1	0
+[live] ADV 5	d4c -> d51	[36]
+Player 25 | st [ 112 ]	2	23	0
+[st] ADV 5	bdd -> be2	[25]
+											Cycle [ 8905 ]
+Player 57 | st [ 112 ]	3	-1	0
+[st] ADV 5	f2d -> f32	[57]
+Player 56 | st [ 112 ]	3	-1	0
+[st] ADV 5	4bc -> 4c1	[56]
+Player 50 | st [ 112 ]	3	-1	0
+[st] ADV 5	d59 -> d5e	[50]
+Player 45 | live [ -1 ]	3	-1	0
+[live] ADV 5	719 -> 71e	[45]
+Player 35 | st [ 112 ]	3	-1	0
+[st] ADV 5	97b -> 980	[35]
+Player 30 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[30]
+Player 26 | live [ -1 ]	3	-1	0
+[live] ADV 5	bd8 -> bdd	[26]
+Player 21 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[21]
+Player 18 | zjmp [ -5 ]	0	0	0
+Player 13 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[13]
+Player 11 | zjmp [ -5 ]	0	0	0
+Player 6 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8906 ]
+Player 58 | st [ 112 ]	2	-14	0
+[st] ADV 5	f28 -> f2d	[58]
+Player 51 | st [ 112 ]	2	-3	0
+[st] ADV 5	d54 -> d59	[51]
+Player 39 | st [ 112 ]	3	-1	0
+[st] ADV 5	d47 -> d4c	[39]
+											Cycle [ 8907 ]
+Player 60 | zjmp [ -33 ]	3	-1	0
+Player 53 | st [ 112 ]	3	-1	0
+[st] ADV 5	4cb -> 4d0	[53]
+Player 42 | live [ -1 ]	3	-1	0
+[live] ADV 5	728 -> 72d	[42]
+Player 40 | st [ 112 ]	2	-7	0
+[st] ADV 5	d42 -> d47	[40]
+Player 32 | st [ 112 ]	3	-1	0
+[st] ADV 5	98a -> 98f	[32]
+Player 23 | live [ -1 ]	3	-1	0
+[live] ADV 5	be7 -> bec	[23]
+Player 2 | zjmp [ -5 ]	0	2	0
+											Cycle [ 8908 ]
+Player 75 | zjmp [ -5 ]	0	0	0
+Player 54 | st [ 112 ]	2	19	0
+[st] ADV 5	4c6 -> 4cb	[54]
+Player 33 | st [ 112 ]	2	19	0
+[st] ADV 5	985 -> 98a	[33]
+											Cycle [ 8909 ]
+Player 55 | live [ -1 ]	3	-1	0
+[live] ADV 5	4c1 -> 4c6	[55]
+Player 49 | live [ -1 ]	3	-1	0
+[live] ADV 5	d5e -> d63	[49]
+Player 44 | st [ 112 ]	3	-1	0
+[st] ADV 5	723 -> 728	[44]
+Player 34 | live [ -1 ]	3	-1	0
+[live] ADV 5	980 -> 985	[34]
+Player 25 | st [ 112 ]	3	-1	0
+[st] ADV 5	be2 -> be7	[25]
+Player 17 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[17]
+Player 10 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[10]
+											Cycle [ 8910 ]
+Player 45 | st [ 112 ]	2	26	0
+[st] ADV 5	71e -> 723	[45]
+Player 37 | live [ -1 ]	3	-1	0
+[live] ADV 5	d4c -> d51	[37]
+Player 26 | st [ 112 ]	2	26	0
+[st] ADV 5	bdd -> be2	[26]
+											Cycle [ 8911 ]
+Player 58 | st [ 112 ]	3	-1	0
+[st] ADV 5	f2d -> f32	[58]
+Player 51 | st [ 112 ]	3	-1	0
+[st] ADV 5	d59 -> d5e	[51]
+Player 41 | live [ -1 ]	3	2559	0
+[live] ADV 5	d3a -> d3f	[41]
+Player 31 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[31]
+Player 22 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[22]
+Player 14 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[14]
+Player 8 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[8]
+											Cycle [ 8912 ]
+Player 60 | st [ 112 ]	2	-10	0
+[st] ADV 5	f28 -> f2d	[60]
+Player 42 | st [ 112 ]	2	15	0
+[st] ADV 5	72d -> 732	[42]
+Player 40 | st [ 112 ]	3	-1	0
+[st] ADV 5	d47 -> d4c	[40]
+Player 23 | st [ 112 ]	2	15	0
+[st] ADV 5	bec -> bf1	[23]
+											Cycle [ 8913 ]
+Player 61 | zjmp [ -33 ]	3	-1	0
+Player 54 | st [ 112 ]	3	-1	0
+[st] ADV 5	4cb -> 4d0	[54]
+Player 43 | live [ -1 ]	3	-1	0
+[live] ADV 5	728 -> 72d	[43]
+Player 33 | st [ 112 ]	3	-1	0
+[st] ADV 5	98a -> 98f	[33]
+Player 28 | zjmp [ -5 ]	0	0	0
+Player 24 | live [ -1 ]	3	-1	0
+[live] ADV 5	be7 -> bec	[24]
+											Cycle [ 8914 ]
+Player 76 | zjmp [ -5 ]	0	0	0
+Player 63 | zjmp [ -5 ]	0	0	0
+Player 55 | st [ 112 ]	2	23	0
+[st] ADV 5	4c6 -> 4cb	[55]
+Player 34 | st [ 112 ]	2	23	0
+[st] ADV 5	985 -> 98a	[34]
+											Cycle [ 8915 ]
+Player 57 | live [ -1178768 ]	3	-1	0
+[live] ADV 5	f32 -> f37	[57]
+Player 56 | live [ -1 ]	3	-1	0
+[live] ADV 5	4c1 -> 4c6	[56]
+Player 50 | live [ -1 ]	3	-1	0
+[live] ADV 5	d5e -> d63	[50]
+Player 45 | st [ 112 ]	3	-1	0
+[st] ADV 5	723 -> 728	[45]
+Player 35 | live [ -1 ]	3	-1	0
+[live] ADV 5	980 -> 985	[35]
+Player 26 | st [ 112 ]	3	-1	0
+[st] ADV 5	be2 -> be7	[26]
+Player 18 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[18]
+Player 11 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[11]
+Player 6 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[6]
+											Cycle [ 8916 ]
+Player 39 | live [ -1 ]	3	-1	0
+[live] ADV 5	d4c -> d51	[39]
+											Cycle [ 8917 ]
+Player 60 | st [ 112 ]	3	-1	0
+[st] ADV 5	f2d -> f32	[60]
+Player 53 | live [ -1 ]	3	-1	0
+[live] ADV 5	4d0 -> 4d5	[53]
+Player 46 | zjmp [ -33 ]	3	-1	0
+Player 42 | st [ 112 ]	3	-1	0
+[st] ADV 5	732 -> 737	[42]
+Player 32 | live [ -1 ]	3	-1	0
+[live] ADV 5	98f -> 994	[32]
+Player 23 | st [ 112 ]	3	-1	0
+[st] ADV 5	bf1 -> bf6	[23]
+Player 2 | live [ -1 ]	0	2	0
+[live] ADV 5	1c8 -> 1cd	[2]
+											Cycle [ 8918 ]
+Player 75 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[75]
+Player 61 | st [ 112 ]	2	-7	0
+[st] ADV 5	f28 -> f2d	[61]
+Player 43 | st [ 112 ]	2	19	0
+[st] ADV 5	72d -> 732	[43]
+Player 24 | st [ 112 ]	2	19	0
+[st] ADV 5	bec -> bf1	[24]
+											Cycle [ 8919 ]
+Player 62 | zjmp [ -33 ]	3	-1	0
+Player 55 | st [ 112 ]	3	-1	0
+[st] ADV 5	4cb -> 4d0	[55]
+Player 44 | live [ -1 ]	3	-1	0
+[live] ADV 5	728 -> 72d	[44]
+Player 34 | st [ 112 ]	3	-1	0
+[st] ADV 5	98a -> 98f	[34]
+Player 29 | zjmp [ -5 ]	0	0	0
+Player 25 | live [ -1 ]	3	-1	0
+[live] ADV 5	be7 -> bec	[25]
+Player 20 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8920 ]
+Player 77 | zjmp [ -5 ]	0	0	0
+Player 64 | zjmp [ -5 ]	0	0	0
+[st] ADV 6	f37 -> f3d	[57]
+Player 56 | st [ 112 ]	2	26	0
+[st] ADV 5	4c6 -> 4cb	[56]
+Player 52 | zjmp [ -5 ]	0	0	0
+Player 35 | st [ 112 ]	2	26	0
+[st] ADV 5	985 -> 98a	[35]
+											Cycle [ 8921 ]
+Player 58 | live [ -1178768 ]	3	-1	0
+[live] ADV 5	f32 -> f37	[58]
+Player 51 | live [ -1 ]	3	-1	0
+[live] ADV 5	d5e -> d63	[51]
+											Cycle [ 8922 ]
+Player 53 | st [ 112 ]	2	15	0
+[st] ADV 5	4d5 -> 4da	[53]
+Player 46 | st [ 112 ]	2	-3	0
+[st] ADV 5	d42 -> d47	[46]
+Player 40 | live [ -1 ]	3	-1	0
+[live] ADV 5	d4c -> d51	[40]
+Player 32 | st [ 112 ]	2	15	0
+[st] ADV 5	994 -> 999	[32]
+Player 1 | zjmp [ -5 ]	0	2	1
+											Cycle [ 8923 ]
+Player 61 | st [ 112 ]	3	-1	0
+[st] ADV 5	f2d -> f32	[61]
+Player 54 | live [ -1 ]	3	-1	0
+[live] ADV 5	4d0 -> 4d5	[54]
+Player 47 | zjmp [ -33 ]	3	-1	0
+Player 43 | st [ 112 ]	3	-1	0
+[st] ADV 5	732 -> 737	[43]
+Player 33 | live [ -1 ]	3	-1	0
+[live] ADV 5	98f -> 994	[33]
+Player 28 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[28]
+Player 24 | st [ 112 ]	3	-1	0
+[st] ADV 5	bf1 -> bf6	[24]
+Player 16 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8924 ]
+Player 76 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[76]
+Player 63 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[63]
+Player 62 | st [ 112 ]	2	-3	0
+[st] ADV 5	f28 -> f2d	[62]
+Player 44 | st [ 112 ]	2	23	0
+[st] ADV 5	72d -> 732	[44]
+Player 36 | zjmp [ -33 ]	3	-1	0
+Player 25 | st [ 112 ]	2	23	0
+[st] ADV 5	bec -> bf1	[25]
+											Cycle [ 8925 ]
+Player 56 | st [ 112 ]	3	-1	0
+[st] ADV 5	4cb -> 4d0	[56]
+Player 45 | live [ -1 ]	3	-1	0
+[live] ADV 5	728 -> 72d	[45]
+Player 35 | st [ 112 ]	3	-1	0
+[st] ADV 5	98a -> 98f	[35]
+Player 30 | zjmp [ -5 ]	0	0	0
+Player 26 | live [ -1 ]	3	-1	0
+[live] ADV 5	be7 -> bec	[26]
+Player 21 | zjmp [ -5 ]	0	0	0
+Player 13 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8926 ]
+[st] ADV 6	f37 -> f3d	[58]
+											Cycle [ 8927 ]
+Player 60 | live [ -1178768 ]	3	-1	0
+[live] ADV 5	f32 -> f37	[60]
+Player 57 | st [ 112 ]	3	-1	0
+[st] ADV 5	f3f -> f44	[57]
+Player 53 | st [ 112 ]	3	-1	0
+[st] ADV 5	4da -> 4df	[53]
+Player 46 | st [ 112 ]	3	-1	0
+[st] ADV 5	d47 -> d4c	[46]
+Player 42 | live [ -1 ]	3	-1	0
+[live] ADV 5	737 -> 73c	[42]
+Player 32 | st [ 112 ]	3	-1	0
+[st] ADV 5	999 -> 99e	[32]
+Player 23 | live [ -1 ]	3	-1	0
+[live] ADV 5	bf6 -> bfb	[23]
+											Cycle [ 8928 ]
+Player 54 | st [ 112 ]	2	19	0
+[st] ADV 5	4d5 -> 4da	[54]
+Player 33 | st [ 112 ]	2	19	0
+[st] ADV 5	994 -> 999	[33]
+											Cycle [ 8929 ]
+Player 62 | st [ 112 ]	3	-1	0
+[st] ADV 5	f2d -> f32	[62]
+Player 55 | live [ -1 ]	3	-1	0
+[live] ADV 5	4d0 -> 4d5	[55]
+Player 49 | zjmp [ -33 ]	3	-1	0
+Player 44 | st [ 112 ]	3	-1	0
+[st] ADV 5	732 -> 737	[44]
+Player 36 | st [ 112 ]	2	-18	0
+[st] ADV 5	d30 -> d35	[36]
+Player 34 | live [ -1 ]	3	-1	0
+[live] ADV 5	98f -> 994	[34]
+Player 29 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[29]
+Player 25 | st [ 112 ]	3	-1	0
+[st] ADV 5	bf1 -> bf6	[25]
+Player 20 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[20]
+Player 17 | zjmp [ -5 ]	0	0	0
+Player 10 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8930 ]
+Player 77 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[77]
+Player 64 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[64]
+Player 52 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[52]
+[ld] ADV 6	d44 -> d4a	[47]
+Player 45 | st [ 112 ]	2	26	0
+[st] ADV 5	72d -> 732	[45]
+Player 37 | zjmp [ -33 ]	3	-1	0
+Player 26 | st [ 112 ]	2	26	0
+[st] ADV 5	bec -> bf1	[26]
+											Cycle [ 8931 ]
+Player 41 | zjmp [ 28674 ]	3	2559	0
+Player 31 | zjmp [ -5 ]	0	0	0
+Player 22 | zjmp [ -5 ]	0	0	0
+Player 14 | zjmp [ -5 ]	0	0	0
+Player 8 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8932 ]
+[st] ADV 6	f37 -> f3d	[60]
+Player 42 | st [ 112 ]	2	15	0
+[st] ADV 5	73c -> 741	[42]
+Player 23 | st [ 112 ]	2	15	0
+[st] ADV 5	bfb -> c00	[23]
+Player 1 | live [ -1 ]	0	2	1
+[live] ADV 5	1c8 -> 1cd	[1]
+											Cycle [ 8933 ]
+Player 61 | live [ -1178768 ]	3	-1	0
+[live] ADV 5	f32 -> f37	[61]
+Player 58 | st [ 112 ]	3	-1	0
+[st] ADV 5	f3f -> f44	[58]
+Player 54 | st [ 112 ]	3	-1	0
+[st] ADV 5	4da -> 4df	[54]
+Player 43 | live [ -1 ]	3	-1	0
+[live] ADV 5	737 -> 73c	[43]
+Player 33 | st [ 112 ]	3	-1	0
+[st] ADV 5	999 -> 99e	[33]
+Player 24 | live [ -1 ]	3	-1	0
+[live] ADV 5	bf6 -> bfb	[24]
+Player 16 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[16]
+											Cycle [ 8934 ]
+Player 55 | st [ 112 ]	2	23	0
+[st] ADV 5	4d5 -> 4da	[55]
+Player 36 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[36]
+Player 34 | st [ 112 ]	2	23	0
+[st] ADV 5	994 -> 999	[34]
+											Cycle [ 8935 ]
+Player 56 | live [ -1 ]	3	-1	0
+[live] ADV 5	4d0 -> 4d5	[56]
+Player 50 | zjmp [ -33 ]	3	-1	0
+Player 45 | st [ 112 ]	3	-1	0
+[st] ADV 5	732 -> 737	[45]
+Player 37 | st [ 112 ]	2	-14	0
+[st] ADV 5	d30 -> d35	[37]
+Player 35 | live [ -1 ]	3	-1	0
+[live] ADV 5	98f -> 994	[35]
+Player 30 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[30]
+Player 26 | st [ 112 ]	3	-1	0
+[st] ADV 5	bf1 -> bf6	[26]
+Player 21 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[21]
+Player 18 | zjmp [ -5 ]	0	0	0
+Player 13 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[13]
+Player 11 | zjmp [ -5 ]	0	0	0
+Player 6 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8936 ]
+[ld] ADV 6	d44 -> d4a	[49]
+[ld] ADV 6	d41 -> d47	[41]
+Player 39 | zjmp [ -33 ]	3	-1	0
+											Cycle [ 8937 ]
+Player 57 | live [ -1 ]	3	-1	0
+[live] ADV 5	f44 -> f49	[57]
+Player 53 | live [ -1 ]	3	-1	0
+[live] ADV 5	4df -> 4e4	[53]
+Player 46 | live [ -1 ]	3	-1	0
+[live] ADV 5	d4c -> d51	[46]
+Player 42 | st [ 112 ]	3	-1	0
+[st] ADV 5	741 -> 746	[42]
+Player 32 | live [ -1 ]	3	-1	0
+[live] ADV 5	99e -> 9a3	[32]
+Player 23 | st [ 112 ]	3	-1	0
+[st] ADV 5	c00 -> c05	[23]
+Player 2 | zjmp [ -5 ]	0	2	0
+											Cycle [ 8938 ]
+Player 75 | zjmp [ -5 ]	0	0	0
+[st] ADV 6	f37 -> f3d	[61]
+Player 43 | st [ 112 ]	2	19	0
+[st] ADV 5	73c -> 741	[43]
+Player 24 | st [ 112 ]	2	19	0
+[st] ADV 5	bfb -> c00	[24]
+											Cycle [ 8939 ]
+Player 62 | live [ -1178768 ]	3	-1	0
+[live] ADV 5	f32 -> f37	[62]
+Player 60 | st [ 112 ]	3	-1	0
+[st] ADV 5	f3f -> f44	[60]
+Player 55 | st [ 112 ]	3	-1	0
+[st] ADV 5	4da -> 4df	[55]
+Player 44 | live [ -1 ]	3	-1	0
+[live] ADV 5	737 -> 73c	[44]
+Player 34 | st [ 112 ]	3	-1	0
+[st] ADV 5	999 -> 99e	[34]
+Player 25 | live [ -1 ]	3	-1	0
+[live] ADV 5	bf6 -> bfb	[25]
+Player 17 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[17]
+Player 10 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[10]
+											Cycle [ 8940 ]
+Player 56 | st [ 112 ]	2	26	0
+[st] ADV 5	4d5 -> 4da	[56]
+Player 37 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[37]
+Player 35 | st [ 112 ]	2	26	0
+[st] ADV 5	994 -> 999	[35]
+											Cycle [ 8941 ]
+Player 51 | zjmp [ -33 ]	3	-1	0
+Player 41 | st [ 112 ]	3	-1	0
+[st] ADV 5	d47 -> d4c	[41]
+Player 39 | st [ 112 ]	2	-10	0
+[st] ADV 5	d30 -> d35	[39]
+Player 31 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[31]
+Player 22 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[22]
+Player 14 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[14]
+Player 8 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[8]
+											Cycle [ 8942 ]
+Player 53 | st [ 112 ]	2	15	0
+[st] ADV 5	4e4 -> 4e9	[53]
+[ld] ADV 6	d44 -> d4a	[50]
+Player 47 | live [ -1 ]	-3581	28675	0
+[live] ADV 5	d4c -> d51	[47]
+Player 40 | zjmp [ -33 ]	3	-1	0
+Player 32 | st [ 112 ]	2	15	0
+[st] ADV 5	9a3 -> 9a8	[32]
+											Cycle [ 8943 ]
+Player 58 | live [ -1 ]	3	-1	0
+[live] ADV 5	f44 -> f49	[58]
+Player 54 | live [ -1 ]	3	-1	0
+[live] ADV 5	4df -> 4e4	[54]
+Player 43 | st [ 112 ]	3	-1	0
+[st] ADV 5	741 -> 746	[43]
+Player 33 | live [ -1 ]	3	-1	0
+[live] ADV 5	99e -> 9a3	[33]
+Player 28 | zjmp [ -5 ]	0	0	0
+Player 24 | st [ 112 ]	3	-1	0
+[st] ADV 5	c00 -> c05	[24]
+											Cycle [ 8944 ]
+Player 76 | zjmp [ -5 ]	0	0	0
+Player 63 | zjmp [ -5 ]	0	0	0
+[st] ADV 6	f37 -> f3d	[62]
+Player 44 | st [ 112 ]	2	23	0
+[st] ADV 5	73c -> 741	[44]
+Player 36 | live [ -1 ]	3	-1	0
+[live] ADV 5	d3a -> d3f	[36]
+Player 25 | st [ 112 ]	2	23	0
+[st] ADV 5	bfb -> c00	[25]
+											Cycle [ 8945 ]
+Player 61 | st [ 112 ]	3	-1	0
+[st] ADV 5	f3f -> f44	[61]
+Player 56 | st [ 112 ]	3	-1	0
+[st] ADV 5	4da -> 4df	[56]
+Player 45 | live [ -1 ]	3	-1	0
+[live] ADV 5	737 -> 73c	[45]
+Player 35 | st [ 112 ]	3	-1	0
+[st] ADV 5	999 -> 99e	[35]
+Player 26 | live [ -1 ]	3	-1	0
+[live] ADV 5	bf6 -> bfb	[26]
+Player 18 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[18]
+Player 11 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[11]
+Player 6 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[6]
+											Cycle [ 8946 ]
+Player 39 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[39]
+											Cycle [ 8947 ]
+Player 65 | fork [ -5 ]	0	0	0
+[fork] ADV 3	1ea -> 1ed	[65]
+Player 53 | st [ 112 ]	3	-1	0
+[st] ADV 5	4e9 -> 4ee	[53]
+Player 42 | live [ -1 ]	3	-1	0
+[live] ADV 5	746 -> 74b	[42]
+Player 40 | st [ 112 ]	2	-7	0
+[st] ADV 5	d30 -> d35	[40]
+Player 32 | st [ 112 ]	3	-1	0
+[st] ADV 5	9a8 -> 9ad	[32]
+Player 23 | live [ -1 ]	3	-1	0
+[live] ADV 5	c05 -> c0a	[23]
+Player 2 | live [ -1 ]	0	2	0
+[live] ADV 5	1c8 -> 1cd	[2]
+											Cycle [ 8948 ]
+Player 75 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[75]
+Player 54 | st [ 112 ]	2	19	0
+[st] ADV 5	4e4 -> 4e9	[54]
+[ld] ADV 6	d44 -> d4a	[51]
+Player 49 | live [ -1 ]	-3581	28675	0
+[live] ADV 5	d4c -> d51	[49]
+Player 33 | st [ 112 ]	2	19	0
+[st] ADV 5	9a3 -> 9a8	[33]
+											Cycle [ 8949 ]
+Player 60 | live [ -1 ]	3	-1	0
+[live] ADV 5	f44 -> f49	[60]
+Player 55 | live [ -1 ]	3	-1	0
+[live] ADV 5	4df -> 4e4	[55]
+Player 44 | st [ 112 ]	3	-1	0
+[st] ADV 5	741 -> 746	[44]
+Player 36 | st [ 112 ]	2	-144	0
+[st] ADV 5	d3f -> d44	[36]
+Player 34 | live [ -1 ]	3	-1	0
+[live] ADV 5	99e -> 9a3	[34]
+Player 29 | zjmp [ -5 ]	0	0	0
+Player 25 | st [ 112 ]	3	-1	0
+[st] ADV 5	c00 -> c05	[25]
+Player 20 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8950 ]
+Player 77 | zjmp [ -5 ]	0	0	0
+Player 64 | zjmp [ -5 ]	0	0	0
+Player 52 | zjmp [ -5 ]	0	0	0
+Player 45 | st [ 112 ]	2	26	0
+[st] ADV 5	73c -> 741	[45]
+Player 37 | live [ -1 ]	3	-1	0
+[live] ADV 5	d3a -> d3f	[37]
+Player 26 | st [ 112 ]	2	26	0
+[st] ADV 5	bfb -> c00	[26]
+											Cycle [ 8951 ]
+Player 62 | st [ 112 ]	3	-1	0
+[st] ADV 5	f3f -> f44	[62]
+Player 41 | live [ -1 ]	3	-1	0
+[live] ADV 5	d4c -> d51	[41]
+											Cycle [ 8952 ]
+Player 42 | st [ 112 ]	2	15	0
+[st] ADV 5	74b -> 750	[42]
+Player 40 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[40]
+Player 23 | st [ 112 ]	2	15	0
+[st] ADV 5	c0a -> c0f	[23]
+Player 1 | zjmp [ -5 ]	0	2	1
+											Cycle [ 8953 ]
+Player 66 | fork [ -5 ]	0	0	0
+[fork] ADV 3	217 -> 21a	[66]
+Player 54 | st [ 112 ]	3	-1	0
+[st] ADV 5	4e9 -> 4ee	[54]
+Player 43 | live [ -1 ]	3	-1	0
+[live] ADV 5	746 -> 74b	[43]
+Player 33 | st [ 112 ]	3	-1	0
+[st] ADV 5	9a8 -> 9ad	[33]
+Player 28 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[28]
+Player 24 | live [ -1 ]	3	-1	0
+[live] ADV 5	c05 -> c0a	[24]
+Player 16 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8954 ]
+Player 76 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[76]
+Player 63 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[63]
+Player 55 | st [ 112 ]	2	23	0
+[st] ADV 5	4e4 -> 4e9	[55]
+Player 50 | live [ -1 ]	-4605	28675	0
+[live] ADV 5	d4c -> d51	[50]
+[ld] ADV 6	d44 -> d4a	[36]
+Player 34 | st [ 112 ]	2	23	0
+[st] ADV 5	9a3 -> 9a8	[34]
+											Cycle [ 8955 ]
+Player 61 | live [ -1 ]	3	-1	0
+[live] ADV 5	f44 -> f49	[61]
+Player 56 | live [ -1 ]	3	-1	0
+[live] ADV 5	4df -> 4e4	[56]
+Player 45 | st [ 112 ]	3	-1	0
+[st] ADV 5	741 -> 746	[45]
+Player 37 | st [ 112 ]	2	-144	0
+[st] ADV 5	d3f -> d44	[37]
+Player 35 | live [ -1 ]	3	-1	0
+[live] ADV 5	99e -> 9a3	[35]
+Player 30 | zjmp [ -5 ]	0	0	0
+Player 26 | st [ 112 ]	3	-1	0
+[st] ADV 5	c00 -> c05	[26]
+Player 21 | zjmp [ -5 ]	0	0	0
+Player 13 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8956 ]
+Player 39 | live [ -1 ]	3	-1	0
+[live] ADV 5	d3a -> d3f	[39]
+											Cycle [ 8957 ]
+Player 78 | live [ 42 ]	0	0	0
+[live] ADV 5	1e5 -> 1ea	[78]
+Player 57 | zjmp [ -33 ]	3	-1	0
+Player 53 | live [ -1 ]	3	-1	0
+[live] ADV 5	4ee -> 4f3	[53]
+Player 46 | zjmp [ -33 ]	3	-1	0
+Player 42 | st [ 112 ]	3	-1	0
+[st] ADV 5	750 -> 755	[42]
+Player 32 | live [ -1 ]	3	-1	0
+[live] ADV 5	9ad -> 9b2	[32]
+Player 23 | st [ 112 ]	3	-1	0
+[st] ADV 5	c0f -> c14	[23]
+											Cycle [ 8958 ]
+Player 43 | st [ 112 ]	2	19	0
+[st] ADV 5	74b -> 750	[43]
+Player 24 | st [ 112 ]	2	19	0
+[st] ADV 5	c0a -> c0f	[24]
+											Cycle [ 8959 ]
+Player 67 | fork [ -5 ]	0	0	0
+[fork] ADV 3	251 -> 254	[67]
+Player 55 | st [ 112 ]	3	-1	0
+[st] ADV 5	4e9 -> 4ee	[55]
+Player 44 | live [ -1 ]	3	-1	0
+[live] ADV 5	746 -> 74b	[44]
+Player 34 | st [ 112 ]	3	-1	0
+[st] ADV 5	9a8 -> 9ad	[34]
+Player 29 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[29]
+Player 25 | live [ -1 ]	3	-1	0
+[live] ADV 5	c05 -> c0a	[25]
+Player 20 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[20]
+Player 17 | zjmp [ -5 ]	0	0	0
+Player 10 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8960 ]
+Player 77 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[77]
+Player 64 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[64]
+Player 56 | st [ 112 ]	2	26	0
+[st] ADV 5	4e4 -> 4e9	[56]
+Player 52 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[52]
+Player 51 | live [ -1 ]	-4605	28675	0
+[live] ADV 5	d4c -> d51	[51]
+[ld] ADV 6	d44 -> d4a	[37]
+Player 35 | st [ 112 ]	2	26	0
+[st] ADV 5	9a3 -> 9a8	[35]
+											Cycle [ 8961 ]
+Player 62 | live [ -1 ]	3	-1	0
+[live] ADV 5	f44 -> f49	[62]
+Player 39 | st [ 112 ]	2	-144	0
+[st] ADV 5	d3f -> d44	[39]
+Player 31 | zjmp [ -5 ]	0	0	0
+Player 22 | zjmp [ -5 ]	0	0	0
+Player 14 | zjmp [ -5 ]	0	0	0
+Player 8 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8962 ]
+Player 57 | st [ 112 ]	2	-18	0
+[st] ADV 5	f28 -> f2d	[57]
+Player 53 | st [ 112 ]	2	15	0
+[st] ADV 5	4f3 -> 4f8	[53]
+Player 47 | zjmp [ -33 ]	-3581	28675	0
+Player 46 | st [ 112 ]	2	-3	0
+[st] ADV 5	d30 -> d35	[46]
+Player 40 | live [ -1 ]	3	-1	0
+[live] ADV 5	d3a -> d3f	[40]
+Player 32 | st [ 112 ]	2	15	0
+[st] ADV 5	9b2 -> 9b7	[32]
+Player 1 | live [ -1 ]	0	2	1
+[live] ADV 5	1c8 -> 1cd	[1]
+											Cycle [ 8963 ]
+Player 79 | live [ 42 ]	0	0	0
+[live] ADV 5	212 -> 217	[79]
+Player 58 | zjmp [ -33 ]	3	-1	0
+Player 54 | live [ -1 ]	3	-1	0
+[live] ADV 5	4ee -> 4f3	[54]
+Player 43 | st [ 112 ]	3	-1	0
+[st] ADV 5	750 -> 755	[43]
+Player 33 | live [ -1 ]	3	-1	0
+[live] ADV 5	9ad -> 9b2	[33]
+Player 24 | st [ 112 ]	3	-1	0
+[st] ADV 5	c0f -> c14	[24]
+Player 16 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[16]
+											Cycle [ 8964 ]
+Player 44 | st [ 112 ]	2	23	0
+[st] ADV 5	74b -> 750	[44]
+Player 25 | st [ 112 ]	2	23	0
+[st] ADV 5	c0a -> c0f	[25]
+											Cycle [ 8965 ]
+Player 68 | fork [ -5 ]	0	0	0
+[fork] ADV 3	295 -> 298	[68]
+Player 56 | st [ 112 ]	3	-1	0
+[st] ADV 5	4e9 -> 4ee	[56]
+Player 45 | live [ -1 ]	3	-1	0
+[live] ADV 5	746 -> 74b	[45]
+Player 35 | st [ 112 ]	3	-1	0
+[st] ADV 5	9a8 -> 9ad	[35]
+Player 30 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[30]
+Player 26 | live [ -1 ]	3	-1	0
+[live] ADV 5	c05 -> c0a	[26]
+Player 21 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[21]
+Player 18 | zjmp [ -5 ]	0	0	0
+Player 13 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[13]
+Player 11 | zjmp [ -5 ]	0	0	0
+Player 6 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8966 ]
+[ld] ADV 6	d44 -> d4a	[39]
+Player 36 | live [ -1 ]	-4605	28675	0
+[live] ADV 5	d4c -> d51	[36]
+											Cycle [ 8967 ]
+Player 65 | zjmp [ 174 ]	0	0	0
+Player 57 | st [ 112 ]	3	-1	0
+[st] ADV 5	f2d -> f32	[57]
+Player 53 | st [ 112 ]	3	-1	0
+[st] ADV 5	4f8 -> 4fd	[53]
+Player 47 | st [ 112 ]	2	-3	0
+[st] ADV 5	d30 -> d35	[47]
+Player 46 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[46]
+Player 42 | live [ -1 ]	3	-1	0
+[live] ADV 5	755 -> 75a	[42]
+Player 40 | st [ 112 ]	2	-144	0
+[st] ADV 5	d3f -> d44	[40]
+Player 32 | st [ 112 ]	3	-1	0
+[st] ADV 5	9b7 -> 9bc	[32]
+Player 23 | live [ -1 ]	3	-1	0
+[live] ADV 5	c14 -> c19	[23]
+Player 2 | zjmp [ -5 ]	0	2	0
+											Cycle [ 8968 ]
+Player 75 | zjmp [ -5 ]	0	0	0
+Player 58 | st [ 112 ]	2	-14	0
+[st] ADV 5	f28 -> f2d	[58]
+Player 54 | st [ 112 ]	2	19	0
+[st] ADV 5	4f3 -> 4f8	[54]
+Player 49 | zjmp [ -33 ]	-3581	28675	0
+Player 33 | st [ 112 ]	2	19	0
+[st] ADV 5	9b2 -> 9b7	[33]
+											Cycle [ 8969 ]
+Player 80 | live [ 42 ]	0	0	0
+[live] ADV 5	24c -> 251	[80]
+Player 60 | zjmp [ -33 ]	3	-1	0
+Player 55 | live [ -1 ]	3	-1	0
+[live] ADV 5	4ee -> 4f3	[55]
+Player 44 | st [ 112 ]	3	-1	0
+[st] ADV 5	750 -> 755	[44]
+Player 34 | live [ -1 ]	3	-1	0
+[live] ADV 5	9ad -> 9b2	[34]
+Player 25 | st [ 112 ]	3	-1	0
+[st] ADV 5	c0f -> c14	[25]
+Player 17 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[17]
+Player 10 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[10]
+											Cycle [ 8970 ]
+Player 45 | st [ 112 ]	2	26	0
+[st] ADV 5	74b -> 750	[45]
+Player 26 | st [ 112 ]	2	26	0
+[st] ADV 5	c0a -> c0f	[26]
+											Cycle [ 8971 ]
+Player 41 | zjmp [ -33 ]	3	-1	0
+Player 31 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[31]
+Player 22 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[22]
+Player 14 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[14]
+Player 8 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[8]
+											Cycle [ 8972 ]
+Player 65 | st [ 112 ]	2	15	0
+[st] ADV 5	29b -> 2a0	[65]
+Player 47 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[47]
+Player 42 | st [ 112 ]	2	15	0
+[st] ADV 5	75a -> 75f	[42]
+[ld] ADV 6	d44 -> d4a	[40]
+Player 37 | live [ -1 ]	-4605	28675	0
+[live] ADV 5	d4c -> d51	[37]
+Player 23 | st [ 112 ]	2	15	0
+[st] ADV 5	c19 -> c1e	[23]
+											Cycle [ 8973 ]
+Player 66 | zjmp [ 129 ]	0	0	0
+Player 58 | st [ 112 ]	3	-1	0
+[st] ADV 5	f2d -> f32	[58]
+Player 54 | st [ 112 ]	3	-1	0
+[st] ADV 5	4f8 -> 4fd	[54]
+Player 49 | st [ 112 ]	2	-10	0
+[st] ADV 5	d30 -> d35	[49]
+Player 43 | live [ -1 ]	3	-1	0
+[live] ADV 5	755 -> 75a	[43]
+Player 33 | st [ 112 ]	3	-1	0
+[st] ADV 5	9b7 -> 9bc	[33]
+Player 28 | zjmp [ -5 ]	0	0	0
+Player 24 | live [ -1 ]	3	-1	0
+[live] ADV 5	c14 -> c19	[24]
+											Cycle [ 8974 ]
+Player 76 | zjmp [ -5 ]	0	0	0
+Player 63 | zjmp [ -5 ]	0	0	0
+Player 60 | st [ 112 ]	2	-10	0
+[st] ADV 5	f28 -> f2d	[60]
+Player 55 | st [ 112 ]	2	23	0
+[st] ADV 5	4f3 -> 4f8	[55]
+Player 50 | zjmp [ -33 ]	-4605	28675	0
+Player 34 | st [ 112 ]	2	23	0
+[st] ADV 5	9b2 -> 9b7	[34]
+											Cycle [ 8975 ]
+Player 81 | live [ 42 ]	0	0	0
+[live] ADV 5	290 -> 295	[81]
+Player 61 | zjmp [ -33 ]	3	-1	0
+Player 56 | live [ -1 ]	3	-1	0
+[live] ADV 5	4ee -> 4f3	[56]
+Player 45 | st [ 112 ]	3	-1	0
+[st] ADV 5	750 -> 755	[45]
+Player 35 | live [ -1 ]	3	-1	0
+[live] ADV 5	9ad -> 9b2	[35]
+Player 26 | st [ 112 ]	3	-1	0
+[st] ADV 5	c0f -> c14	[26]
+Player 18 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[18]
+Player 11 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[11]
+Player 6 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[6]
+											Cycle [ 8976 ]
+Player 41 | st [ 112 ]	2	-10	0
+[st] ADV 5	d30 -> d35	[41]
+											Cycle [ 8977 ]
+Player 65 | st [ 112 ]	3	-1	0
+[st] ADV 5	2a0 -> 2a5	[65]
+Player 57 | live [ -1178768 ]	3	-1	0
+[live] ADV 5	f32 -> f37	[57]
+Player 53 | live [ -1 ]	3	-1	0
+[live] ADV 5	4fd -> 502	[53]
+Player 46 | live [ -1 ]	3	-1	0
+[live] ADV 5	d3a -> d3f	[46]
+Player 42 | st [ 112 ]	3	-1	0
+[st] ADV 5	75f -> 764	[42]
+Player 32 | live [ -1 ]	3	-1	0
+[live] ADV 5	9bc -> 9c1	[32]
+Player 23 | st [ 112 ]	3	-1	0
+[st] ADV 5	c1e -> c23	[23]
+Player 2 | live [ -1 ]	0	2	0
+[live] ADV 5	1c8 -> 1cd	[2]
+											Cycle [ 8978 ]
+Player 75 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[75]
+Player 66 | st [ 112 ]	2	19	0
+[st] ADV 5	29b -> 2a0	[66]
+Player 49 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[49]
+Player 43 | st [ 112 ]	2	19	0
+[st] ADV 5	75a -> 75f	[43]
+Player 39 | live [ -1 ]	-4605	28675	0
+[live] ADV 5	d4c -> d51	[39]
+Player 24 | st [ 112 ]	2	19	0
+[st] ADV 5	c19 -> c1e	[24]
+											Cycle [ 8979 ]
+Player 67 | zjmp [ 71 ]	0	0	0
+Player 60 | st [ 112 ]	3	-1	0
+[st] ADV 5	f2d -> f32	[60]
+Player 55 | st [ 112 ]	3	-1	0
+[st] ADV 5	4f8 -> 4fd	[55]
+Player 50 | st [ 112 ]	2	-7	0
+[st] ADV 5	d30 -> d35	[50]
+Player 44 | live [ -1 ]	3	-1	0
+[live] ADV 5	755 -> 75a	[44]
+Player 34 | st [ 112 ]	3	-1	0
+[st] ADV 5	9b7 -> 9bc	[34]
+Player 29 | zjmp [ -5 ]	0	0	0
+Player 25 | live [ -1 ]	3	-1	0
+[live] ADV 5	c14 -> c19	[25]
+Player 20 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8980 ]
+Player 77 | zjmp [ -5 ]	0	0	0
+Player 64 | zjmp [ -5 ]	0	0	0
+Player 61 | st [ 112 ]	2	-7	0
+[st] ADV 5	f28 -> f2d	[61]
+Player 56 | st [ 112 ]	2	26	0
+[st] ADV 5	4f3 -> 4f8	[56]
+Player 52 | zjmp [ -5 ]	0	0	0
+Player 51 | zjmp [ -33 ]	-4605	28675	0
+Player 35 | st [ 112 ]	2	26	0
+[st] ADV 5	9b2 -> 9b7	[35]
+											Cycle [ 8981 ]
+Player 62 | zjmp [ -33 ]	3	-1	0
+Player 41 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[41]
+											Cycle [ 8982 ]
+[st] ADV 6	f37 -> f3d	[57]
+Player 53 | st [ 112 ]	2	15	0
+[st] ADV 5	502 -> 507	[53]
+Player 47 | live [ -1 ]	3	-1	0
+[live] ADV 5	d3a -> d3f	[47]
+Player 46 | st [ 112 ]	2	-144	0
+[st] ADV 5	d3f -> d44	[46]
+Player 32 | st [ 112 ]	2	15	0
+[st] ADV 5	9c1 -> 9c6	[32]
+Player 1 | zjmp [ -5 ]	0	2	1
+											Cycle [ 8983 ]
+Player 66 | st [ 112 ]	3	-1	0
+[st] ADV 5	2a0 -> 2a5	[66]
+Player 58 | live [ -1178768 ]	3	-1	0
+[live] ADV 5	f32 -> f37	[58]
+Player 54 | live [ -1 ]	3	-1	0
+[live] ADV 5	4fd -> 502	[54]
+Player 43 | st [ 112 ]	3	-1	0
+[st] ADV 5	75f -> 764	[43]
+Player 33 | live [ -1 ]	3	-1	0
+[live] ADV 5	9bc -> 9c1	[33]
+Player 28 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[28]
+Player 24 | st [ 112 ]	3	-1	0
+[st] ADV 5	c1e -> c23	[24]
+Player 16 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8984 ]
+Player 76 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[76]
+Player 67 | st [ 112 ]	2	23	0
+[st] ADV 5	29b -> 2a0	[67]
+Player 63 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[63]
+Player 50 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[50]
+Player 44 | st [ 112 ]	2	23	0
+[st] ADV 5	75a -> 75f	[44]
+Player 40 | live [ -1 ]	-4605	28675	0
+[live] ADV 5	d4c -> d51	[40]
+Player 25 | st [ 112 ]	2	23	0
+[st] ADV 5	c19 -> c1e	[25]
+											Cycle [ 8985 ]
+Player 68 | zjmp [ 3 ]	0	0	0
+Player 61 | st [ 112 ]	3	-1	0
+[st] ADV 5	f2d -> f32	[61]
+Player 56 | st [ 112 ]	3	-1	0
+[st] ADV 5	4f8 -> 4fd	[56]
+Player 51 | st [ 112 ]	2	-3	0
+[st] ADV 5	d30 -> d35	[51]
+Player 45 | live [ -1 ]	3	-1	0
+[live] ADV 5	755 -> 75a	[45]
+Player 35 | st [ 112 ]	3	-1	0
+[st] ADV 5	9b7 -> 9bc	[35]
+Player 30 | zjmp [ -5 ]	0	0	0
+Player 26 | live [ -1 ]	3	-1	0
+[live] ADV 5	c14 -> c19	[26]
+Player 21 | zjmp [ -5 ]	0	0	0
+Player 13 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8986 ]
+Player 62 | st [ 112 ]	2	-3	0
+[st] ADV 5	f28 -> f2d	[62]
+Player 36 | zjmp [ -33 ]	-4605	28675	0
+											Cycle [ 8987 ]
+Player 65 | live [ 1337 ]	3	-1	0
+[live] ADV 5	2a5 -> 2aa	[65]
+Player 53 | st [ 112 ]	3	-1	0
+[st] ADV 5	507 -> 50c	[53]
+Player 47 | st [ 112 ]	2	-144	0
+[st] ADV 5	d3f -> d44	[47]
+[ld] ADV 6	d44 -> d4a	[46]
+Player 42 | live [ -1 ]	3	-1	0
+[live] ADV 5	764 -> 769	[42]
+Player 32 | st [ 112 ]	3	-1	0
+[st] ADV 5	9c6 -> 9cb	[32]
+Player 23 | live [ -1 ]	3	-1	0
+[live] ADV 5	c23 -> c28	[23]
+											Cycle [ 8988 ]
+[st] ADV 6	f37 -> f3d	[58]
+Player 54 | st [ 112 ]	2	19	0
+[st] ADV 5	502 -> 507	[54]
+Player 49 | live [ -1 ]	3	-1	0
+[live] ADV 5	d3a -> d3f	[49]
+Player 33 | st [ 112 ]	2	19	0
+[st] ADV 5	9c1 -> 9c6	[33]
+											Cycle [ 8989 ]
+Player 67 | st [ 112 ]	3	-1	0
+[st] ADV 5	2a0 -> 2a5	[67]
+Player 60 | live [ -1178768 ]	3	-1	0
+[live] ADV 5	f32 -> f37	[60]
+Player 57 | st [ 112 ]	3	-1	0
+[st] ADV 5	f3f -> f44	[57]
+Player 55 | live [ -1 ]	3	-1	0
+[live] ADV 5	4fd -> 502	[55]
+Player 44 | st [ 112 ]	3	-1	0
+[st] ADV 5	75f -> 764	[44]
+Player 34 | live [ -1 ]	3	-1	0
+[live] ADV 5	9bc -> 9c1	[34]
+Player 29 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[29]
+Player 25 | st [ 112 ]	3	-1	0
+[st] ADV 5	c1e -> c23	[25]
+Player 20 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[20]
+Player 17 | zjmp [ -5 ]	0	0	0
+Player 10 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8990 ]
+Player 77 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[77]
+Player 68 | st [ 112 ]	2	26	0
+[st] ADV 5	29b -> 2a0	[68]
+Player 64 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[64]
+Player 52 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[52]
+Player 51 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[51]
+Player 45 | st [ 112 ]	2	26	0
+[st] ADV 5	75a -> 75f	[45]
+Player 26 | st [ 112 ]	2	26	0
+[st] ADV 5	c19 -> c1e	[26]
+											Cycle [ 8991 ]
+Player 62 | st [ 112 ]	3	-1	0
+[st] ADV 5	f2d -> f32	[62]
+Player 41 | live [ -1 ]	3	-1	0
+[live] ADV 5	d3a -> d3f	[41]
+Player 36 | st [ 112 ]	2	-18	0
+[st] ADV 5	d30 -> d35	[36]
+Player 31 | zjmp [ -5 ]	0	0	0
+Player 22 | zjmp [ -5 ]	0	0	0
+Player 14 | zjmp [ -5 ]	0	0	0
+Player 8 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8992 ]
+Player 65 | st [ 112 ]	2	15	0
+[st] ADV 5	2aa -> 2af	[65]
+[ld] ADV 6	d44 -> d4a	[47]
+Player 42 | st [ 112 ]	2	15	0
+[st] ADV 5	769 -> 76e	[42]
+Player 37 | zjmp [ -33 ]	-4605	28675	0
+Player 23 | st [ 112 ]	2	15	0
+[st] ADV 5	c28 -> c2d	[23]
+Player 1 | live [ -1 ]	0	2	1
+[live] ADV 5	1c8 -> 1cd	[1]
+											Cycle [ 8993 ]
+Player 66 | live [ 1337 ]	3	-1	0
+[live] ADV 5	2a5 -> 2aa	[66]
+Player 54 | st [ 112 ]	3	-1	0
+[st] ADV 5	507 -> 50c	[54]
+Player 49 | st [ 112 ]	2	-144	0
+[st] ADV 5	d3f -> d44	[49]
+Player 43 | live [ -1 ]	3	-1	0
+[live] ADV 5	764 -> 769	[43]
+Player 33 | st [ 112 ]	3	-1	0
+[st] ADV 5	9c6 -> 9cb	[33]
+Player 24 | live [ -1 ]	3	-1	0
+[live] ADV 5	c23 -> c28	[24]
+Player 16 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[16]
+											Cycle [ 8994 ]
+[st] ADV 6	f37 -> f3d	[60]
+Player 55 | st [ 112 ]	2	23	0
+[st] ADV 5	502 -> 507	[55]
+Player 50 | live [ -1 ]	3	-1	0
+[live] ADV 5	d3a -> d3f	[50]
+Player 34 | st [ 112 ]	2	23	0
+[st] ADV 5	9c1 -> 9c6	[34]
+											Cycle [ 8995 ]
+Player 68 | st [ 112 ]	3	-1	0
+[st] ADV 5	2a0 -> 2a5	[68]
+Player 61 | live [ -1178768 ]	3	-1	0
+[live] ADV 5	f32 -> f37	[61]
+Player 58 | st [ 112 ]	3	-1	0
+[st] ADV 5	f3f -> f44	[58]
+Player 56 | live [ -1 ]	3	-1	0
+[live] ADV 5	4fd -> 502	[56]
+Player 45 | st [ 112 ]	3	-1	0
+[st] ADV 5	75f -> 764	[45]
+Player 35 | live [ -1 ]	3	-1	0
+[live] ADV 5	9bc -> 9c1	[35]
+Player 30 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[30]
+Player 26 | st [ 112 ]	3	-1	0
+[st] ADV 5	c1e -> c23	[26]
+Player 21 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[21]
+Player 18 | zjmp [ -5 ]	0	0	0
+Player 13 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[13]
+Player 11 | zjmp [ -5 ]	0	0	0
+Player 6 | zjmp [ -5 ]	0	0	0
+											Cycle [ 8996 ]
+Player 41 | st [ 112 ]	2	-144	0
+[st] ADV 5	d3f -> d44	[41]
+Player 36 | st [ 112 ]	3	-1	0
+[st] ADV 5	d35 -> d3a	[36]
+											Cycle [ 8997 ]
+Player 69 | fork [ -5 ]	0	0	0
+[fork] ADV 3	9c -> 9f	[69]
+Player 65 | st [ 112 ]	3	-1	0
+[st] ADV 5	2af -> 2b4	[65]
+Player 53 | live [ -1 ]	3	-1	0
+[live] ADV 5	50c -> 511	[53]
+Player 42 | st [ 112 ]	3	-1	0
+[st] ADV 5	76e -> 773	[42]
+Player 37 | st [ 112 ]	2	-14	0
+[st] ADV 5	d30 -> d35	[37]
+Player 32 | live [ -1 ]	3	-1	0
+[live] ADV 5	9cb -> 9d0	[32]
+Player 23 | st [ 112 ]	3	-1	0
+[st] ADV 5	c2d -> c32	[23]
+Player 2 | zjmp [ -5 ]	0	2	0
+											Cycle [ 8998 ]
+Player 75 | zjmp [ -5 ]	0	0	0
+Player 66 | st [ 112 ]	2	19	0
+[st] ADV 5	2aa -> 2af	[66]
+[ld] ADV 6	d44 -> d4a	[49]
+Player 43 | st [ 112 ]	2	19	0
+[st] ADV 5	769 -> 76e	[43]
+Player 39 | zjmp [ -33 ]	-4605	28675	0
+Player 24 | st [ 112 ]	2	19	0
+[st] ADV 5	c28 -> c2d	[24]
+											Cycle [ 8999 ]
+Player 67 | live [ 1337 ]	3	-1	0
+[live] ADV 5	2a5 -> 2aa	[67]
+Player 57 | live [ -1 ]	3	-1	0
+[live] ADV 5	f44 -> f49	[57]
+Player 55 | st [ 112 ]	3	-1	0
+[st] ADV 5	507 -> 50c	[55]
+Player 50 | st [ 112 ]	2	-144	0
+[st] ADV 5	d3f -> d44	[50]
+Player 46 | live [ -1 ]	-4605	28675	0
+[live] ADV 5	d4c -> d51	[46]
+Player 44 | live [ -1 ]	3	-1	0
+[live] ADV 5	764 -> 769	[44]
+Player 34 | st [ 112 ]	3	-1	0
+[st] ADV 5	9c6 -> 9cb	[34]
+Player 25 | live [ -1 ]	3	-1	0
+[live] ADV 5	c23 -> c28	[25]
+Player 17 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[17]
+Player 10 | live [ -1 ]	0	0	0
+[live] ADV 5	1c8 -> 1cd	[10]
+cycle: 25902	Contestant 1, "Kappa", has won !

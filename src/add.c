@@ -21,7 +21,7 @@ void						op_add(t_vm *vm , t_proc *p)
 	n1 = p->reg[p->set[2]];
 	n2 = p->reg[p->set[3]];
 	int r = n1 + n2;
-	if (r == 0)
+	if ((r % IDX_MOD) == 0)
 		p->carry = 1;
 	else
 		p->carry = 0;
