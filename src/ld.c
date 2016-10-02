@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/11 00:07:02 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/29 23:14:54 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/10/01 17:48:59 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ void						op_ld(t_vm *vm , t_proc *p)
 	unsigned int			n;
 
 	n = get_ld_value(p, 0, 2, vm);
+	// if (vm->cycle->total == 8094)
 	// printf("\t\t\t\t\t\t\tCycle: %d\n", vm->cycle->total);
 	// printf("P% 5d | ld %d\t%d\n", p->pos, n, p->set[3]);
 	// printf("[%d] Value in ld:%d\t\t%x\n",p->set[3], n, n);

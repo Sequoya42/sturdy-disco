@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/14 02:44:43 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/30 20:29:49 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/10/01 23:08:53 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,15 @@
 
 void						get_args_size(int encode, t_proc *p)
 {
+	// int						j;
 	p->arg_size[0] = (encode >> 6) & 3;
 	p->arg_size[1] = (encode >> 4) & 3;
 	p->arg_size[2] = (encode >> 2) & 3;
+
+			
+			if (GOT(p->set[0]).params == 2 && p->arg_size[2] != 0)
+				p->arg_size[2] = -12;
+
 }
 
 int							manage_ind(int *i, t_vm *vm, t_proc *p)
@@ -80,7 +86,7 @@ void						verify_set(int i, t_vm *vm, t_proc *p)
 	}
 }
 
-void						put_in_set(int i, t_vm *vm, t_proc *p)
+int							put_in_set(int i, t_vm *vm, t_proc *p)
 {
 	unsigned int						j;
 	unsigned int						k;
@@ -107,17 +113,20 @@ void						put_in_set(int i, t_vm *vm, t_proc *p)
 		j++;
 		k++;
 	}
-	if (DEBUG == 1)
-	{
-		j = 0;
-		ft_print("CYCLE : %d\n", vm->cycle->total);
-		ft_print(KGRN "op: [%s] %d\tnext i: %d\tpc:\t%d\n" KNRM, GOT(p->set[0]).name, p->set[0], p->next_i, p->pc);
-		while (j < 5)
-		{
-			ft_print("set[%d]:\t%d\n", j, p->set[j]);
-			j++;
-		}
-	}	
+	if (p->arg_size[2] == -12)
+		return (-1);
+	return (0);
+	// if (DEBUG == 1)
+	// {
+	// 	j = 0;
+	// 	ft_print("CYCLE : %d\n", vm->cycle->total);
+	// 	ft_print(KGRN "op: [%s] %d\tnext i: %d\tpc:\t%d\n" KNRM, GOT(p->set[0]).name, p->set[0], p->next_i, p->pc);
+	// 	while (j < 5)
+	// 	{
+	// 		ft_print("set[%d]:\t%d\n", j, p->set[j]);
+	// 		j++;
+	// 	}
+	// }	
 }
 
 

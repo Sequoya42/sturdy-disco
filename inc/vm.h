@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/03 15:27:45 by rbaum             #+#    #+#             */
-/*   Updated: 2016/09/30 19:14:35 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/10/01 23:08:42 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,16 @@ typedef struct s_vm		t_vm;
 
 struct					s_proc
 {
-	unsigned int		next_i;
-	unsigned int		pos;
 	int					old;
 	int					num;
+	int					redo;
+	unsigned int		next_i;
+	unsigned int		pos;
 	unsigned int		alive;
 	unsigned int		size;
 	unsigned int		cycle;
 	unsigned int		pc;
+
 	unsigned int		carry : 1;
 	unsigned int		reg[REG_NUMBER + 1];
 	char				name[PROG_NAME_LENGTH + 1];
@@ -94,7 +96,7 @@ void						manage_players(t_cycle *cycle, t_vm *vm);
 void						add_proc(t_proc *new, t_vm *vm);
 void						first_add_proc(t_proc *new, t_vm *vm);
 void						get_args_size(int encode, t_proc *p);
-void						put_in_set(int i, t_vm *vm, t_proc *p);
+int							put_in_set(int i, t_vm *vm, t_proc *p);
 t_vm						*get_vm(void);
 
 void						op_live(t_vm *vm , t_proc *p);

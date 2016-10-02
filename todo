@@ -8,17 +8,22 @@ in verify validity
 ---
 ST
 
+It is now cycle 8094
+P   49 | st r2 -10
+ADV 5 (0x0ebc -> 0x0ec1) 03 70 02 ff f6
+P   34 | st r2 23
+
 --PROBLEM---
 
-MarineKing: 	9000
-HElltrain : 	22k+
-Kappa : 		8094
-_ 		:		8421
-Asombra: 		21885
+Kappa : 		8111
+_ 		:		11126
+HElltrain : 	23080
 
 
 
 ---OK----
+Asombra: 
+MarineKing:
 doge:	
 champ:			
 Misaka

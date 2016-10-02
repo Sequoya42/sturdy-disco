@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 08:40:39 by rbaum             #+#    #+#             */
-/*   Updated: 2016/10/01 00:19:39 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/10/01 23:13:21 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,16 +36,16 @@ int							get_instructions(t_vm *vm, t_proc *p)
 }
 
 void						verify_set(int i, t_vm *vm, t_proc *p);
-int							verify_validity(t_proc *p)
+int							verify_validity(t_proc *p, t_vm *vm)
 {
 	int						i;
 	int						j;
 
 	i = 0;
-	// printf("Before[%s]\t%d\t%d\t%d\n", GOT(p->set[0]).name, p->set[2], p->set[3], p->set[4]);
-	verify_set(p->pc, get_vm(), p);
-	// printf("After[%s]\t%d\t%d\t%d\n\n", GOT(p->set[0]).name, p->set[2], p->set[3], p->set[4]);
-	if (p->set[0] < 1 || p->set[0] > 16)
+	(void)vm;
+	if (put_in_set(p->pc, vm, p) == -1)
+		return (0);
+	if (p->set[0] < 1 || p->set[0] > 16 || p->arg_size[2] == -1)
 		return (0);
 	j = GOT(p->set[0]).params;
 	while (i < j)
@@ -83,7 +83,7 @@ void						tstw(t_proc *p, t_vm *vm)
 {
 	if (p->cycle == 0)
 	{
-			if (p->set[0] && verify_validity(p))
+			if (p->set[0] && verify_validity(p, vm))
 				g_operator[p->set[0]](vm, p);
 	}
 }
@@ -94,35 +94,57 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 
 	p = vm->first;
 	(void)cycle;
+
 	while (p)
 	{
 		if (p->cycle == 0)
 		{
-			if (p->set[0] && verify_validity(p))
-			{
+			if (p->set[0] && verify_validity(p, vm))
 				g_operator[p->set[0]](vm, p);
-
-				if (p->set[0] != 9)
-				{
-					p->old = p->pc;
-					p->pc += p->next_i;
-					p->pc %= MEM_SIZE;
-				}
-			}
-			else
-			{
-				p->old = p->pc;
-				p->pc += p->next_i;
-				p->pc %= MEM_SIZE;
-				p->next_i = 1;
-			}
+			else if (p->set[0] == 0)
+				p->redo = 1;
+			p->old = p->pc;
+			p->pc += p->next_i;
+			p->pc %= MEM_SIZE;
 			get_instructions(vm, p);
 		}
 		p->cycle--;
-	
+		p = p->next;
+	}
+	p = vm->first;
+	while (p)
+	{
+		if (p->redo == 1)
+		{
+			get_instructions(vm, p);
+			p->cycle--;
+			p->redo = 0;
+		}
 		p = p->next;
 	}
 }
+
+// void						manage_players(t_cycle *cycle, t_vm *vm)
+// {
+// 	t_proc					*p;
+
+// 	p = vm->first;
+// 	(void)cycle;
+// 	while (p)
+// 	{
+// 		if (p->cycle == 0)
+// 		{
+// 			if (p->set[0] && verify_validity(p, vm))
+// 				g_operator[p->set[0]](vm, p);
+// 				p->old = p->pc;
+// 				p->pc += p->next_i;
+// 				p->pc %= MEM_SIZE;
+// 			get_instructions(vm, p);
+// 		}
+// 		p->cycle--;
+// 		p = p->next;
+// 	}
+// }
 
 #if 0 
 

@@ -41,3 +41,28 @@ t_op		g_op_tab[17] =
 	{"aff", 1, {T_REG}, 16, 2, "aff", 1, 0},
 	{0, 0, {0}, 0, 0, 0, 0, 0}
 };
+
+
+#if 0
+KAPPA
+
+It is now cycle 8077
+P   15 | live -16551934
+
+
+t is now cycle 8082
+(p15) ->   ADV 8 (0x0bdd -> 0x0be5) 03 ee 03 70 0f ff ff 01 
+
+
+It is now cycle 8086
+P    4 | st r2 -3
+
+[8086]	Plyr [15]		addr: [be8]		next : [be9]		Op [UH‰åHƒì 1Àº]
+[8086]	Plyr [4]		addr: [bec]		next : [bf1]		Op [st]
+
+
+Tout executer puis bouger les pc??
+First do those than can
+Then the rest
+
+#endif
