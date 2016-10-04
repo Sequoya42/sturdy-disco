@@ -24,7 +24,7 @@ void						op_xor(t_vm *vm , t_proc *p)
 	// ft_print("Xor result : %d\n", v1 ^ v2);
 	n = (v1 ^ v2);
 	p->reg[p->set[4]] = n;
-	if ((n % IDX_MOD) == 0)
+	if (n == 0)
 		p->carry = 1;
 	else
 		p->carry = 0;

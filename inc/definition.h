@@ -15,6 +15,8 @@
 
 typedef enum e_code				t_opcode;
 
+#define BLA 0
+#include <stdio.h>
 # define DEBUG					0
 
 # define NC_SIZE				192

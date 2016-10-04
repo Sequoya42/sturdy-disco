@@ -25,14 +25,19 @@ CHECK THE TODO
 
 void						test_shit(t_vm *vm)
 {
+
+
+	if (IS_IN(4, 2, 0))
+		ft_print("SUCCESS !");
+
 (void)vm;
-	t_proc *p = vm->first;
-	while (p)
-	{
-		ft_print("p->num = %d\t\tp->name : %s\n", (p->pos), p->name);
-		p = p->next;
-	}
-	// exit(0);
+// 	t_proc *p = vm->first;
+// 	while (p)
+// 	{
+// 		ft_print("p->num = %d\t\tp->name : %s\n", (p->pos), p->name);
+// 		p = p->next;
+// 	}
+	exit(0);
 }
 
 void						introducing(int n, t_proc *p)

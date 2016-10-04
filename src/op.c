@@ -44,14 +44,37 @@ t_op		g_op_tab[17] =
 
 
 #if 0
+*****
+
+					CYCLE X
+
+FIND HOW YOU MANAGE CYCLE and PROCESS_CYCLE!!
+
+	- EXEC
+	- DIE--
+	- NEXT_CYCLE
+
+******
+
 KAPPA
 
+1cycledif
+->kill reset cycle_die-- in man player
+
+Discrepency at 17229
+
+
+
+
+
+
+----------------------
 8957
 come from the jymp at 03
 so
 see when and which
 
-prendre op a la fin quand exec tous les bails [sti /st ] les bails
+prendre op a la fin quand exec tous les bails [sti /st 2] les bails
 
 8967
 

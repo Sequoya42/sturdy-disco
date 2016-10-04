@@ -86,6 +86,12 @@ void						verify_set(int i, t_vm *vm, t_proc *p)
 	}
 }
 
+#if 0
+
+VERIFY HOW YOU MANAGE REGISTER
+#endif
+
+
 int							put_in_set(int i, t_vm *vm, t_proc *p)
 {
 	unsigned int						j;
@@ -94,6 +100,9 @@ int							put_in_set(int i, t_vm *vm, t_proc *p)
 	j = 0;
 	p->next_i = 1;
 	k = 1;
+	p->arg_size[0] = 0;
+	p->arg_size[1] = 0;
+	p->arg_size[2] = 0;
 	if (GOT(p->set[0]).op_mod == 1 && (p->next_i++) && (k++))
 		get_args_size(VM(++i), p);
 	else
@@ -103,7 +112,9 @@ int							put_in_set(int i, t_vm *vm, t_proc *p)
 	{
 		if (p->arg_size[j] == REG_CODE && (p->next_i++) && ++i)
 		{
-			if ((p->set[k] = V_REG(VM(i))) == 0)
+			// if ((p->set[k] = V_REG(VM(i))) == 0)
+			p->set[k] = VM(i);
+			if (p->set[k] < 1 || p->set[k] > REG_NUMBER)
 				p->arg_size[j] = 0;
 		}
 		else if (p->arg_size[j] == DIR_CODE && (p->next_i += ISDIR ? 2 : 4))

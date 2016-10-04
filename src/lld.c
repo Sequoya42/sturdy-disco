@@ -42,7 +42,7 @@ void						op_lld(t_vm *vm , t_proc *p)
 
 	n = get_lld_value(p, 0, 2, vm);
 	p->reg[p->set[3]] = n;
-	if ((n % IDX_MOD) == 0)
+	if (n == 0)
 		p->carry = 1;
 	else
 		p->carry = 0;

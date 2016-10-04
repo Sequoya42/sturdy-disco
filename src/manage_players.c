@@ -22,10 +22,7 @@ int							get_instructions(t_vm *vm, t_proc *p)
 	op = VM(i);
 	p->set[0] = op;
 	if (op > 0 && op < 17)
-	{
-		// put_in_set(i, vm, p);//could move that to verify validity, so get arg at the end
 		p->cycle = GOT(op).cycle;
-	}
 	else
 	{
 		p->set[0] = 0;
@@ -82,19 +79,101 @@ static t_fptr       	g_operator[CODE_LEN] =
     &op_aff
 };
 
+// #define BLA cycle->total >= 8900 && cycle->total < 9000
+// #define BLA 1
+
+
+void					print_debug(t_proc *p)
+{
+	int i = GOT(p->set[0]).op_mod == 0 ? 1 : 2;
+if (p->set[0] == 16)
+	return ;
+	printf("P%5d | %s", p->pos, GOT(p->set[0]).name);
+	unsigned int j = 0;
+	while (j < GOT(p->set[0]).params)
+	{
+		if (GOT(p->set[0]).arg[j] == T_REG)
+			printf(" r%d", p->set[i + j]);
+		else if (p->arg_size[j] == T_REG && GOT(p->set[0]).params == 3)
+			printf(" %d", p->reg[p->set[i + j]]);
+		else
+			printf(" %d", p->set[i + j]);
+		j++;
+	}
+
+	if (p->set[0] == 11)
+	{
+int		k = p->set[i + 1] + p->set[i + 2];
+		printf("\n       | -> store to %d + %d = %d (with pc and mod %d)", p->set[i + 1], p->set[i + 2], k, k % IDX_MOD);
+	}
+	else if (p->set[0] == 1 && p->set[1] == p->num)
+	{
+		printf("\nPlayer %d (%s) is said to be alive", -p->num, p->name);
+	}
+	else if (p->set[0] == 12 || p->set[0] == 15)
+		printf(" (%d)", p->set[1] + p->pc);
+	if (p->set[0] == 9 && p->carry == 1)
+		printf(" OK\n");
+	else if (p->set[0] == 9 && p->carry == 0)
+		printf(" FAILED\n");
+	else
+		printf("\n");
+}
+
+
+void	print_address(int i)
+{
+	unsigned int	j = 0;
+	char *r = ft_base(i, 16);
+	ft_putstr("0x");
+	int k = ft_strlen(r);
+	if (k < 4 && k >= 0)
+	while (j++ < (4 - ft_strlen(r)))
+		ft_putchar('0');
+	ft_putstr(r);
+}
+
+void						print_adv(t_proc *p, unsigned char *addr)
+{
+
+	char	hex[] = "0123456789abcdef";
+
+	if (p->set[0] == 9)
+		return ;
+int	i = p->pc;
+int j = p->pc + p->next_i;
+char str[64];
+bzero(str, 64);
+int k = 0;
+	while (i < j)
+	{
+	str[k++] = (hex[(int)addr[i] / 16]);
+	str[k++] = (hex[(int)addr[i] % 16]);
+	str[k++] = (' ');
+		i++;
+	}
+	printf("ADV %d (0x%04x -> 0x%04x) %s\n", p->next_i, p->pc, j, str);
+}
+
+
 void						tstw(t_proc *p, t_vm *vm)
 {
+	if (p->set[0] == 12 || p->set[0] == 15)
+		return;
 	if (p->cycle == 0)
 	{
 			if (p->set[0] && verify_validity(p, vm))
+			{
+									if (BLA)
+						print_debug(p);
+
 				g_operator[p->set[0]](vm, p);
+			}
+						if (p->next_i > 1 && BLA)
+					print_adv(p, vm->memory);
+
 	}
 }
-
-// #define BLA cycle->total >= 8900 && cycle->total < 9000
-// #define BLA 1
-#define BLA 0
-
 
 void						manage_players(t_cycle *cycle, t_vm *vm)
 {
@@ -103,10 +182,8 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 	p = vm->first;
 	(void)cycle;
 
-		if (BLA)
-			ft_print("\t\t\t\t\t\t\t\t\t\t\tCycle [ %d ]\n", cycle->total);
 	while (p)
-	{
+	{	
 		if ((p->set[0] == 0 || (p->cycle + 1) == GOT(p->set[0]).cycle) && cycle->total)
 		{
 			get_instructions(vm, p);
@@ -116,20 +193,11 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 		{
 			 if (p->set[0] && verify_validity(p, vm))
 			{
-		if (BLA)
-		{			
-			ft_print("Player %d | %s [ %d ]\t%d\t%d\t%d\n", p->pos, GOT(p->set[0]).name, p->set[1], p->set[2], p->set[3], p->set[4]);
-			// ft_print("PLAYER [%s] ADV %d\t%s -> %s\t[%d]\n", GOT(p->set[0]).name,p->next_i, ft_base(p->pc, 16), ft_base(p->pc + p->next_i, 16), p->pos);
-		}
-				
+					if (BLA)print_debug(p);
 				g_operator[p->set[0]](vm, p);
 			}
-			if (p->next_i > 1)
-			{
-				if (BLA && p->set[0] != 9)
-					ft_print("[%s] ADV %d\t%s -> %s\t[%d]\n", GOT(p->set[0]).name,p->next_i, ft_base(p->pc, 16), ft_base(p->pc + p->next_i, 16), p->pos);
-
-			}
+			if (p->next_i > 1 && BLA)
+					print_adv(p, vm->memory);
 			p->old = p->pc;
 			p->pc += p->next_i;
 			p->pc %= MEM_SIZE;
@@ -138,20 +206,6 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 		p->cycle--;
 		p = p->next;
 	}
-	// p = vm->first;
-	// while (p)
-	// {
-	// 	if (p->cycle == 0)
-	// 	{
-	// 					p->old = p->pc;
-	// 		p->pc += p->next_i;
-	// 		p->pc %= MEM_SIZE;
-
-	// 		get_instructions(vm, p);
-	// 	}
-	// 	p->cycle--;
-	// 	p = p->next;
-	// }
 }
 
 #if 0 

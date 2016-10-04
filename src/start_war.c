@@ -52,7 +52,6 @@ int							reset_players(t_vm *vm)
 	{
 		if (p->alive == 0)
 		{
-			tstw(p, vm);
 			if (remove_player(vm, p) == -1)
 				return (-1);
 		}
@@ -68,10 +67,13 @@ int							loop_players(t_cycle *cycle, t_vm *vm)
 	int						i;
 
 	i = -1;
-	cycle->current = 0;
+	cycle->current = 1;
 	cycle->alive = 0;
-	while (cycle->current < cycle->stop)
+
+	while (cycle->current <= cycle->stop)
 	{
+		if (BLA && cycle->total)
+		printf("It is now cycle %d\n", cycle->total);
 		manage_players(cycle, vm);
 		if (vm->dump == cycle->total)
 			dump_memory(vm);
@@ -82,7 +84,8 @@ int							loop_players(t_cycle *cycle, t_vm *vm)
 	}
 	while (++i < MAX_PLAYERS)
 		vm->plr[i].live = 0;
-	if (reset_players(vm) == -1)
+	if (cycle->total)
+		if (reset_players(vm) == -1)
 	{
 		ft_print("Trouble at cycle : %d\n", cycle->total);
 		return (-1);
@@ -95,7 +98,7 @@ void						start_war(t_vm *vm)
 {
 	t_cycle					cycle;
 
-	cycle.total = 0;
+	cycle.total = 1;
 	cycle.stop = CYCLE_TO_DIE;
 	cycle.check = 0;
 	cycle.alive = 0;
@@ -104,13 +107,15 @@ void						start_war(t_vm *vm)
 		start_visual(vm);
 	while (1)
 	{
+
 		if (loop_players(&cycle, vm) == -1)
 			break;
 		if (cycle.alive >= NBR_LIVE || cycle.check == MAX_CHECKS)
 		{
-
 			cycle.stop -= CYCLE_DELTA;
 			cycle.check = 0; // Maybe cycle check 0 only if max check
+			if (BLA)
+			printf("Cycle to die is now %d\n", cycle.stop);
 		}
 		if (cycle.alive == 0 || (int)cycle.stop <= 0)
 			break;
@@ -118,3 +123,7 @@ void						start_war(t_vm *vm)
 	ft_print("cycle: %d\tContestant %d, \"%s\", has won !\n",cycle.total,
 			 -vm->first->num, vm->first->name);
 }
+
+
+
+
