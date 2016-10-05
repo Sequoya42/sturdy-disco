@@ -51,6 +51,7 @@ struct					s_plr
 	int					live;
 	unsigned int		last;
 	char				*s;
+	char				*name;
 };
 
 struct					s_cycle

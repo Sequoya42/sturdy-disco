@@ -45,6 +45,9 @@ t_op		g_op_tab[17] =
 
 #if 0
 *****
+13787
+turtle thunder champ fluttershy
+ fight 13780 1 ressources/turtle.cor ressources/THUNDER.cor ressources/champ.cor ressources/fluttershy.cor
 
 					CYCLE X
 

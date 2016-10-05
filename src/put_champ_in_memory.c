@@ -57,6 +57,7 @@ int						fill_memory(t_vm *vm)
 		if (!(p = ft_memalloc(sizeof(t_proc))))
 			msg_exit("Bad alloc of processus\n");
 		fill_champion((i * dist), vm->plr[i].s, vm, p);
+		vm->plr[i].name = ft_strdup(p->name);
 		p->num = (vm->plr[i].n) * (-1);
 		p->reg[1] = p->num;
 		first_add_proc(p, vm);

@@ -1,0 +1,3018 @@
+Introducing contestants...
+* Player 1, weighing 682 bytes, "Kappa" ("AKA Kappa Sandwich.") !
+* Player 2, weighing 679 bytes, "Underscore" ("__UNDERSCORE_S__") !
+* Player 3, weighing 617 bytes, "helltrain" ("choo-choo, motherf*****s !") !
+* Player 4, weighing 681 bytes, "Misaka Mikoto" ("Misaka Mikoto (御坂 美琴 Misaka Mikoto) (born May 2) is a main heroine in Toaru Majutsu no Index and the main protagonist of Toaru Kagaku no Railgun. Introduced in the first volume of the light novels, her role in the story was later expanded in the third volume as well as the release of the Toaru Kagaku no Railgun manga, making her the main heroine of the science side and the second main heroine of the series.
+
+	She is the third ranked Level 5 esper in Academy City, and is nicknamed the Railgun due to her signature move. Kamijou Touma coined the nickname Biri-Biri (ビリビリ?) (a Japanese onomatopoeia imitating the sound of electricity) for her and whenever the two meet he usually calls her that, even after his amnesia") !
+It is now cycle 1
+It is now cycle 2
+It is now cycle 3
+It is now cycle 4
+It is now cycle 5
+P    2 | ld 0 r2
+ADV 7 (0x0400 -> 0x0407) 02 90 00 00 00 00 02 
+It is now cycle 6
+It is now cycle 7
+It is now cycle 8
+It is now cycle 9
+It is now cycle 10
+It is now cycle 11
+It is now cycle 12
+It is now cycle 13
+It is now cycle 14
+It is now cycle 15
+It is now cycle 16
+It is now cycle 17
+It is now cycle 18
+It is now cycle 19
+It is now cycle 20
+It is now cycle 21
+It is now cycle 22
+It is now cycle 23
+It is now cycle 24
+It is now cycle 25
+P    4 | sti r1 348 1
+       | -> store to 348 + 1 = 349 (with pc and mod 3421)
+ADV 7 (0x0c00 -> 0x0c07) 0b 68 01 01 5c 00 01 
+P    3 | sti r1 391 1
+       | -> store to 391 + 1 = 392 (with pc and mod 2440)
+ADV 7 (0x0800 -> 0x0807) 0b 68 01 01 87 00 01 
+P    2 | zjmp 499 OK
+P    1 | sti r1 456 1
+       | -> store to 456 + 1 = 457 (with pc and mod 457)
+ADV 7 (0x0000 -> 0x0007) 0b 68 01 01 c8 00 01 
+It is now cycle 26
+It is now cycle 27
+It is now cycle 28
+It is now cycle 29
+It is now cycle 30
+P    2 | ld 16777216 r16
+ADV 7 (0x05fa -> 0x0601) 02 90 01 00 00 00 10 
+P    1 | ld 75 r13
+ADV 7 (0x0007 -> 0x000e) 02 90 00 00 00 4b 0d 
+It is now cycle 31
+It is now cycle 32
+ADV 3 (0x000e -> 0x0011) 10 40 0d 
+It is now cycle 33
+It is now cycle 34
+It is now cycle 35
+It is now cycle 36
+It is now cycle 37
+It is now cycle 38
+It is now cycle 39
+It is now cycle 40
+It is now cycle 41
+It is now cycle 42
+It is now cycle 43
+It is now cycle 44
+It is now cycle 45
+It is now cycle 46
+It is now cycle 47
+It is now cycle 48
+It is now cycle 49
+It is now cycle 50
+P    4 | sti r1 81 1
+       | -> store to 81 + 1 = 82 (with pc and mod 3161)
+ADV 7 (0x0c07 -> 0x0c0e) 0b 68 01 00 51 00 01 
+P    3 | sti r1 399 1
+       | -> store to 399 + 1 = 400 (with pc and mod 2455)
+ADV 7 (0x0807 -> 0x080e) 0b 68 01 01 8f 00 01 
+It is now cycle 51
+It is now cycle 52
+It is now cycle 53
+It is now cycle 54
+It is now cycle 55
+P    2 | sti r16 -513 6
+       | -> store to -513 + 6 = -507 (with pc and mod 1030)
+ADV 7 (0x0601 -> 0x0608) 0b 68 10 fd ff 00 06 
+It is now cycle 56
+It is now cycle 57
+It is now cycle 58
+It is now cycle 59
+It is now cycle 60
+P    2 | st r1 117
+ADV 5 (0x0608 -> 0x060d) 03 70 01 00 75 
+It is now cycle 61
+It is now cycle 62
+It is now cycle 63
+It is now cycle 64
+It is now cycle 65
+It is now cycle 66
+It is now cycle 67
+It is now cycle 68
+It is now cycle 69
+It is now cycle 70
+It is now cycle 71
+It is now cycle 72
+It is now cycle 73
+It is now cycle 74
+It is now cycle 75
+P    4 | sti r1 85 1
+       | -> store to 85 + 1 = 86 (with pc and mod 3172)
+ADV 7 (0x0c0e -> 0x0c15) 0b 68 01 00 55 00 01 
+P    3 | sti r1 400 1
+       | -> store to 400 + 1 = 401 (with pc and mod 2463)
+ADV 7 (0x080e -> 0x0815) 0b 68 01 01 90 00 01 
+It is now cycle 76
+It is now cycle 77
+It is now cycle 78
+It is now cycle 79
+It is now cycle 80
+It is now cycle 81
+It is now cycle 82
+It is now cycle 83
+It is now cycle 84
+It is now cycle 85
+P    2 | sti r1 68 1
+       | -> store to 68 + 1 = 69 (with pc and mod 1618)
+ADV 7 (0x060d -> 0x0614) 0b 68 01 00 44 00 01 
+It is now cycle 86
+It is now cycle 87
+It is now cycle 88
+It is now cycle 89
+It is now cycle 90
+P    2 | ld 507 r4
+ADV 7 (0x0614 -> 0x061b) 02 90 00 00 01 fb 04 
+It is now cycle 91
+It is now cycle 92
+It is now cycle 93
+It is now cycle 94
+It is now cycle 95
+P    2 | ld 507 r6
+ADV 7 (0x061b -> 0x0622) 02 90 00 00 01 fb 06 
+It is now cycle 96
+It is now cycle 97
+It is now cycle 98
+It is now cycle 99
+It is now cycle 100
+P    4 | sti r1 95 1
+       | -> store to 95 + 1 = 96 (with pc and mod 3189)
+ADV 7 (0x0c15 -> 0x0c1c) 0b 68 01 00 5f 00 01 
+P    3 | sti r1 87 1
+       | -> store to 87 + 1 = 88 (with pc and mod 2157)
+ADV 7 (0x0815 -> 0x081c) 0b 68 01 00 57 00 01 
+P    2 | st r1 6
+ADV 5 (0x0622 -> 0x0627) 03 70 01 00 06 
+It is now cycle 101
+It is now cycle 102
+It is now cycle 103
+It is now cycle 104
+It is now cycle 105
+It is now cycle 106
+It is now cycle 107
+It is now cycle 108
+It is now cycle 109
+It is now cycle 110
+P    2 | live -2
+Player 2 (Underscore) is said to be alive
+ADV 5 (0x0627 -> 0x062c) 01 ff ff ff fe 
+It is now cycle 111
+It is now cycle 112
+It is now cycle 113
+It is now cycle 114
+It is now cycle 115
+P    2 | ld 190055170 r8
+ADV 7 (0x062c -> 0x0633) 02 90 0b 54 03 02 08 
+It is now cycle 116
+It is now cycle 117
+It is now cycle 118
+It is now cycle 119
+It is now cycle 120
+P    2 | ld 67699190 r9
+ADV 7 (0x0633 -> 0x063a) 02 90 04 09 01 f6 09 
+It is now cycle 121
+It is now cycle 122
+It is now cycle 123
+It is now cycle 124
+It is now cycle 125
+P    4 | sti r1 121 1
+       | -> store to 121 + 1 = 122 (with pc and mod 3222)
+ADV 7 (0x0c1c -> 0x0c23) 0b 68 01 00 79 00 01 
+P    3 | sti r1 397 1
+       | -> store to 397 + 1 = 398 (with pc and mod 2474)
+ADV 7 (0x081c -> 0x0823) 0b 68 01 01 8d 00 01 
+P    2 | st r8 511
+ADV 5 (0x063a -> 0x063f) 03 70 08 01 ff 
+It is now cycle 126
+It is now cycle 127
+It is now cycle 128
+It is now cycle 129
+It is now cycle 130
+P    4 | st r2 -35
+ADV 5 (0x0c23 -> 0x0c28) 03 70 02 ff dd 
+P    2 | st r9 510
+ADV 5 (0x063f -> 0x0644) 03 70 09 01 fe 
+It is now cycle 131
+It is now cycle 132
+It is now cycle 133
+It is now cycle 134
+It is now cycle 135
+P    2 | ld 24 r8
+ADV 7 (0x0644 -> 0x064b) 02 90 00 00 00 18 08 
+It is now cycle 136
+It is now cycle 137
+It is now cycle 138
+It is now cycle 139
+It is now cycle 140
+It is now cycle 141
+It is now cycle 142
+It is now cycle 143
+It is now cycle 144
+It is now cycle 145
+It is now cycle 146
+It is now cycle 147
+It is now cycle 148
+It is now cycle 149
+It is now cycle 150
+P    3 | sti r1 390 9
+       | -> store to 390 + 9 = 399 (with pc and mod 2482)
+ADV 7 (0x0823 -> 0x082a) 0b 68 01 01 86 00 09 
+It is now cycle 151
+It is now cycle 152
+It is now cycle 153
+It is now cycle 154
+It is now cycle 155
+It is now cycle 156
+It is now cycle 157
+It is now cycle 158
+It is now cycle 159
+It is now cycle 160
+It is now cycle 161
+It is now cycle 162
+It is now cycle 163
+It is now cycle 164
+It is now cycle 165
+It is now cycle 166
+It is now cycle 167
+It is now cycle 168
+It is now cycle 169
+It is now cycle 170
+It is now cycle 171
+It is now cycle 172
+It is now cycle 173
+It is now cycle 174
+It is now cycle 175
+P    3 | sti r1 383 17
+       | -> store to 383 + 17 = 400 (with pc and mod 2490)
+ADV 7 (0x082a -> 0x0831) 0b 68 01 01 7f 00 11 
+It is now cycle 176
+It is now cycle 177
+It is now cycle 178
+It is now cycle 179
+It is now cycle 180
+It is now cycle 181
+It is now cycle 182
+It is now cycle 183
+It is now cycle 184
+It is now cycle 185
+It is now cycle 186
+It is now cycle 187
+It is now cycle 188
+It is now cycle 189
+It is now cycle 190
+It is now cycle 191
+It is now cycle 192
+It is now cycle 193
+It is now cycle 194
+It is now cycle 195
+It is now cycle 196
+It is now cycle 197
+It is now cycle 198
+It is now cycle 199
+It is now cycle 200
+P    3 | sti r1 421 1
+       | -> store to 421 + 1 = 422 (with pc and mod 2519)
+ADV 7 (0x0831 -> 0x0838) 0b 68 01 01 a5 00 01 
+It is now cycle 201
+It is now cycle 202
+It is now cycle 203
+It is now cycle 204
+It is now cycle 205
+It is now cycle 206
+It is now cycle 207
+It is now cycle 208
+It is now cycle 209
+It is now cycle 210
+It is now cycle 211
+It is now cycle 212
+It is now cycle 213
+It is now cycle 214
+It is now cycle 215
+It is now cycle 216
+It is now cycle 217
+It is now cycle 218
+It is now cycle 219
+It is now cycle 220
+It is now cycle 221
+It is now cycle 222
+It is now cycle 223
+It is now cycle 224
+It is now cycle 225
+ADV 4 (0x0838 -> 0x083c) 0b 0b 54 03 
+It is now cycle 226
+It is now cycle 227
+It is now cycle 228
+It is now cycle 229
+It is now cycle 230
+ADV 2 (0x083c -> 0x083e) 02 04 
+It is now cycle 231
+It is now cycle 232
+It is now cycle 233
+It is now cycle 234
+It is now cycle 235
+It is now cycle 236
+It is now cycle 237
+It is now cycle 238
+It is now cycle 239
+It is now cycle 240
+It is now cycle 241
+It is now cycle 242
+It is now cycle 243
+It is now cycle 244
+It is now cycle 245
+It is now cycle 246
+It is now cycle 247
+It is now cycle 248
+It is now cycle 249
+It is now cycle 250
+P    3 | zjmp 502 FAILED
+ADV 3 (0x083e -> 0x0841) 09 01 f6 
+It is now cycle 251
+It is now cycle 252
+It is now cycle 253
+It is now cycle 254
+It is now cycle 255
+It is now cycle 256
+It is now cycle 257
+It is now cycle 258
+It is now cycle 259
+It is now cycle 260
+P    3 | live 30212097
+ADV 5 (0x0841 -> 0x0846) 01 01 cd 00 01 
+It is now cycle 261
+It is now cycle 262
+It is now cycle 263
+It is now cycle 264
+It is now cycle 265
+It is now cycle 266
+It is now cycle 267
+It is now cycle 268
+It is now cycle 269
+It is now cycle 270
+It is now cycle 271
+It is now cycle 272
+It is now cycle 273
+It is now cycle 274
+It is now cycle 275
+It is now cycle 276
+It is now cycle 277
+It is now cycle 278
+It is now cycle 279
+It is now cycle 280
+It is now cycle 281
+It is now cycle 282
+It is now cycle 283
+It is now cycle 284
+It is now cycle 285
+P    3 | sti r1 454 9
+       | -> store to 454 + 9 = 463 (with pc and mod 2581)
+ADV 7 (0x0846 -> 0x084d) 0b 68 01 01 c6 00 09 
+It is now cycle 286
+It is now cycle 287
+It is now cycle 288
+It is now cycle 289
+It is now cycle 290
+It is now cycle 291
+It is now cycle 292
+It is now cycle 293
+It is now cycle 294
+It is now cycle 295
+It is now cycle 296
+It is now cycle 297
+It is now cycle 298
+It is now cycle 299
+It is now cycle 300
+It is now cycle 301
+It is now cycle 302
+It is now cycle 303
+It is now cycle 304
+It is now cycle 305
+It is now cycle 306
+It is now cycle 307
+It is now cycle 308
+It is now cycle 309
+It is now cycle 310
+P    3 | sti r1 408 1
+       | -> store to 408 + 1 = 409 (with pc and mod 2534)
+ADV 7 (0x084d -> 0x0854) 0b 68 01 01 98 00 01 
+It is now cycle 311
+It is now cycle 312
+It is now cycle 313
+It is now cycle 314
+It is now cycle 315
+P    3 | ld 0 r16
+ADV 7 (0x0854 -> 0x085b) 02 90 00 00 00 00 10 
+It is now cycle 316
+It is now cycle 317
+It is now cycle 318
+It is now cycle 319
+It is now cycle 320
+It is now cycle 321
+It is now cycle 322
+It is now cycle 323
+It is now cycle 324
+It is now cycle 325
+It is now cycle 326
+It is now cycle 327
+It is now cycle 328
+It is now cycle 329
+It is now cycle 330
+It is now cycle 331
+It is now cycle 332
+It is now cycle 333
+It is now cycle 334
+It is now cycle 335
+It is now cycle 336
+It is now cycle 337
+It is now cycle 338
+It is now cycle 339
+It is now cycle 340
+It is now cycle 341
+It is now cycle 342
+It is now cycle 343
+It is now cycle 344
+It is now cycle 345
+It is now cycle 346
+It is now cycle 347
+It is now cycle 348
+It is now cycle 349
+It is now cycle 350
+It is now cycle 351
+It is now cycle 352
+It is now cycle 353
+It is now cycle 354
+It is now cycle 355
+It is now cycle 356
+It is now cycle 357
+It is now cycle 358
+It is now cycle 359
+It is now cycle 360
+It is now cycle 361
+It is now cycle 362
+It is now cycle 363
+It is now cycle 364
+It is now cycle 365
+It is now cycle 366
+It is now cycle 367
+It is now cycle 368
+It is now cycle 369
+It is now cycle 370
+It is now cycle 371
+It is now cycle 372
+It is now cycle 373
+It is now cycle 374
+It is now cycle 375
+It is now cycle 376
+It is now cycle 377
+It is now cycle 378
+It is now cycle 379
+It is now cycle 380
+It is now cycle 381
+It is now cycle 382
+It is now cycle 383
+It is now cycle 384
+It is now cycle 385
+It is now cycle 386
+It is now cycle 387
+It is now cycle 388
+It is now cycle 389
+It is now cycle 390
+It is now cycle 391
+It is now cycle 392
+It is now cycle 393
+It is now cycle 394
+It is now cycle 395
+It is now cycle 396
+It is now cycle 397
+It is now cycle 398
+It is now cycle 399
+It is now cycle 400
+It is now cycle 401
+It is now cycle 402
+It is now cycle 403
+It is now cycle 404
+It is now cycle 405
+It is now cycle 406
+It is now cycle 407
+It is now cycle 408
+It is now cycle 409
+It is now cycle 410
+It is now cycle 411
+It is now cycle 412
+It is now cycle 413
+It is now cycle 414
+It is now cycle 415
+It is now cycle 416
+It is now cycle 417
+It is now cycle 418
+It is now cycle 419
+It is now cycle 420
+It is now cycle 421
+It is now cycle 422
+It is now cycle 423
+It is now cycle 424
+It is now cycle 425
+It is now cycle 426
+It is now cycle 427
+It is now cycle 428
+It is now cycle 429
+It is now cycle 430
+It is now cycle 431
+It is now cycle 432
+It is now cycle 433
+It is now cycle 434
+It is now cycle 435
+It is now cycle 436
+It is now cycle 437
+It is now cycle 438
+It is now cycle 439
+It is now cycle 440
+It is now cycle 441
+It is now cycle 442
+It is now cycle 443
+It is now cycle 444
+It is now cycle 445
+It is now cycle 446
+It is now cycle 447
+It is now cycle 448
+It is now cycle 449
+It is now cycle 450
+It is now cycle 451
+It is now cycle 452
+It is now cycle 453
+It is now cycle 454
+It is now cycle 455
+It is now cycle 456
+It is now cycle 457
+It is now cycle 458
+It is now cycle 459
+It is now cycle 460
+It is now cycle 461
+It is now cycle 462
+It is now cycle 463
+It is now cycle 464
+It is now cycle 465
+It is now cycle 466
+It is now cycle 467
+It is now cycle 468
+It is now cycle 469
+It is now cycle 470
+It is now cycle 471
+It is now cycle 472
+It is now cycle 473
+It is now cycle 474
+It is now cycle 475
+It is now cycle 476
+It is now cycle 477
+It is now cycle 478
+It is now cycle 479
+It is now cycle 480
+It is now cycle 481
+It is now cycle 482
+It is now cycle 483
+It is now cycle 484
+It is now cycle 485
+It is now cycle 486
+It is now cycle 487
+It is now cycle 488
+It is now cycle 489
+It is now cycle 490
+It is now cycle 491
+It is now cycle 492
+It is now cycle 493
+It is now cycle 494
+It is now cycle 495
+It is now cycle 496
+It is now cycle 497
+It is now cycle 498
+It is now cycle 499
+It is now cycle 500
+It is now cycle 501
+It is now cycle 502
+It is now cycle 503
+It is now cycle 504
+It is now cycle 505
+It is now cycle 506
+It is now cycle 507
+It is now cycle 508
+It is now cycle 509
+It is now cycle 510
+It is now cycle 511
+It is now cycle 512
+It is now cycle 513
+It is now cycle 514
+It is now cycle 515
+It is now cycle 516
+It is now cycle 517
+It is now cycle 518
+It is now cycle 519
+It is now cycle 520
+It is now cycle 521
+It is now cycle 522
+It is now cycle 523
+It is now cycle 524
+It is now cycle 525
+It is now cycle 526
+It is now cycle 527
+It is now cycle 528
+It is now cycle 529
+It is now cycle 530
+It is now cycle 531
+It is now cycle 532
+It is now cycle 533
+It is now cycle 534
+It is now cycle 535
+It is now cycle 536
+It is now cycle 537
+It is now cycle 538
+It is now cycle 539
+It is now cycle 540
+It is now cycle 541
+It is now cycle 542
+It is now cycle 543
+It is now cycle 544
+It is now cycle 545
+It is now cycle 546
+It is now cycle 547
+It is now cycle 548
+It is now cycle 549
+It is now cycle 550
+It is now cycle 551
+It is now cycle 552
+It is now cycle 553
+It is now cycle 554
+It is now cycle 555
+It is now cycle 556
+It is now cycle 557
+It is now cycle 558
+It is now cycle 559
+It is now cycle 560
+It is now cycle 561
+It is now cycle 562
+It is now cycle 563
+It is now cycle 564
+It is now cycle 565
+It is now cycle 566
+It is now cycle 567
+It is now cycle 568
+It is now cycle 569
+It is now cycle 570
+It is now cycle 571
+It is now cycle 572
+It is now cycle 573
+It is now cycle 574
+It is now cycle 575
+It is now cycle 576
+It is now cycle 577
+It is now cycle 578
+It is now cycle 579
+It is now cycle 580
+It is now cycle 581
+It is now cycle 582
+It is now cycle 583
+It is now cycle 584
+It is now cycle 585
+It is now cycle 586
+It is now cycle 587
+It is now cycle 588
+It is now cycle 589
+It is now cycle 590
+It is now cycle 591
+It is now cycle 592
+It is now cycle 593
+It is now cycle 594
+It is now cycle 595
+It is now cycle 596
+It is now cycle 597
+It is now cycle 598
+It is now cycle 599
+It is now cycle 600
+It is now cycle 601
+It is now cycle 602
+It is now cycle 603
+It is now cycle 604
+It is now cycle 605
+It is now cycle 606
+It is now cycle 607
+It is now cycle 608
+It is now cycle 609
+It is now cycle 610
+It is now cycle 611
+It is now cycle 612
+It is now cycle 613
+It is now cycle 614
+It is now cycle 615
+It is now cycle 616
+It is now cycle 617
+It is now cycle 618
+It is now cycle 619
+It is now cycle 620
+It is now cycle 621
+It is now cycle 622
+It is now cycle 623
+It is now cycle 624
+It is now cycle 625
+It is now cycle 626
+It is now cycle 627
+It is now cycle 628
+It is now cycle 629
+It is now cycle 630
+It is now cycle 631
+It is now cycle 632
+It is now cycle 633
+It is now cycle 634
+It is now cycle 635
+It is now cycle 636
+It is now cycle 637
+It is now cycle 638
+It is now cycle 639
+It is now cycle 640
+It is now cycle 641
+It is now cycle 642
+It is now cycle 643
+It is now cycle 644
+It is now cycle 645
+It is now cycle 646
+It is now cycle 647
+It is now cycle 648
+It is now cycle 649
+It is now cycle 650
+It is now cycle 651
+It is now cycle 652
+It is now cycle 653
+It is now cycle 654
+It is now cycle 655
+It is now cycle 656
+It is now cycle 657
+It is now cycle 658
+It is now cycle 659
+It is now cycle 660
+It is now cycle 661
+It is now cycle 662
+It is now cycle 663
+It is now cycle 664
+It is now cycle 665
+It is now cycle 666
+It is now cycle 667
+It is now cycle 668
+It is now cycle 669
+It is now cycle 670
+It is now cycle 671
+It is now cycle 672
+It is now cycle 673
+It is now cycle 674
+It is now cycle 675
+It is now cycle 676
+It is now cycle 677
+It is now cycle 678
+It is now cycle 679
+It is now cycle 680
+It is now cycle 681
+It is now cycle 682
+It is now cycle 683
+It is now cycle 684
+It is now cycle 685
+It is now cycle 686
+It is now cycle 687
+It is now cycle 688
+It is now cycle 689
+It is now cycle 690
+It is now cycle 691
+It is now cycle 692
+It is now cycle 693
+It is now cycle 694
+It is now cycle 695
+It is now cycle 696
+It is now cycle 697
+It is now cycle 698
+It is now cycle 699
+It is now cycle 700
+It is now cycle 701
+It is now cycle 702
+It is now cycle 703
+It is now cycle 704
+It is now cycle 705
+It is now cycle 706
+It is now cycle 707
+It is now cycle 708
+It is now cycle 709
+It is now cycle 710
+It is now cycle 711
+It is now cycle 712
+It is now cycle 713
+It is now cycle 714
+It is now cycle 715
+It is now cycle 716
+It is now cycle 717
+It is now cycle 718
+It is now cycle 719
+It is now cycle 720
+It is now cycle 721
+It is now cycle 722
+It is now cycle 723
+It is now cycle 724
+It is now cycle 725
+It is now cycle 726
+It is now cycle 727
+It is now cycle 728
+It is now cycle 729
+It is now cycle 730
+It is now cycle 731
+It is now cycle 732
+It is now cycle 733
+It is now cycle 734
+It is now cycle 735
+It is now cycle 736
+It is now cycle 737
+It is now cycle 738
+It is now cycle 739
+It is now cycle 740
+It is now cycle 741
+It is now cycle 742
+It is now cycle 743
+It is now cycle 744
+It is now cycle 745
+It is now cycle 746
+It is now cycle 747
+It is now cycle 748
+It is now cycle 749
+It is now cycle 750
+It is now cycle 751
+It is now cycle 752
+It is now cycle 753
+It is now cycle 754
+It is now cycle 755
+It is now cycle 756
+It is now cycle 757
+It is now cycle 758
+It is now cycle 759
+It is now cycle 760
+It is now cycle 761
+It is now cycle 762
+It is now cycle 763
+It is now cycle 764
+It is now cycle 765
+It is now cycle 766
+It is now cycle 767
+It is now cycle 768
+It is now cycle 769
+It is now cycle 770
+It is now cycle 771
+It is now cycle 772
+It is now cycle 773
+It is now cycle 774
+It is now cycle 775
+It is now cycle 776
+It is now cycle 777
+It is now cycle 778
+It is now cycle 779
+It is now cycle 780
+It is now cycle 781
+It is now cycle 782
+It is now cycle 783
+It is now cycle 784
+It is now cycle 785
+It is now cycle 786
+It is now cycle 787
+It is now cycle 788
+It is now cycle 789
+It is now cycle 790
+It is now cycle 791
+It is now cycle 792
+It is now cycle 793
+It is now cycle 794
+It is now cycle 795
+It is now cycle 796
+It is now cycle 797
+It is now cycle 798
+It is now cycle 799
+It is now cycle 800
+It is now cycle 801
+It is now cycle 802
+It is now cycle 803
+It is now cycle 804
+It is now cycle 805
+It is now cycle 806
+It is now cycle 807
+It is now cycle 808
+It is now cycle 809
+It is now cycle 810
+It is now cycle 811
+It is now cycle 812
+It is now cycle 813
+It is now cycle 814
+It is now cycle 815
+It is now cycle 816
+It is now cycle 817
+It is now cycle 818
+It is now cycle 819
+It is now cycle 820
+It is now cycle 821
+It is now cycle 822
+It is now cycle 823
+It is now cycle 824
+It is now cycle 825
+It is now cycle 826
+It is now cycle 827
+It is now cycle 828
+It is now cycle 829
+It is now cycle 830
+It is now cycle 831
+It is now cycle 832
+P    1 | fork 400 (417)
+ADV 3 (0x0011 -> 0x0014) 0c 01 90 
+It is now cycle 833
+It is now cycle 834
+It is now cycle 835
+It is now cycle 836
+It is now cycle 837
+It is now cycle 838
+It is now cycle 839
+It is now cycle 840
+It is now cycle 841
+It is now cycle 842
+P    5 | live 42
+ADV 5 (0x01a1 -> 0x01a6) 01 00 00 00 2a 
+P    1 | live 1337
+ADV 5 (0x0014 -> 0x0019) 01 00 00 05 39 
+It is now cycle 843
+It is now cycle 844
+It is now cycle 845
+It is now cycle 846
+It is now cycle 847
+P    1 | ld 880 r5
+ADV 7 (0x0019 -> 0x0020) 02 90 00 00 03 70 05 
+It is now cycle 848
+It is now cycle 849
+It is now cycle 850
+It is now cycle 851
+It is now cycle 852
+P    1 | ld 50327043 r6
+ADV 7 (0x0020 -> 0x0027) 02 90 02 ff ee 03 06 
+It is now cycle 853
+It is now cycle 854
+It is now cycle 855
+It is now cycle 856
+It is now cycle 857
+P    1 | ld 1879310335 r7
+ADV 7 (0x0027 -> 0x002e) 02 90 70 03 ff ff 07 
+It is now cycle 858
+It is now cycle 859
+It is now cycle 860
+It is now cycle 861
+It is now cycle 862
+P    1 | ld 16777216 r8
+ADV 7 (0x002e -> 0x0035) 02 90 01 00 00 00 08 
+It is now cycle 863
+It is now cycle 864
+It is now cycle 865
+It is now cycle 866
+It is now cycle 867
+P    1 | ld 17432543 r9
+ADV 7 (0x0035 -> 0x003c) 02 90 01 09 ff df 09 
+It is now cycle 868
+It is now cycle 869
+It is now cycle 870
+It is now cycle 871
+It is now cycle 872
+P    1 | st r5 -80
+ADV 5 (0x003c -> 0x0041) 03 70 05 ff b0 
+It is now cycle 873
+It is now cycle 874
+It is now cycle 875
+It is now cycle 876
+It is now cycle 877
+P    1 | st r6 -81
+ADV 5 (0x0041 -> 0x0046) 03 70 06 ff af 
+It is now cycle 878
+It is now cycle 879
+It is now cycle 880
+It is now cycle 881
+It is now cycle 882
+P    1 | st r7 -82
+ADV 5 (0x0046 -> 0x004b) 03 70 07 ff ae 
+It is now cycle 883
+It is now cycle 884
+It is now cycle 885
+It is now cycle 886
+It is now cycle 887
+P    1 | st r8 -83
+ADV 5 (0x004b -> 0x0050) 03 70 08 ff ad 
+It is now cycle 888
+It is now cycle 889
+It is now cycle 890
+It is now cycle 891
+It is now cycle 892
+P    1 | st r9 -84
+ADV 5 (0x0050 -> 0x0055) 03 70 09 ff ac 
+It is now cycle 893
+It is now cycle 894
+It is now cycle 895
+It is now cycle 896
+It is now cycle 897
+It is now cycle 898
+It is now cycle 899
+It is now cycle 900
+It is now cycle 901
+It is now cycle 902
+It is now cycle 903
+It is now cycle 904
+It is now cycle 905
+It is now cycle 906
+It is now cycle 907
+It is now cycle 908
+It is now cycle 909
+It is now cycle 910
+It is now cycle 911
+It is now cycle 912
+It is now cycle 913
+It is now cycle 914
+It is now cycle 915
+It is now cycle 916
+It is now cycle 917
+It is now cycle 918
+It is now cycle 919
+It is now cycle 920
+It is now cycle 921
+It is now cycle 922
+It is now cycle 923
+It is now cycle 924
+It is now cycle 925
+It is now cycle 926
+It is now cycle 927
+It is now cycle 928
+It is now cycle 929
+It is now cycle 930
+P    4 | fork 29 (3141)
+ADV 3 (0x0c28 -> 0x0c2b) 0c 00 1d 
+It is now cycle 931
+It is now cycle 932
+It is now cycle 933
+It is now cycle 934
+It is now cycle 935
+P    2 | fork -378 (1233)
+ADV 3 (0x064b -> 0x064e) 0c fe 86 
+It is now cycle 936
+It is now cycle 937
+It is now cycle 938
+It is now cycle 939
+It is now cycle 940
+P    6 | live 404
+ADV 5 (0x0c45 -> 0x0c4a) 01 00 00 01 94 
+P    4 | add r3 r3 r3
+ADV 5 (0x0c2b -> 0x0c30) 04 54 03 03 03 
+It is now cycle 941
+It is now cycle 942
+It is now cycle 943
+It is now cycle 944
+It is now cycle 945
+It is now cycle 946
+It is now cycle 947
+It is now cycle 948
+It is now cycle 949
+It is now cycle 950
+P    6 | add r3 r3 r3
+ADV 5 (0x0c4a -> 0x0c4f) 04 54 03 03 03 
+It is now cycle 951
+It is now cycle 952
+It is now cycle 953
+It is now cycle 954
+It is now cycle 955
+It is now cycle 956
+It is now cycle 957
+It is now cycle 958
+It is now cycle 959
+It is now cycle 960
+P    7 | sti r1 56 1
+       | -> store to 56 + 1 = 57 (with pc and mod 1290)
+ADV 7 (0x04d1 -> 0x04d8) 0b 68 01 00 38 00 01 
+P    4 | zjmp 364 OK
+It is now cycle 961
+It is now cycle 962
+It is now cycle 963
+It is now cycle 964
+It is now cycle 965
+It is now cycle 966
+It is now cycle 967
+It is now cycle 968
+It is now cycle 969
+It is now cycle 970
+It is now cycle 971
+It is now cycle 972
+It is now cycle 973
+It is now cycle 974
+It is now cycle 975
+It is now cycle 976
+It is now cycle 977
+It is now cycle 978
+It is now cycle 979
+It is now cycle 980
+It is now cycle 981
+It is now cycle 982
+It is now cycle 983
+It is now cycle 984
+It is now cycle 985
+P    7 | sti r1 91 1
+       | -> store to 91 + 1 = 92 (with pc and mod 1332)
+ADV 7 (0x04d8 -> 0x04df) 0b 68 01 00 5b 00 01 
+P    4 | ldi 0 -5 r3
+       | -> load from 0 + -5 = -5 (with pc and mod 3479)
+ADV 7 (0x0d9c -> 0x0da3) 0a a4 00 00 ff fb 03 
+It is now cycle 986
+It is now cycle 987
+It is now cycle 988
+It is now cycle 989
+It is now cycle 990
+It is now cycle 991
+It is now cycle 992
+It is now cycle 993
+It is now cycle 994
+It is now cycle 995
+It is now cycle 996
+It is now cycle 997
+It is now cycle 998
+It is now cycle 999
+It is now cycle 1000
+It is now cycle 1001
+It is now cycle 1002
+It is now cycle 1003
+It is now cycle 1004
+It is now cycle 1005
+It is now cycle 1006
+It is now cycle 1007
+It is now cycle 1008
+It is now cycle 1009
+It is now cycle 1010
+P    4 | ldi 7 0 r2
+       | -> load from 7 + 0 = 7 (with pc and mod 3498)
+ADV 7 (0x0da3 -> 0x0daa) 0a a4 00 07 00 00 02 
+It is now cycle 1011
+It is now cycle 1012
+It is now cycle 1013
+It is now cycle 1014
+It is now cycle 1015
+P    4 | st r2 256
+ADV 5 (0x0daa -> 0x0daf) 03 70 02 01 00 
+It is now cycle 1016
+It is now cycle 1017
+It is now cycle 1018
+It is now cycle 1019
+It is now cycle 1020
+P    4 | st r2 256
+ADV 5 (0x0daf -> 0x0db4) 03 70 02 01 00 
+It is now cycle 1021
+It is now cycle 1022
+It is now cycle 1023
+It is now cycle 1024
+It is now cycle 1025
+P    4 | st r2 256
+ADV 5 (0x0db4 -> 0x0db9) 03 70 02 01 00 
+It is now cycle 1026
+It is now cycle 1027
+It is now cycle 1028
+It is now cycle 1029
+It is now cycle 1030
+P    4 | st r2 256
+ADV 5 (0x0db9 -> 0x0dbe) 03 70 02 01 00 
+It is now cycle 1031
+It is now cycle 1032
+It is now cycle 1033
+It is now cycle 1034
+It is now cycle 1035
+P    4 | st r2 256
+ADV 5 (0x0dbe -> 0x0dc3) 03 70 02 01 00 
+It is now cycle 1036
+It is now cycle 1037
+It is now cycle 1038
+It is now cycle 1039
+It is now cycle 1040
+P    4 | st r2 256
+ADV 5 (0x0dc3 -> 0x0dc8) 03 70 02 01 00 
+It is now cycle 1041
+It is now cycle 1042
+It is now cycle 1043
+It is now cycle 1044
+It is now cycle 1045
+P    4 | st r2 256
+ADV 5 (0x0dc8 -> 0x0dcd) 03 70 02 01 00 
+It is now cycle 1046
+It is now cycle 1047
+It is now cycle 1048
+It is now cycle 1049
+It is now cycle 1050
+P    4 | st r2 256
+ADV 5 (0x0dcd -> 0x0dd2) 03 70 02 01 00 
+It is now cycle 1051
+It is now cycle 1052
+It is now cycle 1053
+It is now cycle 1054
+It is now cycle 1055
+P    4 | st r2 256
+ADV 5 (0x0dd2 -> 0x0dd7) 03 70 02 01 00 
+It is now cycle 1056
+It is now cycle 1057
+It is now cycle 1058
+It is now cycle 1059
+It is now cycle 1060
+P    4 | st r2 256
+ADV 5 (0x0dd7 -> 0x0ddc) 03 70 02 01 00 
+It is now cycle 1061
+It is now cycle 1062
+It is now cycle 1063
+It is now cycle 1064
+It is now cycle 1065
+P    4 | st r2 256
+ADV 5 (0x0ddc -> 0x0de1) 03 70 02 01 00 
+It is now cycle 1066
+It is now cycle 1067
+It is now cycle 1068
+It is now cycle 1069
+It is now cycle 1070
+P    4 | st r2 256
+ADV 5 (0x0de1 -> 0x0de6) 03 70 02 01 00 
+It is now cycle 1071
+It is now cycle 1072
+It is now cycle 1073
+It is now cycle 1074
+It is now cycle 1075
+P    4 | st r2 256
+ADV 5 (0x0de6 -> 0x0deb) 03 70 02 01 00 
+It is now cycle 1076
+It is now cycle 1077
+It is now cycle 1078
+It is now cycle 1079
+It is now cycle 1080
+P    4 | st r2 256
+ADV 5 (0x0deb -> 0x0df0) 03 70 02 01 00 
+It is now cycle 1081
+It is now cycle 1082
+It is now cycle 1083
+It is now cycle 1084
+It is now cycle 1085
+P    4 | st r2 256
+ADV 5 (0x0df0 -> 0x0df5) 03 70 02 01 00 
+It is now cycle 1086
+It is now cycle 1087
+It is now cycle 1088
+It is now cycle 1089
+It is now cycle 1090
+P    4 | st r2 256
+ADV 5 (0x0df5 -> 0x0dfa) 03 70 02 01 00 
+It is now cycle 1091
+It is now cycle 1092
+It is now cycle 1093
+It is now cycle 1094
+It is now cycle 1095
+P    4 | st r2 256
+ADV 5 (0x0dfa -> 0x0dff) 03 70 02 01 00 
+It is now cycle 1096
+It is now cycle 1097
+It is now cycle 1098
+It is now cycle 1099
+It is now cycle 1100
+P    4 | st r2 256
+ADV 5 (0x0dff -> 0x0e04) 03 70 02 01 00 
+It is now cycle 1101
+It is now cycle 1102
+It is now cycle 1103
+It is now cycle 1104
+It is now cycle 1105
+P    4 | st r2 256
+ADV 5 (0x0e04 -> 0x0e09) 03 70 02 01 00 
+It is now cycle 1106
+It is now cycle 1107
+It is now cycle 1108
+It is now cycle 1109
+It is now cycle 1110
+P    4 | st r2 256
+ADV 5 (0x0e09 -> 0x0e0e) 03 70 02 01 00 
+It is now cycle 1111
+It is now cycle 1112
+It is now cycle 1113
+It is now cycle 1114
+It is now cycle 1115
+P    4 | st r2 256
+ADV 5 (0x0e0e -> 0x0e13) 03 70 02 01 00 
+P    3 | fork 323 (2462)
+ADV 3 (0x085b -> 0x085e) 0c 01 43 
+It is now cycle 1116
+It is now cycle 1117
+It is now cycle 1118
+It is now cycle 1119
+It is now cycle 1120
+P    4 | st r2 256
+ADV 5 (0x0e13 -> 0x0e18) 03 70 02 01 00 
+P    3 | ld 0 r2
+ADV 7 (0x085e -> 0x0865) 02 90 00 00 00 00 02 
+It is now cycle 1121
+It is now cycle 1122
+It is now cycle 1123
+It is now cycle 1124
+It is now cycle 1125
+P    8 | live -3
+Player 3 (helltrain) is said to be alive
+ADV 5 (0x099e -> 0x09a3) 01 ff ff ff fd 
+P    4 | st r2 256
+ADV 5 (0x0e18 -> 0x0e1d) 03 70 02 01 00 
+P    3 | ld 0 r16
+ADV 7 (0x0865 -> 0x086c) 02 90 00 00 00 00 10 
+It is now cycle 1126
+It is now cycle 1127
+It is now cycle 1128
+It is now cycle 1129
+It is now cycle 1130
+P    4 | st r2 256
+ADV 5 (0x0e1d -> 0x0e22) 03 70 02 01 00 
+It is now cycle 1131
+It is now cycle 1132
+It is now cycle 1133
+It is now cycle 1134
+It is now cycle 1135
+P    4 | st r2 256
+ADV 5 (0x0e22 -> 0x0e27) 03 70 02 01 00 
+P    3 | live -3
+Player 3 (helltrain) is said to be alive
+ADV 5 (0x086c -> 0x0871) 01 ff ff ff fd 
+It is now cycle 1136
+It is now cycle 1137
+It is now cycle 1138
+It is now cycle 1139
+It is now cycle 1140
+P    4 | st r2 256
+ADV 5 (0x0e27 -> 0x0e2c) 03 70 02 01 00 
+P    3 | st r2 -24
+ADV 5 (0x0871 -> 0x0876) 03 70 02 ff e8 
+It is now cycle 1141
+It is now cycle 1142
+It is now cycle 1143
+It is now cycle 1144
+It is now cycle 1145
+P    8 | zjmp 3 OK
+P    4 | st r2 256
+ADV 5 (0x0e2c -> 0x0e31) 03 70 02 01 00 
+P    3 | st r2 -33
+ADV 5 (0x0876 -> 0x087b) 03 70 02 ff df 
+It is now cycle 1146
+It is now cycle 1147
+It is now cycle 1148
+It is now cycle 1149
+It is now cycle 1150
+P    4 | st r2 256
+ADV 5 (0x0e31 -> 0x0e36) 03 70 02 01 00 
+P    3 | st r2 -42
+ADV 5 (0x087b -> 0x0880) 03 70 02 ff d6 
+It is now cycle 1151
+It is now cycle 1152
+It is now cycle 1153
+It is now cycle 1154
+It is now cycle 1155
+P    4 | st r2 256
+ADV 5 (0x0e36 -> 0x0e3b) 03 70 02 01 00 
+P    3 | st r2 -51
+ADV 5 (0x0880 -> 0x0885) 03 70 02 ff cd 
+It is now cycle 1156
+It is now cycle 1157
+It is now cycle 1158
+It is now cycle 1159
+It is now cycle 1160
+P    4 | st r2 256
+ADV 5 (0x0e3b -> 0x0e40) 03 70 02 01 00 
+P    3 | st r2 -60
+ADV 5 (0x0885 -> 0x088a) 03 70 02 ff c4 
+It is now cycle 1161
+It is now cycle 1162
+It is now cycle 1163
+It is now cycle 1164
+It is now cycle 1165
+P    4 | st r2 256
+ADV 5 (0x0e40 -> 0x0e45) 03 70 02 01 00 
+P    3 | st r2 -69
+ADV 5 (0x088a -> 0x088f) 03 70 02 ff bb 
+It is now cycle 1166
+It is now cycle 1167
+It is now cycle 1168
+It is now cycle 1169
+It is now cycle 1170
+P    4 | st r2 256
+ADV 5 (0x0e45 -> 0x0e4a) 03 70 02 01 00 
+P    3 | st r2 -78
+ADV 5 (0x088f -> 0x0894) 03 70 02 ff b2 
+It is now cycle 1171
+It is now cycle 1172
+It is now cycle 1173
+It is now cycle 1174
+It is now cycle 1175
+P    4 | st r2 256
+ADV 5 (0x0e4a -> 0x0e4f) 03 70 02 01 00 
+P    3 | st r2 -87
+ADV 5 (0x0894 -> 0x0899) 03 70 02 ff a9 
+It is now cycle 1176
+It is now cycle 1177
+It is now cycle 1178
+It is now cycle 1179
+It is now cycle 1180
+P    4 | st r2 256
+ADV 5 (0x0e4f -> 0x0e54) 03 70 02 01 00 
+P    3 | st r2 -96
+ADV 5 (0x0899 -> 0x089e) 03 70 02 ff a0 
+It is now cycle 1181
+It is now cycle 1182
+It is now cycle 1183
+It is now cycle 1184
+It is now cycle 1185
+P    4 | st r2 256
+ADV 5 (0x0e54 -> 0x0e59) 03 70 02 01 00 
+P    3 | st r2 -105
+ADV 5 (0x089e -> 0x08a3) 03 70 02 ff 97 
+It is now cycle 1186
+It is now cycle 1187
+It is now cycle 1188
+It is now cycle 1189
+It is now cycle 1190
+P    4 | st r2 256
+ADV 5 (0x0e59 -> 0x0e5e) 03 70 02 01 00 
+P    3 | st r2 -114
+ADV 5 (0x08a3 -> 0x08a8) 03 70 02 ff 8e 
+It is now cycle 1191
+It is now cycle 1192
+It is now cycle 1193
+It is now cycle 1194
+It is now cycle 1195
+P    4 | st r2 256
+ADV 5 (0x0e5e -> 0x0e63) 03 70 02 01 00 
+P    3 | st r2 -123
+ADV 5 (0x08a8 -> 0x08ad) 03 70 02 ff 85 
+It is now cycle 1196
+It is now cycle 1197
+It is now cycle 1198
+It is now cycle 1199
+It is now cycle 1200
+P    4 | st r2 256
+ADV 5 (0x0e63 -> 0x0e68) 03 70 02 01 00 
+P    3 | st r2 -132
+ADV 5 (0x08ad -> 0x08b2) 03 70 02 ff 7c 
+It is now cycle 1201
+It is now cycle 1202
+It is now cycle 1203
+It is now cycle 1204
+It is now cycle 1205
+P    4 | st r2 256
+ADV 5 (0x0e68 -> 0x0e6d) 03 70 02 01 00 
+P    3 | st r2 -141
+ADV 5 (0x08b2 -> 0x08b7) 03 70 02 ff 73 
+It is now cycle 1206
+It is now cycle 1207
+It is now cycle 1208
+It is now cycle 1209
+It is now cycle 1210
+P    4 | st r2 256
+ADV 5 (0x0e6d -> 0x0e72) 03 70 02 01 00 
+P    3 | st r2 -150
+ADV 5 (0x08b7 -> 0x08bc) 03 70 02 ff 6a 
+It is now cycle 1211
+It is now cycle 1212
+It is now cycle 1213
+It is now cycle 1214
+It is now cycle 1215
+P    4 | st r2 256
+ADV 5 (0x0e72 -> 0x0e77) 03 70 02 01 00 
+P    3 | st r2 -159
+ADV 5 (0x08bc -> 0x08c1) 03 70 02 ff 61 
+It is now cycle 1216
+It is now cycle 1217
+It is now cycle 1218
+It is now cycle 1219
+It is now cycle 1220
+P    4 | st r2 256
+ADV 5 (0x0e77 -> 0x0e7c) 03 70 02 01 00 
+P    3 | st r2 -168
+ADV 5 (0x08c1 -> 0x08c6) 03 70 02 ff 58 
+It is now cycle 1221
+It is now cycle 1222
+It is now cycle 1223
+It is now cycle 1224
+It is now cycle 1225
+P    4 | st r2 256
+ADV 5 (0x0e7c -> 0x0e81) 03 70 02 01 00 
+P    3 | st r2 -177
+ADV 5 (0x08c6 -> 0x08cb) 03 70 02 ff 4f 
+It is now cycle 1226
+It is now cycle 1227
+It is now cycle 1228
+It is now cycle 1229
+It is now cycle 1230
+P    4 | st r2 256
+ADV 5 (0x0e81 -> 0x0e86) 03 70 02 01 00 
+P    3 | st r2 -186
+ADV 5 (0x08cb -> 0x08d0) 03 70 02 ff 46 
+It is now cycle 1231
+It is now cycle 1232
+It is now cycle 1233
+It is now cycle 1234
+It is now cycle 1235
+P    4 | st r2 256
+ADV 5 (0x0e86 -> 0x0e8b) 03 70 02 01 00 
+P    3 | st r2 -195
+ADV 5 (0x08d0 -> 0x08d5) 03 70 02 ff 3d 
+It is now cycle 1236
+It is now cycle 1237
+It is now cycle 1238
+It is now cycle 1239
+It is now cycle 1240
+P    4 | st r2 256
+ADV 5 (0x0e8b -> 0x0e90) 03 70 02 01 00 
+P    3 | st r2 -204
+ADV 5 (0x08d5 -> 0x08da) 03 70 02 ff 34 
+It is now cycle 1241
+It is now cycle 1242
+It is now cycle 1243
+It is now cycle 1244
+It is now cycle 1245
+P    4 | st r2 256
+ADV 5 (0x0e90 -> 0x0e95) 03 70 02 01 00 
+P    3 | st r2 -213
+ADV 5 (0x08da -> 0x08df) 03 70 02 ff 2b 
+It is now cycle 1246
+It is now cycle 1247
+It is now cycle 1248
+It is now cycle 1249
+It is now cycle 1250
+P    4 | st r2 256
+ADV 5 (0x0e95 -> 0x0e9a) 03 70 02 01 00 
+P    3 | st r2 -222
+ADV 5 (0x08df -> 0x08e4) 03 70 02 ff 22 
+It is now cycle 1251
+It is now cycle 1252
+It is now cycle 1253
+It is now cycle 1254
+It is now cycle 1255
+P    4 | st r2 256
+ADV 5 (0x0e9a -> 0x0e9f) 03 70 02 01 00 
+P    3 | st r2 -231
+ADV 5 (0x08e4 -> 0x08e9) 03 70 02 ff 19 
+It is now cycle 1256
+It is now cycle 1257
+It is now cycle 1258
+It is now cycle 1259
+It is now cycle 1260
+P    3 | st r2 -240
+ADV 5 (0x08e9 -> 0x08ee) 03 70 02 ff 10 
+It is now cycle 1261
+It is now cycle 1262
+It is now cycle 1263
+It is now cycle 1264
+It is now cycle 1265
+P    4 | live 404
+ADV 5 (0x0e9f -> 0x0ea4) 01 00 00 01 94 
+P    3 | st r2 -249
+ADV 5 (0x08ee -> 0x08f3) 03 70 02 ff 07 
+It is now cycle 1266
+It is now cycle 1267
+It is now cycle 1268
+It is now cycle 1269
+It is now cycle 1270
+P    4 | st r3 256
+ADV 5 (0x0ea4 -> 0x0ea9) 03 70 03 01 00 
+P    3 | st r2 -258
+ADV 5 (0x08f3 -> 0x08f8) 03 70 02 fe fe 
+It is now cycle 1271
+It is now cycle 1272
+It is now cycle 1273
+It is now cycle 1274
+It is now cycle 1275
+P    3 | st r2 -267
+ADV 5 (0x08f8 -> 0x08fd) 03 70 02 fe f5 
+It is now cycle 1276
+P    4 | st r2 256
+ADV 5 (0x0eaa -> 0x0eaf) 03 70 02 01 00 
+It is now cycle 1277
+It is now cycle 1278
+It is now cycle 1279
+It is now cycle 1280
+P    3 | st r2 -276
+ADV 5 (0x08fd -> 0x0902) 03 70 02 fe ec 
+It is now cycle 1281
+P    4 | st r2 256
+ADV 5 (0x0eaf -> 0x0eb4) 03 70 02 01 00 
+It is now cycle 1282
+It is now cycle 1283
+It is now cycle 1284
+It is now cycle 1285
+P    3 | st r2 -285
+ADV 5 (0x0902 -> 0x0907) 03 70 02 fe e3 
+It is now cycle 1286
+P    4 | st r2 256
+ADV 5 (0x0eb4 -> 0x0eb9) 03 70 02 01 00 
+It is now cycle 1287
+It is now cycle 1288
+It is now cycle 1289
+It is now cycle 1290
+P    3 | st r2 -294
+ADV 5 (0x0907 -> 0x090c) 03 70 02 fe da 
+It is now cycle 1291
+P    4 | st r2 256
+ADV 5 (0x0eb9 -> 0x0ebe) 03 70 02 01 00 
+It is now cycle 1292
+It is now cycle 1293
+It is now cycle 1294
+It is now cycle 1295
+P    3 | st r2 -303
+ADV 5 (0x090c -> 0x0911) 03 70 02 fe d1 
+It is now cycle 1296
+P    4 | st r2 256
+ADV 5 (0x0ebe -> 0x0ec3) 03 70 02 01 00 
+It is now cycle 1297
+It is now cycle 1298
+It is now cycle 1299
+It is now cycle 1300
+P    3 | st r2 -312
+ADV 5 (0x0911 -> 0x0916) 03 70 02 fe c8 
+It is now cycle 1301
+P    4 | st r2 256
+ADV 5 (0x0ec3 -> 0x0ec8) 03 70 02 01 00 
+It is now cycle 1302
+It is now cycle 1303
+It is now cycle 1304
+It is now cycle 1305
+P    3 | st r2 -321
+ADV 5 (0x0916 -> 0x091b) 03 70 02 fe bf 
+It is now cycle 1306
+P    4 | st r2 256
+ADV 5 (0x0ec8 -> 0x0ecd) 03 70 02 01 00 
+It is now cycle 1307
+It is now cycle 1308
+It is now cycle 1309
+It is now cycle 1310
+P    3 | st r2 -330
+ADV 5 (0x091b -> 0x0920) 03 70 02 fe b6 
+It is now cycle 1311
+P    4 | st r2 256
+ADV 5 (0x0ecd -> 0x0ed2) 03 70 02 01 00 
+It is now cycle 1312
+It is now cycle 1313
+It is now cycle 1314
+It is now cycle 1315
+P    3 | st r2 -339
+ADV 5 (0x0920 -> 0x0925) 03 70 02 fe ad 
+It is now cycle 1316
+P    4 | st r2 256
+ADV 5 (0x0ed2 -> 0x0ed7) 03 70 02 01 00 
+It is now cycle 1317
+It is now cycle 1318
+It is now cycle 1319
+It is now cycle 1320
+P    3 | st r2 -348
+ADV 5 (0x0925 -> 0x092a) 03 70 02 fe a4 
+It is now cycle 1321
+P    4 | st r2 256
+ADV 5 (0x0ed7 -> 0x0edc) 03 70 02 01 00 
+It is now cycle 1322
+It is now cycle 1323
+It is now cycle 1324
+It is now cycle 1325
+P    3 | st r2 -357
+ADV 5 (0x092a -> 0x092f) 03 70 02 fe 9b 
+It is now cycle 1326
+P    4 | st r2 256
+ADV 5 (0x0edc -> 0x0ee1) 03 70 02 01 00 
+It is now cycle 1327
+It is now cycle 1328
+It is now cycle 1329
+It is now cycle 1330
+P    3 | st r2 -366
+ADV 5 (0x092f -> 0x0934) 03 70 02 fe 92 
+It is now cycle 1331
+P    4 | st r2 256
+ADV 5 (0x0ee1 -> 0x0ee6) 03 70 02 01 00 
+It is now cycle 1332
+It is now cycle 1333
+It is now cycle 1334
+It is now cycle 1335
+P    3 | st r2 -375
+ADV 5 (0x0934 -> 0x0939) 03 70 02 fe 89 
+It is now cycle 1336
+P    4 | st r2 256
+ADV 5 (0x0ee6 -> 0x0eeb) 03 70 02 01 00 
+It is now cycle 1337
+It is now cycle 1338
+It is now cycle 1339
+It is now cycle 1340
+P    3 | st r2 -384
+ADV 5 (0x0939 -> 0x093e) 03 70 02 fe 80 
+It is now cycle 1341
+P    4 | st r2 256
+ADV 5 (0x0eeb -> 0x0ef0) 03 70 02 01 00 
+It is now cycle 1342
+It is now cycle 1343
+It is now cycle 1344
+It is now cycle 1345
+P    3 | st r2 -393
+ADV 5 (0x093e -> 0x0943) 03 70 02 fe 77 
+It is now cycle 1346
+P    4 | st r2 256
+ADV 5 (0x0ef0 -> 0x0ef5) 03 70 02 01 00 
+It is now cycle 1347
+It is now cycle 1348
+It is now cycle 1349
+It is now cycle 1350
+P    3 | st r2 -402
+ADV 5 (0x0943 -> 0x0948) 03 70 02 fe 6e 
+It is now cycle 1351
+P    4 | st r2 256
+ADV 5 (0x0ef5 -> 0x0efa) 03 70 02 01 00 
+It is now cycle 1352
+It is now cycle 1353
+It is now cycle 1354
+It is now cycle 1355
+P    3 | st r2 -411
+ADV 5 (0x0948 -> 0x094d) 03 70 02 fe 65 
+It is now cycle 1356
+P    4 | st r2 256
+ADV 5 (0x0efa -> 0x0eff) 03 70 02 01 00 
+It is now cycle 1357
+It is now cycle 1358
+It is now cycle 1359
+It is now cycle 1360
+P    3 | st r2 -420
+ADV 5 (0x094d -> 0x0952) 03 70 02 fe 5c 
+It is now cycle 1361
+P    4 | st r2 256
+ADV 5 (0x0eff -> 0x0f04) 03 70 02 01 00 
+It is now cycle 1362
+It is now cycle 1363
+It is now cycle 1364
+It is now cycle 1365
+P    3 | st r2 -429
+ADV 5 (0x0952 -> 0x0957) 03 70 02 fe 53 
+It is now cycle 1366
+P    4 | st r2 256
+ADV 5 (0x0f04 -> 0x0f09) 03 70 02 01 00 
+It is now cycle 1367
+It is now cycle 1368
+It is now cycle 1369
+It is now cycle 1370
+P    3 | st r2 -438
+ADV 5 (0x0957 -> 0x095c) 03 70 02 fe 4a 
+It is now cycle 1371
+P    4 | st r2 256
+ADV 5 (0x0f09 -> 0x0f0e) 03 70 02 01 00 
+It is now cycle 1372
+It is now cycle 1373
+It is now cycle 1374
+It is now cycle 1375
+P    3 | st r2 -447
+ADV 5 (0x095c -> 0x0961) 03 70 02 fe 41 
+It is now cycle 1376
+P    4 | st r2 256
+ADV 5 (0x0f0e -> 0x0f13) 03 70 02 01 00 
+It is now cycle 1377
+It is now cycle 1378
+It is now cycle 1379
+It is now cycle 1380
+P    3 | st r2 -456
+ADV 5 (0x0961 -> 0x0966) 03 70 02 fe 38 
+It is now cycle 1381
+P    4 | st r2 256
+ADV 5 (0x0f13 -> 0x0f18) 03 70 02 01 00 
+It is now cycle 1382
+It is now cycle 1383
+It is now cycle 1384
+It is now cycle 1385
+P    3 | st r2 -465
+ADV 5 (0x0966 -> 0x096b) 03 70 02 fe 2f 
+It is now cycle 1386
+P    4 | st r2 256
+ADV 5 (0x0f18 -> 0x0f1d) 03 70 02 01 00 
+It is now cycle 1387
+It is now cycle 1388
+It is now cycle 1389
+It is now cycle 1390
+P    3 | st r2 -474
+ADV 5 (0x096b -> 0x0970) 03 70 02 fe 26 
+It is now cycle 1391
+P    4 | st r2 256
+ADV 5 (0x0f1d -> 0x0f22) 03 70 02 01 00 
+It is now cycle 1392
+It is now cycle 1393
+It is now cycle 1394
+It is now cycle 1395
+P    3 | st r2 -483
+ADV 5 (0x0970 -> 0x0975) 03 70 02 fe 1d 
+It is now cycle 1396
+P    4 | st r2 256
+ADV 5 (0x0f22 -> 0x0f27) 03 70 02 01 00 
+It is now cycle 1397
+It is now cycle 1398
+It is now cycle 1399
+It is now cycle 1400
+P    3 | st r2 -492
+ADV 5 (0x0975 -> 0x097a) 03 70 02 fe 14 
+It is now cycle 1401
+P    4 | st r2 256
+ADV 5 (0x0f27 -> 0x0f2c) 03 70 02 01 00 
+It is now cycle 1402
+It is now cycle 1403
+It is now cycle 1404
+It is now cycle 1405
+P    3 | st r2 -501
+ADV 5 (0x097a -> 0x097f) 03 70 02 fe 0b 
+It is now cycle 1406
+P    4 | st r2 256
+ADV 5 (0x0f2c -> 0x0f31) 03 70 02 01 00 
+It is now cycle 1407
+It is now cycle 1408
+It is now cycle 1409
+It is now cycle 1410
+P    3 | st r2 -510
+ADV 5 (0x097f -> 0x0984) 03 70 02 fe 02 
+It is now cycle 1411
+P    4 | st r2 256
+ADV 5 (0x0f31 -> 0x0f36) 03 70 02 01 00 
+It is now cycle 1412
+It is now cycle 1413
+It is now cycle 1414
+It is now cycle 1415
+It is now cycle 1416
+P    4 | st r2 256
+ADV 5 (0x0f36 -> 0x0f3b) 03 70 02 01 00 
+It is now cycle 1417
+It is now cycle 1418
+It is now cycle 1419
+It is now cycle 1420
+It is now cycle 1421
+P    4 | st r2 256
+ADV 5 (0x0f3b -> 0x0f40) 03 70 02 01 00 
+It is now cycle 1422
+It is now cycle 1423
+It is now cycle 1424
+It is now cycle 1425
+It is now cycle 1426
+P    4 | st r2 256
+ADV 5 (0x0f40 -> 0x0f45) 03 70 02 01 00 
+It is now cycle 1427
+It is now cycle 1428
+It is now cycle 1429
+It is now cycle 1430
+P    3 | zjmp -280 OK
+It is now cycle 1431
+P    4 | st r2 256
+ADV 5 (0x0f45 -> 0x0f4a) 03 70 02 01 00 
+It is now cycle 1432
+It is now cycle 1433
+It is now cycle 1434
+It is now cycle 1435
+It is now cycle 1436
+P    4 | st r2 256
+ADV 5 (0x0f4a -> 0x0f4f) 03 70 02 01 00 
+It is now cycle 1437
+It is now cycle 1438
+It is now cycle 1439
+It is now cycle 1440
+P    3 | live -3
+Player 3 (helltrain) is said to be alive
+ADV 5 (0x086c -> 0x0871) 01 ff ff ff fd 
+It is now cycle 1441
+P    4 | st r2 256
+ADV 5 (0x0f4f -> 0x0f54) 03 70 02 01 00 
+It is now cycle 1442
+It is now cycle 1443
+It is now cycle 1444
+It is now cycle 1445
+P    3 | st r2 -24
+ADV 5 (0x0871 -> 0x0876) 03 70 02 ff e8 
+It is now cycle 1446
+P    4 | st r2 256
+ADV 5 (0x0f54 -> 0x0f59) 03 70 02 01 00 
+It is now cycle 1447
+It is now cycle 1448
+It is now cycle 1449
+It is now cycle 1450
+P    3 | st r2 -33
+ADV 5 (0x0876 -> 0x087b) 03 70 02 ff df 
+It is now cycle 1451
+P    4 | st r2 256
+ADV 5 (0x0f59 -> 0x0f5e) 03 70 02 01 00 
+It is now cycle 1452
+It is now cycle 1453
+It is now cycle 1454
+It is now cycle 1455
+P    3 | st r2 -42
+ADV 5 (0x087b -> 0x0880) 03 70 02 ff d6 
+It is now cycle 1456
+P    4 | st r2 256
+ADV 5 (0x0f5e -> 0x0f63) 03 70 02 01 00 
+It is now cycle 1457
+It is now cycle 1458
+It is now cycle 1459
+It is now cycle 1460
+P    3 | st r2 -51
+ADV 5 (0x0880 -> 0x0885) 03 70 02 ff cd 
+It is now cycle 1461
+P    4 | st r2 256
+ADV 5 (0x0f63 -> 0x0f68) 03 70 02 01 00 
+It is now cycle 1462
+It is now cycle 1463
+It is now cycle 1464
+It is now cycle 1465
+P    3 | st r2 -60
+ADV 5 (0x0885 -> 0x088a) 03 70 02 ff c4 
+It is now cycle 1466
+P    4 | st r2 256
+ADV 5 (0x0f68 -> 0x0f6d) 03 70 02 01 00 
+It is now cycle 1467
+It is now cycle 1468
+It is now cycle 1469
+It is now cycle 1470
+P    3 | st r2 -69
+ADV 5 (0x088a -> 0x088f) 03 70 02 ff bb 
+It is now cycle 1471
+P    4 | st r2 256
+ADV 5 (0x0f6d -> 0x0f72) 03 70 02 01 00 
+It is now cycle 1472
+It is now cycle 1473
+It is now cycle 1474
+It is now cycle 1475
+P    3 | st r2 -78
+ADV 5 (0x088f -> 0x0894) 03 70 02 ff b2 
+It is now cycle 1476
+P    4 | st r2 256
+ADV 5 (0x0f72 -> 0x0f77) 03 70 02 01 00 
+It is now cycle 1477
+It is now cycle 1478
+It is now cycle 1479
+It is now cycle 1480
+P    3 | st r2 -87
+ADV 5 (0x0894 -> 0x0899) 03 70 02 ff a9 
+It is now cycle 1481
+P    4 | st r2 256
+ADV 5 (0x0f77 -> 0x0f7c) 03 70 02 01 00 
+It is now cycle 1482
+It is now cycle 1483
+It is now cycle 1484
+It is now cycle 1485
+P    3 | st r2 -96
+ADV 5 (0x0899 -> 0x089e) 03 70 02 ff a0 
+It is now cycle 1486
+P    4 | st r2 256
+ADV 5 (0x0f7c -> 0x0f81) 03 70 02 01 00 
+It is now cycle 1487
+It is now cycle 1488
+It is now cycle 1489
+It is now cycle 1490
+P    3 | st r2 -105
+ADV 5 (0x089e -> 0x08a3) 03 70 02 ff 97 
+It is now cycle 1491
+P    4 | st r2 256
+ADV 5 (0x0f81 -> 0x0f86) 03 70 02 01 00 
+It is now cycle 1492
+It is now cycle 1493
+It is now cycle 1494
+It is now cycle 1495
+P    3 | st r2 -114
+ADV 5 (0x08a3 -> 0x08a8) 03 70 02 ff 8e 
+It is now cycle 1496
+P    4 | st r2 256
+ADV 5 (0x0f86 -> 0x0f8b) 03 70 02 01 00 
+It is now cycle 1497
+It is now cycle 1498
+It is now cycle 1499
+It is now cycle 1500
+P    3 | st r2 -123
+ADV 5 (0x08a8 -> 0x08ad) 03 70 02 ff 85 
+It is now cycle 1501
+P    4 | st r2 256
+ADV 5 (0x0f8b -> 0x0f90) 03 70 02 01 00 
+It is now cycle 1502
+It is now cycle 1503
+It is now cycle 1504
+It is now cycle 1505
+P    3 | st r2 -132
+ADV 5 (0x08ad -> 0x08b2) 03 70 02 ff 7c 
+It is now cycle 1506
+P    4 | st r2 256
+ADV 5 (0x0f90 -> 0x0f95) 03 70 02 01 00 
+It is now cycle 1507
+It is now cycle 1508
+It is now cycle 1509
+It is now cycle 1510
+P    3 | st r2 -141
+ADV 5 (0x08b2 -> 0x08b7) 03 70 02 ff 73 
+It is now cycle 1511
+P    4 | st r2 256
+ADV 5 (0x0f95 -> 0x0f9a) 03 70 02 01 00 
+It is now cycle 1512
+It is now cycle 1513
+It is now cycle 1514
+It is now cycle 1515
+P    3 | st r2 -150
+ADV 5 (0x08b7 -> 0x08bc) 03 70 02 ff 6a 
+It is now cycle 1516
+P    4 | st r2 256
+ADV 5 (0x0f9a -> 0x0f9f) 03 70 02 01 00 
+It is now cycle 1517
+It is now cycle 1518
+It is now cycle 1519
+It is now cycle 1520
+P    3 | st r2 -159
+ADV 5 (0x08bc -> 0x08c1) 03 70 02 ff 61 
+It is now cycle 1521
+It is now cycle 1522
+It is now cycle 1523
+It is now cycle 1524
+It is now cycle 1525
+P    3 | st r2 -168
+ADV 5 (0x08c1 -> 0x08c6) 03 70 02 ff 58 
+It is now cycle 1526
+It is now cycle 1527
+It is now cycle 1528
+It is now cycle 1529
+It is now cycle 1530
+P    3 | st r2 -177
+ADV 5 (0x08c6 -> 0x08cb) 03 70 02 ff 4f 
+It is now cycle 1531
+P    4 | live 256
+ADV 5 (0x0fa4 -> 0x0fa9) 01 00 00 01 00 
+It is now cycle 1532
+It is now cycle 1533
+It is now cycle 1534
+It is now cycle 1535
+P    3 | st r2 -186
+ADV 5 (0x08cb -> 0x08d0) 03 70 02 ff 46 
+It is now cycle 1536
+It is now cycle 1537
+P    4 | st r2 256
+ADV 5 (0x0faa -> 0x0faf) 03 70 02 01 00 
+It is now cycle 1538
+It is now cycle 1539
+It is now cycle 1540
+P    3 | st r2 -195
+ADV 5 (0x08d0 -> 0x08d5) 03 70 02 ff 3d 
+It is now cycle 1541
+It is now cycle 1542
+P    4 | st r2 256
+ADV 5 (0x0faf -> 0x0fb4) 03 70 02 01 00 
+It is now cycle 1543
+It is now cycle 1544
+It is now cycle 1545
+P    3 | st r2 -204
+ADV 5 (0x08d5 -> 0x08da) 03 70 02 ff 34 
+It is now cycle 1546
+It is now cycle 1547
+P    4 | st r2 256
+ADV 5 (0x0fb4 -> 0x0fb9) 03 70 02 01 00 
+It is now cycle 1548
+It is now cycle 1549
+It is now cycle 1550
+P    3 | st r2 -213
+ADV 5 (0x08da -> 0x08df) 03 70 02 ff 2b 
+It is now cycle 1551
+It is now cycle 1552
+P    4 | st r2 256
+ADV 5 (0x0fb9 -> 0x0fbe) 03 70 02 01 00 
+It is now cycle 1553
+It is now cycle 1554
+It is now cycle 1555
+P    3 | st r2 -222
+ADV 5 (0x08df -> 0x08e4) 03 70 02 ff 22 
+It is now cycle 1556
+It is now cycle 1557
+P    4 | st r2 256
+ADV 5 (0x0fbe -> 0x0fc3) 03 70 02 01 00 
+It is now cycle 1558
+It is now cycle 1559
+It is now cycle 1560
+P    3 | st r2 -231
+ADV 5 (0x08e4 -> 0x08e9) 03 70 02 ff 19 
+It is now cycle 1561
+It is now cycle 1562
+P    4 | st r2 256
+ADV 5 (0x0fc3 -> 0x0fc8) 03 70 02 01 00 
+It is now cycle 1563
+It is now cycle 1564
+It is now cycle 1565
+P    3 | st r2 -240
+ADV 5 (0x08e9 -> 0x08ee) 03 70 02 ff 10 
+It is now cycle 1566
+It is now cycle 1567
+P    4 | st r2 256
+ADV 5 (0x0fc8 -> 0x0fcd) 03 70 02 01 00 
+It is now cycle 1568
+It is now cycle 1569
+It is now cycle 1570
+P    3 | st r2 -249
+ADV 5 (0x08ee -> 0x08f3) 03 70 02 ff 07 
+It is now cycle 1571
+It is now cycle 1572
+P    4 | st r2 256
+ADV 5 (0x0fcd -> 0x0fd2) 03 70 02 01 00 
+It is now cycle 1573
+It is now cycle 1574
+It is now cycle 1575
+P    3 | st r2 -258
+ADV 5 (0x08f3 -> 0x08f8) 03 70 02 fe fe 
+It is now cycle 1576
+It is now cycle 1577
+P    4 | st r2 256
+ADV 5 (0x0fd2 -> 0x0fd7) 03 70 02 01 00 
+It is now cycle 1578
+It is now cycle 1579
+It is now cycle 1580
+P    3 | st r2 -267
+ADV 5 (0x08f8 -> 0x08fd) 03 70 02 fe f5 
+It is now cycle 1581
+It is now cycle 1582
+P    4 | st r2 256
+ADV 5 (0x0fd7 -> 0x0fdc) 03 70 02 01 00 
+It is now cycle 1583
+It is now cycle 1584
+It is now cycle 1585
+P    3 | st r2 -276
+ADV 5 (0x08fd -> 0x0902) 03 70 02 fe ec 
+It is now cycle 1586
+It is now cycle 1587
+P    4 | st r2 256
+ADV 5 (0x0fdc -> 0x0fe1) 03 70 02 01 00 
+It is now cycle 1588
+It is now cycle 1589
+It is now cycle 1590
+P    3 | st r2 -285
+ADV 5 (0x0902 -> 0x0907) 03 70 02 fe e3 
+It is now cycle 1591
+It is now cycle 1592
+P    4 | st r2 256
+ADV 5 (0x0fe1 -> 0x0fe6) 03 70 02 01 00 
+It is now cycle 1593
+It is now cycle 1594
+It is now cycle 1595
+P    3 | st r2 -294
+ADV 5 (0x0907 -> 0x090c) 03 70 02 fe da 
+It is now cycle 1596
+It is now cycle 1597
+P    4 | st r2 256
+ADV 5 (0x0fe6 -> 0x0feb) 03 70 02 01 00 
+It is now cycle 1598
+It is now cycle 1599
+It is now cycle 1600
+P    3 | st r2 -303
+ADV 5 (0x090c -> 0x0911) 03 70 02 fe d1 
+It is now cycle 1601
+It is now cycle 1602
+P    4 | st r2 368
+ADV 5 (0x0feb -> 0x0ff0) 03 70 02 01 70 
+It is now cycle 1603
+It is now cycle 1604
+It is now cycle 1605
+P    3 | st r2 -312
+ADV 5 (0x0911 -> 0x0916) 03 70 02 fe c8 
+It is now cycle 1606
+It is now cycle 1607
+P    4 | st r2 368
+ADV 5 (0x0ff0 -> 0x0ff5) 03 70 02 01 70 
+It is now cycle 1608
+It is now cycle 1609
+It is now cycle 1610
+P    3 | st r2 -321
+ADV 5 (0x0916 -> 0x091b) 03 70 02 fe bf 
+It is now cycle 1611
+It is now cycle 1612
+P    4 | st r2 256
+ADV 5 (0x0ff5 -> 0x0ffa) 03 70 02 01 00 
+It is now cycle 1613
+It is now cycle 1614
+It is now cycle 1615
+P    3 | st r2 -330
+ADV 5 (0x091b -> 0x0920) 03 70 02 fe b6 
+It is now cycle 1616
+It is now cycle 1617
+P    4 | st r2 511
+ADV 5 (0x0ffa -> 0x0fff) 03 70 02 01 ff 
+It is now cycle 1618
+It is now cycle 1619
+It is now cycle 1620
+P    3 | st r2 -339
+ADV 5 (0x0920 -> 0x0925) 03 70 02 fe ad 
+It is now cycle 1621
+It is now cycle 1622
+P    4 | st r2 257
+ADV 5 (0x0fff -> 0x1004) 03 00 00 00 00 
+It is now cycle 1623
+It is now cycle 1624
+It is now cycle 1625
+P    3 | st r2 -348
+ADV 5 (0x0925 -> 0x092a) 03 70 02 fe a4 
+It is now cycle 1626
+It is now cycle 1627
+P    4 | st r2 400
+ADV 5 (0x0004 -> 0x0009) 03 70 02 01 90 
+It is now cycle 1628
+It is now cycle 1629
+It is now cycle 1630
+P    3 | st r2 -357
+ADV 5 (0x092a -> 0x092f) 03 70 02 fe 9b 
+It is now cycle 1631
+It is now cycle 1632
+P    4 | st r2 269
+ADV 5 (0x0009 -> 0x000e) 03 70 02 01 0d 
+It is now cycle 1633
+It is now cycle 1634
+It is now cycle 1635
+P    3 | st r2 -366
+ADV 5 (0x092f -> 0x0934) 03 70 02 fe 92 
+It is now cycle 1636
+It is now cycle 1637
+P    4 | st r2 257
+ADV 5 (0x000e -> 0x0013) 03 70 02 01 01 
+It is now cycle 1638
+It is now cycle 1639
+It is now cycle 1640
+P    3 | st r2 -375
+ADV 5 (0x0934 -> 0x0939) 03 70 02 fe 89 
+It is now cycle 1641
+It is now cycle 1642
+P    5 | fork 177 (599)
+ADV 3 (0x01a6 -> 0x01a9) 0c 00 b1 
+P    4 | st r2 261
+ADV 5 (0x0013 -> 0x0018) 03 70 02 01 05 
+It is now cycle 1643
+It is now cycle 1644
+It is now cycle 1645
+P    3 | st r2 -384
+ADV 5 (0x0939 -> 0x093e) 03 70 02 fe 80 
+It is now cycle 1646
+It is now cycle 1647
+P    4 | st r2 256
+ADV 5 (0x0018 -> 0x001d) 03 70 02 01 00 
+It is now cycle 1648
+It is now cycle 1649
+It is now cycle 1650
+P    3 | st r2 -393
+ADV 5 (0x093e -> 0x0943) 03 70 02 fe 77 
+It is now cycle 1651
+It is now cycle 1652
+P    9 | live 42
+ADV 5 (0x0257 -> 0x025c) 01 00 00 00 2a 
+P    5 | live 42
+ADV 5 (0x01a9 -> 0x01ae) 01 00 00 00 2a 
+P    4 | st r2 400
+ADV 5 (0x001d -> 0x0022) 03 70 02 01 90 
+It is now cycle 1653
+It is now cycle 1654
+It is now cycle 1655
+P    3 | st r2 -402
+ADV 5 (0x0943 -> 0x0948) 03 70 02 fe 6e 
+It is now cycle 1656
+It is now cycle 1657
+P    9 | st r1 2
+ADV 4 (0x025c -> 0x0260) 03 50 01 02 
+P    4 | st r2 262
+ADV 5 (0x0022 -> 0x0027) 03 70 02 01 06 
+It is now cycle 1658
+ADV 2 (0x01af -> 0x01b1) 02 01 
+It is now cycle 1659
+It is now cycle 1660
+P    3 | st r2 -411
+ADV 5 (0x0948 -> 0x094d) 03 70 02 fe 65 
+It is now cycle 1661
+It is now cycle 1662
+P    9 | ld 251883523 r3
+ADV 7 (0x0260 -> 0x0267) 02 90 0f 03 70 03 03 
+P    4 | st r2 511
+ADV 5 (0x0027 -> 0x002c) 03 70 02 01 ff 
+It is now cycle 1663
+It is now cycle 1664
+It is now cycle 1665
+P    3 | st r2 -420
+ADV 5 (0x094d -> 0x0952) 03 70 02 fe 5c 
+It is now cycle 1666
+It is now cycle 1667
+P    4 | st r2 257
+ADV 5 (0x002c -> 0x0031) 03 70 02 01 01 
+It is now cycle 1668
+P    9 | or 0 0 r12
+ADV 5 (0x0267 -> 0x026c) 07 54 0c 0c 0c 
+P    5 | live 42
+ADV 5 (0x01b1 -> 0x01b6) 01 00 00 00 2a 
+It is now cycle 1669
+It is now cycle 1670
+P    3 | st r2 -429
+ADV 5 (0x0952 -> 0x0957) 03 70 02 fe 53 
+It is now cycle 1671
+It is now cycle 1672
+P    4 | st r2 258
+ADV 5 (0x0031 -> 0x0036) 03 70 02 01 02 
+It is now cycle 1673
+It is now cycle 1674
+P    9 | or 0 0 r12
+ADV 5 (0x026c -> 0x0271) 07 54 0c 0c 0c 
+It is now cycle 1675
+P    3 | st r2 -438
+ADV 5 (0x0957 -> 0x095c) 03 70 02 fe 4a 
+It is now cycle 1676
+It is now cycle 1677
+P    4 | st r2 479
+ADV 5 (0x0036 -> 0x003b) 03 70 02 01 df 
+It is now cycle 1678
+It is now cycle 1679
+It is now cycle 1680
+P    9 | or 0 0 r12
+ADV 5 (0x0271 -> 0x0276) 07 54 0c 0c 0c 
+P    3 | st r2 -447
+ADV 5 (0x095c -> 0x0961) 03 70 02 fe 41 
+It is now cycle 1681
+It is now cycle 1682
+P    4 | st r2 511
+ADV 5 (0x003b -> 0x0040) 03 70 02 01 ff 
+It is now cycle 1683
+It is now cycle 1684
+It is now cycle 1685
+P    9 | ld 0 r4
+ADV 7 (0x0276 -> 0x027d) 02 90 00 00 00 00 04 
+P    3 | st r2 -456
+ADV 5 (0x0961 -> 0x0966) 03 70 02 fe 38 
+It is now cycle 1686
+It is now cycle 1687
+P    4 | st r2 511
+ADV 5 (0x0040 -> 0x0045) 03 70 02 01 ff 
+It is now cycle 1688
+It is now cycle 1689
+It is now cycle 1690
+P    3 | st r2 -465
+ADV 5 (0x0966 -> 0x096b) 03 70 02 fe 2f 
+It is now cycle 1691
+It is now cycle 1692
+P    4 | st r2 511
+ADV 5 (0x0045 -> 0x004a) 03 70 02 01 ff 
+P    1 | fork 513 (86)
+ADV 3 (0x0055 -> 0x0058) 70 02 01 
+It is now cycle 1693
+It is now cycle 1694
+It is now cycle 1695
+P    3 | st r2 -474
+ADV 5 (0x096b -> 0x0970) 03 70 02 fe 26 
+It is now cycle 1696
+It is now cycle 1697
+ADV 2 (0x0056 -> 0x0058) 02 01 
+P    4 | st r2 511
+ADV 5 (0x004a -> 0x004f) 03 70 02 01 ff 
+It is now cycle 1698
+It is now cycle 1699
+It is now cycle 1700
+P    3 | st r2 -483
+ADV 5 (0x0970 -> 0x0975) 03 70 02 fe 1d 
+It is now cycle 1701
+It is now cycle 1702
+P    4 | st r2 511
+ADV 5 (0x004f -> 0x0054) 03 70 02 01 ff 
+P    1 | live 57672193
+ADV 5 (0x0058 -> 0x005d) 01 03 70 02 01 
+It is now cycle 1703
+It is now cycle 1704
+It is now cycle 1705
+P    3 | st r2 -492
+ADV 5 (0x0975 -> 0x097a) 03 70 02 fe 14 
+It is now cycle 1706
+It is now cycle 1707
+P   10 | live 57672193
+ADV 5 (0x0058 -> 0x005d) 01 03 70 02 01 
+P    4 | st r2 257
+ADV 5 (0x0054 -> 0x0059) 03 70 02 01 01 
+It is now cycle 1708
+It is now cycle 1709
+It is now cycle 1710
+P    3 | st r2 -501
+ADV 5 (0x097a -> 0x097f) 03 70 02 fe 0b 
+It is now cycle 1711
+It is now cycle 1712
+P    4 | st r2 268
+ADV 5 (0x0059 -> 0x005e) 03 70 02 01 0c 
+It is now cycle 1713
+It is now cycle 1714
+It is now cycle 1715
+P    3 | st r2 -510
+ADV 5 (0x097f -> 0x0984) 03 70 02 fe 02 
+It is now cycle 1716
+It is now cycle 1717
+P    4 | st r2 256
+ADV 5 (0x005e -> 0x0063) 03 70 02 01 00 
+It is now cycle 1718
+It is now cycle 1719
+It is now cycle 1720
+It is now cycle 1721
+It is now cycle 1722
+P    4 | st r2 362
+ADV 5 (0x0063 -> 0x0068) 03 70 02 01 6a 
+It is now cycle 1723
+It is now cycle 1724
+It is now cycle 1725
+It is now cycle 1726
+It is now cycle 1727
+P    4 | st r2 298
+ADV 5 (0x0068 -> 0x006d) 03 70 02 01 2a 
+It is now cycle 1728
+It is now cycle 1729
+It is now cycle 1730
+It is now cycle 1731
+It is now cycle 1732
+P    4 | st r2 256
+ADV 5 (0x006d -> 0x0072) 03 70 02 01 00 
+It is now cycle 1733
+It is now cycle 1734
+It is now cycle 1735
+P    3 | zjmp -280 OK
+P    2 | fork 46 (1660)
+ADV 3 (0x064e -> 0x0651) 0c 00 2e 
+It is now cycle 1736
+It is now cycle 1737
+P    4 | st r2 256
+ADV 5 (0x0072 -> 0x0077) 03 70 02 01 00 
+It is now cycle 1738
+It is now cycle 1739
+It is now cycle 1740
+It is now cycle 1741
+It is now cycle 1742
+P    4 | st r2 256
+ADV 5 (0x0077 -> 0x007c) 03 70 02 01 00 
+It is now cycle 1743
+It is now cycle 1744
+It is now cycle 1745
+P   11 | live -2
+Player 2 (Underscore) is said to be alive
+ADV 5 (0x067c -> 0x0681) 01 ff ff ff fe 
+P    3 | live -3
+Player 3 (helltrain) is said to be alive
+ADV 5 (0x086c -> 0x0871) 01 ff ff ff fd 
+P    2 | live -2
+Player 2 (Underscore) is said to be alive
+ADV 5 (0x0651 -> 0x0656) 01 ff ff ff fe 
+It is now cycle 1746
+It is now cycle 1747
+P    4 | st r2 257
+ADV 5 (0x007c -> 0x0081) 03 70 02 01 01 
+It is now cycle 1748
+It is now cycle 1749
+It is now cycle 1750
+P   11 | ld 4 r2
+ADV 7 (0x0681 -> 0x0688) 02 90 00 00 00 04 02 
+P    6 | fork 6 (3157)
+ADV 3 (0x0c4f -> 0x0c52) 0c 00 06 
+P    3 | st r2 -24
+ADV 5 (0x0871 -> 0x0876) 03 70 02 ff e8 
+P    2 | ld 0 r2
+ADV 7 (0x0656 -> 0x065d) 02 90 00 00 00 00 02 
+It is now cycle 1751
+It is now cycle 1752
+P    4 | st r2 368
+ADV 5 (0x0081 -> 0x0086) 03 70 02 01 70 
+It is now cycle 1753
+It is now cycle 1754
+It is now cycle 1755
+P   11 | ld 101253622 r3
+ADV 7 (0x0688 -> 0x068f) 02 90 06 09 01 f6 03 
+P    3 | st r2 -33
+ADV 5 (0x0876 -> 0x087b) 03 70 02 ff df 
+P    2 | ld 190055682 r3
+ADV 7 (0x065d -> 0x0664) 02 90 0b 54 05 02 03 
+It is now cycle 1756
+It is now cycle 1757
+P    4 | st r2 400
+ADV 5 (0x0086 -> 0x008b) 03 70 02 01 90 
+It is now cycle 1758
+It is now cycle 1759
+It is now cycle 1760
+P   11 | ld 134807571 r5
+ADV 7 (0x068f -> 0x0696) 02 90 08 09 00 13 05 
+P    3 | st r2 -42
+ADV 5 (0x087b -> 0x0880) 03 70 02 ff d6 
+P    2 | ld 190056194 r5
+ADV 7 (0x0664 -> 0x066b) 02 90 0b 54 07 02 05 
+It is now cycle 1761
+It is now cycle 1762
+P    4 | st r2 259
+ADV 5 (0x008b -> 0x0090) 03 70 02 01 03 
+It is now cycle 1763
+It is now cycle 1764
+It is now cycle 1765
+P   11 | ld 134807571 r7
+ADV 7 (0x0696 -> 0x069d) 02 90 08 09 00 13 07 
+P    3 | st r2 -51
+ADV 5 (0x0880 -> 0x0885) 03 70 02 ff cd 
+P    2 | ld 190056194 r7
+ADV 7 (0x066b -> 0x0672) 02 90 0b 54 07 02 07 
+It is now cycle 1766
+It is now cycle 1767
+P    4 | st r2 256
+ADV 5 (0x0090 -> 0x0095) 03 70 02 01 00 
+It is now cycle 1768
+It is now cycle 1769
+It is now cycle 1770
+P   12 | zjmp 14 OK
+P   11 | ld 0 r16
+ADV 7 (0x069d -> 0x06a4) 02 90 00 00 00 00 10 
+P    6 | zjmp 6 OK
+P    3 | st r2 -60
+ADV 5 (0x0885 -> 0x088a) 03 70 02 ff c4 
+P    2 | ld 0 r16
+ADV 7 (0x0672 -> 0x0679) 02 90 00 00 00 00 10 
+It is now cycle 1771
+It is now cycle 1772
+P    4 | st r2 256
+ADV 5 (0x0095 -> 0x009a) 03 70 02 01 00 
+It is now cycle 1773
+It is now cycle 1774
+It is now cycle 1775
+P    3 | st r2 -69
+ADV 5 (0x088a -> 0x088f) 03 70 02 ff bb 
+It is now cycle 1776
+It is now cycle 1777
+P    4 | st r2 507
+ADV 5 (0x009a -> 0x009f) 03 70 02 01 fb 
+It is now cycle 1778
+It is now cycle 1779
+It is now cycle 1780
+P   12 | live -4
+Player 4 (Misaka Mikoto) is said to be alive
+ADV 5 (0x0c63 -> 0x0c68) 01 ff ff ff fc 
+P    6 | live -4
+Player 4 (Misaka Mikoto) is said to be alive
+ADV 5 (0x0c58 -> 0x0c5d) 01 ff ff ff fc 
+P    3 | st r2 -78
+ADV 5 (0x088f -> 0x0894) 03 70 02 ff b2 
+It is now cycle 1781
+It is now cycle 1782
+It is now cycle 1783
+It is now cycle 1784
+It is now cycle 1785
+P    7 | fork -77 (1170)
+ADV 3 (0x04df -> 0x04e2) 0c ff b3 
+P    3 | st r2 -87
+ADV 5 (0x0894 -> 0x0899) 03 70 02 ff a9 
+It is now cycle 1786
+It is now cycle 1787
+It is now cycle 1788
+It is now cycle 1789
+It is now cycle 1790
+P   11 | zjmp 405 OK
+P    7 | st r1 6
+ADV 5 (0x04e2 -> 0x04e7) 03 70 01 00 06 
+P    3 | st r2 -96
+ADV 5 (0x0899 -> 0x089e) 03 70 02 ff a0 
+P    2 | zjmp 448 OK
+It is now cycle 1791
+It is now cycle 1792
+It is now cycle 1793
+It is now cycle 1794
+It is now cycle 1795
+P   13 | live -42
+ADV 5 (0x0492 -> 0x0497) 01 ff ff ff d6 
+P    3 | st r2 -105
+ADV 5 (0x089e -> 0x08a3) 03 70 02 ff 97 
+It is now cycle 1796
+It is now cycle 1797
+P    4 | zjmp -177 FAILED
+ADV 3 (0x009f -> 0x00a2) 09 ff 4f 
+It is now cycle 1798
+It is now cycle 1799
+It is now cycle 1800
+P    7 | live -2
+Player 2 (Underscore) is said to be alive
+ADV 5 (0x04e7 -> 0x04ec) 01 ff ff ff fe 
+P    3 | st r2 -114
+ADV 5 (0x08a3 -> 0x08a8) 03 70 02 ff 8e 
+It is now cycle 1801
+It is now cycle 1802
+It is now cycle 1803
+It is now cycle 1804
+It is now cycle 1805
+P    3 | st r2 -123
+ADV 5 (0x08a8 -> 0x08ad) 03 70 02 ff 85 
+It is now cycle 1806
+P    7 | or -2 -2 r7
+ADV 5 (0x04ec -> 0x04f1) 07 54 01 01 07 
+It is now cycle 1807
+P    4 | live 42
+ADV 5 (0x00a2 -> 0x00a7) 01 00 00 00 2a 
+It is now cycle 1808
+It is now cycle 1809
+It is now cycle 1810
+P    3 | st r2 -132
+ADV 5 (0x08ad -> 0x08b2) 03 70 02 ff 7c 
+It is now cycle 1811
+P    7 | ld 1880161814 r9
+ADV 7 (0x04f1 -> 0x04f8) 02 90 70 10 fe 16 09 
+It is now cycle 1812
+P    4 | ld -301764606 r1
+ADV 7 (0x00a7 -> 0x00ae) 02 90 ee 03 70 02 01 
+It is now cycle 1813
+It is now cycle 1814
+It is now cycle 1815
+P    3 | st r2 -141
+ADV 5 (0x08b2 -> 0x08b7) 03 70 02 ff 73 
+It is now cycle 1816
+P    7 | ld 1879571989 r10
+ADV 7 (0x04f8 -> 0x04ff) 02 90 70 07 fe 15 0a 
+It is now cycle 1817
+ADV 2 (0x00ae -> 0x00b0) 02 03 
+It is now cycle 1818
+It is now cycle 1819
+It is now cycle 1820
+P   13 | sti r1 -138 1
+       | -> store to -138 + 1 = -137 (with pc and mod 1038)
+ADV 7 (0x0497 -> 0x049e) 0b 68 01 ff 76 00 01 
+P    3 | st r2 -150
+ADV 5 (0x08b7 -> 0x08bc) 03 70 02 ff 6a 
+It is now cycle 1821
+P    7 | ld 34209281 r11
+ADV 7 (0x04ff -> 0x0506) 02 90 02 09 fe 01 0b 
+It is now cycle 1822
+It is now cycle 1823
+ADV 2 (0x00b1 -> 0x00b3) 02 01 
+It is now cycle 1824
+It is now cycle 1825
+P   13 | ld 57672959 r10
+ADV 7 (0x049e -> 0x04a5) 02 90 03 70 04 ff 0a 
+P    3 | st r2 -159
+ADV 5 (0x08bc -> 0x08c1) 03 70 02 ff 61 
+It is now cycle 1826
+It is now cycle 1827
+It is now cycle 1828
+ADV 2 (0x00b3 -> 0x00b5) 03 03 
+It is now cycle 1829
+It is now cycle 1830
+P   13 | ld -30 r11
+ADV 7 (0x04a5 -> 0x04ac) 02 90 ff ff ff e2 0b 
+P    3 | st r2 -168
+ADV 5 (0x08c1 -> 0x08c6) 03 70 02 ff 58 
+It is now cycle 1831
+It is now cycle 1832
+P   11 | ld 0 r2
+ADV 7 (0x085e -> 0x0865) 02 90 00 00 00 00 02 
+P    2 | ld 0 r2
+ADV 7 (0x085e -> 0x0865) 02 90 00 00 00 00 02 
+It is now cycle 1833
+It is now cycle 1834
+ADV 2 (0x00b6 -> 0x00b8) 02 01 
+It is now cycle 1835
+P   13 | ld -5 r12
+ADV 7 (0x04ac -> 0x04b3) 02 90 ff ff ff fb 0c 
+P    3 | st r2 -177
+ADV 5 (0x08c6 -> 0x08cb) 03 70 02 ff 4f 
+It is now cycle 1836
+It is now cycle 1837
+P   11 | ld 0 r16
+ADV 7 (0x0865 -> 0x086c) 02 90 00 00 00 00 10 
+P    2 | ld 0 r16
+ADV 7 (0x0865 -> 0x086c) 02 90 00 00 00 00 10 
+It is now cycle 1838
+It is now cycle 1839
+It is now cycle 1840
+P   13 | st r1 6
+ADV 5 (0x04b3 -> 0x04b8) 03 70 01 00 06 
+P    3 | st r2 -186
+ADV 5 (0x08cb -> 0x08d0) 03 70 02 ff 46 
+It is now cycle 1841
+It is now cycle 1842
+It is now cycle 1843
+It is now cycle 1844
+It is now cycle 1845
+P    3 | st r2 -195
+ADV 5 (0x08d0 -> 0x08d5) 03 70 02 ff 3d 
+It is now cycle 1846
+It is now cycle 1847
+P   11 | live -3
+ADV 5 (0x086c -> 0x0871) 01 ff ff ff fd 
+P    2 | live -3
+ADV 5 (0x086c -> 0x0871) 01 ff ff ff fd 
+It is now cycle 1848
+It is now cycle 1849
+It is now cycle 1850
+P   13 | live -2
+Player 2 (Underscore) is said to be alive
+ADV 5 (0x04b8 -> 0x04bd) 01 ff ff ff fe 
+P    3 | st r2 -204
+ADV 5 (0x08d5 -> 0x08da) 03 70 02 ff 34 
+It is now cycle 1851
+It is now cycle 1852
+P   11 | st r2 -24
+ADV 5 (0x0871 -> 0x0876) 03 70 02 ff e8 
+P    2 | st r2 -24
+ADV 5 (0x0871 -> 0x0876) 03 70 02 ff e8 
+It is now cycle 1853
+It is now cycle 1854
+It is now cycle 1855
+P    3 | st r2 -213
+ADV 5 (0x08da -> 0x08df) 03 70 02 ff 2b 
+It is now cycle 1856
+It is now cycle 1857
+P   11 | st r2 -33
+ADV 5 (0x0876 -> 0x087b) 03 70 02 ff df 
+P    2 | st r2 -33
+ADV 5 (0x0876 -> 0x087b) 03 70 02 ff df 
+It is now cycle 1858
+It is now cycle 1859
+It is now cycle 1860
+P    3 | st r2 -222
+ADV 5 (0x08df -> 0x08e4) 03 70 02 ff 22 
+It is now cycle 1861
+It is now cycle 1862
+P   11 | st r2 -42
+ADV 5 (0x087b -> 0x0880) 03 70 02 ff d6 
+P    2 | st r2 -42
+ADV 5 (0x087b -> 0x0880) 03 70 02 ff d6 
+It is now cycle 1863
+It is now cycle 1864
+It is now cycle 1865
+P    3 | st r2 -231
+ADV 5 (0x08e4 -> 0x08e9) 03 70 02 ff 19 
+It is now cycle 1866
+It is now cycle 1867
+P   11 | st r2 -51
+ADV 5 (0x0880 -> 0x0885) 03 70 02 ff cd 
+P    2 | st r2 -51
+ADV 5 (0x0880 -> 0x0885) 03 70 02 ff cd 
+It is now cycle 1868
+It is now cycle 1869
+It is now cycle 1870
+P    3 | st r2 -240
+ADV 5 (0x08e9 -> 0x08ee) 03 70 02 ff 10 
+It is now cycle 1871
+It is now cycle 1872
+P   11 | st r2 -60
+ADV 5 (0x0885 -> 0x088a) 03 70 02 ff c4 
+P    2 | st r2 -60
+ADV 5 (0x0885 -> 0x088a) 03 70 02 ff c4 
+It is now cycle 1873
+It is now cycle 1874
+It is now cycle 1875
+P    3 | st r2 -249
+ADV 5 (0x08ee -> 0x08f3) 03 70 02 ff 07 
+It is now cycle 1876
+It is now cycle 1877
+P   11 | st r2 -69
+ADV 5 (0x088a -> 0x088f) 03 70 02 ff bb 
+P    2 | st r2 -69
+ADV 5 (0x088a -> 0x088f) 03 70 02 ff bb 
+It is now cycle 1878
+It is now cycle 1879
+It is now cycle 1880
+P    3 | st r2 -258
+ADV 5 (0x08f3 -> 0x08f8) 03 70 02 fe fe 
+It is now cycle 1881
+It is now cycle 1882
+P   11 | st r2 -78
+ADV 5 (0x088f -> 0x0894) 03 70 02 ff b2 
+P    2 | st r2 -78
+ADV 5 (0x088f -> 0x0894) 03 70 02 ff b2 
+It is now cycle 1883
+It is now cycle 1884
+It is now cycle 1885
+P    3 | st r2 -267
+ADV 5 (0x08f8 -> 0x08fd) 03 70 02 fe f5 
+It is now cycle 1886
+It is now cycle 1887
+P   11 | st r2 -87
+ADV 5 (0x0894 -> 0x0899) 03 70 02 ff a9 
+P    2 | st r2 -87
+ADV 5 (0x0894 -> 0x0899) 03 70 02 ff a9 
+It is now cycle 1888
+It is now cycle 1889
+It is now cycle 1890
+P    3 | st r2 -276
+ADV 5 (0x08fd -> 0x0902) 03 70 02 fe ec 
+It is now cycle 1891
+It is now cycle 1892
+P   11 | st r2 -96
+ADV 5 (0x0899 -> 0x089e) 03 70 02 ff a0 
+P    2 | st r2 -96
+ADV 5 (0x0899 -> 0x089e) 03 70 02 ff a0 
+It is now cycle 1893
+It is now cycle 1894
+It is now cycle 1895
+P    3 | st r2 -285
+ADV 5 (0x0902 -> 0x0907) 03 70 02 fe e3 
+It is now cycle 1896
+It is now cycle 1897
+P   11 | st r2 -105
+ADV 5 (0x089e -> 0x08a3) 03 70 02 ff 97 
+P    2 | st r2 -105
+ADV 5 (0x089e -> 0x08a3) 03 70 02 ff 97 
+It is now cycle 1898
+It is now cycle 1899
+It is now cycle 1900
+P    3 | st r2 -294
+ADV 5 (0x0907 -> 0x090c) 03 70 02 fe da 
+It is now cycle 1901
+It is now cycle 1902
+P   11 | st r2 -114
+ADV 5 (0x08a3 -> 0x08a8) 03 70 02 ff 8e 
+P    2 | st r2 -114
+ADV 5 (0x08a3 -> 0x08a8) 03 70 02 ff 8e 
+It is now cycle 1903
+It is now cycle 1904
+It is now cycle 1905
+P    3 | st r2 -303
+ADV 5 (0x090c -> 0x0911) 03 70 02 fe d1 
+It is now cycle 1906
+It is now cycle 1907
+P   11 | st r2 -123
+ADV 5 (0x08a8 -> 0x08ad) 03 70 02 ff 85 
+P    2 | st r2 -123
+ADV 5 (0x08a8 -> 0x08ad) 03 70 02 ff 85 
+It is now cycle 1908
+It is now cycle 1909
+It is now cycle 1910
+P    3 | st r2 -312
+ADV 5 (0x0911 -> 0x0916) 03 70 02 fe c8 
+It is now cycle 1911
+It is now cycle 1912
+P   11 | st r2 -132
+ADV 5 (0x08ad -> 0x08b2) 03 70 02 ff 7c 
+P    2 | st r2 -132
+ADV 5 (0x08ad -> 0x08b2) 03 70 02 ff 7c 
+It is now cycle 1913
+It is now cycle 1914
+It is now cycle 1915
+P    3 | st r2 -321
+ADV 5 (0x0916 -> 0x091b) 03 70 02 fe bf 
+It is now cycle 1916
+It is now cycle 1917
+P   11 | st r2 -141
+ADV 5 (0x08b2 -> 0x08b7) 03 70 02 ff 73 
+P    2 | st r2 -141
+ADV 5 (0x08b2 -> 0x08b7) 03 70 02 ff 73 
+It is now cycle 1918
+It is now cycle 1919
+It is now cycle 1920
+P    3 | st r2 -330
+ADV 5 (0x091b -> 0x0920) 03 70 02 fe b6 
+It is now cycle 1921
+It is now cycle 1922
+P   11 | st r2 -150
+ADV 5 (0x08b7 -> 0x08bc) 03 70 02 ff 6a 
+P    2 | st r2 -150
+ADV 5 (0x08b7 -> 0x08bc) 03 70 02 ff 6a 
+It is now cycle 1923
+It is now cycle 1924
+It is now cycle 1925
+P    3 | st r2 -339
+ADV 5 (0x0920 -> 0x0925) 03 70 02 fe ad 
+It is now cycle 1926
+It is now cycle 1927
+P   11 | st r2 -159
+ADV 5 (0x08bc -> 0x08c1) 03 70 02 ff 61 
+P    2 | st r2 -159
+ADV 5 (0x08bc -> 0x08c1) 03 70 02 ff 61 
+It is now cycle 1928
+It is now cycle 1929
+It is now cycle 1930
+P    3 | st r2 -348
+ADV 5 (0x0925 -> 0x092a) 03 70 02 fe a4 
+It is now cycle 1931
+It is now cycle 1932
+P   11 | st r2 -168
+ADV 5 (0x08c1 -> 0x08c6) 03 70 02 ff 58 
+P    2 | st r2 -168
+ADV 5 (0x08c1 -> 0x08c6) 03 70 02 ff 58 
+It is now cycle 1933
+It is now cycle 1934
+It is now cycle 1935
+P    3 | st r2 -357
+ADV 5 (0x092a -> 0x092f) 03 70 02 fe 9b 
+It is now cycle 1936
+It is now cycle 1937
+P   11 | st r2 -177
+ADV 5 (0x08c6 -> 0x08cb) 03 70 02 ff 4f 
+P    2 | st r2 -177
+ADV 5 (0x08c6 -> 0x08cb) 03 70 02 ff 4f 
+It is now cycle 1938
+It is now cycle 1939
+It is now cycle 1940
+P    3 | st r2 -366
+ADV 5 (0x092f -> 0x0934) 03 70 02 fe 92 
+It is now cycle 1941
+It is now cycle 1942
+P   11 | st r2 -186
+ADV 5 (0x08cb -> 0x08d0) 03 70 02 ff 46 
+P    2 | st r2 -186
+ADV 5 (0x08cb -> 0x08d0) 03 70 02 ff 46 
+It is now cycle 1943
+It is now cycle 1944
+It is now cycle 1945
+P    8 | fork -8 (2462)
+ADV 3 (0x09a6 -> 0x09a9) 0c ff f8 
+P    3 | st r2 -375
+ADV 5 (0x0934 -> 0x0939) 03 70 02 fe 89 
+It is now cycle 1946
+It is now cycle 1947
+P   11 | st r2 -195
+ADV 5 (0x08d0 -> 0x08d5) 03 70 02 ff 3d 
+P    2 | st r2 -195
+ADV 5 (0x08d0 -> 0x08d5) 03 70 02 ff 3d 
+It is now cycle 1948
+It is now cycle 1949
+It is now cycle 1950
+P    3 | st r2 -384
+ADV 5 (0x0939 -> 0x093e) 03 70 02 fe 80 
+It is now cycle 1951
+It is now cycle 1952
+P   11 | st r2 -204
+ADV 5 (0x08d5 -> 0x08da) 03 70 02 ff 34 
+P    2 | st r2 -204
+ADV 5 (0x08d5 -> 0x08da) 03 70 02 ff 34 
+It is now cycle 1953
+It is now cycle 1954
+It is now cycle 1955
+P   14 | live -3
+Player 3 (helltrain) is said to be alive
+ADV 5 (0x099e -> 0x09a3) 01 ff ff ff fd 
+P    8 | live -3
+Player 3 (helltrain) is said to be alive
+ADV 5 (0x09a9 -> 0x09ae) 01 ff ff ff fd 
+P    3 | st r2 -393
+ADV 5 (0x093e -> 0x0943) 03 70 02 fe 77 
+It is now cycle 1956
+It is now cycle 1957
+P   11 | st r2 -213
+ADV 5 (0x08da -> 0x08df) 03 70 02 ff 2b 
+P    2 | st r2 -213
+ADV 5 (0x08da -> 0x08df) 03 70 02 ff 2b 
+It is now cycle 1958
+It is now cycle 1959
+It is now cycle 1960
+P    3 | st r2 -402
+ADV 5 (0x0943 -> 0x0948) 03 70 02 fe 6e 
+It is now cycle 1961
+It is now cycle 1962
+P   11 | st r2 -222
+ADV 5 (0x08df -> 0x08e4) 03 70 02 ff 22 
+P    2 | st r2 -222
+ADV 5 (0x08df -> 0x08e4) 03 70 02 ff 22 
+It is now cycle 1963
+It is now cycle 1964
+It is now cycle 1965
+P    3 | st r2 -411
+ADV 5 (0x0948 -> 0x094d) 03 70 02 fe 65 
+It is now cycle 1966
+It is now cycle 1967
+P   11 | st r2 -231
+ADV 5 (0x08e4 -> 0x08e9) 03 70 02 ff 19 
+P    2 | st r2 -231
+ADV 5 (0x08e4 -> 0x08e9) 03 70 02 ff 19 
+It is now cycle 1968
+It is now cycle 1969
+It is now cycle 1970
+P    3 | st r2 -420
+ADV 5 (0x094d -> 0x0952) 03 70 02 fe 5c 
+It is now cycle 1971
+It is now cycle 1972
+P   11 | st r2 -240
+ADV 5 (0x08e9 -> 0x08ee) 03 70 02 ff 10 
+P    2 | st r2 -240
+ADV 5 (0x08e9 -> 0x08ee) 03 70 02 ff 10 
+It is now cycle 1973
+It is now cycle 1974
+It is now cycle 1975
+P   14 | zjmp 3 OK
+P    3 | st r2 -429
+ADV 5 (0x0952 -> 0x0957) 03 70 02 fe 53 
+It is now cycle 1976
+It is now cycle 1977
+P   11 | st r2 -249
+ADV 5 (0x08ee -> 0x08f3) 03 70 02 ff 07 
+P    2 | st r2 -249
+ADV 5 (0x08ee -> 0x08f3) 03 70 02 ff 07 
+It is now cycle 1978
+It is now cycle 1979
+It is now cycle 1980
+P    3 | st r2 -438
+ADV 5 (0x0957 -> 0x095c) 03 70 02 fe 4a 
+It is now cycle 1981
+It is now cycle 1982
+P   11 | st r2 -258
+ADV 5 (0x08f3 -> 0x08f8) 03 70 02 fe fe 
+P    2 | st r2 -258
+ADV 5 (0x08f3 -> 0x08f8) 03 70 02 fe fe 
+It is now cycle 1983
+It is now cycle 1984
+It is now cycle 1985
+P    3 | st r2 -447
+ADV 5 (0x095c -> 0x0961) 03 70 02 fe 41 
+It is now cycle 1986
+It is now cycle 1987
+P   11 | st r2 -267
+ADV 5 (0x08f8 -> 0x08fd) 03 70 02 fe f5 
+P    2 | st r2 -267
+ADV 5 (0x08f8 -> 0x08fd) 03 70 02 fe f5 
+It is now cycle 1988
+It is now cycle 1989
+It is

@@ -1,0 +1,1439 @@
+P   96 | live 0
+P   96 | fork -5 (3459)
+P   96 | ld 0 r2
+P   96 | ld 4 r3
+P   96 | ld 96 r5
+P   96 | sti r1 51 1
+P   96 | st r1 6
+P   96 | live -4
+P   96 | ldi -38 0 r4
+P   96 | sti r4 400 0
+P   96 | add r2 r3 r2
+P   96 | ldi -55 4 r4
+P   96 | sti r4 383 4
+P   96 | add r2 r3 r2
+P   96 | live -4
+P   96 | xor 8 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 8 r4
+P   96 | sti r4 400 8
+P   96 | add r2 r3 r2
+P   96 | ldi -55 12 r4
+P   96 | sti r4 383 12
+P   96 | add r2 r3 r2
+P   96 | live 0
+P   96 | xor 16 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 16 r4
+P   96 | sti r4 400 16
+P   96 | add r2 r3 r2
+P   96 | ldi -55 20 r4
+P   96 | sti r4 383 20
+P   96 | add r2 r3 r2
+P   96 | live 0
+P   96 | xor 24 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 24 r4
+P   96 | sti r4 400 24
+P   96 | add r2 r3 r2
+P   96 | ldi -55 28 r4
+P   96 | sti r4 383 28
+P   96 | add r2 r3 r2
+P   96 | live 0
+P   96 | xor 32 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 32 r4
+P   96 | sti r4 400 32
+P   96 | add r2 r3 r2
+P   96 | ldi -55 36 r4
+P   96 | sti r4 383 36
+P   96 | add r2 r3 r2
+P   96 | live -4
+P   96 | xor 40 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live -4
+P   96 | ldi -38 40 r4
+P   96 | sti r4 400 40
+P   96 | add r2 r3 r2
+P   96 | ldi -55 44 r4
+P   96 | sti r4 383 44
+P   96 | add r2 r3 r2
+P   96 | live 0
+P   96 | xor 48 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 48 r4
+P   96 | sti r4 400 48
+P   96 | add r2 r3 r2
+P   96 | ldi -55 52 r4
+P   96 | sti r4 383 52
+P   96 | add r2 r3 r2
+P   96 | live 0
+P   96 | xor 56 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 56 r4
+P   96 | sti r4 400 56
+P   96 | add r2 r3 r2
+P   96 | ldi -55 60 r4
+P   96 | sti r4 383 60
+P   96 | add r2 r3 r2
+P   96 | live 0
+P   96 | xor 64 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 64 r4
+P   96 | sti r4 400 64
+P   96 | add r2 r3 r2
+P   96 | ldi -55 68 r4
+P   96 | sti r4 383 68
+P   96 | add r2 r3 r2
+P   96 | live -4
+P   96 | xor 72 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live -4
+P   96 | ldi -38 72 r4
+P   96 | sti r4 400 72
+P   96 | add r2 r3 r2
+P   96 | ldi -55 76 r4
+P   96 | sti r4 383 76
+P   96 | add r2 r3 r2
+P   96 | live 0
+P   96 | xor 80 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 80 r4
+P   96 | sti r4 400 80
+P   96 | add r2 r3 r2
+P   96 | ldi -55 84 r4
+P   96 | sti r4 383 84
+P   96 | add r2 r3 r2
+P   96 | live 0
+P   96 | xor 88 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 88 r4
+P   96 | sti r4 400 88
+P   96 | add r2 r3 r2
+P   96 | ldi -55 92 r4
+P   96 | sti r4 383 92
+P   96 | add r2 r3 r2
+P   96 | live 0
+P   96 | xor 96 96 r15
+P   96 | zjmp 362 OK
+P   96 | ld 96 r5
+P   96 | sti r1 51 1
+P   96 | st r1 6
+P   96 | live -4
+P   96 | ldi -38 96 r4
+P   96 | sti r4 383 96
+P   96 | add r2 r3 r2
+P   96 | live -4
+P   96 | xor 100 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 65532
+P   96 | ldi -38 100 r4
+P   96 | sti r4 383 100
+P   96 | add r2 r3 r2
+P   96 | live -256
+P   96 | xor 104 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live -4
+P   96 | ldi -38 104 r4
+P   96 | sti r4 383 104
+P   96 | add r2 r3 r2
+P   96 | live 0
+P   96 | xor 108 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 108 r4
+P   96 | sti r4 400 108
+P   96 | add r2 r3 r2
+P   96 | live 191365376
+P   96 | xor 112 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 112 r4
+P   96 | sti r4 400 112
+P   96 | add r2 r3 r2
+P   96 | xor 116 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live -4
+P   96 | ldi -38 116 r4
+P   96 | sti r4 383 116
+P   96 | live 191365120
+P   96 | xor 116 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 65532
+P   96 | ldi -38 116 r4
+P   96 | sti r4 383 116
+P   96 | live 191365631
+P   96 | xor 116 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live -4
+P   96 | ldi -38 116 r4
+P   96 | sti r4 383 116
+P   96 | live 191365376
+P   96 | xor 116 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 116 r4
+P   96 | sti r4 400 116
+P   96 | live 33751562
+P   96 | sti r1 4 2916
+P   96 | live 191365376
+P   96 | xor 116 96 r15
+P   96 | zjmp 362 FAILED
+P   96 | ld 0 r15
+P   96 | zjmp -59 OK
+P   96 | live 0
+P   96 | ldi -38 116 r4
+P   96 | sti r4 400 116
+P   96 | live 33751562
+P   96 | sti r4 383 116
+P   96 | live 191365120
+P   96 | zjmp 362 OK
+P   96 | ld 96 r5
+P   96 | sti r1 51 1
+P   96 | st r1 6
+P   96 | live -4
+P   96 | st r2 400
+P   96 | st r2 400
+P   96 | st r2 400
+P   96 | st r2 400
+P   96 | st r2 400
+P   96 | st r2 400
+P   96 | st r2 400
+P   96 | st r2 256
+P   96 | sti r1 223 1
+P   96 | sti r1 53 1
+P  196 | live 0
+P   96 | live 637665279
+P   96 | st r2 -24
+P   96 | st r2 -33
+P   96 | st r2 -42
+P   96 | st r2 -51
+P   96 | st r2 -60
+P   96 | st r2 -69
+P   96 | st r2 -78
+P   96 | st r2 -87
+P   96 | st r2 -96
+P   96 | st r2 -105
+P   96 | st r2 -114
+P   96 | st r2 -123
+P   96 | st r2 -132
+P   96 | st r2 -141
+P   96 | st r2 -150
+P   96 | st r2 -159
+P  196 | fork -5 (3221)
+P   96 | st r2 -168
+P  196 | st r1 58
+P   96 | st r2 -177
+P  196 | st r1 58
+P   96 | st r2 -186
+P  196 | st r1 58
+P   96 | st r2 -195
+P  196 | st r1 58
+P   96 | st r2 -204
+P  196 | st r1 58
+P   96 | st r2 -213
+P  196 | st r1 58
+P   96 | st r2 -222
+P  196 | st r1 58
+P   96 | st r2 -231
+P  196 | st r1 58
+P   96 | st r2 -240
+P  196 | st r1 58
+P   96 | st r2 -249
+P  196 | st r1 58
+P   96 | st r2 -258
+P  196 | ld 0 r16
+P   96 | st r2 -267
+P   96 | st r2 -276
+P  196 | live 0
+P   96 | st r2 -285
+P   96 | st r2 -294
+P  196 | live 0
+P   96 | st r2 -303
+P   96 | st r2 -312
+P  196 | live 0
+P   96 | st r2 -321
+P   96 | st r2 -330
+P  196 | live 0
+P   96 | st r2 -339
+P   96 | st r2 -348
+P  196 | live 0
+P   96 | st r2 -357
+P   96 | st r2 -366
+P  196 | live 0
+P   96 | st r2 -375
+P   96 | st r2 -384
+P  196 | live 0
+P   96 | st r2 -393
+P   96 | st r2 -402
+P  196 | live 0
+P   96 | st r2 -411
+P   96 | st r2 -420
+P  196 | live 0
+P   96 | st r2 -429
+P   96 | st r2 -438
+P  196 | live 0
+P   96 | st r2 -447
+P   96 | st r2 -456
+P   96 | st r2 -465
+P   96 | st r2 -474
+P  196 | zjmp -50 OK
+P   96 | st r2 -483
+P   96 | st r2 -492
+P  196 | live 0
+P   96 | st r2 -501
+P   96 | st r2 -510
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -280 FAILED
+P  196 | live 0
+P   96 | live -2
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -5 FAILED
+P  196 | live 0
+P   96 | live -2
+P  196 | live 0
+P   96 | st r2 24
+P   96 | st r2 33
+P  196 | live 0
+P   96 | st r2 42
+P   96 | st r2 51
+P  196 | live 0
+P   96 | st r2 78
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | st r2 105
+P  196 | live 0
+P  196 | live 0
+P   96 | st r2 132
+P  196 | live 0
+P   96 | st r2 150
+P   96 | st r2 159
+P  196 | live 0
+P   96 | st r2 168
+P   96 | st r2 177
+P  196 | live 0
+P   96 | st r2 186
+P   96 | st r2 195
+P  196 | live 0
+P   96 | st r2 204
+P  196 | live 0
+P  196 | live 0
+P   96 | st r2 231
+P   96 | st r2 240
+P  196 | live 0
+P   96 | st r2 249
+P   96 | st r2 258
+P   96 | st r2 267
+P   96 | st r2 276
+P  196 | zjmp -50 OK
+P   96 | st r2 285
+P  196 | live 0
+P   96 | st r2 303
+P   96 | st r2 312
+P  196 | live 0
+P   96 | st r2 321
+P   96 | st r2 330
+P  196 | live 0
+P   96 | st r2 339
+P   96 | st r2 348
+P  196 | live 0
+P   96 | st r2 357
+P  196 | live 0
+P   96 | st r2 384
+P  196 | live 0
+P   96 | st r2 393
+P   96 | st r2 402
+P  196 | live 0
+P   96 | st r2 411
+P  196 | live 0
+P   96 | st r2 429
+P   96 | st r2 256
+P  196 | live 0
+P  196 | live 0
+P   96 | live -1090293758
+P   96 | live -939298814
+P  196 | zjmp -50 OK
+P   96 | st r2 483
+P  196 | live 0
+P  196 | live 0
+P   96 | st r2 510
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 6699 FAILED
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | zjmp -50 OK
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P   96 | live -3
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P   96 | ldi -19 0 r16
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P   96 | ld 0 r9
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp -48 OK
+P  196 | live -4
+P   96 | live -3
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live -4
+P  196 | live -4
+P   96 | ld 0 r9
+P  196 | zjmp -50 OK
+P   96 | zjmp -48 OK
+P  196 | live -4
+P   96 | live -3
+P  196 | live -4
+P  196 | live -4
+P   96 | ldi -19 0 r16
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P   96 | ld 0 r9
+P  196 | live -4
+P   96 | zjmp -48 OK
+P  196 | zjmp -50 OK
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | zjmp -50 OK
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live -4
+P   96 | zjmp -48 OK
+P  196 | live -4
+P   96 | live -3
+P  196 | live -4
+P  196 | live -4
+P   96 | ldi -19 0 r16
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P   96 | ld 0 r9
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp -48 OK
+P  196 | live -4
+P   96 | live -3
+P  196 | live -4
+P  196 | live -4
+P   96 | ldi -19 0 r16
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P   96 | ld 0 r9
+P  196 | zjmp -50 OK
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | zjmp -50 OK
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P   96 | live -3
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | zjmp -50 OK
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P   96 | ld 0 r9
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp -48 OK
+P  196 | live -4
+P   96 | live -3
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P   96 | ldi -19 0 r16
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P   96 | ld 0 r9
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp -48 OK
+P  196 | live -4
+P   96 | live -3
+P  196 | live -4
+P  196 | live -4
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | zjmp -50 OK
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P   96 | live -3
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | zjmp -50 OK
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P   96 | ld 0 r9
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp -48 OK
+P  196 | live -4
+P   96 | live -3
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P   96 | ldi -19 0 r16
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  296 | live 0
+P  196 | zjmp -50 OK
+P  196 | live 0
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | zjmp -50 OK
+P   96 | zjmp -48 OK
+P  196 | live 0
+P   96 | live -3
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp -48 OK
+P   96 | live -3
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | ldi -19 0 r16
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | ld 0 r9
+P  196 | live 0
+P  196 | live -4
+P   96 | zjmp -48 OK
+P  196 | live -4
+P   96 | live -3
+P  196 | zjmp -50 OK
+P   96 | ldi -19 0 r16
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P   96 | ld 0 r9
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp -48 OK
+P  196 | live -4
+P   96 | live -3
+P  196 | live -4
+P   96 | ldi -19 0 r16
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | st r2 -339
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 2559 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | zjmp -50 OK
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | zjmp -50 OK
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | zjmp -50 OK
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | zjmp -50 OK
+P   96 | zjmp 0 OK
+P  196 | live 0
+P  196 | live 0
+P   96 | zjmp 0 OK
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp 0 OK
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp 0 OK
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp 0 OK
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp 0 OK
+P  196 | zjmp -50 OK
+P   96 | zjmp 0 OK
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp 0 OK
+P  196 | live -4
+P  196 | live -4
+P   96 | zjmp 0 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | zjmp -50 OK
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4
+P  196 | live -4

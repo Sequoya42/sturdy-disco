@@ -83,7 +83,44 @@ static t_fptr       	g_operator[CODE_LEN] =
 // #define BLA 1
 
 
-void					print_debug(t_proc *p)
+
+void	print_address(int i)
+{
+	unsigned int	j = 0;
+	char *r = ft_base(i, 16);
+	ft_putstr("0x");
+	int k = ft_strlen(r);
+	if (k < 4 && k >= 0)
+	while (j++ < (4 - ft_strlen(r)))
+		ft_putchar('0');
+	ft_putstr(r);
+}
+
+void						print_adv(t_proc *p, unsigned char *addr)
+{
+
+	char	hex[] = "0123456789abcdef";
+
+	if (p->set[0] == 9 && p->carry == 1)
+		return ;
+int	i = p->pc;
+int j = p->pc + p->next_i;
+char str[64];
+bzero(str, 64);
+int k = 0;
+	while (i < j)
+	{
+	str[k++] = (hex[(int)addr[i] / 16]);
+	str[k++] = (hex[(int)addr[i] % 16]);
+	str[k++] = (' ');
+		i++;
+	}
+	printf("ADV %d (0x%04x -> 0x%04x) %s\n", p->next_i, p->pc, j, str);
+}
+
+
+
+void					print_debug(t_proc *p, t_vm *vm)
 {
 	int i = GOT(p->set[0]).op_mod == 0 ? 1 : 2;
 if (p->set[0] == 16)
@@ -103,78 +140,42 @@ if (p->set[0] == 16)
 
 	if (p->set[0] == 11)
 	{
-int		k = p->set[i + 1] + p->set[i + 2];
-		printf("\n       | -> store to %d + %d = %d (with pc and mod %d)", p->set[i + 1], p->set[i + 2], k, k % IDX_MOD);
+	int		k = p->set[i + 1] + p->set[i + 2];
+		printf("\n       | -> store to %d + %d = %d (with pc and mod %d)", p->set[i + 1], p->set[i + 2], k, p->pc + (k % IDX_MOD));
 	}
-	else if (p->set[0] == 1 && p->set[1] == p->num)
+	else if (p->set[0] == 10)
 	{
-		printf("\nPlayer %d (%s) is said to be alive", -p->num, p->name);
+	int		k = p->set[i] + p->set[i + 1];
+		printf("\n       | -> load from %d + %d = %d (with pc and mod %d)", p->set[i + 0], p->set[i + 1], k, p->pc + (k % IDX_MOD));
+
+	}
+	else if (p->set[0] == 1)
+	{
+	int		n = p->set[1];
+int	i = 0;
+	while (i < MAX_PLAYERS)
+	{
+		if (n == (vm->plr[i].n * -1))
+		{
+			printf("\nPlayer %d (%s) is said to be alive", vm->plr[i].n, vm->plr[i].name);
+		}
+		i++;
+	}
+
 	}
 	else if (p->set[0] == 12 || p->set[0] == 15)
-		printf(" (%d)", p->set[1] + p->pc);
+	{
+		int k = p->set[0] == 15 ? p->set[1] : p->set[1] % IDX_MOD;
+		printf(" (%d)", k + p->pc);
+	}
 	if (p->set[0] == 9 && p->carry == 1)
 		printf(" OK\n");
 	else if (p->set[0] == 9 && p->carry == 0)
 		printf(" FAILED\n");
 	else
 		printf("\n");
+	(void)vm;
 }
-
-
-void	print_address(int i)
-{
-	unsigned int	j = 0;
-	char *r = ft_base(i, 16);
-	ft_putstr("0x");
-	int k = ft_strlen(r);
-	if (k < 4 && k >= 0)
-	while (j++ < (4 - ft_strlen(r)))
-		ft_putchar('0');
-	ft_putstr(r);
-}
-
-void						print_adv(t_proc *p, unsigned char *addr)
-{
-
-	char	hex[] = "0123456789abcdef";
-
-	if (p->set[0] == 9)
-		return ;
-int	i = p->pc;
-int j = p->pc + p->next_i;
-char str[64];
-bzero(str, 64);
-int k = 0;
-	while (i < j)
-	{
-	str[k++] = (hex[(int)addr[i] / 16]);
-	str[k++] = (hex[(int)addr[i] % 16]);
-	str[k++] = (' ');
-		i++;
-	}
-	printf("ADV %d (0x%04x -> 0x%04x) %s\n", p->next_i, p->pc, j, str);
-}
-
-
-void						tstw(t_proc *p, t_vm *vm)
-{
-	if (p->set[0] == 12 || p->set[0] == 15)
-		return;
-	if (p->cycle == 0)
-	{
-			if (p->set[0] && verify_validity(p, vm))
-			{
-									if (BLA)
-						print_debug(p);
-
-				g_operator[p->set[0]](vm, p);
-			}
-						if (p->next_i > 1 && BLA)
-					print_adv(p, vm->memory);
-
-	}
-}
-
 void						manage_players(t_cycle *cycle, t_vm *vm)
 {
 	t_proc					*p;
@@ -184,7 +185,7 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 
 	while (p)
 	{	
-		if ((p->set[0] == 0 || (p->cycle + 1) == GOT(p->set[0]).cycle) && cycle->total)
+		if ((p->set[0] == 0 || (p->cycle + 1) == GOT(p->set[0]).cycle))
 		{
 			get_instructions(vm, p);
 			p->cycle--;	
@@ -193,12 +194,12 @@ void						manage_players(t_cycle *cycle, t_vm *vm)
 		{
 			 if (p->set[0] && verify_validity(p, vm))
 			{
-					if (BLA)print_debug(p);
+					if (BLA)print_debug(p, vm);
 				g_operator[p->set[0]](vm, p);
 			}
 			if (p->next_i > 1 && BLA)
 					print_adv(p, vm->memory);
-			p->old = p->pc;
+			p->old = p->set[0] == 9 ? p->old : p->pc;
 			p->pc += p->next_i;
 			p->pc %= MEM_SIZE;
 			get_instructions(vm, p);

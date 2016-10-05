@@ -27,8 +27,6 @@ int							remove_player(t_vm *vm, t_proc *p)
 		vm->first = vm->first->next;
 	else if (p == vm->first && !vm->first->next)
 		return (-1);
-
-
 	if (p->prev)
 		p->prev->next = p->next;
 	else
@@ -41,7 +39,6 @@ int							remove_player(t_vm *vm, t_proc *p)
 		print_coord(p->pc, vm);
 	return (0);
 }
-void						tstw(t_proc *p, t_vm *vm);
 int							reset_players(t_vm *vm)
 {
 	t_proc					*p;

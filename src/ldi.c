@@ -23,10 +23,6 @@ void						op_ldi(t_vm *vm , t_proc *p)
 	v1 = get_value(p, 0, 2, vm);
 	v2 = get_value(p, 1, 3, vm);
 	n = p->pc + ((v1 + v2) % IDX_MOD);
-	if (n == 0)
-		p->carry = 1;
-	else
-		p->carry = 0;
 	r |= (VM(n + 0) << 24);
 	r |= (VM(n + 1) << 16);
 	r |= (VM(n + 2) << 8);
