@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/10/04 11:43:01 by zaz               #+#    #+#             */
-/*   Updated: 2016/09/23 08:04:34 by rbaum            ###   ########.fr       */
+/*   Created: 2016/10/05 15:16:04 by rbaum             #+#    #+#             */
+/*   Updated: 2016/10/05 15:16:04 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,76 +41,3 @@ t_op		g_op_tab[17] =
 	{"aff", 1, {T_REG}, 16, 2, "aff", 1, 0},
 	{0, 0, {0}, 0, 0, 0, 0, 0}
 };
-
-
-#if 0
-*****
-13787
-turtle thunder champ fluttershy
- fight 13780 1 ressources/turtle.cor ressources/THUNDER.cor ressources/champ.cor ressources/fluttershy.cor
-
-					CYCLE X
-
-FIND HOW YOU MANAGE CYCLE and PROCESS_CYCLE!!
-
-	- EXEC
-	- DIE--
-	- NEXT_CYCLE
-
-******
-
-KAPPA
-
-1cycledif
-->kill reset cycle_die-- in man player
-
-Discrepency at 17229
-
-
-
-
-
-
-----------------------
-8957
-come from the jymp at 03
-so
-see when and which
-
-prendre op a la fin quand exec tous les bails [sti /st 2] les bails
-
-8967
-
-											It is now cycle 8106
-P   51 | st r2 -3
-ADV 5 (0x0ebc -> 0x0ec1) 03 70 02 ff fd 
-P   15 | zjmp -33 OK
-
-
-
-											Cycle [ 8106 ]
-Player 51 | st [ 112 ]	2	-3	0
-ADV 3	be9 -> bec	[15]
------------------
-DONE
-----------------------
-It is now cycle 8077
-P   15 | live -16551934
-
-
-t is now cycle 8082
-(p15) ->   ADV 8 (0x0bdd -> 0x0be5) 03 ee 03 70 0f ff ff 01 
-
-
-It is now cycle 8086
-P    4 | st r2 -3
-
-[8086]	Plyr [15]		addr: [be8]		next : [be9]		Op [UH‰åHƒì 1Àº]
-[8086]	Plyr [4]		addr: [bec]		next : [bf1]		Op [st]
-
-
-Tout executer puis bouger les pc??
-First do those than can
-Then the rest
-
-#endif

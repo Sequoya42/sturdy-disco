@@ -1,1 +1,0 @@
-./corewar ressources/fluttershy.cor ressources/fluttershy.cor ressources/fluttershy.cor ressources/fluttershy.cor -d 20000

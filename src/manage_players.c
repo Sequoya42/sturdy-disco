@@ -152,7 +152,8 @@ if (p->set[0] == 16)
 	else if (p->set[0] == 1)
 	{
 	int		n = p->set[1];
-int	i = 0;
+	int	i = 0;
+	if (n)
 	while (i < MAX_PLAYERS)
 	{
 		if (n == (vm->plr[i].n * -1))

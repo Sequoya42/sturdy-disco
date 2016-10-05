@@ -91,6 +91,27 @@ int							loop_players(t_cycle *cycle, t_vm *vm)
 	return (0);
 }
 
+void						print_winner(t_vm *vm)
+{
+	unsigned int			j;
+	int						i;
+	int						k;
+
+	i = -1;
+	j = 0;
+	k = 0;
+	while (++i < vm->nb_champ)
+	{
+		if (vm->plr[i].last >= j)
+		{
+			j = vm->plr[i].last;
+			k = i;
+		}
+	}
+
+	ft_print("cycle: %d\tContestant %d, \"%s\", has won !\n",vm->cycle->total,
+		vm->plr[k].n , vm->plr[k].name);
+}
 void						start_war(t_vm *vm)
 {
 	t_cycle					cycle;
@@ -117,10 +138,5 @@ void						start_war(t_vm *vm)
 		if (cycle.alive == 0 || (int)cycle.stop <= 0)
 			break;
 	}
-	ft_print("cycle: %d\tContestant %d, \"%s\", has won !\n",cycle.total,
-			 -vm->first->num, vm->first->name);
+	print_winner(vm);
 }
-
-
-
-
