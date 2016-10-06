@@ -11,34 +11,6 @@
 /* ************************************************************************** */
 
 #include "vm.h"
-//-d could be anywhere
-
-#if 0
-Finished check_arg, assign right number with -n
-put them [process] in char**, for the name, and an int 
-so structure...
-OR | join name with number.. so just one tab
-
-p->number = n != (i * -1) ? n : ()
-CHECK THE TODO
-#endif
-
-void						test_shit(t_vm *vm)
-{
-
-
-	if (IS_IN(4, 2, 0))
-		ft_print("SUCCESS !");
-
-(void)vm;
-// 	t_proc *p = vm->first;
-// 	while (p)
-// 	{
-// 		ft_print("p->num = %d\t\tp->name : %s\n", (p->pos), p->name);
-// 		p = p->next;
-// 	}
-	exit(0);
-}
 
 void						introducing(int n, t_proc *p)
 {
@@ -54,26 +26,25 @@ void						introducing(int n, t_proc *p)
 	}
 }
 
-int							main(int ac, char **av)
+void						print_winner(t_vm *vm)
 {
-	t_vm					*vm;
-	
-	if (ac < 2)
-		msg_exit("Up to %d players\n flags: -d N" \
-			"\tto dump memory after N cycle\n", MAX_PLAYERS);
-	vm = get_vm();
-	vm->nb_proc = 0;
-	vm->visual = 0;
-	check_arg(ac, av, vm);
-	ft_bzero(vm->memory, MEM_SIZE);
-	fill_memory(vm);
-	// test_shit(vm);
-	if (vm->visual == 1)
-		init_visual(vm);
-	introducing(vm->nb_champ, vm->proc);
-	// ft_print("FIRST: %s\t PROC: %s \n", vm->first->name, vm->proc->name);
-	// exit(0);
-	start_war(vm);
+	unsigned int			j;
+	int						i;
+	int						k;
+
+	i = -1;
+	j = 0;
+	k = 0;
+	while (++i < vm->nb_champ)
+	{
+		if (vm->plr[i].last >= j)
+		{
+			j = vm->plr[i].last;
+			k = i;
+		}
+	}
+	ft_print("Contestant %d, \"%s\", has won !\n",
+		vm->plr[k].n, vm->plr[k].name);
 	if (vm->visual == 1)
 	{
 		move(20, 250);
@@ -82,5 +53,26 @@ int							main(int ac, char **av)
 		getch();
 		endwin();
 	}
+}
+
+int							main(int ac, char **av)
+{
+	t_vm					*vm;
+
+	if (ac < 2)
+		msg_exit("Up to %d players\n flags: -d N" \
+			"\tto dump memory after N cycle\n", MAX_PLAYERS);
+	vm = get_vm();
+	vm->nb_champ = 0;
+	vm->nb_proc = 0;
+	vm->visual = 0;
+	check_arg(ac, av, vm);
+	ft_bzero(vm->memory, MEM_SIZE);
+	fill_memory(vm);
+	if (vm->visual == 1)
+		init_visual(vm);
+	introducing(vm->nb_champ, vm->proc);
+	start_war(vm);
+	print_winner(vm);
 	return (0);
 }
