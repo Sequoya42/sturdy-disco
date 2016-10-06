@@ -12,10 +12,28 @@
 
 #include "vm.h"
 
+void					fill_rest(int ofst, t_proc *p)
+{
+	int					k;
+
+	k = 0;
+	p->pc = ofst;
+	p->carry = 0;
+	p->next = NULL;
+	p->prev = NULL;
+	p->old = -1;
+	while (k < REG_SIZE + 1)
+	{
+		p->reg[k] = 0;
+		k++;
+	}
+}
+
 void					fill_champion(int ofst, char *av, t_vm *vm, t_proc *p)
 {
 	int					fd;
 	int					i;
+	char				*s;
 
 	i = 0;
 	if ((fd = open(av, O_RDONLY)) <= -1)
@@ -29,17 +47,14 @@ void					fill_champion(int ofst, char *av, t_vm *vm, t_proc *p)
 	p->size = ft_endian(i);
 	if (p->size > CHAMP_MAX_SIZE)
 		msg_exit("%d : Too big a champion !\nMax size is %d\n",
-		 p->size, CHAMP_MAX_SIZE);
+			p->size, CHAMP_MAX_SIZE);
 	ft_read(fd, p->comment, COMMENT_LENGTH);
-	char *s = ft_memalloc(p->size + 1);
-		lseek(fd, sizeof(int), SEEK_CUR);
-	ft_read(fd, s, p->size);
+	s = ft_memalloc(p->size + 1);
+	lseek(fd, sizeof(int), SEEK_CUR);
+	if (ft_read(fd, s, p->size) != (int)p->size)
+		msg_exit("Size smaller than header says\n");
 	write_memory(p->size, ofst, s, vm);
-	p->pc = ofst;
-	p->carry = 0;
-	p->next = NULL;
-	p->prev = NULL;
-	p->old = -1;
+	fill_rest(ofst, p);
 }
 
 int						fill_memory(t_vm *vm)
@@ -52,7 +67,7 @@ int						fill_memory(t_vm *vm)
 	ac = vm->nb_champ;
 	dist = MEM_SIZE / (ac);
 	i = 0;
-  	while (i < ac)
+	while (i < ac)
 	{
 		if (!(p = ft_memalloc(sizeof(t_proc))))
 			msg_exit("Bad alloc of processus\n");
@@ -63,6 +78,5 @@ int						fill_memory(t_vm *vm)
 		first_add_proc(p, vm);
 		i++;
 	}
-	// vm->first = vm->proc;	
 	return (1);
 }

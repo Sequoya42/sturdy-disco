@@ -4,6 +4,34 @@
 				===========
 
 
+fight 5780 1 ressources/_.cor ressources/Asombra.cor ressources/Varimathras.cor ressources/youforkmytralala.cor
+
+
+It is now cycle 5793
+P   18 | st r9 0
+
+
+cycle 4953
+P   18 | lldi 84475923 28686 r9
+       | -> load from 84475923 + 28686 = 84504609 (with pc 84508181)
+ADV 7 (0x0df4 -> 0x0dfb) 0e e4 a2 03 70 0e 09 
+
+
+df4 : 3572 [pc]:  0e e4 a2 03 70 0e
+
+
+a2 03  : 41475
+
+70 0e : 28686
+First paramater is indirect, go look up at pc + first value
+so ( 41475 + pc ) % MEM_SIZE = 4087
+3563 [4097  + pc ] % MEM_SIZE
+
+Value at 4087 : ff 00 00 00
+
+Value zaz take : 84475923 :  05 09 00 13 [ located at 4087 - 64 (4023) | one line up]
+
+
 
 
 *****
@@ -19,15 +47,6 @@ fight 1000 1000 ressources/Varimathras.cor ressources/Misaka_Mikoto.cor ressourc
 
 
 *******
-Not same winner, without diff memory, look it up
-
-
-
-
-
-
-
-
 
 ----------------------------------------------------------
 put in set just param

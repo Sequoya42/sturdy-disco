@@ -35,7 +35,6 @@ SRC_NAME =		main.c\
 				start_war.c\
 				manage_players.c\
 				manage_arg.c\
-				hex_to_dec.c\
 				add_proc.c\
 				go_visual.c\
 				get_value.c\

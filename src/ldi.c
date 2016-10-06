@@ -12,7 +12,7 @@
 
 #include "vm.h"
 
-void						op_ldi(t_vm *vm , t_proc *p)
+void						op_ldi(t_vm *vm, t_proc *p)
 {
 	unsigned int			n;
 	int						v1;
@@ -29,15 +29,3 @@ void						op_ldi(t_vm *vm , t_proc *p)
 	r |= (VM(n + 3));
 	p->reg[p->set[4]] = r;
 }
-
-#if 0
-	{"ldi", 3, {T_REG | T_DIR | T_IND,
-	 			T_DIR | T_REG,
-	  			T_REG}
-
-	p->set[2] = t_REG | T_DIR | T_IND
-	p->set[3] = T_DIR | T_REG
-2 octet
-
-Indirect relatifpc
-#endif

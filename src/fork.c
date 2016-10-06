@@ -37,17 +37,10 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	n->cycle--;
 }
 
-
-#if 0
-
-JUMP TO RIGHT ADRESS WHEN DONE !
-#endif
-
-void						op_fork(t_vm *vm , t_proc *p)
+void						op_fork(t_vm *vm, t_proc *p)
 {
 	t_proc					*n;
 
-	// ft_print(KRED "APPEL A FORK AU CYCLE %d\n" KNRM, vm->cycle->total);
 	put_in_set(p->pc, vm, p);
 	if (!(n = ft_memalloc(sizeof(t_proc))))
 		msg_exit("Bad alloc of new proc [fork]\n");

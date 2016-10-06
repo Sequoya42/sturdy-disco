@@ -14,8 +14,8 @@
 
 int							get_ld_value(t_proc *p, int i, int j, t_vm *vm)
 {
-	int 							r;
-	int								n;
+	int						r;
+	int						n;
 
 	r = 0;
 	if (p->arg_size[i] == REG_CODE)
@@ -27,25 +27,17 @@ int							get_ld_value(t_proc *p, int i, int j, t_vm *vm)
 		r |= (VM(n + 1) << 16);
 		r |= (VM(n + 2) << 8);
 		r |= (VM(n + 3));
-		// printf("Valueof n : %d\tValue of r : %d\n",n,  r);
-		// ft_print("Value of endian r: %d\n", format_int(r, DIR_SIZE));
 		return (r);
 	}
 	else
 		return (p->set[j]);
 }
 
-
-void						op_ld(t_vm *vm , t_proc *p)
+void						op_ld(t_vm *vm, t_proc *p)
 {
 	unsigned int			n;
 
 	n = get_ld_value(p, 0, 2, vm);
-	// printf("Cycle : %d \tValue n ld: %d\n", vm->cycle->total, n);
-	// if (vm->cycle->total == 8094)
-	// printf("\t\t\t\t\t\t\tCycle: %d\n", vm->cycle->total);
-	// printf("P% 5d | ld %d\t%d\n", p->pos, n, p->set[3]);
-	// printf("[%d] Value in ld:%d\t\t%x\n",p->set[3], n, n);
 	p->reg[p->set[3]] = n;
 	if (n == 0)
 		p->carry = 1;
@@ -53,9 +45,3 @@ void						op_ld(t_vm *vm , t_proc *p)
 		p->carry = 0;
 	(void)vm;
 }
-
-#if 0
-
-	{"ld", 2, {T_DIR | T_IND, T_REG}, 2, 5, "load", 1, 0},
-
-#endif

@@ -99,6 +99,7 @@ int					match(char *s1, char *s2);
 int					match_char(char c, char *s1);
 int					is_blank(char *s);
 int					ft_string_digit(char *s);
+int					ft_read(int fd, void *s, int size);
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
 char				*ft_strchr(char const *s, int c);
@@ -125,6 +126,5 @@ char				**ft_strdup_tab(char **tab);
 char				*ft_base(unsigned int n, int b);
 t_list				*ft_lstnew(void const *content, size_t content_size);
 t_list				*ft_lstmap(t_list *list, t_list *(*f)(t_list*));
-void				ft_read(int fd, void *s, int size);
 void				print_memory(const void *addr, size_t size);
 #endif

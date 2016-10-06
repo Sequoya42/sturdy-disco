@@ -12,8 +12,11 @@
 
 #include "libft.h"
 
-void						ft_read(int fd, void *s, int size)
+int						ft_read(int fd, void *s, int size)
 {
-	if ((read(fd, s, size)) == -1)
+	int					k;
+
+	if ((k = (read(fd, s, size))) == -1)
 		msg_exit("Failed to read file\n");
+	return (k);
 }

@@ -11,32 +11,20 @@
 /* ************************************************************************** */
 
 #include "vm.h"
-#if 0
-Take care of stuff like :
--Create ncurse window to print everything
--Modify print_visual to include vm, and show all pc, and maybe color
-
-#endif
 
 void					init_visual(t_vm *vm)
 {
 	initscr();
-	if (COLS < 340 || LINES < 78)
-	{
-		endwin();
-		msg_exit("You need to be in fullscreen !\n");
-	}
 	start_color();
-	// init_color(COLOR_WHITE, 255, 255, 255);
 	init_pair(1, COLOR_GREEN, COLOR_BLACK);
-	init_pair(2, COLOR_RED, COLOR_BLACK);
-	init_pair(3, COLOR_BLUE, COLOR_BLACK);
+	init_pair(2, COLOR_BLUE, COLOR_BLACK);
+	init_pair(3, COLOR_RED, COLOR_BLACK);
 	init_pair(4, COLOR_CYAN, COLOR_BLACK);
 	init_pair(5, COLOR_YELLOW, COLOR_BLACK);
 	init_pair(6, COLOR_BLACK, COLOR_BLACK);
 	init_pair(8, COLOR_WHITE, COLOR_BLACK);
 	noecho();
-	 curs_set(FALSE);
+	curs_set(FALSE);
 	cbreak();
 	(void)vm;
 }
@@ -49,7 +37,7 @@ void					deal_with_keyboard(int *i)
 	c = getch();
 	if (c == ' ')
 		j = j == 1 ? -1 : 1;
-		timeout(j);
+	timeout(j);
 	if (c == '+' && *i <= 1000)
 		*i += 50;
 	else if (c == '-' && *i > 1)
@@ -61,12 +49,7 @@ void					deal_with_keyboard(int *i)
 void					start_visual(t_vm *vm)
 {
 	move(0, 0);
-	addch('\n');
-	printw("Speed : %d\n", 50);
-	addch('\n');
-	int x = 0; int y = 0;
-	getyx(stdscr, y, x);
-	printw("x: %d\ty  : %d\n", x, y);
+	printw("\n\n\n\n");
 	print_visual(vm->memory, MEM_SIZE, vm);
 }
 
@@ -82,12 +65,8 @@ void					go_visual(t_vm *vm)
 		sleep = sec / i;
 		usleep(sleep);
 	}
-	move(0, 0);
-	addch('\n');
-	printw("Speed : %d\n", i);
-	addch('\n');
 	print_pc(vm->first, vm);
-		move(70, 0);
+	move(70, 0);
 	print_sub_screen(vm);
 	deal_with_keyboard(&i);
 }

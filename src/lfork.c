@@ -17,7 +17,6 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	int						i;
 
 	i = 0;
-	// *n = *p;
 	n->pc = p->pc + (p->set[1]);
 	n->pc %= MEM_SIZE;
 	n->old = -1;
@@ -37,10 +36,9 @@ static void					fill_new(t_proc *n, t_proc *p, t_vm *vm)
 	first_add_proc(n, vm);
 	get_instructions(vm, n);
 	n->cycle--;
-
 }
 
-void						op_lfork(t_vm *vm , t_proc *p)
+void						op_lfork(t_vm *vm, t_proc *p)
 {
 	t_proc					*n;
 

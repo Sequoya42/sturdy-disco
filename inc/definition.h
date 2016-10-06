@@ -15,19 +15,20 @@
 
 typedef enum e_code				t_opcode;
 
-#define BLA 0
-#include <stdio.h>
+# define BLA 0
 # define DEBUG					0
+# define REDO					(p->cycle + 1) == GOT(p->set[0]).cycle
+
+# define Y(x)					(x / 64) + 4
+# define X(x)					((x % 64) *3) + 4
 
 # define NC_SIZE				192
 # define BREAK_CHAR				"," " " "\t" "\0" "\r" "\n"
 # define NUM_CHAR				"-1234567890"
 # define GOT(x)					g_op_tab[x - 1]
 # define M(x)					(x % MEM_SIZE)
-# define COLORN(x, y)			( M(x) == y || M(x + 1) == y\
-								|| M(x + 2) == y || M(x + 3) == y)
 
-#define V_REG(x)				(x < 0 || x > REG_NUMBER) ? 0 : x
+# define V_REG(x)				(x < 0 || x > REG_NUMBER) ? 0 : x
 
 # define ISDIR					(GOT(p->set[0]).dir_mod == 1)
 
@@ -44,7 +45,7 @@ typedef enum e_code				t_opcode;
 # define ARG_ONE				t->next
 # define ARG_TWO				t->next->next
 # define ARG_THREE				t->next->next->next
-# define N_ERR					"Number [ %d ] already used by previous champ %s\n"
+# define N_ERR					"Number [ %d ] already used by %s\n"
 
 enum							e_type
 {

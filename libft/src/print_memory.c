@@ -12,23 +12,23 @@
 
 #include "libft.h"
 
-void	print_hex_mem(unsigned char *addr)
+void					print_hex_mem(unsigned char *addr)
 {
-	size_t	i;
-	char	hex[] = "0123456789abcdef";
+	size_t				i;
+	static char			hex[] = "0123456789abcdef";
 
 	i = -1;
 	while (++i < 64)
 	{
-			ft_putchar(hex[(int)addr[i] / 16]);
-			ft_putchar(hex[(int)addr[i] % 16]);
-			ft_putchar(' ');
+		ft_putchar(hex[(int)addr[i] / 16]);
+		ft_putchar(hex[(int)addr[i] % 16]);
+		ft_putchar(' ');
 	}
 }
 
-void	print_raw_mem(unsigned char *addr)
+void					print_raw_mem(unsigned char *addr)
 {
-	size_t i;
+	size_t				i;
 
 	i = -1;
 	while (++i < 16)
@@ -40,10 +40,13 @@ void	print_raw_mem(unsigned char *addr)
 	}
 }
 
-void	print_adrr(int i)
+void					print_adrr(int i)
 {
-	unsigned int	j = 0;
-	char *r = ft_base(i, 16);
+	unsigned int		j;
+	char				*r;
+
+	j = 0;
+	r = ft_base(i, 16);
 	ft_putstr("0x");
 	while (j++ < (4 - ft_strlen(r)))
 		ft_putchar('0');
@@ -51,18 +54,17 @@ void	print_adrr(int i)
 	ft_putstr(" : ");
 }
 
-void	print_memory(const void *addr, size_t size)
+void					print_memory(const void *addr, size_t size)
 {
 	size_t			i;
+
 	i = 0;
 	while (size >= 64)
 	{
 		print_adrr(i);
 		print_hex_mem((unsigned char*)(addr + i));
-		// print_raw_mem((unsigned char*)(addr + i));
 		ft_putchar('\n');
 		size -= 64;
 		i += 64;
 	}
 }
-

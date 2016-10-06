@@ -12,15 +12,15 @@
 
 #include "vm.h"
 
-void						op_add(t_vm *vm , t_proc *p)
+void						op_add(t_vm *vm, t_proc *p)
 {
 	int						n1;
 	int						n2;
+	int						r;
 
-// ft_print(KCYN "OH REALLY !");
 	n1 = p->reg[p->set[2]];
 	n2 = p->reg[p->set[3]];
-	int r = n1 + n2;
+	r = n1 + n2;
 	if (r == 0)
 		p->carry = 1;
 	else
@@ -28,7 +28,3 @@ void						op_add(t_vm *vm , t_proc *p)
 	p->reg[p->set[4]] = r;
 	(void)vm;
 }
-
-#if 0
-
-#endif

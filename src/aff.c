@@ -12,10 +12,10 @@
 
 #include "vm.h"
 
-void						op_aff(t_vm *vm , t_proc *p)
+void						op_aff(t_vm *vm, t_proc *p)
 {
-	// if (vm->visual != 1)
-		// ft_putchar(p->set[2] % 256);
+	if (vm->visual != 1)
+		ft_putchar(p->set[2] % 256);
 	(void)p;
 	(void)vm;
 }

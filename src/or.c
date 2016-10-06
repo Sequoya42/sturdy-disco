@@ -12,7 +12,7 @@
 
 #include "vm.h"
 
-void						op_or(t_vm *vm , t_proc *p)
+void						op_or(t_vm *vm, t_proc *p)
 {
 	int						v1;
 	int						v2;
@@ -26,6 +26,5 @@ void						op_or(t_vm *vm , t_proc *p)
 		p->carry = 1;
 	else
 		p->carry = 0;
-
 	(void)vm;
 }

@@ -12,7 +12,7 @@
 
 #include "vm.h"
 
-void						op_and(t_vm *vm , t_proc *p)
+void						op_and(t_vm *vm, t_proc *p)
 {
 	int						v1;
 	int						v2;
@@ -22,10 +22,9 @@ void						op_and(t_vm *vm , t_proc *p)
 	v2 = get_value(p, 1, 3, vm);
 	n = v1 & v2;
 	p->reg[p->set[4]] = n;
-		if (n == 0)
+	if (n == 0)
 		p->carry = 1;
 	else
 		p->carry = 0;
-
 	(void)vm;
 }

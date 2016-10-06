@@ -1,11 +1,18 @@
 .name "test"
 .comment "instruction test"
 
-
-ldi %10, %10, r2
-st r2, 210
-# ld %0, r2
 zjmp %250
+zjmp %250
+zjmp %250
+zjmp %250
+zjmp %250
+lldi 5023 ,%28723, r9
+st r9, 200
+zjmp %250
+
+
+fork:
+	zjmp %112
 #####################################################
 
 # fork %250

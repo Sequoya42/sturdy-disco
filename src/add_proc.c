@@ -12,51 +12,10 @@
 
 #include "vm.h"
 
-// Implement prev
-void					add_proc(t_proc *new, t_vm *vm)
+void					first_add_proc(t_proc *new, t_vm *vm)
 {
 	static int			i = 1;
 
-	if (new)
-	{
-		new->pos = i++;
-		vm->nb_proc++;
-		if (!vm->first)
-		{
-			vm->proc = new;
-			vm->first = vm->proc;
-		}
-		else
-		{
-			new->prev = vm->proc;
-			vm->proc->next = new;
-			vm->proc = vm->proc->next;
-		}
-	}
-	else
-		msg_exit("No new elem\n");
-}
-
-// void					add_proc(t_proc *new, t_vm *vm)
-// {
-// 	static int			i = 2;
-
-// 	if (new)
-// 	{
-// 		new->pos = i++;
-// 		vm->nb_proc++;
-// 		// ft_putendl("\t\t\t\t\tELSE");
-// 		vm->proc->next = new;
-// 		new->prev = vm->proc;
-// 		vm->proc = vm->proc->next;
-// 	}
-// 	else
-// 		msg_exit("No new elem\n");
-// }
-
-void					first_add_proc(t_proc *new, t_vm *vm)
-{
-		static int			i = 1;
 	if (new)
 	{
 		new->pos = i++;
@@ -76,7 +35,3 @@ void					first_add_proc(t_proc *new, t_vm *vm)
 	else
 		msg_exit("No new elem\n");
 }
-#if 0
-Better add them as first for the init part
-
-#endif

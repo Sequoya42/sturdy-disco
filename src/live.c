@@ -31,7 +31,3 @@ void						op_live(t_vm *vm, t_proc *p)
 	p->alive++;
 	vm->cycle->alive++;
 }
-
-#if 0
-
-#endif

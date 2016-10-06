@@ -12,14 +12,13 @@
 
 #include "vm.h"
 
-static void	print_hex_mem(unsigned char *addr, unsigned int j, t_proc *p)
+void						print_mem(unsigned char *addr, int j, t_proc *p)
 {
-	size_t	i;
-	char	hex[] = "0123456789abcdef";
-	t_proc	*t;
+	size_t					i;
+	static char				hex[] = "0123456789abcdef";
+	t_proc					*t;
 
 	i = -1;
-	// int k = 0;
 	init_color(COLOR_MAGENTA, 254, 254, 254);
 	init_pair(17, COLOR_MAGENTA, COLOR_BLACK);
 	while (++i < 64)
@@ -27,9 +26,9 @@ static void	print_hex_mem(unsigned char *addr, unsigned int j, t_proc *p)
 		t = p;
 		while (t)
 		{
-			if (t->pc == j)
+			if (t->pc == (unsigned int)j)
 				attron(COLOR_PAIR(-t->num));
-			if (t->pc + t->size == j)
+			if (t->pc + t->size == (unsigned int)j)
 				attron(COLOR_PAIR(17));
 			t = t->next;
 		}
@@ -38,14 +37,13 @@ static void	print_hex_mem(unsigned char *addr, unsigned int j, t_proc *p)
 		j++;
 		addch(' ');
 	}
-	// addch('\n');
 }
 
-void							print_coord(int old, t_vm *vm)
+void						print_coord(int old, t_vm *vm)
 {
-	char						hex[] = "0123456789abcdef";
+	static char				hex[] = "0123456789abcdef";
 
-	move((old / 64) + 4 , (old % 64) * 3);
+	move(Y(old), X(old));
 	attron(inch() & A_COLOR);
 	attroff(A_STANDOUT);
 	addch(hex[VM(old) / 16]);
@@ -53,10 +51,10 @@ void							print_coord(int old, t_vm *vm)
 	attroff(inch() & A_COLOR);
 }
 
-void							print_pc(t_proc *f, t_vm *vm)
+void						print_pc(t_proc *f, t_vm *vm)
 {
-	int							old;
-	char						hex[] = "0123456789abcdef";
+	int						old;
+	static char				hex[] = "0123456789abcdef";
 
 	while (f)
 	{
@@ -64,7 +62,7 @@ void							print_pc(t_proc *f, t_vm *vm)
 		if (old != -1)
 			print_coord(old, vm);
 		old = f->pc;
-		move((old / 64) + 4 , ((old % 64) * 3));
+		move(Y(old), X(old));
 		attron((inch() & A_COLOR) | A_STANDOUT);
 		addch(hex[VM(old) / 16]);
 		addch(hex[VM(old) % 16]);
@@ -73,49 +71,43 @@ void							print_pc(t_proc *f, t_vm *vm)
 	}
 }
 
-// static void					print_adrr(int i)
-// {
-// 	unsigned int			j;
-// 	char					*r;
-
-// 	j = 0;
-// 	r = ft_base(i, 16);
-// 	printw("0x");
-// 	while (j++ < (4 - ft_strlen(r)))
-// 		addch('0');
-// 	printw(r);
-// 	addch('\t');
-// }
-
 void						print_sub_screen(t_vm *vm)
 {
 	int						i;
+	int						j;
 
 	i = -1;
-
-	printw("******************************\n");
-	printw("Cycle to die:\t%d\t    *\n", vm->cycle->stop);
-	printw("Cycle total: \t%d\t    *\n", vm->cycle->total);
-	printw("Nb_process:  \t%d\t    *\n", vm->nb_proc);
-	printw("******************************\n");
+	j = 4;
+	mvprintw(j++, 222, "******************************\n");
+	mvprintw(j++, 222, "* Cycle to die:\t%d\t    *", vm->cycle->stop);
+	mvprintw(j++, 222, "* Cycle total: \t%d\t    *", vm->cycle->total);
+	mvprintw(j++, 222, "* Nb_process:  \t%d\t    *", vm->nb_proc);
+	mvprintw(j++, 222, "******************************\n");
+	j++;
 	while (++i < vm->nb_champ)
-		printw("\n[%s]  live(s) : %d\t\t\t%d\n", vm->plr[i].s , vm->plr[i].live, vm->plr[i].last);
+	{
+		attron(COLOR_PAIR(i + 1));
+		mvprintw(j++, 222, "[%s] last : %d", vm->plr[i].s, vm->plr[i].last);
+		attroff(COLOR_PAIR(i + 1));
+		mvprintw(j++, 222, "Nb live(s) : %d", vm->plr[i].live);
+		j++;
+	}
 }
 
-void						print_visual(const void *addr, size_t size, t_vm *vm)
+void						print_visual(void *addr, size_t size, t_vm *vm)
 {
 	unsigned int			i;
+	unsigned int			k;
 
 	i = 0;
-
+	k = 0;
 	while (size >= 64)
 	{
-		// print_adrr(i);
-		print_hex_mem((unsigned char*)(addr + i), i, vm->first);
+		printw("*   ", ++k);
+		print_mem((unsigned char*)(addr + i), i, vm->first);
 		addch('\n');
 		size -= 64;
 		i += 64;
 	}
-	// print_sub_screen(vm);
 	(void)vm;
 }

@@ -12,7 +12,7 @@
 
 #include "vm.h"
 
-void						op_sub(t_vm *vm , t_proc *p)
+void						op_sub(t_vm *vm, t_proc *p)
 {
 	int						v1;
 	int						v2;

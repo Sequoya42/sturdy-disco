@@ -12,33 +12,18 @@
 
 #include "vm.h"
 
-void						right_value(int r, unsigned int n, t_vm *vm)
+void						write_value(int r, unsigned int n, t_vm *vm)
 {
-	// int						j;
-
-	// j = REG_SIZE * 8;
-	// n += 3;
-	// if (DEBUG == 1)
-	// 	ft_print("IN STI : %d\n", r);
-	// while (j)
-	// {
-	// 	VM(n) = (r >> j);
-	// 	j -= 8;
-	// 	n--;
-	// }
-	// r = (long)r;
-	// ft_print("base : %s\n", ft_base(r, 16));
 	VM(n) = (r >> 24);
 	VM(n + 1) = (r >> 16);
 	VM(n + 2) = (r >> 8);
 	VM(n + 3) = (r);
 }
 
-
 int							get_value(t_proc *p, int i, int j, t_vm *vm)
 {
-	int 							r;
-	int								n;
+	int						r;
+	int						n;
 
 	r = 0;
 	if (p->arg_size[i] == REG_CODE)
@@ -50,11 +35,8 @@ int							get_value(t_proc *p, int i, int j, t_vm *vm)
 		r |= (VM(n + 1) << 16);
 		r |= (VM(n + 2) << 8);
 		r |= (VM(n + 3));
-		// ft_print("Value of r : %d\n", r);
-		// ft_print("Value of endian r: %d\n", format_int(r, DIR_SIZE));
 		return (r);
 	}
 	else
 		return (p->set[j]);
-
 }
