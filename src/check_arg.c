@@ -68,7 +68,6 @@ void					check_arg(int ac, char **av, t_vm *vm)
 
 	i = 1;
 	n = 1;
-	vm->nb_champ = 0;
 	vm->dump = -1;
 	nb = 0;
 	while (i < ac)
@@ -84,8 +83,8 @@ void					check_arg(int ac, char **av, t_vm *vm)
 		i++;
 		check_number(&n, vm);
 	}
-	if (vm->nb_champ > MAX_PLAYERS)
-		msg_exit("Too many players, [max is : %d]\n", MAX_PLAYERS);
+	if (vm->nb_champ > MAX_PLAYERS || vm->nb_champ == 0)
+		msg_exit("Need between 1 and %d players\n", MAX_PLAYERS);
 	if (vm->visual == 1 && nb == 1)
 		msg_exit("-v and -n are mutually exclusive\n");
 }
