@@ -6,7 +6,7 @@
 /*   By: rbaum <rbaum@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/04 06:26:12 by rbaum             #+#    #+#             */
-/*   Updated: 2016/10/01 00:19:52 by rbaum            ###   ########.fr       */
+/*   Updated: 2016/10/06 16:56:17 by rbaum            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,10 +83,7 @@ int							loop_players(t_cycle *cycle, t_vm *vm)
 		vm->plr[i].live = 0;
 	if (cycle->total)
 		if (reset_players(vm) == -1)
-	{
-		ft_print("Trouble at cycle : %d\n", cycle->total);
 		return (-1);
-	}
 	cycle->check++;
 	return (0);
 }
